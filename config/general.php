@@ -12,16 +12,24 @@ use craft\config\GeneralConfig;
 use craft\helpers\App;
 
 return GeneralConfig::create()
-    // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
+    ->securityKey(App::env('CRAFT_SECURITY_KEY'))
+    ->allowedFileExtensions(['jpg', 'png', 'jpeg', 'webp', 'gif', 'svg', 'mp4', 'wov', 'mp3', 'wav', 'pdf', 'zip', 'csv', 'rar'])
+    ->maxUploadFileSize('256M')
+    ->userSessionDuration(30*(24*60*60))
     ->defaultWeekStartDay(1)
-    // Prevent generated URLs from including "index.php"
-    ->omitScriptNameInUrls()
-    // Preload Single entries as Twig variables
     ->preloadSingles()
-    // Prevent user enumeration attacks
     ->preventUserEnumeration()
-    // Set the @webroot alias so the clear-caches command knows where to find CP resources
+    ->enableGql(false)
+    ->defaultSearchTermOptions(['subLeft' => true, 'subRight' => true])
+    ->errorTemplatePrefix('errors/')
+    ->timezone('utc')
+    ->omitScriptNameInUrls(true)
+    ->usePathInfo(true)
+    ->useEmailAsUsername(true)
+    ->sendPoweredByHeader(false)
     ->aliases([
-        '@webroot' => dirname(__DIR__) . '/web',
-    ])
-;
+        '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
+        '@webroot' => dirname(__DIR__) . '/public_html',
+        '@assetsUrl' => App::env('ASSETS_URL'),
+        '@cloudfrontUrl' => App::env('CLOUDFRONT_URL'),
+    ]);

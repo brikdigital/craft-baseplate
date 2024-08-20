@@ -1,6 +1,6 @@
 name: craft-baseplate
 type: craftcms
-docroot: web
+docroot: public_html
 php_version: "8.2"
 webserver_type: nginx-fpm
 xdebug_enabled: false
