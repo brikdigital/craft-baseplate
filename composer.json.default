@@ -1,13 +1,4 @@
 {
-  "name": "brikdigital/craft-baseplate",
-  "description": "Craft CMS baseplate",
-  "keywords": [
-    "craft",
-    "cms",
-    "craftcms",
-    "project"
-  ],
-  "license": "MPL-2.0",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
@@ -35,12 +26,8 @@
     }
   },
   "scripts": {
-    "post-create-project-cmd": [
-      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\"",
-      "@php -r \"unlink('composer.json');\"",
-      "@php -r \"rename('composer.json.default', 'composer.json');\"",
-      "@composer dump-autoload -o",
-      "@php craft setup/welcome"
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
   }
 }
