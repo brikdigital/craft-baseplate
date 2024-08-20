@@ -1,0 +1,19 @@
+dateModified: 1724150021
+email:
+  fromEmail: dev@brik.digital
+  fromName: Baseplate
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
+    edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
+system:
+  edition: solo
+  live: true
+  name: Baseplate
+  schemaVersion: 5.3.0.2
+  timeZone: America/Los_Angeles
