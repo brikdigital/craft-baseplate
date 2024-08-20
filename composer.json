@@ -46,6 +46,7 @@
   },
   "require-dev": {
     "craftcms/generator": "^2.0.0",
+    "nystudio107/craft-autocomplete": "^1.12",
     "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
