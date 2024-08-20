@@ -1,4 +1,4 @@
-dateModified: 1724150021
+dateModified: 1724154332
 email:
   fromEmail: dev@brik.digital
   fromName: Baseplate
@@ -9,8 +9,127 @@ graphql:
     expiryDate: null
 meta:
   __names__:
+    41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
+  batch-actions:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  blitz:
+    edition: standard
+    enabled: true
+    licenseKey: 0IXJ6CQ5XRL49GR7OQL1KBK0
+    schemaVersion: 5.6.4
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  colour-swatches:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.4.3
+  cp-clearcache:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  embeddedassets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: OFJXXNZZ9YIB5M9HFWLM4BGN
+    schemaVersion: 1.0.0
+  imager-x:
+    edition: lite
+    enabled: true
+    licenseKey: HB7TZKKGHZ462FW30NLD83JZ
+    schemaVersion: 4.0.0
+  inlinesvg:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  knock-knock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  mjml:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: TQUJX32I1CN41GWOXYF6BT6O
+    schemaVersion: 2.1.0
+  position-fieldtype:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  retour:
+    edition: standard
+    enabled: true
+    licenseKey: RVHJ5DVL8OM9DS6WUXNRMBVK
+    schemaVersion: 3.0.12
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 59THR9H5YX9CBVI8LNAEJSPU
+    schemaVersion: 3.0.12
+  sherlock:
+    edition: lite
+    enabled: true
+    schemaVersion: 5.1.0
+  statuspaginator:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      token: $STATUSPAGINATOR_TOKEN
+  templatecomments:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  translations-admin:
+    edition: standard
+    enabled: true
+    licenseKey: RJCO2QIR903LDU5NNASV1722
+    schemaVersion: 1.1.0
+  typogrify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
