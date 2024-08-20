@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Yii Application Config
  *
@@ -15,13 +16,16 @@
  * If you want to modify the application config for *only* web requests or
  * *only* console requests, create an app.web.php or app.console.php file in
  * your config/ folder, alongside this one.
- * 
+ *
  * Read more about application configuration:
  * https://craftcms.com/docs/4.x/config/app.html
  */
 
+use brikdigital\sitemodule\SiteModule;
 use craft\helpers\App;
 
 return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
+    'modules' => ['site-module' => SiteModule::class],
+    'bootstrap' => ['site-module'],
 ];
