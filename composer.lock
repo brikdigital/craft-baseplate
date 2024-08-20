@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "765cbdec5290048c4e8497923f3f1370",
+    "content-hash": "b0608747db9b073c641c193b559a5eba",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3379,6 +3379,47 @@
                 "source": "https://github.com/firebase/php-jwt/tree/v6.10.1"
             },
             "time": "2024-05-18T18:05:11+00:00"
+        },
+        {
+            "name": "goldinteractive/craft-sitecopy",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Goldinteractive/craft-sitecopy.git",
+                "reference": "b48f10481eca644c7a7b48946cc5db0ac731808e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Goldinteractive/craft-sitecopy/zipball/b48f10481eca644c7a7b48946cc5db0ac731808e",
+                "reference": "b48f10481eca644c7a7b48946cc5db0ac731808e",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "site-copy-x",
+                "name": "Site Copy X",
+                "developer": "Gold Interactive",
+                "developerUrl": "http://goldinteractive.ch",
+                "class": "goldinteractive\\sitecopy\\SiteCopy",
+                "hasSettings": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "goldinteractive\\sitecopy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "support": {
+                "issues": "https://github.com/Goldinteractive/craft-sitecopy/issues",
+                "source": "https://github.com/Goldinteractive/craft-sitecopy/tree/2.1.1"
+            },
+            "time": "2024-08-06T08:26:55+00:00"
         },
         {
             "name": "google/auth",

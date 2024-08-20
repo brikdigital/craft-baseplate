@@ -1,11 +1,17 @@
 headingLevels:
-  - 1
   - 2
   - 3
   - 4
-  - 5
-  - 6
 name: Simple
+options:
+  link:
+    decorators:
+      isExternal:
+        attributes:
+          rel: 'noopener noreferrer'
+          target: _blank
+        label: 'Open in a new tab'
+        mode: manual
 toolbar:
   - heading
   - '|'

@@ -1,4 +1,4 @@
-dateModified: 1724154332
+dateModified: 1724161207
 email:
   fromEmail: dev@brik.digital
   fromName: Baseplate
@@ -10,6 +10,7 @@ graphql:
 meta:
   __names__:
     41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
+    79253ff9-2016-4c72-9a06-3c35a6a690f4: Advanced # Advanced
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
 plugins:
@@ -107,6 +108,11 @@ plugins:
     edition: lite
     enabled: true
     schemaVersion: 5.1.0
+  site-copy-x:
+    edition: standard
+    enabled: true
+    licenseKey: GRU244F8YMODRETY1CG14ZFA
+    schemaVersion: 1.0.2
   statuspaginator:
     edition: standard
     enabled: true

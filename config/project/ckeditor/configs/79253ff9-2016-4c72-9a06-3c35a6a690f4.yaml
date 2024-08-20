@@ -1,0 +1,36 @@
+css: ".ck.ck-content ul + ul, .ck.ck-content ul + ol, .ck.ck-content ol + ul, .ck.ck-content ol + ol {\r\n  margin-top: 20px;\r\n}"
+headingLevels:
+  - 2
+  - 3
+  - 4
+name: Advanced
+options:
+  link:
+    decorators:
+      isExternal:
+        attributes:
+          rel: 'noopener noreferrer'
+          target: _blank
+        label: 'Open in a new tab'
+        mode: manual
+  style:
+    definitions:
+      -
+        classes:
+          - checkmarks
+        element: ul
+        name: 'Lijst met vinkjes'
+toolbar:
+  - heading
+  - style
+  - '|'
+  - numberedList
+  - bulletedList
+  - outdent
+  - indent
+  - '|'
+  - bold
+  - italic
+  - link
+  - findAndReplace
+  - sourceEditing
