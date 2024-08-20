@@ -8,6 +8,8 @@
     "project"
   ],
   "license": "MPL-2.0",
+  "homepage": "https://brik.digital",
+  "type": "project",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
