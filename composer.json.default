@@ -38,7 +38,7 @@
   },
   "autoload": {
     "psr-4": {
-      "modules\\": "modules/"
+      "brikdigital\\sitemodule\\": "modules/site-module/"
     }
   },
   "config": {
@@ -56,5 +56,20 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/lexisother/craft-statuspaginator"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cweagans/composer-patches.git"
+    },
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
 }
