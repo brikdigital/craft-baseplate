@@ -1,0 +1,96 @@
+{#
+/**
+ * @file
+ * Varbase Components implementation for the button component.
+ *
+ * Available properties:
+ * - html_tag: The HTML tag to use for the button (button | a). Defaults to `button`.
+ * - url: URL link for the button when the HTML tag is an anchor link.
+ * - color: Bootstrap includes several predefined button styles, each serving its own
+ *          semantic purpose, with a few extras thrown in for more control.
+ *          (primary | secondary | success | danger | warning | info | dark | light | link)
+ * - outline: (true|false) In need of a button, but not the hefty background colors they bring?
+ *            Replace the default modifier classes with the `.btn-outline-*` ones to remove all
+ *            background images and colors on any button.
+ * - size: (btn-sm | btn-lg) Bootstrap button size
+ * - disabled: (true|false) Disabled button
+ * - utility_classes: An array of utility classes that can be used to add extra
+ *                    Bootstrap utility classes or custom classes to this component.
+ *
+ * Available attributes:
+ * - attributes: Attributes array.
+ *
+ * Available slots:
+ * - content: The content for the button
+ */
+#}
+
+{% set html_tag = html_tag ?? 'button' %}
+{% set size = size ? [size] : [] %}
+{% set disabled_classes = disabled ? ['disabled'] : [] %}
+{% set utility_classes = utility_classes|default([]) %}
+{% set attributes = {} %}
+
+{% set button_color = [] %}
+
+{% if color != '' %}
+  {% if outline == true %}
+    {% set button_color = ['btn-outline-' ~ color] %}
+  {% else %}
+    {% set button_color = ['btn-' ~ color] %}
+  {% endif %}
+{% endif %}
+
+{%
+  set classes = [
+    'btn',
+  ]|merge(button_color)|merge(size)|merge(disabled_classes)|merge(utility_classes)
+%}
+
+{# When the HTML tag is an anchor link #}
+{% if html_tag == 'a' %}
+
+  {# When having a value for the URL
+   # Then add the href attribute with url link value.
+   #}
+  {% if url != '' %}
+    {% set attributes = attributes|merge({ href: url }) %}
+  {% endif %}
+
+  {# Set the role for the anchor link as a button #}
+  {#
+   # When using button classes on `<a>` elements that are used to trigger
+   # in-page functionality (like collapsing content), rather than linking
+   # to new pages or sections within the current page, these links should
+   # be given a `role="button"` to appropriately convey their purpose to
+   # assistive technologies such as screen readers.
+  #}
+  {% set attributes = attributes|merge({ role: 'button' }) %}
+
+  {# When the link is disabled
+   # Then add more accessibility attributes for aria-disabled
+   # And no tab index #}
+  {#
+   # Bootstrap Link functionality caveat:
+   # https://getbootstrap.com/docs/5.3/components/buttons/#link-functionality-caveat
+   #
+   #}
+  {% if disabled == true %}
+    {% set attributes = attributes|merge({
+      'aria-disabled': 'true',
+      tabindex: '-1'
+    }) %}
+  {% endif %}
+{% endif %}
+
+{% tag html_tag with attributes %}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+{% endtag %}
+
+{#<{{ html_tag }}{{ attributes.addClass(classes) }}>{% apply spaceless %}#}
+{#    {% block content %}#}
+{#      {{ content }}#}
+{#    {% endblock %}#}
+{#{% endapply %}</{{ html_tag }}>#}
