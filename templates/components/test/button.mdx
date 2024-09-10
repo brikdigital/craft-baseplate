@@ -1,0 +1,63 @@
+{/* Button.mdx */}
+
+import { Canvas, Title, Subtitle, ArgTypes, Source, Meta, Description, Primary, Story, Stories, Controls } from '@storybook/blocks';
+import * as comStories from './button.stories.json';
+import templateSource from './button.twig?raw';
+
+<Meta of={comStories} name="Docs"/>
+
+<Title />
+<Subtitle />
+<Description />
+
+> #### [Bootstrap Documentation on Buttons](https://getbootstrap.com/docs/5.3/components/buttons)
+> * [Button tags](https://getbootstrap.com/docs/5.3/components/buttons/#button-tags)
+> * [Outline buttons](https://getbootstrap.com/docs/5.3/components/buttons/#outline-buttons)
+> * [Disabled state](https://getbootstrap.com/docs/5.3/components/buttons/#disabled-state)
+> * [Link functionality caveat](https://getbootstrap.com/docs/5.3/components/buttons/#link-functionality-caveat)
+> * [Button plugin](https://getbootstrap.com/docs/5.3/components/buttons/#button-plugin)
+> * [Toggle states](https://getbootstrap.com/docs/5.3/components/buttons/#toggle-states)
+
+<Primary />
+
+## Properties
+<Controls />
+
+<Stories of={comStories} />
+
+### Examples
+**Example #1:** Primary button
+```
+{% include 'varbase_components:button' with {
+  html_tag: 'button',
+  color: 'primary',
+  content: 'Login'
+} %}
+```
+
+**Example #2:** Anchor button as Read more link in a Card
+```
+{% include 'varbase_components:button' with {
+  html_tag: 'a',
+  url: '/blog/blog-test1',
+  content: 'Read more'|t,
+  color: 'primary',
+  outline: true,
+  utility_classes: ['card-link', 'float-end', 'mt-3', 'read-more']
+} %}
+```
+
+**Example #3:** Disabled Anchor button
+```
+{% include 'varbase_components:button' with {
+  html_tag: 'a',
+  color: 'primary',
+  content: 'Read more',
+  url: '#',
+  disabled: true,
+} %}
+```
+
+## Source code
+[//]: # (Twig Template source code)
+<Source code={templateSource} />
