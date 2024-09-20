@@ -14,6 +14,9 @@ class StorybookController extends Controller
     public function actionIndex()
     {
         $request = Craft::$app->getRequest();
+        $response = Craft::$app->getResponse();
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+
         if ($request->getMethod() === "OPTIONS")
             return $this->returnEarlyForCors();
 
@@ -45,7 +48,6 @@ class StorybookController extends Controller
     {
         $response = Craft::$app->getResponse();
 
-        $response->headers->set("Access-Control-Allow-Origin", "*");
         $response->headers->set(
             "Access-Control-Allow-Methods",
             "POST, OPTIONS"
