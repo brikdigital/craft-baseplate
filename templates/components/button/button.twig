@@ -1,0 +1,11 @@
+{% set color =
+    color == "primary"
+        ? "bg-primary"
+        : color == "secondary"
+            ? "bg-secondary"
+            : ""
+%}
+
+<{{ html_tag }} class="{{ color }}">
+    test
+</{{ html_tag }}>
