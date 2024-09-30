@@ -1,0 +1,33 @@
+{
+  "title": "Components/Card",
+  "parameters": {
+    "docs": {
+      "story": {
+        "inline": true
+      }
+    }
+  },
+  "argTypes": {
+    "outline": {
+      "name": "Outline",
+      "description": "qhar",
+      "control": "boolean",
+      "defaultValue": false
+    },
+    "content": {
+      "name": "Content",
+      "description": "whar",
+      "control": "text",
+      "defaultValue": "Card"
+    }
+  },
+  "stories": [
+    {
+      "name": "Primary",
+      "args": {
+        "outline": false,
+        "imageLink": "https://http.cat/404"
+      }
+    }
+  ]
+}

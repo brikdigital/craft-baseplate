@@ -1,0 +1,26 @@
+{
+  "title": "Components/Image",
+  "parameters": {
+    "docs": {
+      "story": {
+        "inline": true
+      }
+    }
+  },
+  "argTypes": {
+    "url": {
+      "name": "Link",
+      "description": "The link to the displayed image",
+      "control": "text",
+      "defaultValue": "https://http.cat/404"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "url": "https://http.cat/404"
+      }
+    }
+  ]
+}

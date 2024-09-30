@@ -2,4 +2,9 @@
 
 {% block html %}
     <div class="text-13">test</div>
+
+    {% include "components/card/card.twig" with {
+        outline: false,
+        imageLink: "https://http.cat/402"
+    } %}
 {% endblock %}

@@ -54,8 +54,10 @@ export default {
       darkpink: '#9B104F',
       orange: '#EF5E1D',
       darkorange: '#9B4524',
-      ...useMapDefaultColorPalette({ palette: colors.green, name: 'primary' }),
-      ...useMapDefaultColorPalette({ palette: colors.pink, name: 'secondary' }),
+      primary: "#1424d5",
+      secondary: "#ef0505"
+      // ...useMapDefaultColorPalette({ palette: colors.green, name: 'primary' }),
+      // ...useMapDefaultColorPalette({ palette: colors.pink, name: 'secondary' }),
     },
     fontFamily: {
       sans: ['"Montserrat"', 'Helvetica', 'Arial', 'sans-serif'],

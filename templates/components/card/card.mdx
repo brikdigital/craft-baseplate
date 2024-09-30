@@ -1,0 +1,59 @@
+import dedent from "dedent";
+import { match } from "ts-pattern";
+import { Canvas, Title, Subtitle, ArgTypes, Source, Meta, Description, Primary, Story, Stories, Controls } from '@storybook/blocks';
+import * as comStories from './card.stories.json';
+import templateSource from './card.twig?raw';
+
+<Meta of={comStories} name="Docs"/>
+
+<Title />
+<Subtitle />
+<Description />
+
+<Primary />
+
+## Properties
+<Controls />
+
+<Stories of={comStories} />
+
+
+# Examples
+
+A card with all required values.
+
+<Source
+    language="twig"
+    code={dedent`
+        {% include "components/card/card.twig" with {
+            ${Object.keys(comStories.default.argTypes).map(key => {
+              console.log(match("e").with("e", () => "a").with("a", () => "b").run())
+//                 let value = match('e')
+//                     .with('e', (v) => 'x')
+//                     .with('a', (v) => 'y')
+//                     .run();
+//                 let value = match(typeof comStories.default.argTypes[key].defaultValue)
+//                     .with('string', (v) => `'${v}'`)
+//                     .with('number', (v) => v)
+//                     .exhaustive();
+
+                return `${key}: '${value}',`
+            })}
+        } %}
+    `}
+/>
+
+```twig
+{% include "components/card/card.twig" with {
+  html_tag: 'a',
+  url: '/blog/blog-test1',
+  content: 'Read more'|t,
+  color: 'primary',
+  outline: true,
+  utility_classes: ['card-link', 'float-end', 'mt-3', 'read-more']
+} %}
+```
+
+## Source code
+[//]: # (Twig Template source code)
+<Source code={templateSource} />
