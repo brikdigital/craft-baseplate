@@ -12,6 +12,7 @@ import PluginCritical from 'rollup-plugin-critical';
 export default defineConfig(({ command }) => ({
   base: command === 'serve' ? '' : '/dist/',
   build: {
+    target: 'es2023',
     commonjsOptions: {
       transformMixedEsModules: true,
     },
@@ -20,7 +21,7 @@ export default defineConfig(({ command }) => ({
     outDir: path.resolve(__dirname, 'public_html/dist/'),
     rollupOptions: {
       input: {
-        app: path.resolve(__dirname, 'src/js/app.js'),
+        app: path.resolve(__dirname, 'src/ts/app.ts'),
       },
     },
   },
@@ -29,7 +30,7 @@ export default defineConfig(({ command }) => ({
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@css': path.resolve(__dirname, 'src/pcss'),
-      '@js': path.resolve(__dirname, 'src/js'),
+      '@ts': path.resolve(__dirname, 'src/ts'),
     },
   },
   server: {
@@ -52,9 +53,9 @@ export default defineConfig(({ command }) => ({
     //   inject: false,
     //   outputPath: 'favicons',
     // }),
-    legacy({
-      targets: ['defaults', 'not IE 11'],
-    }),
+    // legacy({
+    //   targets: ['defaults', 'not IE 11'],
+    // }),
     manifestSRI(),
     viteCompression({
       filter: /\.(js|mjs|json|css|map)$/i,
