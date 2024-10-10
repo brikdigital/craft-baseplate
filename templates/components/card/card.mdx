@@ -25,34 +25,14 @@ A card with all required values.
 <Source
     language="twig"
     code={dedent`
-        {% include "components/card/card.twig" with {
-            ${Object.keys(comStories.default.argTypes).map(key => {
-              console.log(match("e").with("e", () => "a").with("a", () => "b").run())
-//                 let value = match('e')
-//                     .with('e', (v) => 'x')
-//                     .with('a', (v) => 'y')
-//                     .run();
-//                 let value = match(typeof comStories.default.argTypes[key].defaultValue)
-//                     .with('string', (v) => `'${v}'`)
-//                     .with('number', (v) => v)
-//                     .exhaustive();
-
-                return `${key}: '${value}',`
-            })}
+        {% include "components/card/card.twig" with {\n${
+            Object.keys(comStories.default.argTypes).map(key => {
+                let value = comStories.default.argTypes[key].defaultValue;
+                return `    ${key}: '${value}'`
+            }).join(',\n        ')}
         } %}
     `}
 />
-
-```twig
-{% include "components/card/card.twig" with {
-  html_tag: 'a',
-  url: '/blog/blog-test1',
-  content: 'Read more'|t,
-  color: 'primary',
-  outline: true,
-  utility_classes: ['card-link', 'float-end', 'mt-3', 'read-more']
-} %}
-```
 
 ## Source code
 [//]: # (Twig Template source code)
