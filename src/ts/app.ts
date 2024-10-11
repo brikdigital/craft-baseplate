@@ -6,6 +6,14 @@ const components: Component[] = [
     {
         name: 'general',
         selector: 'body'
+    },
+    {
+        name: 'lazysizes',
+        selector: '.lazyload'
+    },
+    {
+        name: 'swiper',
+        selector: '[data-swiper]'
     }
 ];
 
