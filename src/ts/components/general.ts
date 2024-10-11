@@ -1,5 +1,3 @@
-export class GeneralComponent {
-    public constructor() {
-        console.log("hi")
-    }
+export default function general() {
+    console.log("hi")
 }
