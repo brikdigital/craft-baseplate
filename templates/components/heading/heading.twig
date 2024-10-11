@@ -1,0 +1,51 @@
+{% set tag = tag is defined and tag|length ? tag : 'h2' %}
+{% set text = text is defined and text|length ? text : '' %}
+{% set pre = pre is defined and pre|length ? pre : '' %}
+
+{% set size = size is defined and size|length ? size : 'medium' %}
+{% set align = align is defined and align|length ? align : 'left' %}
+{% set color = color is defined and color|length ? color : 'text-black' %}
+{% set colorPre = colorPre is defined and colorPre|length ? colorPre : 'text-primary' %}
+{% set headingClasses = headingClasses is defined and headingClasses|length ? headingClasses : '' %}
+{% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : '' %}
+{% set upperCase = uppercase is defined and uppercase|length ? 'uppercase' : '' %}
+
+{% set cssClass = 'font-extrabold block' %}
+{% set preCssClass = 'text-base lg:text-xl leading-tight font-bold mb-2' %}
+
+{% switch size %}
+    {% case 'xs' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-lg lg:text-xl' %}
+    {% case 'small' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-3xl' %}
+    {% case 'medium' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-3xl lg:text-4xl xl:text-5xl' %}
+    {% case 'large' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-3xl md:text-4xl lg:text-6xl' %}
+    {% case 'xl' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-4xl lg:text-7xl' %}
+{% endswitch %}
+
+{% switch align %}
+    {% case 'left' %}
+        {% set cssClass = cssClass ~ ' ml-0 text-left' %}
+        {% set preCssClass = preCssClass ~ ' ml-0 text-left' %}
+    {% case 'right' %}
+        {% set cssClass = cssClass ~ ' mr-0 text-right' %}
+        {% set preCssClass = preCssClass ~ ' mr-0 text-right' %}
+    {% case 'center' %}
+        {% set cssClass = cssClass ~ ' mx-auto text-center' %}
+        {% set preCssClass = preCssClass ~ ' mx-auto text-center' %}
+{% endswitch %}
+
+{% if text or pre %}
+    <hgroup class="{{ wrapperClasses }}">
+        {% if pre %}
+            <p class=" {{ preCssClass }} {{ colorPre }}">{{ pre }}</p>
+        {% endif %}
+
+        <{{ tag }} class="{{ cssClass }} {{ color }} {{ headingClasses }} {{ upperCase }}">
+            {{ text }}
+        </{{ tag }}>
+    </hgroup>
+{% endif %}

@@ -3,4 +3,5 @@
 /vendor
 /node_modules
 /public_html/dist
+/public_html/imager
 .DS_Store

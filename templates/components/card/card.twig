@@ -1,10 +1,30 @@
-<div>
-    {% include "components/image/image.twig" with {
-        url: imageLink
-    } %}
-    some card text
-    {% include "components/button/button.twig" with {
-        html_tag: "button",
-        color: "primary"
-    } %}
+<div class="flex flex-col cursor-pointer swiper-slide" x-data="{}" @click="(event) => {event.stopPropagation();event.preventDefault();$dispatch('getpopupcontent');}">
+    <a class="relative flex flex-col h-full group" href="#">
+        <div class="relative flex items-center justify-center overflow-hidden">
+            {% include "components/image/image.twig" with {
+                image: true,
+                imageUrl: "https://http.cat/100",
+                size: 'default',
+                sizes: '(min-width: 1440px) 25vw, 50vw',
+                imageClasses:'w-full h-full object-contain',
+                containerClasses: 'w-full'
+            } only %}
+
+            <button class="absolute top-0 right-0 z-10 flex items-center justify-center text-black transition duration-100 ease-in-out pointer-events-none size-11 bg-white/50 backdrop-blur-sm group-hover:bg-black group-hover:bg-white/80" aria-label="Vergroten">
+                {{ inlineSvg('icons/magnify', 'fill-current size-5') }}
+            </button>
+        </div>
+
+        <div class="flex flex-col mt-6">
+            <p class="text-base">
+                {% for artist in ["One", "Two", "Three"] %}
+                    {{ artist }}<span class="last:hidden">,</span>
+                {% endfor %}
+            </p>
+            <h2 class="text-lg font-bold lg:text-xl">
+                {# Configurable through storybook? #}
+                Item Title
+            </h2>
+        </div>
+    </a>
 </div>

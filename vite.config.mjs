@@ -39,12 +39,12 @@ export default defineConfig(({ command }) => ({
     strictPort: true,
   },
   plugins: [
-    PluginCritical({
-      criticalUrl: 'https://craft-baseplate.ddev.site',
-      criticalBase: './public_html/dist/critical/',
-      criticalPages: [{ uri: '/', template: 'index' }],
-      criticalConfig: {},
-    }),
+    // PluginCritical({
+    //   criticalUrl: 'https://craft-baseplate.ddev.site',
+    //   criticalBase: './public_html/dist/critical/',
+    //   criticalPages: [{ uri: '/', template: 'index' }],
+    //   criticalConfig: {},
+    // }),
     // ViteFaviconsPlugin({
     //   logo: "./src/img/favicon-src.png",
     //   favicons: {
