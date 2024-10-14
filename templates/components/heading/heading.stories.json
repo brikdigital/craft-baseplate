@@ -50,7 +50,7 @@
       "description": "The alignment of the heading. Defaults to `left`.",
       "control": "inline-radio",
       "options": ["left", "center", "right"],
-      "defaultValue": ["e"]
+      "defaultValue": "left"
     },
     "color": {
       "name": "Color",

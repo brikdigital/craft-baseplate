@@ -187,7 +187,7 @@ export default {
                     height: '10px',
                     backgroundColor: 'transparent',
                     borderRadius: '0',
-                    backgroundImage: "url('@/img/icons/check.svg')",
+                    // backgroundImage: "url('@/img/icons/check.svg')",
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'contain',
                     top: '8px',
@@ -286,7 +286,7 @@ export default {
               '>': {
                 li: {
                   '&::before': {
-                    backgroundImage: "url('@/img/icons/check-white.svg')",
+                    // backgroundImage: "url('@/img/icons/check-white.svg')",
                   },
                 },
               },
