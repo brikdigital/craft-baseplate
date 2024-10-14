@@ -1,4 +1,4 @@
-dateModified: 1724760022
+dateModified: 1728910248
 email:
   fromEmail: dev@brik.digital
   fromName: Baseplate
@@ -26,7 +26,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 0IXJ6CQ5XRL49GR7OQL1KBK0
-    schemaVersion: 5.7.0.1
+    schemaVersion: 5.9.0
   ckeditor:
     edition: standard
     enabled: true
