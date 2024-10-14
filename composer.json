@@ -26,6 +26,7 @@
     "mmikkel/cp-clearcache": "^2.0",
     "mmikkel/cp-field-inspect": "^2.0",
     "mmikkel/retcon": "^3.2",
+    "mostlyserious/craft-markerio": "2.1.1",
     "mutation/translate": "^4.0",
     "nystudio107/craft-minify": "^5.0",
     "nystudio107/craft-retour": "^5.0",

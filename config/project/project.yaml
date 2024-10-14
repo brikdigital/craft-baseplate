@@ -1,4 +1,4 @@
-dateModified: 1728910248
+dateModified: 1728910613
 email:
   fromEmail: dev@brik.digital
   fromName: Baseplate
@@ -69,6 +69,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
+  markerio:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: true

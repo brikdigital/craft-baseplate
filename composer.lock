@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5b99ac4d88797f8d0c4d94656e9437e",
+    "content-hash": "b01ee12f0b2f7c9f8a97726d8b7db89e",
     "packages": [
         {
             "name": "amphp/amp",
@@ -5321,6 +5321,55 @@
                 "psr-3"
             ],
             "time": "2024-06-28T09:40:51+00:00"
+        },
+        {
+            "name": "mostlyserious/craft-markerio",
+            "version": "2.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mostlyserious/craft-markerio/zipball/3c1561eb31e7e9a9d49b0a6a82204c4fa338e2cc",
+                "reference": "3c1561eb31e7e9a9d49b0a6a82204c4fa338e2cc",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.9.0||^5.0.0",
+                "php": ">=8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "markerio",
+                "name": "Marker.io",
+                "developer": "Mostly Serious",
+                "documentationUrl": "https://github.com/mostlyserious/craft-markerio"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mostlyserious\\craftmarkerio\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mostly Serious",
+                    "homepage": "https://github.com/mostlyserious"
+                }
+            ],
+            "description": "Easily add Marker.io to your CraftCMS site.",
+            "keywords": [
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "marker",
+                "marker.io"
+            ],
+            "support": {
+                "issues": "https://github.com/mostlyserious/craft-markerio/issues",
+                "source": "https://github.com/mostlyserious/craft-markerio",
+                "docs": "https://github.com/mostlyserious/craft-markerio"
+            },
+            "time": "2024-07-19T21:37:40+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
