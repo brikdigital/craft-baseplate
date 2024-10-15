@@ -28,4 +28,20 @@ return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
     'modules' => ['site-module' => SiteModule::class],
     'bootstrap' => ['site-module'],
+    'components' => [
+        'cache' => [
+            'class' => yii\redis\Cache::class,
+            'keyPrefix' => App::env('APP_ID') ?: 'CraftCMS'
+        ],
+        'queue' => [
+            'class' => craft\queue\Queue::class,
+            'ttr' => 10 * 60,
+        ],
+        'redis' => [
+            'class' => yii\redis\Connection::class,
+            'hostname' => App::env('REDIS_HOSTNAME'),
+            'port' => App::env('REDIS_PORT'),
+            'password' => App::env('REDIS_PASS') ?: null
+        ]
+    ]
 ];

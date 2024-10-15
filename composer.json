@@ -44,7 +44,8 @@
     "verbb/hyper": "2.1.1",
     "verbb/knock-knock": "^3.0",
     "verbb/navigation": "3.0.4",
-    "vlucas/phpdotenv": "^5.4.0"
+    "vlucas/phpdotenv": "^5.4.0",
+    "yiisoft/yii2-redis": "^2.0"
   },
   "require-dev": {
     "craftcms/generator": "^2.0.0",
