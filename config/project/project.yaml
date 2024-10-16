@@ -3,10 +3,6 @@ email:
   fromEmail: dev@brik.digital
   fromName: Baseplate
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple

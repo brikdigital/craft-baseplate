@@ -1,8 +1,8 @@
 import dedent from "dedent";
 import { match } from "ts-pattern";
 import { Canvas, Title, Subtitle, ArgTypes, Source, Meta, Description, Primary, Story, Stories, Controls } from '@storybook/blocks';
-import * as comStories from './button.stories.json';
-import templateSource from './button.twig?raw';
+import * as comStories from './image.stories.json';
+import templateSource from './image.twig?raw';
 
 <Meta of={comStories} name="Docs"/>
 
@@ -19,12 +19,12 @@ import templateSource from './button.twig?raw';
 
 ### Examples
 
-A button with all required values.
+An image with all required values.
 
 <Source
     language="twig"
     code={dedent`
-        {% include "components/button/button.twig" with {\n${
+        {% include "components/atoms/image/image.twig" with {\n${
             Object.keys(comStories.default.argTypes).map(key => {
                 let value = comStories.default.argTypes[key].defaultValue;
                 return `    ${key}: '${value}'`

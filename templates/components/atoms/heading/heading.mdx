@@ -24,7 +24,7 @@ A button with all required values.
 <Source
     language="twig"
     code={dedent`
-        {% include "components/heading/heading.twig" with {\n${
+        {% include "components/atoms/heading/heading.twig" with {\n${
             Object.keys(comStories.default.argTypes).map(key => {
                 let value = comStories.default.argTypes[key].defaultValue;
                 value = match(typeof value)
