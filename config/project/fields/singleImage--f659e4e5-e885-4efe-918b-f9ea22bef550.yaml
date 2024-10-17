@@ -10,7 +10,7 @@ settings:
   allowedKinds:
     - image
   branchLimit: null
-  defaultUploadLocationSource: null
+  defaultUploadLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: 1
@@ -19,14 +19,15 @@ settings:
   restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: null
+  restrictedLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
   restrictedLocationSubpath: null
   selectionLabel: 'Selecteer een afbeelding'
   showCardsInGrid: false
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

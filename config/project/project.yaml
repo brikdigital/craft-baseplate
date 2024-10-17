@@ -1,4 +1,4 @@
-dateModified: 1729164384
+dateModified: 1729164760
 elementSources:
   craft\elements\Entry:
     -
@@ -54,18 +54,35 @@ email:
   fromEmail: dev@brik.digital
   fromName: Baseplate
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  files:
+    hasUrls: true
+    name: Bestanden
+    settings:
+      path: '@webroot/assets/files'
+    type: craft\fs\Local
+    url: '@assetsUrl/assets/files'
+  images:
+    hasUrls: true
+    name: Afbeeldingen
+    settings:
+      path: '@webroot/assets/images'
+    type: craft\fs\Local
+    url: '@assetsUrl/assets/images'
 meta:
   __names__:
     1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: 'Artikelen index' # Artikelen index
     4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
     8d87bf9f-8546-434b-a971-6407e109f8aa: Blokken # Blokken
+    008f6cb3-012d-4339-ab10-9df3eec5f3aa: Afbeeldingen # Afbeeldingen
     41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
     87add8ee-18cc-4272-8a4c-4fd06d16ec25: 'Pagina''s' # Pagina's
     132fd44a-075e-4b36-a399-5270c429abdd: 'Artikel Type' # Artikel Type
     432be928-1cc7-435b-bd50-bf75c40a983c: 'Gedeelde content blokken' # Gedeelde content blokken
     0619bf3f-de22-4525-8261-a10f5454eee0: Homepage # Homepage
     731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO Instellingen' # SEO Instellingen
+    7205ce0b-82c8-45e4-8400-08ceaf7f7576: Bestanden # Bestanden
     54058ce4-020d-4535-9931-d69993419df7: Artikelen # Artikelen
     79253ff9-2016-4c72-9a06-3c35a6a690f4: Advanced # Advanced
     82231ea7-a108-43d6-9a7a-78b4b9297fb2: 'Artikelen index' # Artikelen index
