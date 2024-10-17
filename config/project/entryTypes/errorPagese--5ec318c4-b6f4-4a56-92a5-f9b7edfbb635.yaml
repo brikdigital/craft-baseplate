@@ -1,0 +1,83 @@
+color: null
+fieldLayouts:
+  2f49047d-8527-4cab-aed5-ffc796cae5f0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-10-17T10:43:56+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 93e8c440-59e1-4539-b3ec-16c90619d1e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:46:14+00:00'
+            elementCondition: null
+            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Pre Heading
+            handle: errorHeadline
+            includeInCards: false
+            instructions: null
+            label: 'Error Headline'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13b0b67d-673c-47d9-9238-5abdce24a693
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:46:14+00:00'
+            elementCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            handle: errorText
+            includeInCards: false
+            instructions: null
+            label: 'Error Message'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f000832-8828-49f7-9ee1-57e068a7905a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 02a9f7b3-4cb4-4ffc-9da7-c928397ffcb1
+        userCondition: null
+handle: errorPagese
+hasTitleField: true
+icon: triangle-exclamation
+name: Errors
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

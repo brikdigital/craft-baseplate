@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 54058ce4-020d-4535-9931-d69993419df7 # Artikelen
+handle: articles
+maxAuthors: 1
+name: Artikelen
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Besaplete EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/articles/_entry.twig
+    uriFormat: 'articles/{slug}'
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/articles/_entry.twig
+    uriFormat: 'artikelen/{slug}'
+type: channel

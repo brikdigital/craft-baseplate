@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 4f69e3ac-43b6-46cc-acad-80ce9804fd2a # Homepage
+handle: homepage
+maxAuthors: 1
+name: Homepage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Besaplete EN
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+type: single

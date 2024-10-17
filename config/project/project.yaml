@@ -1,14 +1,89 @@
-dateModified: 1728910613
+dateModified: 1729164384
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Algemeen
+      type: heading
+    -
+      key: 'single:0619bf3f-de22-4525-8261-a10f5454eee0' # Homepage
+      type: native
+    -
+      key: 'section:b7fa6983-cbe4-435a-a345-b065911c3442' # Pagina's
+      type: native
+    -
+      key: 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Gedeelde content blokken
+      type: native
+    -
+      key: 'section:edb6d78c-27f5-4522-852d-2df53429bb71' # Errors
+      type: native
+    -
+      heading: Artikelen
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Artikelen
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'single:82231ea7-a108-43d6-9a7a-78b4b9297fb2' # Artikelen index
+      type: native
+    -
+      key: 'section:b20babee-2b3a-4f80-9384-15e7b592cdc9' # Artikel type
+      type: native
 email:
   fromEmail: dev@brik.digital
   fromName: Baseplate
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: 'Artikelen index' # Artikelen index
+    4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
+    5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
+    8d87bf9f-8546-434b-a971-6407e109f8aa: Blokken # Blokken
     41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
+    87add8ee-18cc-4272-8a4c-4fd06d16ec25: 'Pagina''s' # Pagina's
+    132fd44a-075e-4b36-a399-5270c429abdd: 'Artikel Type' # Artikel Type
+    432be928-1cc7-435b-bd50-bf75c40a983c: 'Gedeelde content blokken' # Gedeelde content blokken
+    0619bf3f-de22-4525-8261-a10f5454eee0: Homepage # Homepage
+    731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO Instellingen' # SEO Instellingen
+    54058ce4-020d-4535-9931-d69993419df7: Artikelen # Artikelen
     79253ff9-2016-4c72-9a06-3c35a6a690f4: Advanced # Advanced
+    82231ea7-a108-43d6-9a7a-78b4b9297fb2: 'Artikelen index' # Artikelen index
+    437963f6-fffc-4014-921d-e13fd7b2315f: Body # Body
+    a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Besaplete EN' # Besaplete EN
+    b7fa6983-cbe4-435a-a345-b065911c3442: 'Pagina''s' # Pagina's
+    b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Artikel type' # Artikel type
+    bc6369ec-7f21-4151-a8ad-85cec976c987: 'Artikel type' # Artikel type
+    c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Buttons # Buttons
+    c798cdf5-723e-4cdc-8ac1-6c527b1a14a6: 'Pre Heading' # Pre Heading
+    c957c2ee-ff8a-4973-8111-58c21b775495: Tekst # Tekst
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
+    d602da2a-239f-4f18-93fd-8047af89cdd0: Heading # Heading
+    db6df807-fdb5-4bef-a3f5-2ebb6800c0bd: Artikelen # Artikelen
+    edb6d78c-27f5-4522-852d-2df53429bb71: Errors # Errors
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
+    f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Gedeelde content blokken' # Gedeelde content blokken
+    f659e4e5-e885-4efe-918b-f9ea22bef550: Afbeelding # Afbeelding
 plugins:
   aws-s3:
     edition: standard

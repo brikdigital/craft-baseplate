@@ -1,0 +1,229 @@
+color: null
+fieldLayouts:
+  50aab429-a7f0-497c-b300-1394e96159e9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-10-17T10:46:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f09f5bb0-04de-40c3-ae8d-0e5e5232dbf9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:52:58+00:00'
+            elementCondition: null
+            fieldUid: 132fd44a-075e-4b36-a399-5270c429abdd # Artikel Type
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57fcb81c-b287-418f-8796-01677872a139
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:52:58+00:00'
+            elementCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a54e5b7-59cd-4703-9f03-b7462008705d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:52:58+00:00'
+            elementCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9d61cbb-87e8-49d3-a996-5942b0fc3935
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:52:58+00:00'
+            elementCondition: null
+            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Buttons
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64b7db2e-831c-4f74-a04a-f09d7af03ed9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 280d0b11-2ca3-4847-b5f1-e1c616ff596f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-17T10:54:03+00:00'
+            elementCondition: null
+            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da9c4419-955c-4826-8984-e8243253ed89
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 76adffcd-c050-4fa2-b0f8-1398fe379a9d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-17T10:54:03+00:00'
+            elementCondition: null
+            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Pre Heading
+            handle: cardPreHeading
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad7226d8-d1b9-44e5-8294-2ef5ac13b72e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:54:03+00:00'
+            elementCondition: null
+            fieldUid: d602da2a-239f-4f18-93fd-8047af89cdd0 # Heading
+            handle: cardHeading
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a794c775-05b9-40fa-a2cb-139d58d592d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:54:03+00:00'
+            elementCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            handle: cardBody
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95ff03ba-0f23-478c-946c-55a87749e87f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:54:03+00:00'
+            elementCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding
+            handle: cardImage
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c7ff3086-56b4-4f7a-9fb5-119fdc89b796
+            userCondition: null
+            warning: null
+            width: 100
+        name: Kaart
+        uid: c040dc7d-589b-468f-924e-0b08f1e20365
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-17T10:54:03+00:00'
+            elementCondition: null
+            fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO Instellingen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 722705b1-01da-4d19-89d3-45133bacbccb
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 74336115-e013-42aa-8ff1-2cc27a8df8a0
+        userCondition: null
+handle: articles
+hasTitleField: true
+icon: newspaper
+name: Artikelen
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

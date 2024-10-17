@@ -1,0 +1,23 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - bc6369ec-7f21-4151-a8ad-85cec976c987 # Artikel type
+handle: articleType
+maxAuthors: 1
+name: 'Artikel type'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Besaplete EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 723a7549-588b-46e2-a483-693710316fe4
+type: structure

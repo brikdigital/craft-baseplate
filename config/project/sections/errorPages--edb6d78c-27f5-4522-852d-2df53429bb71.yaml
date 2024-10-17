@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 5ec318c4-b6f4-4a56-92a5-f9b7edfbb635 # Errors
+handle: errorPages
+maxAuthors: 1
+name: Errors
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Besaplete EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

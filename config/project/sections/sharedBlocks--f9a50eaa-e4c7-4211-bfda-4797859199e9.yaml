@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 432be928-1cc7-435b-bd50-bf75c40a983c # Gedeelde content blokken
+handle: sharedBlocks
+maxAuthors: 1
+name: 'Gedeelde content blokken'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Besaplete EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

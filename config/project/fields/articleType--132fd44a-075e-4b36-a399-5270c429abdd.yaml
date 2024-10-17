@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: articleType
+instructions: null
+name: 'Artikel Type'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Selecteer artikel type'
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:b20babee-2b3a-4f80-9384-15e7b592cdc9' # Artikel type
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

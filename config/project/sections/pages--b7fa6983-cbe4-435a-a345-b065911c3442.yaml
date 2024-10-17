@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 87add8ee-18cc-4272-8a4c-4fd06d16ec25 # Pagina's
+handle: pages
+maxAuthors: 1
+name: 'Pagina''s'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Besaplete EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/pages/_entry
+    uriFormat: '{slug}'
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/pages/_entry
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: c24fc82a-b932-4711-b82c-e70b75b6f155
+type: structure

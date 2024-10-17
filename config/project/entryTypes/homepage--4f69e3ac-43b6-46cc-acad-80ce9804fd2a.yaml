@@ -1,0 +1,95 @@
+color: null
+fieldLayouts:
+  40226b46-128a-42ca-a8d0-0dcd58a4c40b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-10-17T10:15:33+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0c56a516-291c-4f96-9e27-e50280be09cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 372dfb5a-ed9c-4a0d-b8a7-04e5a1e281e3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-17T10:25:40+00:00'
+            elementCondition: null
+            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 87e178ed-11ce-4a88-8950-a59bf5618ca7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e5ead6ac-1fc7-46ae-89cb-32c9c00f3eed
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-17T10:28:03+00:00'
+            elementCondition: null
+            fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO Instellingen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c553fc90-84cc-427a-ad06-752aba53be89
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 9c9bba4a-4278-4740-827a-2fc532831b04
+        userCondition: null
+handle: homepage
+hasTitleField: true
+icon: house
+name: Homepage
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

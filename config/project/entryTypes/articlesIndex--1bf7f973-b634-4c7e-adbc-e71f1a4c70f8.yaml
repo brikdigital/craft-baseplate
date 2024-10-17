@@ -1,0 +1,143 @@
+color: null
+fieldLayouts:
+  fde7c2bf-2bdb-44b4-bb64-87cb29e9bd3a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-10-17T10:55:07+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ebe8b972-19e7-4053-bc12-b8c93bc3af37
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:57:11+00:00'
+            elementCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00df0122-2922-441b-8c37-29d4bbb7e676
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:57:11+00:00'
+            elementCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8fb46f0d-ddc2-4ea5-b276-b384d6664590
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T10:57:11+00:00'
+            elementCondition: null
+            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Buttons
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4363c03c-b0b0-4eee-8b03-b0ddda162214
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 869adf13-a4c3-42ab-b425-73e0f80b953b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-17T10:57:11+00:00'
+            elementCondition: null
+            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94adc43f-79e8-473e-a5ba-d414a51f9379
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cfde52c9-8023-442b-a0c8-4712db9fc11f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-17T10:57:11+00:00'
+            elementCondition: null
+            fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO Instellingen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c19f18e-21d2-49a1-be07-26838c3b4f3d
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 5e61034d-d197-4b86-8fb3-825da79df710
+        userCondition: null
+handle: articlesIndex
+hasTitleField: true
+icon: newspaper
+name: 'Artikelen index'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
