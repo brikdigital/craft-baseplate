@@ -2,7 +2,7 @@ columnSuffix: null
 handle: body
 instructions: null
 name: Body
-searchable: false
+searchable: true
 settings:
   availableTransforms: ''
   availableVolumes: ''
@@ -17,5 +17,5 @@ settings:
   showWordCount: true
   wordLimit: null
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\ckeditor\Field

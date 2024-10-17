@@ -2,7 +2,7 @@ columnSuffix: null
 handle: heading
 instructions: null
 name: Heading
-searchable: false
+searchable: true
 settings:
   byteLimit: null
   charLimit: null
@@ -12,5 +12,5 @@ settings:
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\PlainText

@@ -2,7 +2,7 @@ columnSuffix: null
 handle: articleType
 instructions: null
 name: 'Artikel Type'
-searchable: false
+searchable: true
 settings:
   allowSelfRelations: false
   branchLimit: null
@@ -18,5 +18,5 @@ settings:
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Entries

@@ -2,7 +2,7 @@ columnSuffix: null
 handle: singleImage
 instructions: null
 name: Afbeelding
-searchable: false
+searchable: true
 settings:
   allowSelfRelations: false
   allowSubfolders: false

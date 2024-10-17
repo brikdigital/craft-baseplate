@@ -5,8 +5,13 @@ name: 'SEO Instellingen'
 searchable: false
 settings:
   elementDisplayPreviewType: google
-  facebookEnabledFields: ''
-  facebookTabEnabled: ''
+  facebookEnabledFields:
+    - seoPreview
+    - ogTitle
+    - ogDescription
+    - ogImage
+    - ogImageDescription
+  facebookTabEnabled: '1'
   generalEnabledFields:
     - seoPreview
     - mainEntityOfPage
@@ -20,8 +25,14 @@ settings:
   generalTabEnabled: '1'
   sitemapEnabledFields: ''
   sitemapTabEnabled: ''
-  twitterEnabledFields: ''
-  twitterTabEnabled: ''
+  twitterEnabledFields:
+    - seoPreview
+    - twitterCardType
+    - twitterTitle
+    - twitterDescription
+    - twitterImage
+    - twitterImageDescription
+  twitterTabEnabled: '1'
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: nystudio107\seomatic\fields\SeoSettings
