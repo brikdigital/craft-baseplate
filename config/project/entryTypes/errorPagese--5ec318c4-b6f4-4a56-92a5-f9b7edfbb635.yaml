@@ -38,7 +38,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:46:14+00:00'
             elementCondition: null
-            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Pre Heading
+            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Bovenkop
             handle: errorHeadline
             includeInCards: false
             instructions: null
@@ -54,7 +54,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:46:14+00:00'
             elementCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst
             handle: errorText
             includeInCards: false
             instructions: null

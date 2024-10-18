@@ -1,0 +1,30 @@
+columnSuffix: null
+handle: textPosition
+instructions: null
+name: 'Tekst positie'
+searchable: false
+settings:
+  default: left
+  options:
+    __assoc__:
+      -
+        - left
+        - '1'
+      -
+        - center
+        - ''
+      -
+        - right
+        - '1'
+      -
+        - full
+        - '1'
+      -
+        - drop-left
+        - ''
+      -
+        - drop-right
+        - ''
+translationKeyFormat: null
+translationMethod: none
+type: rias\positionfieldtype\fields\Position

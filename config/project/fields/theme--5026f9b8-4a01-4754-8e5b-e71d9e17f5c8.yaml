@@ -1,0 +1,13 @@
+columnSuffix: null
+handle: theme
+instructions: null
+name: Thema
+searchable: false
+settings:
+  default: null
+  palette: Theme
+  setRandom: false
+  useConfigFile: true
+translationKeyFormat: null
+translationMethod: none
+type: percipiolondon\colourswatches\fields\ColourSwatches

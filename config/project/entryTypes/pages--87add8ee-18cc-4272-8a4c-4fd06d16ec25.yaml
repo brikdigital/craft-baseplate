@@ -54,7 +54,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:32:57+00:00'
             elementCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst
             handle: null
             includeInCards: false
             instructions: null
@@ -98,7 +98,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:32:57+00:00'
             elementCondition: null
-            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Pre Heading
+            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Bovenkop
             handle: cardPreHeading
             includeInCards: false
             instructions: null
@@ -114,7 +114,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:32:57+00:00'
             elementCondition: null
-            fieldUid: d602da2a-239f-4f18-93fd-8047af89cdd0 # Heading
+            fieldUid: d602da2a-239f-4f18-93fd-8047af89cdd0 # Kop
             handle: cardHeading
             includeInCards: false
             instructions: null
@@ -130,7 +130,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:36:30+00:00'
             elementCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst
             handle: cardBody
             includeInCards: false
             instructions: null

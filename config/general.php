@@ -27,6 +27,7 @@ return GeneralConfig::create()
     ->usePathInfo(true)
     ->useEmailAsUsername(true)
     ->sendPoweredByHeader(false)
+    ->extraAllowedFileExtensions(['json'])
     ->aliases([
         '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
         '@webroot' => dirname(__DIR__) . '/public_html',

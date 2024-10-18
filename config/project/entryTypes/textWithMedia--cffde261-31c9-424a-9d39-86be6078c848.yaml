@@ -1,0 +1,265 @@
+color: null
+fieldLayouts:
+  67374a86-2379-435f-8483-8200c10be10f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-18T13:07:35+00:00'
+            elementCondition: null
+            fieldUid: bb9f38f1-c5e0-4ed6-9d09-97f29487de56 # Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd9ecaaf-da43-4957-996c-02f485caf480
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:43:42+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: ab5ba091-3ce1-41f0-aed6-bcac4c4071cf
+            userCondition: null
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-10-17T14:16:08+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8cd95b4d-39bc-4788-89a4-4f9927aeb2e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:19:37+00:00'
+            elementCondition: null
+            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Bovenkop
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b0a8218-f42b-40ef-87e3-c32029acc113
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:19:37+00:00'
+            elementCondition: null
+            fieldUid: d602da2a-239f-4f18-93fd-8047af89cdd0 # Kop
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 143346ec-7dad-4dc7-a693-ea31d7e0dfcd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:19:37+00:00'
+            elementCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f79737d3-3082-4a23-8d8c-71e25f001b9d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:19:37+00:00'
+            elementCondition: null
+            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Knoppen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88cf7039-28f1-4392-a6f5-2551479f3322
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-18T13:10:47+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 828c2803-278d-4b67-bdc9-d1a35e790c8b
+            userCondition: null
+          -
+            dateAdded: '2024-10-18T13:10:47+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: bb9f38f1-c5e0-4ed6-9d09-97f29487de56 # Type
+                  layoutElementUid: dd9ecaaf-da43-4957-996c-02f485caf480
+                  operator: ni
+                  uid: 1ff97cde-cae7-480f-a4d6-3e1658eada0d
+                  values:
+                    - text
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: afce72fb-dcb9-42e3-99d5-a4e1b6c32d71 # Media
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 917971ca-54bd-4d49-8291-08280562e455
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: d13bf530-6e70-49d4-834d-ebbb71c354c1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-18T13:20:43+00:00'
+            elementCondition: null
+            fieldUid: a43b9a82-d36b-47f2-9c34-fb66898b6fd1 # Titel formaat
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dcf028db-479d-4363-b22d-18257606498c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:43:42+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: bb9f38f1-c5e0-4ed6-9d09-97f29487de56 # Type
+                  layoutElementUid: dd9ecaaf-da43-4957-996c-02f485caf480
+                  operator: ni
+                  uid: d105d146-276c-48b6-bece-59a06592aa2e
+                  values:
+                    - text
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 889f70a7-0949-425c-a9be-060721269cf0 # Tekst positie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77e07e2c-cbf4-41e5-b2b5-7b9ca7ae8074
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:19:37+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: d4a4bc7c-6065-4510-878b-e4e3ef6ec1ce # Type
+                  layoutElementUid: 0c43c3c7-adfb-4da3-b1ce-3cf1da0d1800
+                  operator: in
+                  uid: 1c6dbc80-05fd-4d12-a045-e04abe4fa6d8
+                  values:
+                    - textImage
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 767c68f7-a42c-4402-a640-46af0c267fb7 # Afbeelding ratio
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bfe0b10-2a05-445a-b2c1-48f4f9c55c0f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-17T14:19:37+00:00'
+            elementCondition: null
+            fieldUid: 5026f9b8-4a01-4754-8e5b-e71d9e17f5c8 # Thema
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd2e8789-5c00-47bb-a2e1-76630b2b94c9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: d7075d17-5417-4e32-a774-fcfd679450d4
+        userCondition: null
+handle: textWithMedia
+hasTitleField: false
+icon: image-polaroid
+name: 'Tekst (met media)'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

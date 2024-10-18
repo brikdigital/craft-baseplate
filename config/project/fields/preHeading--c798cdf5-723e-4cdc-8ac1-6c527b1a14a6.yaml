@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: preHeading
 instructions: null
-name: 'Pre Heading'
+name: Bovenkop
 searchable: true
 settings:
   byteLimit: null

@@ -1,0 +1,53 @@
+columnSuffix: null
+handle: titleSize
+instructions: null
+name: 'Titel formaat'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Extra groot'
+        -
+          - value
+          - h2
+        -
+          - pxVal
+          - '24'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Groot
+        -
+          - value
+          - h3
+        -
+          - pxVal
+          - '20'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Standaard
+        -
+          - value
+          - h4
+        -
+          - pxVal
+          - '16'
+        -
+          - default
+          - ''
+  placeholderText: 'Select an option'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\buttonbox\fields\TextSize

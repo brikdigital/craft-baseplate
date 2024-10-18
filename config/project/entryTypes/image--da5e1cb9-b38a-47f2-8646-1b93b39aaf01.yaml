@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  1b296801-0ebc-4003-96de-9b63cbb12187:
+  423d92a3-0b09-4352-a62e-933eadb8f7d0:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-10-17T10:40:42+00:00'
+            dateAdded: '2024-10-17T14:07:40+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,14 +31,14 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: a7e9a0fd-edcd-416b-b243-cadb933ae69e
+            uid: f308d32a-0693-4745-a07d-a5470ad42806
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-10-17T10:42:14+00:00'
+            dateAdded: '2024-10-17T14:09:57+00:00'
             elementCondition: null
-            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
+            fieldUid: 86dfc9bd-0363-4046-a638-26e03cd481da # Afbeeldingen
             handle: null
             includeInCards: false
             instructions: null
@@ -47,17 +47,33 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c65c5e7a-c047-4526-9257-c3d4eab416c7
+            uid: ae46fdda-3827-478d-a156-737c67818edc
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: ea9521a3-eb99-43b5-9ecf-1e1447ba257f
+          -
+            dateAdded: '2024-10-17T14:09:57+00:00'
+            elementCondition: null
+            fieldUid: 767c68f7-a42c-4402-a640-46af0c267fb7 # Afbeelding ratio
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36feded6-f341-4bfc-a5bb-9b72294b51d5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: f782a9ed-17d0-4127-98f3-a53b3f49f46a
         userCondition: null
-handle: sharedBlocks
-hasTitleField: true
-icon: cubes
-name: 'Gedeelde content blokken'
+handle: image
+hasTitleField: false
+icon: image
+name: Afbeelding
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

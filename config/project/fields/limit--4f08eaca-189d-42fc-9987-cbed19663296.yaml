@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: limit
+instructions: null
+name: 'Maximaal aantal berichten'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 3
+  max: null
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

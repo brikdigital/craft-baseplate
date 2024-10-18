@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  1b296801-0ebc-4003-96de-9b63cbb12187:
+  cc2988cf-a9e7-41e7-94d5-278b732fa737:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-10-17T10:40:42+00:00'
+            dateAdded: '2024-10-18T13:25:38+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,14 +31,14 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: a7e9a0fd-edcd-416b-b243-cadb933ae69e
+            uid: ce9df0ed-67ac-4610-a5e5-b9e24a4f8897
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-10-17T10:42:14+00:00'
+            dateAdded: '2024-10-18T13:27:08+00:00'
             elementCondition: null
-            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
+            fieldUid: afce72fb-dcb9-42e3-99d5-a4e1b6c32d71 # Media
             handle: null
             includeInCards: false
             instructions: null
@@ -47,17 +47,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c65c5e7a-c047-4526-9257-c3d4eab416c7
+            uid: b17674b0-bde9-4dbf-9c00-9819b64a413f
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: ea9521a3-eb99-43b5-9ecf-1e1447ba257f
+        name: Inhoud
+        uid: 5c679b94-3164-4d41-898b-576ac35dea49
         userCondition: null
-handle: sharedBlocks
-hasTitleField: true
-icon: cubes
-name: 'Gedeelde content blokken'
+handle: media
+hasTitleField: false
+icon: images
+name: Media
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

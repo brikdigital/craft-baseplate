@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: blockType
+instructions: null
+name: Type
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Tekst
+        -
+          - value
+          - text
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Tekst met afbeelding'
+        -
+          - value
+          - textImage
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Tekst met video'
+        -
+          - value
+          - textVideo
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

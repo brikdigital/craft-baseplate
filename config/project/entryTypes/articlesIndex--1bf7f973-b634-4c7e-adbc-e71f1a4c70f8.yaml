@@ -54,7 +54,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:57:11+00:00'
             elementCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Body
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst
             handle: null
             includeInCards: false
             instructions: null
@@ -70,7 +70,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:57:11+00:00'
             elementCondition: null
-            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Buttons
+            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Knoppen
             handle: null
             includeInCards: false
             instructions: null

@@ -1,0 +1,52 @@
+columnSuffix: null
+handle: blockTypes
+instructions: null
+name: Type
+searchable: false
+settings:
+  displayAsGraphic: null
+  displayFullwidth: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Tekst
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - text
+        -
+          - imageUrl
+          - ''
+        -
+          - imageAlign
+          - left
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Tekst met media'
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - textMedia
+        -
+          - imageUrl
+          - ''
+        -
+          - imageAlign
+          - left
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: verbb\buttonbox\fields\Buttons

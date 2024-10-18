@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: sharedBlock
+instructions: null
+name: 'Gedeeld blok'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: 'Kies een blok'
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Gedeelde content blokken
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

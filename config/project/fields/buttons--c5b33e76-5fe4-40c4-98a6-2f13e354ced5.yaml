@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: buttons
 instructions: null
-name: Buttons
+name: Knoppen
 searchable: true
 settings:
   defaultLinkType: default-verbb-hyper-links-entry

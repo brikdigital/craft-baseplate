@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5d41cd791e05b3061e44172425f4c7b",
+    "content-hash": "7dc21dd9247d7389c13e7571bf7cda19",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3440,11 +3440,6 @@
         {
             "name": "hybridinteractive/craft-position-fieldtype",
             "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hybridinteractive/craft-position-fieldtype.git",
-                "reference": "9e02cb387303bfe8a4cfcc18478d7ef7a98e4e65"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/hybridinteractive/craft-position-fieldtype/zipball/9e02cb387303bfe8a4cfcc18478d7ef7a98e4e65",
@@ -3469,7 +3464,6 @@
                     "rias\\positionfieldtype\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3481,16 +3475,15 @@
             ],
             "description": "Brings back the Position fieldtype from Craft 2",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "position fieldtype"
             ],
             "support": {
                 "docs": "https://github.com/hybridinteractive/craft-position-fieldtype/blob/master/README.md",
-                "issues": "https://github.com/hybridinteractive/craft-position-fieldtype/issues",
-                "source": "https://github.com/hybridinteractive/craft-position-fieldtype/tree/5.0.0"
+                "issues": "https://github.com/hybridinteractive/craft-position-fieldtype/issues"
             },
             "time": "2024-04-17T17:48:07+00:00"
         },
@@ -10382,6 +10375,63 @@
             "time": "2024-09-13T23:33:05+00:00"
         },
         {
+            "name": "verbb/buttonbox",
+            "version": "5.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/buttonbox/zipball/d17c4f03719673a3d19b9e86291e69b6817a09ee",
+                "reference": "d17c4f03719673a3d19b9e86291e69b6817a09ee",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0",
+                "php": "^8.2",
+                "verbb/base": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Button Box",
+                "handle": "buttonbox",
+                "documentationUrl": "https://github.com/verbb/buttonbox",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/buttonbox/craft-5/CHANGELOG.md",
+                "class": "verbb\\buttonbox\\ButtonBox"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\buttonbox\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                },
+                {
+                    "name": "Supercool",
+                    "homepage": "http://supercooldesign.co.uk"
+                }
+            ],
+            "description": "A collection of utility field types.",
+            "keywords": [
+                "buttonbox",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/buttonbox/issues?state=open",
+                "source": "https://github.com/verbb/buttonbox",
+                "docs": "https://github.com/verbb/buttonbox",
+                "rss": "https://github.com/verbb/buttonbox/commits/v2.atom"
+            },
+            "time": "2024-05-10T14:48:17+00:00"
+        },
+        {
             "name": "verbb/expanded-singles",
             "version": "3.0.0",
             "source": {
@@ -12249,8 +12299,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },

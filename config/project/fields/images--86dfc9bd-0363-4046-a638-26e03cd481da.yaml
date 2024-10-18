@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: images
+instructions: null
+name: Afbeeldingen
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets
