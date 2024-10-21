@@ -396,6 +396,16 @@ export default {
             padding: theme('spacing.20')
           },
         },
+        '.full-click': {
+          '&::after': {
+            content:"''",
+            zIndex: 10,
+            position: 'absolute',
+            inset: 0,
+            backgroundColor: 'transparent',
+            pointerEvents: 'auto'
+          },
+        },
       });
     },
   ],
