@@ -4,11 +4,11 @@
 
 {% set size = size is defined and size|length ? size : 'medium' %}
 {% set align = align is defined and align|length ? align : 'left' %}
-{% set color = color is defined and color|length ? color : 'text-black' %}
-{% set colorPre = colorPre is defined and colorPre|length ? colorPre : 'text-primary' %}
+{% set color = color is defined and color|length ? color : ' text-primary' %}
+{% set colorPre = colorPre is defined and colorPre|length ? colorPre : ' text-secondary' %}
 {% set headingClasses = headingClasses is defined and headingClasses|length ? headingClasses : '' %}
 {% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : '' %}
-{% set upperCase = uppercase is defined and uppercase|length ? 'uppercase' : '' %}
+{% set upperCase = uppercase is defined and uppercase|length ? ' uppercase' : '' %}
 
 {% set cssClass = 'font-extrabold block' %}
 {% set preCssClass = 'text-base lg:text-xl leading-tight font-bold mb-2' %}
@@ -26,24 +26,31 @@
 
 {% switch align %}
     {% case 'left' %}
-        {% set cssClass = cssClass ~ ' ml-0 text-left' %}
-        {% set preCssClass = preCssClass ~ ' ml-0 text-left' %}
+        {% set cssClass = cssClass ~ ' ml-0 text-left ' %}
+        {% set preCssClass = preCssClass ~ ' ml-0 text-left ' %}
     {% case 'right' %}
-        {% set cssClass = cssClass ~ ' mr-0 text-right' %}
-        {% set preCssClass = preCssClass ~ ' mr-0 text-right' %}
+        {% set cssClass = cssClass ~ ' mr-0 text-right ' %}
+        {% set preCssClass = preCssClass ~ ' mr-0 text-right ' %}
     {% case 'center' %}
-        {% set cssClass = cssClass ~ ' mx-auto text-center' %}
-        {% set preCssClass = preCssClass ~ ' mx-auto text-center' %}
+        {% set cssClass = cssClass ~ ' mx-auto text-center ' %}
+        {% set preCssClass = preCssClass ~ ' mx-auto text-center ' %}
 {% endswitch %}
+
+{% set cssClass = cssClass ~ color ~ ' '~ headingClasses ~ upperCase %}
+{% set preCssClass = preCssClass ~ colorPre %}
 
 {% if text or pre %}
     <hgroup class="{{ wrapperClasses }}">
         {% if pre %}
-            <p class=" {{ preCssClass }} {{ colorPre }}">{{ pre }}</p>
+            {{ tag('p', {
+                class: [preCssClass|join(', ')],
+                text: pre
+            }) }}
         {% endif %}
 
-        <{{ tag }} class="{{ cssClass }} {{ color }} {{ headingClasses }} {{ upperCase }}">
-            {{ text }}
-        </{{ tag }}>
+        {{ tag(tag, {
+            class: [cssClass|join(', ')],
+            text: text
+        }) }}
     </hgroup>
 {% endif %}

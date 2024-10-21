@@ -91,7 +91,7 @@
         "text": "Heading text",
         "size": "large",
         "align": "left",
-        "color": "text-black",
+        "color": "text-primary",
         "colorPre": "text-secondary",
         "headingClasses": "",
         "wrapperClasses": "",
