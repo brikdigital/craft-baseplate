@@ -384,25 +384,16 @@ export default {
     typography,
     ({ addComponents, theme }) => {
       addComponents({
-        '.boxed': {
-          width: '100%',
+        '.container': {
+          width: theme('width.full'),
+          maxWidth: theme('screen.3xl'),
           paddingLeft: theme('spacing.6'),
-          paddingRight: '1.5rem',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          '@screen md': {
-            paddingLeft: '2rem',
-            paddingRight: '2rem',
-          },
-          '@screen xl': {
-            maxWidth: '1280px',
-            paddingLeft: 'max(24, min((11px + 3.50vw), 32px))',
-            paddingRight: 'max(24, min((11px + 3.5vw), 32px))',
-          },
-          '@screen 2xl': {
-            maxWidth: '1536px',
-            paddingLeft: 'max(24, min((8.57px + 3.57vw), 32px))',
-            paddingRight: 'max(24, min((8.57px + 3.57vw), 32px))',
+          paddingRight: theme('spacing.6'),
+          paddingTop: theme('spacing.14'),
+          paddingBottom: theme('spacing.14'),
+          margin: '0 auto',
+          '@screen lg': {
+            padding: theme('spacing.20')
           },
         },
       });
