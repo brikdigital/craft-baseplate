@@ -9,7 +9,7 @@ settings:
       __assoc__:
         -
           - label
-          - 'Extra groot'
+          - 'Standaard (H2)'
         -
           - value
           - h2
@@ -23,7 +23,7 @@ settings:
       __assoc__:
         -
           - label
-          - Groot
+          - 'Klein (H3)'
         -
           - value
           - h3
@@ -37,7 +37,7 @@ settings:
       __assoc__:
         -
           - label
-          - Standaard
+          - 'Kleiner (H4)'
         -
           - value
           - h4

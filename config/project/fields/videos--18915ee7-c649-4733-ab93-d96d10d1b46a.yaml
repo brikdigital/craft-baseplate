@@ -18,7 +18,7 @@ settings:
   restrictFiles: false
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
+  restrictedLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa'
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false

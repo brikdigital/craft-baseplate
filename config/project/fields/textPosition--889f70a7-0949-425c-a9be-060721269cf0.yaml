@@ -18,7 +18,7 @@ settings:
         - '1'
       -
         - full
-        - '1'
+        - ''
       -
         - drop-left
         - ''

@@ -364,27 +364,12 @@ export default {
       current: 'currentColor',
       black: '#000000',
       white: '#FFFFFF',
-      lime: 'rgb(var(--color-lime))',
-      green: {
-        DEFAULT: 'rgb(var(--color-dark-grass))',
-        light: 'rgb(var(--color-grass))',
-        lighter: 'rgb(var(--color-light-grass))',
-      },
-      gray: {
-        DEFAULT: 'rgb(var(--color-gray-600))',
-        medium: 'rgb(var(--color-dark-sky))',
-        light: 'rgb(var(--color-sky))',
-      },
-      red: {
-        DEFAULT: 'rgb(var(--color-dark-red))',
-        light: 'rgb(var(--color-tiles))',
-        lighter: 'rgb(var(--color-brick))',
-      },
+      gray: colors.gray,
       primary: {
-        DEFAULT: 'rgb(var(--color-dark-grass))',
+        DEFAULT: 'rgb(var(--color-primary))',
       },
       secondary: {
-        DEFAULT: 'rgb(var(--color-tiles))',
+        DEFAULT: 'rgb(var(--color-secondary))',
       },
       error: '#FF0000',
     },
@@ -397,11 +382,11 @@ export default {
     debugScreens,
     forms,
     typography,
-    ({ addComponents }) => {
+    ({ addComponents, theme }) => {
       addComponents({
-        '.container': {
+        '.boxed': {
           width: '100%',
-          paddingLeft: '1.5rem',
+          paddingLeft: theme('spacing.6'),
           paddingRight: '1.5rem',
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -415,7 +400,7 @@ export default {
             paddingRight: 'max(24, min((11px + 3.5vw), 32px))',
           },
           '@screen 2xl': {
-            maxWidth: '1360px',
+            maxWidth: '1536px',
             paddingLeft: 'max(24, min((8.57px + 3.57vw), 32px))',
             paddingRight: 'max(24, min((8.57px + 3.57vw), 32px))',
           },

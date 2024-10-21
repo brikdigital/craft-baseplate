@@ -38,7 +38,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-18T13:27:08+00:00'
             elementCondition: null
-            fieldUid: afce72fb-dcb9-42e3-99d5-a4e1b6c32d71 # Media
+            fieldUid: afce72fb-dcb9-42e3-99d5-a4e1b6c32d71 # Foto's en/of video's
             handle: null
             includeInCards: false
             instructions: null
@@ -57,7 +57,7 @@ fieldLayouts:
 handle: media
 hasTitleField: false
 icon: images
-name: Media
+name: 'Foto en/of video'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

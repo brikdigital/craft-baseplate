@@ -10,7 +10,7 @@ settings:
   allowedKinds:
     - image
   branchLimit: null
-  defaultUploadLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
+  defaultUploadLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: 1
@@ -19,7 +19,7 @@ settings:
   restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
+  restrictedLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
   restrictedLocationSubpath: null
   selectionLabel: 'Selecteer een afbeelding'
   showCardsInGrid: false
@@ -27,7 +27,7 @@ settings:
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
-    - 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa' # Afbeeldingen
+    - 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

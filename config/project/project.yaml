@@ -1,4 +1,4 @@
-dateModified: 1729258047
+dateModified: 1729511958
 elementSources:
   craft\elements\Entry:
     -
@@ -78,7 +78,6 @@ meta:
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
     5fe4b921-1ad2-4cce-bf81-bb2fe1f766a3: 'Externe url' # Externe url
     8d87bf9f-8546-434b-a971-6407e109f8aa: Blokken # Blokken
-    008f6cb3-012d-4339-ab10-9df3eec5f3aa: Afbeeldingen # Afbeeldingen
     8f439fc2-311f-4f45-99c6-c482d129d1fd: Tag # Tag
     41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
@@ -91,6 +90,7 @@ meta:
     731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO Instellingen' # SEO Instellingen
     767c68f7-a42c-4402-a640-46af0c267fb7: 'Afbeelding ratio' # Afbeelding ratio
     889f70a7-0949-425c-a9be-060721269cf0: 'Tekst positie' # Tekst positie
+    927fe6b5-4220-425e-b5a5-cd1948cea056: Ondertitel # Ondertitel
     5026f9b8-4a01-4754-8e5b-e71d9e17f5c8: Thema # Thema
     7205ce0b-82c8-45e4-8400-08ceaf7f7576: Bestanden # Bestanden
     18915ee7-c649-4733-ab93-d96d10d1b46a: Video # Video
@@ -102,11 +102,12 @@ meta:
     25165387-9136-4739-86cb-59a989b1c003: Afbeelding # Afbeelding
     a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Besaplete EN' # Besaplete EN
     a43b9a82-d36b-47f2-9c34-fb66898b6fd1: 'Titel formaat' # Titel formaat
-    a22612d8-4a11-4015-b6c2-855dfef11a6c: 'Tekst met media' # Tekst met media
-    afce72fb-dcb9-42e3-99d5-a4e1b6c32d71: Media # Media
+    afce72fb-dcb9-42e3-99d5-a4e1b6c32d71: 'Foto''s en/of video''s' # Foto's en/of video's
+    b5da10b5-92de-4de6-8ac4-619c4d1eccc6: 'Slider type' # Slider type
     b7fa6983-cbe4-435a-a345-b065911c3442: 'Pagina''s' # Pagina's
     b9f016c9-d8b3-49f8-acbe-3337414dd097: Artikelen # Artikelen
     b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Artikel type' # Artikel type
+    b56c28d2-a08b-4291-80fd-4cff8f398791: Weergave # Weergave
     b5386dfa-66c8-4d08-bbcc-38503a3862c9: Video # Video
     bb9f38f1-c5e0-4ed6-9d09-97f29487de56: Type # Type
     bc6369ec-7f21-4151-a8ad-85cec976c987: 'Artikel type' # Artikel type
@@ -114,7 +115,7 @@ meta:
     c798cdf5-723e-4cdc-8ac1-6c527b1a14a6: Bovenkop # Bovenkop
     c957c2ee-ff8a-4973-8111-58c21b775495: Tekst # Tekst
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
-    cffde261-31c9-424a-9d39-86be6078c848: 'Tekst (met media)' # Tekst (met media)
+    cffde261-31c9-424a-9d39-86be6078c848: 'Tekst (met foto en/of video)' # Tekst (met foto en/of video)
     d4a4bc7c-6065-4510-878b-e4e3ef6ec1ce: Type # Type
     d602da2a-239f-4f18-93fd-8047af89cdd0: Kop # Kop
     d52247de-f951-467f-823c-4808b53741ca: 'Gedeeld blok' # Gedeeld blok
@@ -124,7 +125,7 @@ meta:
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
     f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Gedeelde content blokken' # Gedeelde content blokken
     f659e4e5-e885-4efe-918b-f9ea22bef550: Afbeelding # Afbeelding
-    fb34806c-754c-4b9f-8df1-4fa15eef8a16: Media # Media
+    fb34806c-754c-4b9f-8df1-4fa15eef8a16: 'Foto en/of video' # Foto en/of video
 plugins:
   aws-s3:
     edition: standard

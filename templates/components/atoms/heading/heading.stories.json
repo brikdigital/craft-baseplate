@@ -20,15 +20,15 @@
         "Span": "span"
       }
     },
-    "text": {
-      "name": "Text",
-      "description": "The heading text.",
-      "control": "text",
-      "defaultValue": ""
-    },
     "pre": {
       "name": "Pre-heading",
       "description": "The text of the pre-heading.",
+      "control": "text",
+      "defaultValue": ""
+    },
+    "text": {
+      "name": "Heading text",
+      "description": "The heading text.",
       "control": "text",
       "defaultValue": ""
     },
@@ -38,11 +38,10 @@
       "control": "select",
       "defaultValue": "large",
       "options": {
-        "XS": "xs",
-        "Small": "small",
-        "Medium": "medium",
+        "XL": "xl",
         "Large": "large",
-        "XL": "xl"
+        "Medium": "medium",
+        "Small": "small"
       }
     },
     "align": {
@@ -88,12 +87,12 @@
       "name": "Default",
       "args": {
         "tag": "h2",
-        "text": "Heading Text",
-        "pre": "Pre-heading Text",
+        "pre": "Pre-heading text",
+        "text": "Heading text",
         "size": "large",
         "align": "left",
         "color": "text-black",
-        "colorPre": "text-primary",
+        "colorPre": "text-secondary",
         "headingClasses": "",
         "wrapperClasses": "",
         "uppercase": ""

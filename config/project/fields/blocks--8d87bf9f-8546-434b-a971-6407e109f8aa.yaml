@@ -7,13 +7,12 @@ settings:
   createButtonLabel: 'Voeg een blok toe'
   entryTypes:
     - c957c2ee-ff8a-4973-8111-58c21b775495 # Tekst
-    - a22612d8-4a11-4015-b6c2-855dfef11a6c # Tekst met media
-    - cffde261-31c9-424a-9d39-86be6078c848 # Tekst (met media)
+    - cffde261-31c9-424a-9d39-86be6078c848 # Tekst (met foto en/of video)
     - 25165387-9136-4739-86cb-59a989b1c003 # Afbeelding
     - b5386dfa-66c8-4d08-bbcc-38503a3862c9 # Video
     - 74716a14-5d9a-4002-bc77-51f38589d539 # Artikel grid
     - 057c8c38-dc14-4f4f-8bc8-14a7232d3905 # Gedeeld blok
-    - fb34806c-754c-4b9f-8df1-4fa15eef8a16 # Media
+    - fb34806c-754c-4b9f-8df1-4fa15eef8a16 # Foto en/of video
   includeTableView: false
   maxEntries: null
   minEntries: null

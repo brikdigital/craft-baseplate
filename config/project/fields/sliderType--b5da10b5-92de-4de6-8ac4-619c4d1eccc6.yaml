@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: blockTypes
+handle: sliderType
 instructions: null
-name: Type
+name: 'Slider type'
 searchable: false
 settings:
   displayAsGraphic: null
@@ -11,13 +11,13 @@ settings:
       __assoc__:
         -
           - label
-          - Tekst
+          - 'Automatisch afspelen'
         -
           - showLabel
           - '1'
         -
           - value
-          - text
+          - inlineAutoplay
         -
           - imageUrl
           - ''
@@ -31,13 +31,13 @@ settings:
       __assoc__:
         -
           - label
-          - 'Tekst met foto en/of video'
+          - 'Niet automatisch afspelen'
         -
           - showLabel
           - '1'
         -
           - value
-          - textMedia
+          - inline
         -
           - imageUrl
           - ''
@@ -51,13 +51,13 @@ settings:
       __assoc__:
         -
           - label
-          - 'Foto en/of video'
+          - Popup
         -
           - showLabel
           - '1'
         -
           - value
-          - media
+          - popup
         -
           - imageUrl
           - ''
