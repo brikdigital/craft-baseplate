@@ -1,3 +1,3 @@
 export default function general() {
-    console.log("hi")
+  console.log('hi');
 }
