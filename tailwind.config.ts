@@ -29,8 +29,7 @@ export default {
   content: ['./templates/**/*.{twig,html,vue,js,ts}', './src/pcss/**/*.pcss'],
   safelist: [
     {
-      pattern:
-        /bg-(white|gray|black|green|darkgreen|pink|darkpink|orange|darkorange)/,
+      pattern: /bg-(white|gray|black|green|darkgreen|pink|darkpink|orange|darkorange)/,
     },
     { pattern: /col-span-(2|3|4|5|6|8|9|10)/ },
     { pattern: /grid-cols-(2|3|4|5|6|8|9|10)/ },
@@ -334,8 +333,7 @@ export default {
         'border-black': 'inset 0px 0px 0px 1px theme(colors.black)',
       },
       backgroundImage: {
-        overlay:
-          'linear-gradient(180deg, rgba(0, 0, 0, 0) 69.66%, rgba(0, 0, 0, 0.8) 90.29%)',
+        overlay: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 69.66%, rgba(0, 0, 0, 0.8) 90.29%)',
       },
     },
     // Replace the default Tailwind config here
@@ -393,17 +391,17 @@ export default {
           paddingBottom: theme('spacing.14'),
           margin: '0 auto',
           '@screen lg': {
-            padding: theme('spacing.20')
+            padding: theme('spacing.20'),
           },
         },
         '.full-click': {
           '&::after': {
-            content:"''",
+            content: "''",
             zIndex: 10,
             position: 'absolute',
             inset: 0,
             backgroundColor: 'transparent',
-            pointerEvents: 'auto'
+            pointerEvents: 'auto',
           },
         },
       });

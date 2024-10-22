@@ -60,7 +60,8 @@
         "noDuplicateElseIf": "error",
         "noIrregularWhitespace": "error",
         "noOctalEscape": "error",
-        "noUselessEscapeInRegex": "error"
+        "noUselessEscapeInRegex": "error",
+        "useSortedClasses": "warn"
       },
       "security": { "noGlobalEval": "error" },
       "style": {
