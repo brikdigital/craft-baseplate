@@ -14,35 +14,31 @@ export default class DOMHelper {
                     if (mutation.type === "childList") {
                         if (checkRemoved) {
                             (Array.from(mutation.removedNodes) as HTMLElement[]).forEach((node) => {
-                                if (node.nodeType == 1) {
+                                if (node.nodeType === 1) {
                                     const results = node.querySelectorAll(selector);
                                     if (results.length > 0) {
                                         callback(results);
-                                    } else {
-                                        if (node.matches(selector)) {
+                                    } else if (node.matches(selector)) {
                                             callback([node]);
                                         }
-                                    }
                                 }
                             })
                         } else {
                             (Array.from(mutation.addedNodes) as HTMLElement[]).forEach((node) => {
-                                if (node.nodeType == 1) {
+                                if (node.nodeType === 1) {
                                     const results = node.querySelectorAll(selector);
                                     if (results.length > 0) {
                                         callback(results);
-                                    } else {
-                                        if (node.matches(selector)) {
+                                    } else if (node.matches(selector)) {
                                             callback([node]);
                                         }
-                                    }
                                 }
                             });
                         }
                     }
                     if (mutation.type === "attributes" && includeAttributes) {
-                        if (typeof includeAttributes == "string") {
-                            if (mutation.attributeName == includeAttributes) {
+                        if (typeof includeAttributes === "string") {
+                            if (mutation.attributeName === includeAttributes) {
                                 const results = (mutation.target as HTMLElement).matches(
                                     selector
                                 );
@@ -64,7 +60,7 @@ export default class DOMHelper {
         );
         mutationObserver.observe(parent, {
             attributes:
-                typeof includeAttributes == "boolean"
+                typeof includeAttributes === "boolean"
                     ? includeAttributes
                     : includeAttributes.length > 0,
             childList: true,

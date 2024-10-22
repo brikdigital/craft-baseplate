@@ -5,7 +5,7 @@ import 'swiper/css/bundle';
 export default function swiper() {
     let sliders = document.querySelectorAll('[data-swiper]') as NodeListOf<HTMLElement>;
 
-    sliders.forEach((slider, index) => {
+    sliders.forEach((slider, _index) => {
         let slides = slider.querySelectorAll('.swiper-slide');
         let sliderData = JSON.parse(slider.dataset.swiper);
 
@@ -58,6 +58,6 @@ export default function swiper() {
             }
         }
 
-        const swiper = new Swiper(slider, options);
+        const _swiper = new Swiper(slider, options);
     });
 }

@@ -20,12 +20,12 @@ export default class ComponentLoader {
             this.initComponent(componentName, plugins);
         }
 
-        DOMHelper.onDynamicContent(document.documentElement, selector, (elements) => {
+        DOMHelper.onDynamicContent(document.documentElement, selector, (_elements) => {
             this.initComponent(componentName, plugins);
         });
     }
 
-    private async initComponent(componentName: string, plugins: Plugin[]) {
+    private async initComponent(componentName: string, _plugins: Plugin[]) {
         const component = await import(`./components/${componentName}.ts`);
         if (!component.default || typeof component.default !== "function")
             throw new Error(`${componentName} doesn't export a default function!`)
