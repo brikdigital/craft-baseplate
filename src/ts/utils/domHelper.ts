@@ -5,24 +5,40 @@ export default class DOMHelper {
         parent: Element,
         selector: string,
         callback: DynamicContentCallback,
-        includeAttributes: boolean | string = false
+        includeAttributes: boolean | string = false,
+        checkRemoved: boolean = false
     ) {
         const mutationObserver: MutationObserver = new MutationObserver(
             (mutationsList) => {
                 for (let mutation of mutationsList) {
                     if (mutation.type === "childList") {
-                        Array.from(mutation.addedNodes).forEach((node: HTMLElement) => {
-                            if (node.nodeType == 1) {
-                                const results = node.querySelectorAll(selector);
-                                if (results.length > 0) {
-                                    callback(results);
-                                } else {
-                                    if (node.matches(selector)) {
-                                        callback([node]);
+                        if (checkRemoved) {
+                            (Array.from(mutation.removedNodes) as HTMLElement[]).forEach((node) => {
+                                if (node.nodeType == 1) {
+                                    const results = node.querySelectorAll(selector);
+                                    if (results.length > 0) {
+                                        callback(results);
+                                    } else {
+                                        if (node.matches(selector)) {
+                                            callback([node]);
+                                        }
                                     }
                                 }
-                            }
-                        });
+                            })
+                        } else {
+                            (Array.from(mutation.addedNodes) as HTMLElement[]).forEach((node) => {
+                                if (node.nodeType == 1) {
+                                    const results = node.querySelectorAll(selector);
+                                    if (results.length > 0) {
+                                        callback(results);
+                                    } else {
+                                        if (node.matches(selector)) {
+                                            callback([node]);
+                                        }
+                                    }
+                                }
+                            });
+                        }
                     }
                     if (mutation.type === "attributes" && includeAttributes) {
                         if (typeof includeAttributes == "string") {
