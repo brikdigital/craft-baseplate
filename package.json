@@ -16,6 +16,7 @@
     "split-type": "^0.3.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@storybook/addon-a11y": "^8.3.0",
     "@storybook/addon-essentials": "^8.3.0",
     "@storybook/addon-links": "^8.3.0",
@@ -45,6 +46,7 @@
     "postcss-inline-svg": "^6.0.0",
     "postcss-nested": "^6.0.1",
     "postcss-pxtorem": "^6.0.0",
+    "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-syntax-highlighter": "^15.5.0",
