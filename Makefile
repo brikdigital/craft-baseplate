@@ -10,7 +10,7 @@ MAKEFLAGS += --no-builtin-rules
 test: dev storybook
 
 build: up
-	ddev exec npm run build
+	ddev exec pnpm build
 clean:
 	rm -f composer.lock
 	rm -rf vendor/
@@ -18,9 +18,9 @@ clean:
 	rm -rf node_modules/
 dev: build
 	ddev launch
-	ddev exec npm run serve
+	ddev exec pnpm serve
 storybook:
-	ddev exec npx storybook dev --disable-telemetry -p 3001
+	ddev exec pnpm storybook dev --disable-telemetry -p 3001
 composer: up
 	ddev composer \
 		$(filter-out $@,$(MAKECMDGOALS))
@@ -42,7 +42,7 @@ up:
         ddev auth ssh; \
         ddev start; \
         ddev composer install; \
-        ddev exec npm install -f; \
+        ddev exec pnpm install; \
     fi
 %:
 	@:

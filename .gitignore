@@ -2,6 +2,8 @@
 /.idea
 /vendor
 /node_modules
+/.pnpm-store
 /public_html/dist
 /public_html/imager
 .DS_Store
+lefthook-local.yml
