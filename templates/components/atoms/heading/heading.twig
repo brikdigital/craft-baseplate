@@ -1,4 +1,4 @@
-{% set tag = tag is defined and tag|length ? tag : 'h2' %}
+{% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'h2' %}
 {% set text = text is defined and text|length ? text : '' %}
 {% set pre = pre is defined and pre|length ? pre : '' %}
 
@@ -14,14 +14,12 @@
 {% set preCssClass = 'text-base lg:text-xl leading-tight font-bold mb-2' %}
 
 {% switch size %}
-    {% case 'small' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-3xl' %}
     {% case 'medium' %}
         {% set cssClass = cssClass ~ ' leading-tight text-3xl lg:text-4xl xl:text-5xl' %}
     {% case 'large' %}
         {% set cssClass = cssClass ~ ' leading-tight text-3xl md:text-4xl lg:text-6xl' %}
     {% case 'xl' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-4xl lg:text-7xl' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-6xl lg:text-8xl' %}
 {% endswitch %}
 
 {% switch align %}
@@ -48,7 +46,7 @@
             }) }}
         {% endif %}
 
-        {{ tag(tag, {
+        {{ tag(htmlTag, {
             class: [cssClass|join(', ')],
             text: text
         }) }}

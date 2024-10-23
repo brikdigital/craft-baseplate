@@ -32,13 +32,11 @@
             <meta name='csrf-token-name' content='{{ craft.app.config.general.csrfTokenName }}'>
             <meta name='csrf-token' content='{{ craft.app.request.getCsrfToken() }}'>
         </head>
-        <body class='overflow-x-hidden relative flex flex-col min-h-screenh antialiased {{ bodyClasses }} {{ devMode ? 'debug-screens' : '' }}'>
-            <div id='app'>
-                <main
-                    id='main'
-                    class='transition-fade flex flex-col gap-32'
-                    style='animation-duration: 0ms;'>
-                    {% block html %}{% endblock %}
+        <body class="overflow-x-hidden relative flex flex-col min-h-screen antialiased {{ bodyClasses }} {{ devMode ? 'debug-screens' : '' }}">
+            <div id="app">
+                <main id="main" class="flex-[1_0_auto]">
+                    {% block html %}
+                    {% endblock %}
                 </main>
             </div>
         </body>

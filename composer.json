@@ -1,56 +1,40 @@
 {
-  "name": "brikdigital/craft-baseplate",
-  "description": "Craft CMS baseplate",
-  "keywords": [
-    "craft",
-    "cms",
-    "craftcms",
-    "project"
-  ],
-  "license": "MPL-2.0",
-  "homepage": "https://brik.digital",
-  "type": "project",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
     "brik-digital/craft-statuspaginator": "^5.0",
     "clubstudioltd/craft-inline-svg": "^2.1",
     "craftcms/aws-s3": "^2.2",
-    "craftcms/ckeditor": "4.3.1",
-    "craftcms/cms": "5.4.8",
+    "craftcms/ckeditor": "^4.2",
+    "craftcms/cms": "^5.0.0",
     "craftcms/postmark": "^3.1",
-    "craftpulse/craft-colour-swatches": "5.0.3",
+    "craftpulse/craft-colour-swatches": "^5.0",
     "cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
-    "goldinteractive/craft-sitecopy": "^2.1",
-    "hybridinteractive/craft-position-fieldtype": "^5.0.0",
+    "hybridinteractive/craft-position-fieldtype": "^5.0",
     "mmikkel/cp-clearcache": "^2.0",
     "mmikkel/cp-field-inspect": "^2.0",
     "mmikkel/retcon": "^3.2",
-    "mostlyserious/craft-markerio": "2.1.1",
     "mutation/translate": "^4.0",
     "nystudio107/craft-minify": "^5.0",
     "nystudio107/craft-retour": "^5.0",
-    "nystudio107/craft-seomatic": "5.1.4",
-    "nystudio107/craft-templatecomments": "5.0.3",
+    "nystudio107/craft-seomatic": "^5.1",
+    "nystudio107/craft-templatecomments": "^5.0",
     "nystudio107/craft-typogrify": "^5.0",
     "nystudio107/craft-vite": "^5.0",
-    "putyourlightson/craft-blitz": "5.9.0",
+    "putyourlightson/craft-blitz": "^5.6",
     "putyourlightson/craft-sherlock": "^5.1",
     "spacecatninja/imager-x": "^5.0",
     "spicyweb/craft-batch-actions": "^2.0",
     "spicyweb/craft-embedded-assets": "^5.1",
     "superbig/craft-mjml": "^5.0",
-    "verbb/buttonbox": "^5.0.0",
-    "verbb/expanded-singles": "3.0.1",
-    "verbb/hyper": "2.1.2",
+    "verbb/expanded-singles": "^3.0",
+    "verbb/hyper": "^2.0",
     "verbb/knock-knock": "^3.0",
-    "verbb/navigation": "3.0.5",
-    "vlucas/phpdotenv": "^5.4.0",
-    "yiisoft/yii2-redis": "^2.0"
+    "verbb/navigation": "^3.0",
+    "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
     "craftcms/generator": "^2.0.0",
-    "nystudio107/craft-autocomplete": "^1.12",
     "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
@@ -71,12 +55,8 @@
     }
   },
   "scripts": {
-    "post-create-project-cmd": [
-      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\"",
-      "@php -r \"unlink('composer.json');\"",
-      "@php -r \"rename('composer.json.default', 'composer.json');\"",
-      "@composer dump-autoload -o",
-      "@php craft setup/welcome"
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
   },
   "repositories": [

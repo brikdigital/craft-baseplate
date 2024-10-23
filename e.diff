@@ -1,0 +1,655 @@
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+index 4f7cbe1..ef41c03 100644
+--- a/.vscode/settings.json
++++ b/.vscode/settings.json
+@@ -1,4 +1,5 @@
+ {
++  "prettier.configPath": "prettier.config.js",
+   "[javascript]": {
+     "editor.maxTokenizationLineLength": 2500,
+     "editor.defaultFormatter": "esbenp.prettier-vscode",
+diff --git a/composer.json b/composer.json
+index 4d574d8..0326cea 100644
+--- a/composer.json
++++ b/composer.json
+@@ -1,56 +1,40 @@
+ {
+-  "name": "brikdigital/craft-baseplate",
+-  "description": "Craft CMS baseplate",
+-  "keywords": [
+-    "craft",
+-    "cms",
+-    "craftcms",
+-    "project"
+-  ],
+-  "license": "MPL-2.0",
+-  "homepage": "https://brik.digital",
+-  "type": "project",
+   "minimum-stability": "dev",
+   "prefer-stable": true,
+   "require": {
+     "brik-digital/craft-statuspaginator": "^5.0",
+     "clubstudioltd/craft-inline-svg": "^2.1",
+     "craftcms/aws-s3": "^2.2",
+-    "craftcms/ckeditor": "4.3.1",
+-    "craftcms/cms": "5.4.8",
++    "craftcms/ckeditor": "^4.2",
++    "craftcms/cms": "^5.0.0",
+     "craftcms/postmark": "^3.1",
+-    "craftpulse/craft-colour-swatches": "5.0.3",
++    "craftpulse/craft-colour-swatches": "^5.0",
+     "cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
+-    "goldinteractive/craft-sitecopy": "^2.1",
+-    "hybridinteractive/craft-position-fieldtype": "^5.0.0",
++    "hybridinteractive/craft-position-fieldtype": "^5.0",
+     "mmikkel/cp-clearcache": "^2.0",
+     "mmikkel/cp-field-inspect": "^2.0",
+     "mmikkel/retcon": "^3.2",
+-    "mostlyserious/craft-markerio": "2.1.1",
+     "mutation/translate": "^4.0",
+     "nystudio107/craft-minify": "^5.0",
+     "nystudio107/craft-retour": "^5.0",
+-    "nystudio107/craft-seomatic": "5.1.4",
+-    "nystudio107/craft-templatecomments": "5.0.3",
++    "nystudio107/craft-seomatic": "^5.1",
++    "nystudio107/craft-templatecomments": "^5.0",
+     "nystudio107/craft-typogrify": "^5.0",
+     "nystudio107/craft-vite": "^5.0",
+-    "putyourlightson/craft-blitz": "5.9.0",
++    "putyourlightson/craft-blitz": "^5.6",
+     "putyourlightson/craft-sherlock": "^5.1",
+     "spacecatninja/imager-x": "^5.0",
+     "spicyweb/craft-batch-actions": "^2.0",
+     "spicyweb/craft-embedded-assets": "^5.1",
+     "superbig/craft-mjml": "^5.0",
+-    "verbb/buttonbox": "^5.0.0",
+-    "verbb/expanded-singles": "3.0.1",
+-    "verbb/hyper": "2.1.2",
++    "verbb/expanded-singles": "^3.0",
++    "verbb/hyper": "^2.0",
+     "verbb/knock-knock": "^3.0",
+-    "verbb/navigation": "3.0.5",
+-    "vlucas/phpdotenv": "^5.4.0",
+-    "yiisoft/yii2-redis": "^2.0"
++    "verbb/navigation": "^3.0",
++    "vlucas/phpdotenv": "^5.4.0"
+   },
+   "require-dev": {
+     "craftcms/generator": "^2.0.0",
+-    "nystudio107/craft-autocomplete": "^1.12",
+     "yiisoft/yii2-shell": "^2.0.3"
+   },
+   "autoload": {
+@@ -71,12 +55,8 @@
+     }
+   },
+   "scripts": {
+-    "post-create-project-cmd": [
+-      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\"",
+-      "@php -r \"unlink('composer.json');\"",
+-      "@php -r \"rename('composer.json.default', 'composer.json');\"",
+-      "@composer dump-autoload -o",
+-      "@php craft setup/welcome"
++    "post-root-package-install": [
++      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+     ]
+   },
+   "repositories": [
+@@ -94,4 +74,4 @@
+       "canonical": false
+     }
+   ]
+-}
+\ No newline at end of file
++}
+diff --git a/composer.json.default b/composer.json.default
+deleted file mode 100644
+index 0326cea..0000000
+--- a/composer.json.default
++++ /dev/null
+@@ -1,77 +0,0 @@
+-{
+-  "minimum-stability": "dev",
+-  "prefer-stable": true,
+-  "require": {
+-    "brik-digital/craft-statuspaginator": "^5.0",
+-    "clubstudioltd/craft-inline-svg": "^2.1",
+-    "craftcms/aws-s3": "^2.2",
+-    "craftcms/ckeditor": "^4.2",
+-    "craftcms/cms": "^5.0.0",
+-    "craftcms/postmark": "^3.1",
+-    "craftpulse/craft-colour-swatches": "^5.0",
+-    "cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
+-    "hybridinteractive/craft-position-fieldtype": "^5.0",
+-    "mmikkel/cp-clearcache": "^2.0",
+-    "mmikkel/cp-field-inspect": "^2.0",
+-    "mmikkel/retcon": "^3.2",
+-    "mutation/translate": "^4.0",
+-    "nystudio107/craft-minify": "^5.0",
+-    "nystudio107/craft-retour": "^5.0",
+-    "nystudio107/craft-seomatic": "^5.1",
+-    "nystudio107/craft-templatecomments": "^5.0",
+-    "nystudio107/craft-typogrify": "^5.0",
+-    "nystudio107/craft-vite": "^5.0",
+-    "putyourlightson/craft-blitz": "^5.6",
+-    "putyourlightson/craft-sherlock": "^5.1",
+-    "spacecatninja/imager-x": "^5.0",
+-    "spicyweb/craft-batch-actions": "^2.0",
+-    "spicyweb/craft-embedded-assets": "^5.1",
+-    "superbig/craft-mjml": "^5.0",
+-    "verbb/expanded-singles": "^3.0",
+-    "verbb/hyper": "^2.0",
+-    "verbb/knock-knock": "^3.0",
+-    "verbb/navigation": "^3.0",
+-    "vlucas/phpdotenv": "^5.4.0"
+-  },
+-  "require-dev": {
+-    "craftcms/generator": "^2.0.0",
+-    "yiisoft/yii2-shell": "^2.0.3"
+-  },
+-  "autoload": {
+-    "psr-4": {
+-      "brikdigital\\sitemodule\\": "modules/site-module/"
+-    }
+-  },
+-  "config": {
+-    "allow-plugins": {
+-      "craftcms/plugin-installer": true,
+-      "yiisoft/yii2-composer": true,
+-      "cweagans/composer-patches": true
+-    },
+-    "sort-packages": true,
+-    "optimize-autoloader": true,
+-    "platform": {
+-      "php": "8.2"
+-    }
+-  },
+-  "scripts": {
+-    "post-root-package-install": [
+-      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+-    ]
+-  },
+-  "repositories": [
+-    {
+-      "type": "git",
+-      "url": "https://github.com/lexisother/craft-statuspaginator"
+-    },
+-    {
+-      "type": "vcs",
+-      "url": "https://github.com/cweagans/composer-patches.git"
+-    },
+-    {
+-      "type": "composer",
+-      "url": "https://composer.craftcms.com",
+-      "canonical": false
+-    }
+-  ]
+-}
+diff --git a/config/imager-x.php b/config/imager-x.php
+index 1df5640..d00f517 100644
+--- a/config/imager-x.php
++++ b/config/imager-x.php
+@@ -50,7 +50,7 @@ return [
+         'transformer' => 'craft',
+         // 'imgixProfile' => 'live',
+         'fillTransforms' => false,
+-        'imagerUrl' => App::env('IMGIX_DEV_URL'),
++        // 'imagerUrl' => App::env('IMGIX_DEV_URL'),
+     ],
+     // Staging environment settings
+     'staging' => [
+diff --git a/templates/components/atoms/button/button.stories.json b/templates/components/atoms/button/button.stories.json
+index 43e5d3f..1086b9f 100644
+--- a/templates/components/atoms/button/button.stories.json
++++ b/templates/components/atoms/button/button.stories.json
+@@ -8,56 +8,162 @@
+     }
+   },
+   "argTypes": {
+-    "html_tag": {
++    "htmlTag": {
+       "name": "HTML Tag",
+       "description": "The HTML tag to use for the button (button | a). Defaults to `button`.",
+       "control": "select",
+       "defaultValue": "button",
+       "options": {
+         "'Button element'": "button",
+-        "'Anchor button'": "a"
++        "'Anchor link'": "a"
+       }
+     },
+-    "color": {
+-      "name": "Color",
+-      "description": "Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.",
++    "theme": {
++      "name": "Theme",
++      "description": "Defines the button background and text color. Defaults to `primary`",
+       "defaultValue": "primary",
+       "control": "select",
+       "options": {
+         "Primary": "primary",
+         "Secondary": "secondary",
+-        "Success": "success",
+-        "Info": "info",
+-        "Warning": "warning",
+-        "Danger": "danger",
+-        "Light": "light",
+-        "Dark": "dark"
++        "'Text dark'": "textDark",
++        "'Text light'": "textLight"
+       }
++    },
++    "size": {
++      "name": "Size",
++      "description": "The button size, defaults to `large`",
++      "defaultValue": "large",
++      "control": "select",
++      "options": {
++        "Large": "large",
++        "Small": "small"
++      }
++    },
++    "text": {
++      "name": "Text",
++      "description": "The text of the button.",
++      "defaultValue": "",
++      "control": "text"
++    },
++    "url": {
++      "name": "Url",
++      "description": "The link for the button. Only used when the button is an anchor link.",
++      "defaultValue": "#",
++      "control": "text"
++    },
++    "target": {
++      "name": "Target",
++      "description": "The target of the link, only used when the button is an anchor link. Defaults to `_self`. If the target is set to `_blank`, the rel will be set to `noopener noreferrer`.",
++      "defaultValue": "_self",
++      "control": "select",
++      "options": {
++        "Self": "_self",
++        "Blank": "_blank",
++        "Parent": "_parent",
++        "Top": "_top"
++      }
++    },
++    "icon": {
++      "name": "Icon",
++      "description": "The icon to display in the button. This can be a link to an svg or an image",
++      "defaultValue": "",
++      "control": "text"
++    },
++    "iconPosition": {
++      "name": "Icon position",
++      "description": "The position of the icon. Defaults to `left`. Only used when the button contains an icon.",
++      "control": "inline-radio",
++      "options": ["left", "right"],
++      "defaultValue": "left"
++    },
++    "fullWidth": {
++      "name": "Full width",
++      "description": "Whether the button should be full width. Defaults to `false`.",
++      "control": "select",
++      "options": {
++        "No": "default",
++        "Yes": "allways",
++        "'Mobile only'": "mobile"
++      }
++    },
++    "buttonClasses": {
++      "name": "Button classes",
++      "description": "Additional classes to add to the button.",
++      "defaultValue": "",
++      "control": "text"
++    },
++    "rel": {
++      "name": "Rel",
++      "description": "The rel attribute for the link. Only used when the button is an anchor link.",
++      "control": {
++        "type": "check"
++      },
++      "options": ["noopener", "noreferrer", "nofollow", "opener", "next", "prev", "search" ],
++      "defaultValue": ""
++    },
++    "disabled": {
++      "name": "Disabled",
++      "description": "Whether the button is disabled or not. Works only for button element.",
++      "control": "boolean",
++      "defaultValue": "false"
+     }
+   },
+   "stories": [
+     {
+       "name": "Primary",
+       "args": {
+-        "html_tag": "button",
+-        "color": "primary",
+-        "outline": false,
+-        "size": "",
+-        "disabled": false,
+-        "content": "Button",
+-        "url": "#"
++        "htmlTag": "button",
++        "theme": "primary",
++        "size": "large",
++        "text": "Button text",
++        "url": "#",
++        "target": "_self",
++        "icon": "",
++        "iconPosition": "left",
++        "disabled": false
+       }
+     },
+     {
+       "name": "Secondary",
+       "args": {
+-        "html_tag": "button",
+-        "color": "secondary",
+-        "outline": false,
+-        "size": "",
+-        "disabled": false,
+-        "content": "Button",
+-        "url": "#"
++        "htmlTag": "button",
++        "theme": "secondary",
++        "size": "large",
++        "text": "Button text",
++        "url": "#",
++        "target": "",
++        "icon": "",
++        "iconPosition": "left",
++        "disabled": false
++      }
++    },
++    {
++      "name": "Text dark",
++      "args": {
++        "htmlTag": "button",
++        "theme": "textDark",
++        "size": "large",
++        "text": "Button text",
++        "url": "#",
++        "target": "",
++        "icon": "",
++        "iconPosition": "left",
++        "disabled": false
++      }
++    },
++    {
++      "name": "Text light",
++      "args": {
++        "htmlTag": "button",
++        "theme": "textLight",
++        "size": "large",
++        "text": "Button text",
++        "url": "#",
++        "target": "",
++        "icon": "",
++        "iconPosition": "left",
++        "disabled": false
+       }
+     }
+   ]
+diff --git a/templates/components/atoms/button/button.twig b/templates/components/atoms/button/button.twig
+index f26d460..75af704 100644
+--- a/templates/components/atoms/button/button.twig
++++ b/templates/components/atoms/button/button.twig
+@@ -1,11 +1,157 @@
+-{% set color =
+-    color == "primary"
+-        ? "bg-primary"
+-        : color == "secondary"
+-            ? "bg-secondary"
+-            : ""
+-%}
+-
+-<{{ html_tag }} class="{{ color }}">
+-    test
+-</{{ html_tag }}>
+\ No newline at end of file
++{#
++{% set url = url is defined ? url : null %}
++{% set type = type is defined ? type : 'link' %}
++{% set theme = theme is defined ? theme : null %}
++{% set fullWidth = fullWidth is defined ? fullWidth : false %}
++{% set fullWidthMobile = fullWidthMobile is defined ? fullWidthMobile : false %}
++{% set buttonClasses = buttonClasses is defined ? buttonClasses : false %}
++{% set icon = icon is defined ? icon : false %}
++{% set iconClasses = '' %}
++{% set rel = rel is defined ? rel : false %}
++
++{% set buttonStyling = 'inline-flex items-center justify-center font-bold text-base transition ease-in-out duration-150 '~styleClass %}
++{% if fullWidth %}
++	{% set buttonStyling = buttonStyling~' w-full' %}
++{% elseif fullWidth %}
++    {% set buttonStyling = buttonStyling~' w-full md:w-auto' %}
++{% endif %}
++
++{% set iconReplace = {
++    '--cart--' : '<svg class="inline-block w-5 h-5 mr-1" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M.688.688h4.125v12.374h13.75l2.75-9.624H8.938"/><circle cx="5.5" cy="19.25" r="2.063"/><circle cx="17.875" cy="19.25" r="2.063"/></g></svg>',
++} %}
++
++{% if type == 'link' and url != null %}
++	<a href="{{ url }}" target="{{ target }}" class="button {{ buttonStyling }} {{buttonClasses}}" {{ rel ? ('rel="'~rel~'"')|raw : null }}>
++
++		{% if icon %}
++			{% set imageType = icon.filename|split('.')|last %}
++			{% if imageType == 'svg' %}
++				{{ svg(icon)|attr({class: 'mr-2 w-6 h-6 fill-current '~iconClasses}) }}
++			{% else %}
++				{% set size = 'default' %}
++				{% set sizes = '(min-width: 1440px) 100px, (min-width: 1024px) and (max-width: 1439px) 5vw, 10vw' %}
++				{% set icon = craft.imager.transformImage(icon, size) %}
++				{% include "_partials/interface/images.twig" with {image: icon, size: 'icon', sizes: '400px', imageClasses: '', containerClasses: 'w-6 mr-2'} only %}
++			{% endif %}
++		{% endif %}
++		{{ text|replace(iconReplace)|raw }}
++	</a>
++{% elseif type == 'submit' %}
++	<button class="{{ buttonStyling }} {{buttonClasses}}" type="submit">
++		{% if icon is defined and icon|length %}
++			{{icon|replace(iconReplace)|raw}}
++		{% endif %}
++		{{ text|replace(iconReplace)|raw }}
++	</button>
++{% else %}
++	<button class="{{ buttonStyling }} {{buttonClasses}}">
++		{% if icon is defined and icon|length %}
++			{{icon|replace(iconReplace)|raw}}
++		{% endif %}
++		{{ text|replace(iconReplace)|raw }}
++	</button>
++{% endif %} #}
++
++{% set htmlTag = htmlTag ?? 'button' %}
++{% set baseClasses = 'inline-flex items-center justify-center font-bold text-base transition ease-in-out duration-150' %}
++{% set text = text is defined and text|length ? text : 'Meer info'|t %}
++{% set target = target is defined and target|length ? target : '_self' %}
++{% set disabled = disabled is defined and disabled|length ? disabled : false %}
++{% set theme = theme is defined and theme|length ? theme : 'primary' %}
++{% set fullWidth = fullWidth is defined ? fullWidth : 'default' %}
++{% set rel = rel is defined ? rel : false %}
++{% set buttonClasses = buttonClasses is defined and buttonClasses|length ? buttonClasses : false %}
++{% set icon = icon is defined ? icon : false %}
++{% set iconPosition = iconPosition is defined ? iconPosition : 'left' %}
++
++{% switch theme %}
++	{% case 'primary' %}
++		{% if icon %}
++			{% set iconClasses = 'filter brightness-0 invert' %}
++		{% endif %}
++		{% set themeClasses = 'bg-primary text-white hover:text-white hover:bg-primary/[.65]' %}
++	{% case 'secondary' %}
++		{% if icon %}
++			{% set iconClasses = 'filter brightness-1' %}
++		{% endif %}
++		{% set themeClasses = 'bg-secondary text-white hover:opacity-60' %}
++	{% case 'textDark' %}
++		{% if icon %}
++			{% set iconClasses = 'filter brightness-1' %}
++		{% endif %}
++		{% set themeClasses = 'text-black underline hover:text-primary' %}
++	{% case 'textLight' %}
++		{% if icon %}
++			{% set iconClasses = 'filter brightness-1' %}
++		{% endif %}
++		{% set themeClasses = 'text-white underline hover:text-secondary' %}
++{% endswitch %}
++
++{% set attributes = {
++	class: [baseClasses|join(' '), themeClasses|join(' '),]
++} %}
++
++{% switch size %}
++	{% case 'large' %}
++        {% set fontSize = 'text-lg' %}
++		{% set padding = 'px-5 py-3' %}
++	{% case 'small' %}
++        {% set fontSize = 'text-base' %}
++		{% set padding = 'px-3 py-2' %}
++{% endswitch %}
++
++{% switch fullWidth %}
++	{% case "allways" %}
++		{% set attributes = attributes|merge({class: [attributes.class|join(' '), 'w-full']}) %}
++	{% case "mobile" %}
++		{% set attributes = attributes|merge({class: [attributes.class|join(' '), 'w-full', 'md:w-auto']}) %}
++{% endswitch %}
++
++{% if theme starts with 'text' %}
++	{% set attributes = attributes|merge({class: [attributes.class|join(' '), fontSize|join(' ')]}) %}
++{% else %}
++	{% set attributes = attributes|merge({class: [attributes.class|join(' '), fontSize|join(' '), padding|join(' ')]}) %}
++{% endif %}
++
++{% if buttonClasses %}
++	{% set attributes = attributes|merge({class: [attributes.class|join(' '), buttonClasses|join(' ')]}) %}
++{% endif %}
++
++{% if htmlTag == 'a' %}
++    {% if url != '' %}
++        {% set attributes = attributes|merge({href: url}) %}
++    {% endif %}
++
++    {% if target %}
++        {% set attributes = attributes|merge({target: target}) %}
++        {% if target == '_blank'%}
++            {% set attributes = attributes|merge({rel: 'noopener noreferrer'}) %}
++        {% endif %}
++    {% endif %}
++
++	{% if rel %}
++		{% set attributes = attributes|merge({rel: rel|join(' ')}) %}
++	{% endif %}
++{% else %}
++    {% if disabled == true %}
++        {% set attributes = attributes|merge({'aria-disabled': 'true' }) %}
++        {% set attributes = attributes|merge({tabindex: '-1' }) %}
++        {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'cursor-not-allowed opacity-50']}) %}
++    {% endif %}
++
++    {# {% set attributes = attributes|merge({role: button}) %} #}
++{% endif %}
++
++<{{ htmlTag }} {{attr(attributes)}}>
++    {% apply spaceless %}
++		{% if icon and iconPosition == 'left' %}
++			{{ inlineSvg(icon, 'mr-2 w-6 h-6 fill-current', { sanitize: true, namespace: true }) }}
++		{% endif %}
++
++		{{ text }}
++
++		{% if icon and iconPosition == 'right' %}
++			{{ inlineSvg(icon, 'ml-2 w-6 h-6 fill-current', { sanitize: true, namespace: true }) }}
++		{% endif %}
++    {% endapply %}
++</{{ htmlTag }}>
+\ No newline at end of file
+diff --git a/templates/components/atoms/heading/heading.stories.json b/templates/components/atoms/heading/heading.stories.json
+index b97230e..99fe96f 100644
+--- a/templates/components/atoms/heading/heading.stories.json
++++ b/templates/components/atoms/heading/heading.stories.json
+@@ -8,7 +8,7 @@
+     }
+   },
+   "argTypes": {
+-    "tag": {
++    "html_tag": {
+       "name": "HTML Tag",
+       "description": "The HTML tag to use for the heading. Defaults to `h2`.",
+       "control": "select",
+@@ -40,8 +40,7 @@
+       "options": {
+         "XL": "xl",
+         "Large": "large",
+-        "Medium": "medium",
+-        "Small": "small"
++        "Medium": "medium"
+       }
+     },
+     "align": {
+@@ -86,7 +85,7 @@
+     {
+       "name": "Default",
+       "args": {
+-        "tag": "h2",
++        "htmlTag": "h2",
+         "pre": "Pre-heading text",
+         "text": "Heading text",
+         "size": "large",
+diff --git a/templates/components/atoms/heading/heading.twig b/templates/components/atoms/heading/heading.twig
+index f80f6ea..bb21787 100644
+--- a/templates/components/atoms/heading/heading.twig
++++ b/templates/components/atoms/heading/heading.twig
+@@ -1,4 +1,4 @@
+-{% set tag = tag is defined and tag|length ? tag : 'h2' %}
++{% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'h2' %}
+ {% set text = text is defined and text|length ? text : '' %}
+ {% set pre = pre is defined and pre|length ? pre : '' %}
+ 
+@@ -14,14 +14,12 @@
+ {% set preCssClass = 'text-base lg:text-xl leading-tight font-bold mb-2' %}
+ 
+ {% switch size %}
+-    {% case 'small' %}
+-        {% set cssClass = cssClass ~ ' leading-tight text-3xl' %}
+     {% case 'medium' %}
+         {% set cssClass = cssClass ~ ' leading-tight text-3xl lg:text-4xl xl:text-5xl' %}
+     {% case 'large' %}
+         {% set cssClass = cssClass ~ ' leading-tight text-3xl md:text-4xl lg:text-6xl' %}
+     {% case 'xl' %}
+-        {% set cssClass = cssClass ~ ' leading-tight text-4xl lg:text-7xl' %}
++        {% set cssClass = cssClass ~ ' leading-tight text-6xl lg:text-8xl' %}
+ {% endswitch %}
+ 
+ {% switch align %}
+@@ -48,7 +46,7 @@
+             }) }}
+         {% endif %}
+ 
+-        {{ tag(tag, {
++        {{ tag(htmlTag, {
+             class: [cssClass|join(', ')],
+             text: text
+         }) }}
+diff --git a/templates/index.twig b/templates/index.twig
+index 29d110b..3b84e27 100644
+--- a/templates/index.twig
++++ b/templates/index.twig
+@@ -1,3 +1,15 @@
+ {% extends '_layouts/default.twig' %}
+ 
+-{% block html %}{% endblock %}
++{% block html %}
++{% set sizes = '(min-width: 1440px) 1400px, (min-width: 1024px) and (max-width: 1439px) 50vw, 100vw' %}
++
++
++{% include "components/atoms/image/image.twig" with {
++    image: '',
++    imageUrl: 'https://http.cat/404',
++    size: 'default',
++    sizes:sizes
++} %}
++
++<div class="py-4 bg-gray-400 lg:bg-gray-600 px-6"></div>
++{% endblock %}
