@@ -1,5 +1,5 @@
 export default class Cookies {
-  public static setCookie(name, value, days) {
+  public static setCookie(name: string, value: string, days: number) {
     let expires = '';
     if (days) {
       const date = new Date();
@@ -8,7 +8,7 @@ export default class Cookies {
     }
     document.cookie = `${name}=${value || ''}${expires}; path=/`;
   }
-  public static getCookie(name) {
+  public static getCookie(name: string) {
     const nameEQ = `${name}=`;
     const ca = document.cookie.split(';');
     for (let i = 0; i < ca.length; i++) {
@@ -18,7 +18,7 @@ export default class Cookies {
     }
     return null;
   }
-  public static eraseCookie(name) {
+  public static eraseCookie(name: string) {
     document.cookie = `${name}=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
   }
 }

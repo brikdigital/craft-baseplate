@@ -1,4 +1,3 @@
-// @ts-expect-error jfc, swiper specifies this in its package.json yet tsserver doesn't want to resolve it
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -7,22 +6,11 @@ export default function swiper() {
 
   sliders.forEach((slider, _index) => {
     let slides = slider.querySelectorAll('.swiper-slide');
-    let sliderData = JSON.parse(slider.dataset.swiper);
+    // we can be certain this is present, otherwise this module wouldn't be called
+    let sliderData = JSON.parse(slider.dataset.swiper!);
 
     let buttonNext = slider.querySelector('.button-next');
     let buttonPrev = slider.querySelector('.button-prev');
-
-    let additionalButtonNext = slider.closest('section').querySelectorAll('.mobile-button-next');
-    let additionalButtonPrev = slider.closest('section').querySelectorAll('.mobile-button-prev');
-
-    additionalButtonNext.forEach((button) => {
-      button.addEventListener('click', () => swiper.slideNext());
-    });
-
-    additionalButtonPrev.forEach((button) => {
-      button.addEventListener('click', () => swiper.slidePrev());
-    });
-
     let defaultOptions = {
       slidesPerView: 1.2,
       spaceBetween: 12,
@@ -58,6 +46,18 @@ export default function swiper() {
       };
     }
 
-    const _swiper = new Swiper(slider, options);
+    const swiper = new Swiper(slider, options);
+
+    // TODO: change these when implementing a regular slider component
+    let additionalButtonNext = slider.closest('section')!.querySelectorAll('.mobile-button-next');
+    let additionalButtonPrev = slider.closest('section')!.querySelectorAll('.mobile-button-prev');
+
+    additionalButtonNext.forEach((button) => {
+      button.addEventListener('click', () => swiper.slideNext());
+    });
+
+    additionalButtonPrev.forEach((button) => {
+      button.addEventListener('click', () => swiper.slidePrev());
+    });
   });
 }
