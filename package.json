@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@biomejs/cli-linux-x64": "^1.9.4",
     "@biomejs/cli-darwin-arm64": "^1.9.4",
     "@biomejs/cli-darwin-x64": "^1.9.4",
+    "@biomejs/cli-linux-x64": "^1.9.4",
     "@destination/prettier-plugin-twig": "^1.5.0",
     "@storybook/addon-a11y": "^8.3.0",
     "@storybook/addon-essentials": "^8.3.0",
@@ -78,6 +78,11 @@
   "overrides": {
     "vite": {
       "rollup": "npm:@rollup/wasm-node"
+    }
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@destination/prettier-plugin-twig": "patches/@destination__prettier-plugin-twig.patch"
     }
   }
 }
