@@ -1,0 +1,48 @@
+{% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'span' %}
+{% set theme = theme is defined and theme|length ? theme : 'primary' %}
+{% set size = size is defined and size|length ? size : 'large' %}
+{% set text = text is defined and text|length ? text : 'Meer info'|t %}
+{% set url = url is defined and url|length ? url : false %}
+{% set target = target is defined and target|length ? target : '_self' %}
+{% set badgeClasses = badgeClasses is defined and badgeClasses|length ? badgeClasses : false %}
+{% set baseClasses = 'inline-flex items-center justify-center font-bold text-base transition ease-in-out duration-150' %}
+
+{% switch theme %}
+	{% case 'primary' %}
+		{% set themeClasses = 'bg-primary text-white' %}
+	{% case 'secondary' %}
+		{% set themeClasses = 'bg-secondary text-primary' %}
+{% endswitch %}
+
+{% set attributes = {
+    text: text,
+	class: [baseClasses|join(' '), themeClasses|join(' '),]
+} %}
+
+{% switch size %}
+	{% case 'large' %}
+        {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-16 px-2 py-1']}) %}
+	{% case 'medium' %}
+        {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-14 px-3 py-1']}) %}
+	{% case 'small' %}
+        {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-12 px-2 py-0.5']}) %}
+{% endswitch %}
+
+{% if badgeClasses %}
+	{% set attributes = attributes|merge({class: [attributes.class|join(' '), badgeClasses|join(' ')]}) %}
+{% endif %}
+
+{% if htmlTag == 'a' and url %}
+	{% set attributes = attributes|merge({href: url}) %}
+
+	{% if target %}
+		{% set attributes = attributes|merge({target: target}) %}
+		{% if target == '_blank'%}
+			{% set attributes = attributes|merge({rel: 'noopener noreferrer'}) %}
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{{ tag(htmlTag,
+    attributes: attributes
+) }}

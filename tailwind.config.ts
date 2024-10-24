@@ -337,22 +337,47 @@ export default {
       },
     },
     // Replace the default Tailwind config here
+    // fontSize: {
+    //   xs: ['.75rem', '1rem'], // 12px
+    //   sm: ['.8rem', '1.25rem'], // 13px
+    //   tiny: ['.875rem', '1.25rem'], // 14px
+    //   base: ['1rem', '1.5rem'], // 16px
+    //   lg: ['1.125rem', '1.75rem'], // 18px
+    //   xl: ['1.3125rem', '1.75rem'], // 21px
+    //   '2xl': ['1.5rem', '2rem'], // 24px
+    //   '2.5xl': ['1.625rem', '2rem'], // 26px
+    //   '3xl': ['1.75rem', '2rem'], // 28px
+    //   '4xl': ['2rem', '2.25rem'], // 32px
+    //   '4.5xl': ['2.25rem', '2.5rem'], // 36px
+    //   '5xl': ['2.5rem', '3rem'], // 40px
+    //   '6xl': ['3rem', '3.25rem'], // 48px
+    //   '7xl': ['4rem', '4.5rem'], // 72px
+    //   '8xl': ['5rem', '5.5rem'], // 80px
+    // },
     fontSize: {
-      xs: ['.75rem', '1rem'], // 12px
-      sm: ['.8rem', '1.25rem'], // 13px
-      tiny: ['.875rem', '1.25rem'], // 14px
-      base: ['1rem', '1.5rem'], // 16px
-      lg: ['1.125rem', '1.75rem'], // 18px
-      xl: ['1.3125rem', '1.75rem'], // 21px
-      '2xl': ['1.5rem', '2rem'], // 24px
-      '2.5xl': ['1.625rem', '2rem'], // 26px
-      '3xl': ['1.75rem', '2rem'], // 28px
-      '4xl': ['2rem', '2.25rem'], // 32px
-      '4.5xl': ['2.25rem', '2.5rem'], // 36px
-      '5xl': ['2.5rem', '3rem'], // 40px
-      '6xl': ['3rem', '3.25rem'], // 48px
-      '7xl': ['4rem', '4.5rem'], // 72px
-      '8xl': ['5rem', '5.5rem'], // 80px
+      ...size(12),
+      ...size(13),
+      ...size(14),
+      ...size(15),
+      ...size(16),
+      ...size(18),
+      ...size(20),
+      ...size(22),
+      ...size(24),
+      ...size(28),
+      ...size(30),
+      ...size(32),
+      ...size(36),
+      ...size(40),
+      ...size(44),
+      ...size(48),
+      ...size(52),
+      ...size(56),
+      ...size(60),
+      ...size(72),
+      ...size(80),
+      ...size(96),
+      ...size(128),
     },
     fontFamily: {
       sans: ['"univia-pro"', 'sans-serif'],

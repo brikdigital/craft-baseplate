@@ -14,12 +14,12 @@
 {% set preCssClass = 'text-base lg:text-xl leading-tight font-bold mb-2' %}
 
 {% switch size %}
+    {% case 'small' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-20 lg:text-24 xl:text-32' %}
     {% case 'medium' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-3xl lg:text-4xl xl:text-5xl' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-28 md:text-32 lg:text-40' %}
     {% case 'large' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-3xl md:text-4xl lg:text-6xl' %}
-    {% case 'xl' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-6xl lg:text-8xl' %}
+        {% set cssClass = cssClass ~ ' leading-tight text-40 lg:text-60' %}
 {% endswitch %}
 
 {% switch align %}

@@ -16,6 +16,9 @@
       "options": {
         "'Button element'": "button",
         "'Anchor link'": "a"
+      },
+      "table": {
+        "category": "Default"
       }
     },
     "theme": {
@@ -28,6 +31,9 @@
         "Secondary": "secondary",
         "'Text dark'": "textDark",
         "'Text light'": "textLight"
+      },
+      "table": {
+        "category": "Default"
       }
     },
     "size": {
@@ -38,19 +44,28 @@
       "options": {
         "Large": "large",
         "Small": "small"
+      },
+      "table": {
+        "category": "Default"
       }
     },
     "text": {
       "name": "Text",
       "description": "The text of the button.",
       "defaultValue": "",
-      "control": "text"
+      "control": "text",
+      "table": {
+        "category": "Default"
+      }
     },
     "url": {
       "name": "Url",
       "description": "The link for the button. Only used when the button is an anchor link.",
       "defaultValue": "",
-      "control": "text"
+      "control": "text",
+      "table": {
+        "category": "Url"
+      }
     },
     "target": {
       "name": "Target",
@@ -62,20 +77,29 @@
         "Blank": "_blank",
         "Parent": "_parent",
         "Top": "_top"
+      },
+      "table": {
+        "category": "Url"
       }
     },
     "icon": {
       "name": "Icon",
       "description": "The svg icon to display in the button. This uses Inline SVG, use only the path and icon name i.e. `icons/play`.",
       "defaultValue": "",
-      "control": "text"
+      "control": "text",
+      "table": {
+        "category": "Icon"
+      }
     },
     "iconPosition": {
       "name": "Icon position",
       "description": "The position of the icon. Defaults to `left`. Only used when the button contains an icon.",
       "control": "inline-radio",
       "options": ["left", "right"],
-      "defaultValue": "left"
+      "defaultValue": "left",
+      "table": {
+        "category": "Icon"
+      }
     },
     "fullWidth": {
       "name": "Full width",
@@ -86,13 +110,19 @@
         "Auto": "auto",
         "Yes": "allways",
         "'Mobile only'": "mobile"
+      },
+      "table": {
+        "category": "Button"
       }
     },
     "buttonClasses": {
       "name": "Button classes",
       "description": "Additional classes to add to the button.",
       "defaultValue": "",
-      "control": "text"
+      "control": "text",
+      "table": {
+        "category": "Default"
+      }
     },
     "rel": {
       "name": "Rel",
@@ -100,8 +130,11 @@
       "control": {
         "type": "check"
       },
-      "options": ["noopener", "noreferrer", "nofollow", "opener", "next", "prev", "search" ],
-      "defaultValue": ""
+      "options": ["noopener", "noreferrer", "nofollow", "opener", "next", "prev", "search"],
+      "defaultValue": "",
+      "table": {
+        "category": "Url"
+      }
     },
     "type": {
       "name": "Type",
@@ -112,19 +145,28 @@
         "Button": "button",
         "Submit": "submit",
         "Reset": "reset"
+      },
+      "table": {
+        "category": "Button"
       }
     },
     "role": {
       "name": "Role",
       "description": "The role of the button. Only used when the button is a button element. Default is `button` and doesn't have to be set.",
       "control": "text",
-      "defaultValue": ""
+      "defaultValue": "",
+      "table": {
+        "category": "Button"
+      }
     },
     "disabled": {
       "name": "Disabled",
       "description": "Whether the button is disabled or not. Works only for button element.",
       "control": "boolean",
-      "defaultValue": "false"
+      "defaultValue": "false",
+      "table": {
+        "category": "Button"
+      }
     }
   },
   "stories": [
