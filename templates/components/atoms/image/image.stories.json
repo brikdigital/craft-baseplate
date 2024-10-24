@@ -13,13 +13,40 @@
       "description": "The link to the displayed image",
       "control": "text",
       "defaultValue": "https://http.cat/404"
+    },
+    "urlMobile": {
+      "name": "Link to mobbile image",
+      "description": "The link to the displayed image on mobile. If empty, the desktop image will be used.",
+      "control": "text",
+      "defaultValue": ""
+    },
+    "alt": {
+      "name": "Alt text",
+      "description": "The alt text for the image",
+      "control": "text",
+      "defaultValue": ""
+    },
+    "imageClasses": {
+      "name": "Image classes",
+      "description": "The classes to apply to the image",
+      "control": "text",
+      "defaultValue": ""
+    },
+    "wrapperClasses": {
+      "name": "Wrapper classes",
+      "description": "The classes to apply to the wrapper",
+      "control": "text",
+      "defaultValue": ""
     }
   },
   "stories": [
     {
       "name": "Default",
       "args": {
-        "url": "https://http.cat/404"
+        "url": "https://http.cat/404",
+        "urlMobile": "",
+        "alt": "Lorem ipsum dolar sit amet",
+        "imageClasses": ""
       }
     }
   ]

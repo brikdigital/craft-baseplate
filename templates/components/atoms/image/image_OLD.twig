@@ -1,0 +1,76 @@
+{% if image is defined and size is defined %}
+    {% set containerClasses = containerClasses is defined ? containerClasses : '' %}
+    {% set imageClasses = imageClasses is defined ? imageClasses : '' %}
+    <div class="relative fade-box z-0 overflow-hidden {{ containerClasses }}">
+        {% if imageUrl is defined and imageUrl != null %}
+            {% set image = imageUrl %}
+        {% elseif image is not instance of('craft\\elements\\Asset') %}
+            {% set image = image is instance of('craft\\elements\\db\\AssetQuery') ? image.one() : image[0] %}
+        {% endif %}
+        {% if image %}
+
+            {% set hasMobileImage = false %}
+            {% if craft.imager.hasNamedTransform(size~'Mobile') %}
+                {% set hasMobileImage = true %}
+                {% set mobileSize = size~'Mobile' %}
+            {% else %}
+                {% set mobileSize = size %}
+            {% endif %}
+
+            {# LOAD DESKTOP IMAGE #}
+            {% set transformedImages = craft.imager.transformImage(image, size) %}
+            {% set placeholder = craft.imager.transformImage(image, { width: transformedImages[0].getWidth()/4, height:transformedImages[0].getHeight()/4, jpegQuality: 2 }) %}
+            <img class="placeholder {% if hasMobileImage %}custom-portrait:hidden {% endif %}block w-full {{ imageClasses }}"
+                 src="{{ placeholder.url }}"
+                 width="{{ transformedImages[0].getWidth() }}"
+                 height="{{ transformedImages[0].getHeight() }}"
+                    {% if image.title is defined %}
+                        alt="Placeholder for {{ image.title }}"
+                    {% endif %}
+            >
+
+            <img sizes="{{ sizes }}" class="{% if hasMobileImage %}custom-portrait:hidden {% endif %}block w-full lazyload absolute top-0 left-0 {{ imageClasses }}"
+                 data-srcset="{{ craft.imager.srcset(transformedImages) }}"
+                 data-src="{{ transformedImages[0].url }}"
+                    {% if image.title is defined %}
+                        alt="{{ image.title }}"
+                    {% endif %}
+            >
+
+            {# LOAD MOBILE IMAGE #}
+            {% if hasMobileImage %}
+
+                {% if mobileImage is not defined %}
+                    {% set mobileImage = image %}
+                {% elseif mobileImage != null %}
+                    {% set mobileImage = mobileImage is instance of('craft\\elements\\db\\AssetQuery') ? mobileImage.one() : mobileImage[0] %}
+                    {% if mobileImage is null %}
+                        {% set mobileImage = image %}
+                    {% endif %}
+                {% else %}
+                    {% set mobileImage = image %}
+                {% endif %}
+
+                {% set transformedMobileImages = craft.imager.transformImage(mobileImage, mobileSize) %}
+                {% set mobilePlaceholder = craft.imager.transformImage(mobileImage, { width: transformedMobileImages[0].getWidth()/4, height:transformedMobileImages[0].getHeight()/4, jpegQuality: 2 }) %}
+                <img class="placeholder custom-portrait:block hidden w-full {{ imageClasses }}"
+                     src="{{ mobilePlaceholder.url }}"
+                     width="{{ transformedMobileImages[0].getWidth() }}"
+                     height="{{ transformedMobileImages[0].getHeight() }}"
+                        {% if mobileImage.title is defined %}
+                            alt="Placeholder for {{ mobileImage.title }}"
+                        {% endif %}
+                >
+
+                <img sizes="{{ sizes }}" class="custom-portrait:block hidden w-full lazyload absolute top-0 left-0 {{ imageClasses }}"
+                     data-srcset="{{ craft.imager.srcset(transformedMobileImages) }}"
+                     data-src="{{ transformedMobileImages[0].url }}"
+                        {% if mobileImage.title is defined %}
+                            alt="{{ mobileImage.title }}"
+                        {% endif %}
+                >
+            {% endif %}
+
+        {% endif %}
+    </div>
+{% endif %}

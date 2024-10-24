@@ -1,4 +1,4 @@
-dateModified: 1729511958
+dateModified: 1729759319
 elementSources:
   craft\elements\Entry:
     -
@@ -174,10 +174,14 @@ plugins:
     licenseKey: OFJXXNZZ9YIB5M9HFWLM4BGN
     schemaVersion: 1.0.0
   imager-x:
-    edition: lite
+    edition: pro
     enabled: true
     licenseKey: HB7TZKKGHZ462FW30NLD83JZ
     schemaVersion: 4.0.0
+  imager-x-power-pack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   inlinesvg:
     edition: standard
     enabled: true

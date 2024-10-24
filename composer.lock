@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e9cefe9484dbf33b594f12b238209ab",
+    "content-hash": "1a65566f1008bdb84a79e662ce17dd4d",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1408,11 +1408,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.4.8",
+            "version": "5.4.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/be2ded297900d1ce0b3ae63d64422165e0ba892f",
-                "reference": "be2ded297900d1ce0b3ae63d64422165e0ba892f",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/8c354fc15b0fba8a8b9363f0f98883a76e57795f",
+                "reference": "8c354fc15b0fba8a8b9363f0f98883a76e57795f",
                 "shasum": ""
             },
             "require": {
@@ -1509,7 +1509,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-10-15T22:36:00+00:00"
+            "time": "2024-10-22T19:14:27+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -2577,47 +2577,6 @@
                 "source": "https://github.com/firebase/php-jwt/tree/v6.10.1"
             },
             "time": "2024-05-18T18:05:11+00:00"
-        },
-        {
-            "name": "goldinteractive/craft-sitecopy",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Goldinteractive/craft-sitecopy.git",
-                "reference": "b48f10481eca644c7a7b48946cc5db0ac731808e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Goldinteractive/craft-sitecopy/zipball/b48f10481eca644c7a7b48946cc5db0ac731808e",
-                "reference": "b48f10481eca644c7a7b48946cc5db0ac731808e",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "site-copy-x",
-                "name": "Site Copy X",
-                "developer": "Gold Interactive",
-                "developerUrl": "http://goldinteractive.ch",
-                "class": "goldinteractive\\sitecopy\\SiteCopy",
-                "hasSettings": true
-            },
-            "autoload": {
-                "psr-4": {
-                    "goldinteractive\\sitecopy\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "support": {
-                "issues": "https://github.com/Goldinteractive/craft-sitecopy/issues",
-                "source": "https://github.com/Goldinteractive/craft-sitecopy/tree/2.1.1"
-            },
-            "time": "2024-08-06T08:26:55+00:00"
         },
         {
             "name": "google/auth",
@@ -4758,11 +4717,6 @@
         {
             "name": "masterminds/html5",
             "version": "2.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "f5ac2c0b0a2eefca70b2ce32a5809992227e75a6"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/f5ac2c0b0a2eefca70b2ce32a5809992227e75a6",
@@ -4772,9 +4726,6 @@
             "require": {
                 "ext-dom": "*",
                 "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7 || ^8 || ^9"
             },
             "type": "library",
             "extra": {
@@ -4787,7 +4738,6 @@
                     "Masterminds\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4816,10 +4766,6 @@
                 "serializer",
                 "xml"
             ],
-            "support": {
-                "issues": "https://github.com/Masterminds/html5-php/issues",
-                "source": "https://github.com/Masterminds/html5-php/tree/2.9.0"
-            },
             "time": "2024-03-31T07:05:07+00:00"
         },
         {
@@ -5107,16 +5053,11 @@
         },
         {
             "name": "mmikkel/retcon",
-            "version": "3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mmikkel/Retcon-Craft.git",
-                "reference": "86e622a9d57d49706fbe976c69a1f26a94041e47"
-            },
+            "version": "3.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmikkel/Retcon-Craft/zipball/86e622a9d57d49706fbe976c69a1f26a94041e47",
-                "reference": "86e622a9d57d49706fbe976c69a1f26a94041e47",
+                "url": "https://api.github.com/repos/mmikkel/Retcon-Craft/zipball/80a520b54220417a598f66b5dcac77216da51cc1",
+                "reference": "80a520b54220417a598f66b5dcac77216da51cc1",
                 "shasum": ""
             },
             "require": {
@@ -5125,9 +5066,6 @@
                 "php": "^8.2",
                 "symfony/css-selector": "^6.0|^7.0",
                 "symfony/dom-crawler": "^6.0|^7.0"
-            },
-            "require-dev": {
-                "craftcms/rector": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -5145,7 +5083,6 @@
                     "mmikkel\\retcon\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5157,18 +5094,17 @@
             ],
             "description": "Powerful Twig filters for mutating and querying HTML",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "retcon"
             ],
             "support": {
                 "docs": "https://github.com/mmikkel/Retcon-Craft/blob/master/README.md",
-                "issues": "https://github.com/mmikkel/Retcon-Craft/issues",
-                "source": "https://github.com/mmikkel/Retcon-Craft/tree/3.2.0"
+                "issues": "https://github.com/mmikkel/Retcon-Craft/issues"
             },
-            "time": "2024-06-28T17:08:59+00:00"
+            "time": "2024-10-21T13:36:18+00:00"
         },
         {
             "name": "moneyphp/money",
@@ -5291,55 +5227,6 @@
                 "psr-3"
             ],
             "time": "2024-06-28T09:40:51+00:00"
-        },
-        {
-            "name": "mostlyserious/craft-markerio",
-            "version": "2.1.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mostlyserious/craft-markerio/zipball/3c1561eb31e7e9a9d49b0a6a82204c4fa338e2cc",
-                "reference": "3c1561eb31e7e9a9d49b0a6a82204c4fa338e2cc",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.9.0||^5.0.0",
-                "php": ">=8.0.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "markerio",
-                "name": "Marker.io",
-                "developer": "Mostly Serious",
-                "documentationUrl": "https://github.com/mostlyserious/craft-markerio"
-            },
-            "autoload": {
-                "psr-4": {
-                    "mostlyserious\\craftmarkerio\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mostly Serious",
-                    "homepage": "https://github.com/mostlyserious"
-                }
-            ],
-            "description": "Easily add Marker.io to your CraftCMS site.",
-            "keywords": [
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "marker",
-                "marker.io"
-            ],
-            "support": {
-                "issues": "https://github.com/mostlyserious/craft-markerio/issues",
-                "source": "https://github.com/mostlyserious/craft-markerio",
-                "docs": "https://github.com/mostlyserious/craft-markerio"
-            },
-            "time": "2024-07-19T21:37:40+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -5936,11 +5823,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "5.1.4",
+            "version": "5.1.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d70c6fd10f7fee7c450ac9098f69661f9933d337",
-                "reference": "d70c6fd10f7fee7c450ac9098f69661f9933d337",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2ac2e093c39c72d7b95cf03c4481d5ca66476ff2",
+                "reference": "2ac2e093c39c72d7b95cf03c4481d5ca66476ff2",
                 "shasum": ""
             },
             "require": {
@@ -5992,7 +5879,7 @@
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
                 "source": "https://github.com/nystudio107/craft-seomatic"
             },
-            "time": "2024-09-29T23:30:19+00:00"
+            "time": "2024-10-21T23:19:03+00:00"
         },
         {
             "name": "nystudio107/craft-templatecomments",
@@ -7330,11 +7217,11 @@
         },
         {
             "name": "putyourlightson/craft-blitz",
-            "version": "5.9.0",
+            "version": "5.9.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/e99e25c1e7eaa60a737a59c31b703c4038537f90",
-                "reference": "e99e25c1e7eaa60a737a59c31b703c4038537f90",
+                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/caf1babf0ca159460e7465f445849af665815dde",
+                "reference": "caf1babf0ca159460e7465f445849af665815dde",
                 "shasum": ""
             },
             "require": {
@@ -7378,7 +7265,7 @@
                 "source": "https://github.com/putyourlightson/craft-blitz",
                 "issues": "https://github.com/putyourlightson/craft-blitz/issues"
             },
-            "time": "2024-10-04T15:41:40+00:00"
+            "time": "2024-10-22T17:39:24+00:00"
         },
         {
             "name": "putyourlightson/craft-sherlock",
@@ -7957,6 +7844,65 @@
             "time": "2024-08-08T11:34:30+00:00"
         },
         {
+            "name": "spacecatninja/imager-x-power-pack",
+            "version": "1.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spacecatninja/craft-imager-x-power-pack/zipball/55829251555c23b640b1e2d9419394a031a002ce",
+                "reference": "55829251555c23b640b1e2d9419394a031a002ce",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.5.0|^5.0.0",
+                "ext-imagick": "*",
+                "php": "^8.0.2",
+                "spacecatninja/imager-x": "^4.3.0|^5.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Imager X Power Pack",
+                "handle": "imager-x-power-pack",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/spacecatninja/craft-imager-x-power-pack/master/CHANGELOG.md",
+                "components": [],
+                "class": "spacecatninja\\imagerxpowerpack\\PowerPack"
+            },
+            "autoload": {
+                "psr-4": {
+                    "spacecatninja\\imagerxpowerpack\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SPACECATNINJA",
+                    "homepage": "https://www.spacecat.ninja"
+                }
+            ],
+            "description": "Unlocks a stash of hidden weapons in your quest to optimize images, while simultaniously saving time and cognitive load.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "imager",
+                "lazyload",
+                "picture",
+                "responsive-images",
+                "sizes",
+                "srcset"
+            ],
+            "support": {
+                "docs": "https://github.com/spacecatninja/craft-imager-x-power-pack/blob/master/README.md",
+                "issues": "https://github.com/spacecatninja/craft-imager-x-power-pack/issues"
+            },
+            "time": "2024-09-24T11:31:39+00:00"
+        },
+        {
             "name": "spicyweb/craft-batch-actions",
             "version": "2.0.1",
             "source": {
@@ -8385,11 +8331,6 @@
         {
             "name": "symfony/css-selector",
             "version": "v7.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "1c7cee86c6f812896af54434f8ce29c8d94f9ff4"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/1c7cee86c6f812896af54434f8ce29c8d94f9ff4",
@@ -8408,7 +8349,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -8428,23 +8368,6 @@
             ],
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v7.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2024-05-31T14:57:53+00:00"
         },
         {
@@ -8493,16 +8416,11 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v7.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "01ce8174447f1f1dd33a5854b01beef79061d9fa"
-            },
+            "version": "v7.1.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/01ce8174447f1f1dd33a5854b01beef79061d9fa",
-                "reference": "01ce8174447f1f1dd33a5854b01beef79061d9fa",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/b92af238457a7cdd2738f941cd525d76313e8283",
+                "reference": "b92af238457a7cdd2738f941cd525d76313e8283",
                 "shasum": ""
             },
             "require": {
@@ -8510,9 +8428,6 @@
                 "php": ">=8.2",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0"
-            },
-            "require-dev": {
-                "symfony/css-selector": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -8523,7 +8438,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -8539,24 +8453,7 @@
             ],
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v7.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-05-31T14:57:53+00:00"
+            "time": "2024-09-15T06:48:17+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -10324,63 +10221,6 @@
             "time": "2024-09-13T23:33:05+00:00"
         },
         {
-            "name": "verbb/buttonbox",
-            "version": "5.0.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/buttonbox/zipball/d17c4f03719673a3d19b9e86291e69b6817a09ee",
-                "reference": "d17c4f03719673a3d19b9e86291e69b6817a09ee",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2",
-                "verbb/base": "^3.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Button Box",
-                "handle": "buttonbox",
-                "documentationUrl": "https://github.com/verbb/buttonbox",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/buttonbox/craft-5/CHANGELOG.md",
-                "class": "verbb\\buttonbox\\ButtonBox"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\buttonbox\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                },
-                {
-                    "name": "Supercool",
-                    "homepage": "http://supercooldesign.co.uk"
-                }
-            ],
-            "description": "A collection of utility field types.",
-            "keywords": [
-                "buttonbox",
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms"
-            ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/buttonbox/issues?state=open",
-                "source": "https://github.com/verbb/buttonbox",
-                "docs": "https://github.com/verbb/buttonbox",
-                "rss": "https://github.com/verbb/buttonbox/commits/v2.atom"
-            },
-            "time": "2024-05-10T14:48:17+00:00"
-        },
-        {
             "name": "verbb/expanded-singles",
             "version": "3.0.1",
             "dist": {
@@ -11921,75 +11761,6 @@
             "time": "2024-03-17T08:10:35+00:00"
         },
         {
-            "name": "nystudio107/craft-autocomplete",
-            "version": "1.12.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-autocomplete.git",
-                "reference": "ee3d7e2386eb94abf4e4d7690640055cedeaf07f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/ee3d7e2386eb94abf4e4d7690640055cedeaf07f",
-                "reference": "ee3d7e2386eb94abf4e4d7690640055cedeaf07f",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0 || ^4.0.0 || ^5.0.0"
-            },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "nystudio107\\autocomplete\\Autocomplete"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\autocomplete\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                },
-                {
-                    "name": "PutYourLightsOn",
-                    "homepage": "https://putyourlightson.com"
-                }
-            ],
-            "description": "Provides Twig template IDE autocomplete of Craft CMS & plugin variables",
-            "keywords": [
-                "Craft",
-                "auto",
-                "autocomplete",
-                "cms",
-                "complete",
-                "craftcms",
-                "symfony",
-                "twig"
-            ],
-            "support": {
-                "docs": "https://github.com/nystudio107/craft-autocomplete/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-autocomplete/issues",
-                "source": "https://github.com/nystudio107/craft-autocomplete"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-04-15T16:14:38+00:00"
-        },
-        {
             "name": "psy/psysh",
             "version": "v0.11.22",
             "source": {
@@ -12236,8 +12007,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },

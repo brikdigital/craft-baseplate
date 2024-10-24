@@ -1,12 +1,59 @@
 {% extends '_layouts/default.twig' %}
 
 {% block html %}
-    {% set sizes = '(min-width: 1440px) 1400px, (min-width: 1024px) and (max-width: 1439px) 50vw, 100vw' %}
+    {# {% set sizes = '(min-width: 1440px) 1400px, (min-width: 1024px) and (max-width: 1439px) 50vw, 100vw' %} #}
 
-    {% include "components/atoms/image/image.twig" with {
+    {# {% include "components/atoms/image/image.twig" with {
         image: '',
         imageUrl: 'https://http.cat/404',
         size: 'default',
         sizes:sizes
-    } %}
+    } %} #}
+
+
+{% set image = craft.assets.id(68).one() %}
+{% set imageMobile = craft.assets.id(68).one() %}
+
+
+{{ pppicture(
+    [
+        [image, [1200, 2000, 16/9, 'webp'], 750, 'webp'],
+        [image, [1200, 2000, 16/9, 'jpg'], 750],
+        [imageMobile, [400, 1600, 1, 'webp'], 'webp'],
+        [imageMobile, [400, 1600, 1, 'jpg']]
+    ],
+    {
+        'data-sizes': 'auto',
+        sizes: 'auto',
+        class: 'lazyload w-full',
+        loading: 'eager',
+        decoding: 'async',
+        alt: 'This is a custom alternative text!',
+        defaults: {
+            effects: { sharpen: true }
+        }
+    },
+    {
+        lazysizes: true,
+        placeholder: 'blurhash'
+    }
+)}}
+
+
+<h2>lorem ipsum</h2>
+
+
+{# {{ pppicture(
+    [
+        [image, [1200, 3400, 16/9, 'webp'], 750, 'webp'],
+        [image, [1200, 3400, 16/9, 'jpg'], 750],
+        [imageMobile, [800, 1600, 1, 'webp'], 'webp'],
+        [imageMobile, [800, 1600, 1, 'jpg']]
+    ],
+ {
+        lazysizes: true,
+        placeholder: 'blurhash'
+    }
+) }} #}
+
 {% endblock %}

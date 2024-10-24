@@ -14,8 +14,8 @@ return [
     // Global settings
     '*' => [
         'cacheDuration' => '31536000',
-        'fillInterval' => '500',
-        'fillTransforms' => true,
+        'fillTransforms' => 'auto',
+        'autoFillCount' => 'auto',
         'imgixConfig' => [
             'default' => [
                 'domain' => App::env('IMGIX_DOMAIN'),
@@ -49,8 +49,8 @@ return [
     'dev' => [
         'transformer' => 'craft',
         // 'imgixProfile' => 'live',
-        'fillTransforms' => false,
-        // 'imagerUrl' => App::env('IMGIX_DEV_URL'),
+        // 'fillTransforms' => false,
+        'imagerUrl' => App::env('IMGIX_DEV_URL'),
     ],
     // Staging environment settings
     'staging' => [
