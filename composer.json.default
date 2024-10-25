@@ -29,6 +29,7 @@
     "spicyweb/craft-batch-actions": "^2.0",
     "spicyweb/craft-embedded-assets": "^5.1",
     "superbig/craft-mjml": "^5.0",
+    "verbb/buttonbox": "^5.0.0",
     "verbb/expanded-singles": "^3.0",
     "verbb/hyper": "2.1.1",
     "verbb/knock-knock": "^3.0",
