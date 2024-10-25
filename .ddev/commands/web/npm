@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## Description: Run pnpm in the web container
+## Usage: npm
+## Example: "ddev npm"
+## ExecRaw: true
+## HostWorkingDir: true
+
+pnpm "$@"
