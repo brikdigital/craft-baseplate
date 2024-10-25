@@ -8,6 +8,9 @@ patchedDependencies:
   '@destination/prettier-plugin-twig':
     hash: 2emsb6xljk2y4xvgivwdrdqhf4
     path: patches/@destination__prettier-plugin-twig.patch
+  '@storybook/blocks':
+    hash: y35duw5fdippxf3miw2qetguwq
+    path: patches/@storybook__blocks.patch
 
 importers:
 
@@ -58,7 +61,7 @@ importers:
         version: 8.3.6(react@18.3.1)(storybook@8.3.6)
       '@storybook/blocks':
         specifier: ^8.3.0
-        version: 8.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
+        version: 8.3.6(patch_hash=y35duw5fdippxf3miw2qetguwq)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
       '@storybook/builder-webpack5':
         specifier: ^8.3.0
         version: 8.3.6(esbuild@0.23.1)(storybook@8.3.6)(typescript@5.6.3)(webpack-cli@5.1.4)
@@ -7099,7 +7102,7 @@ snapshots:
   '@storybook/addon-docs@8.3.6(storybook@8.3.6)(webpack-sources@3.2.3)':
     dependencies:
       '@mdx-js/react': 3.1.0(@types/react@18.3.12)(react@18.3.1)
-      '@storybook/blocks': 8.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
+      '@storybook/blocks': 8.3.6(patch_hash=y35duw5fdippxf3miw2qetguwq)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
       '@storybook/csf-plugin': 8.3.6(storybook@8.3.6)(webpack-sources@3.2.3)
       '@storybook/global': 5.0.0
       '@storybook/react-dom-shim': 8.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
@@ -7165,7 +7168,7 @@ snapshots:
       memoizerific: 1.11.3
       storybook: 8.3.6
 
-  '@storybook/blocks@8.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)':
+  '@storybook/blocks@8.3.6(patch_hash=y35duw5fdippxf3miw2qetguwq)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)':
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0

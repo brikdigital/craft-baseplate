@@ -84,7 +84,8 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@destination/prettier-plugin-twig": "patches/@destination__prettier-plugin-twig.patch"
+      "@destination/prettier-plugin-twig": "patches/@destination__prettier-plugin-twig.patch",
+      "@storybook/blocks": "patches/@storybook__blocks.patch"
     }
   }
 }
