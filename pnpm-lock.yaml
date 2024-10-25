@@ -47,6 +47,9 @@ importers:
       '@storybook/addon-a11y':
         specifier: ^8.3.0
         version: 8.3.6(storybook@8.3.6)
+      '@storybook/addon-designs':
+        specifier: ^8.0.3
+        version: 8.0.3(@storybook/blocks@8.3.6(patch_hash=y35duw5fdippxf3miw2qetguwq)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6))(@storybook/components@8.3.6(storybook@8.3.6))(@storybook/theming@8.3.6(storybook@8.3.6))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-essentials':
         specifier: ^8.3.0
         version: 8.3.6(storybook@8.3.6)(webpack-sources@3.2.3)
@@ -1132,6 +1135,14 @@ packages:
     resolution: {integrity: sha512-HFZ4Mp26nbWk9d/BpvP0YNL6W4UoZF0VFcTw/aPPA8RpOxeFQgK+ClABGgAUXs9Y/RGX/l1vOmrqz1MQt9MNuw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@figspec/components@1.0.3':
+    resolution: {integrity: sha512-fBwHzJ4ouuOUJEi+yBZIrOy+0/fAjB3AeTcIHTT1PRxLz8P63xwC7R0EsIJXhScIcc+PljGmqbbVJCjLsnaGYA==}
+
+  '@figspec/react@1.0.3':
+    resolution: {integrity: sha512-r683qOko+5CbT48Ox280fMx2MNAtaFPgCNJvldOqN3YtmAzlcTT+YSxd3OahA+kjXGGrnzDbUgeTOX1cPLII+g==}
+    peerDependencies:
+      react: ^16.14.0 || ^17.0.0 || ^18.0.0
+
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
 
@@ -1344,6 +1355,15 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
+  '@lit-labs/react@1.2.1':
+    resolution: {integrity: sha512-DiZdJYFU0tBbdQkfwwRSwYyI/mcWkg3sWesKRsHUd4G+NekTmmeq9fzsurvcKTNVa0comNljwtg4Hvi1ds3V+A==}
+
+  '@lit-labs/ssr-dom-shim@1.2.1':
+    resolution: {integrity: sha512-wx4aBmgeGvFmOKucFKY+8VFJSYZxs9poN3SDNQFF6lT6NrQUnHiPB2PWz2sc4ieEcAaYYzN+1uWahEeTq2aRIQ==}
+
+  '@lit/reactive-element@1.6.3':
+    resolution: {integrity: sha512-QuTgnG52Poic7uM1AN5yJ09QMe0O28e10XzSvWDz02TJiiKee4stsiownEIadWm8nYzyDAyT+gKzUoZmiWQtsQ==}
+
   '@mdx-js/react@3.1.0':
     resolution: {integrity: sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ==}
     peerDependencies:
@@ -1486,6 +1506,26 @@ packages:
     resolution: {integrity: sha512-9IMLHgtWPuFoRCt3hDsIk1FbkK5SlCMDW1DDwtTBIeWYYZLvptS42+vGVTeQ8v5SejmVzZkzuUdzu3p4sb3IcA==}
     peerDependencies:
       storybook: ^8.3.6
+
+  '@storybook/addon-designs@8.0.3':
+    resolution: {integrity: sha512-uArLGYDwiRDjgJHgMotOLGGYK4hq1hBb0PfTJrlBnPy6evky9khrqf4KmXrIh4ViOyZ5t01THe1DnBj52DwrEQ==}
+    peerDependencies:
+      '@storybook/blocks': ^8.0.0
+      '@storybook/components': ^8.0.0
+      '@storybook/theming': ^8.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@storybook/blocks':
+        optional: true
+      '@storybook/components':
+        optional: true
+      '@storybook/theming':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
 
   '@storybook/addon-docs@8.3.6':
     resolution: {integrity: sha512-31Rk1TOhDIzGM2wNCUIB1xKuWtArW0D2Puua9warEXlQ3FtvwmxnPrwbIzw6ufYZDWPwl9phDYTcRh8WqZIoGg==}
@@ -1794,6 +1834,9 @@ packages:
 
   '@types/serve-static@1.15.7':
     resolution: {integrity: sha512-W8Ym+h8nhuRwaKPaDw34QUkwsGi6Rc4yYqvKFo5rm2FUEhCFbzVWrxXUxuKK8TASjWsysJY0nsmNCGhCOIsrOw==}
+
+  '@types/trusted-types@2.0.7':
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
@@ -3781,6 +3824,15 @@ packages:
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
+
+  lit-element@3.3.3:
+    resolution: {integrity: sha512-XbeRxmTHubXENkV4h8RIPyr8lXc+Ff28rkcQzw3G6up2xg5E8Zu1IgOWIwBLEQsu3cOVFqdYwiVi0hv0SlpqUA==}
+
+  lit-html@2.8.0:
+    resolution: {integrity: sha512-o9t+MQM3P4y7M7yNzqAyjp7z+mQGa4NS4CxiyLqFPyFWyc4O+nodLrkrxSaCTrla6M5YOLaT3RpbbqjszB5g3Q==}
+
+  lit@2.8.0:
+    resolution: {integrity: sha512-4Sc3OFX9QHOJaHbmTMk28SYgVxLN3ePDjg7hofEft2zWlehFL3LiAuapWc4U/kYwMYJSh2hTCPZ6/LIC7ii0MA==}
 
   lite-vimeo-embed@0.3.0:
     resolution: {integrity: sha512-EVpSPTy3sRSBcCU3LqpFKAPRgrHgm775ZYjvwphSI2p4JQGwVczF8GtZ5tQPXhOgOI3AWkPVRj7KL0Jfh3GUEA==}
@@ -6761,6 +6813,16 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
+  '@figspec/components@1.0.3':
+    dependencies:
+      lit: 2.8.0
+
+  '@figspec/react@1.0.3(react@18.3.1)':
+    dependencies:
+      '@figspec/components': 1.0.3
+      '@lit-labs/react': 1.2.1
+      react: 18.3.1
+
   '@hapi/hoek@9.3.0': {}
 
   '@hapi/topo@5.1.0':
@@ -7058,6 +7120,14 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@lit-labs/react@1.2.1': {}
+
+  '@lit-labs/ssr-dom-shim@1.2.1': {}
+
+  '@lit/reactive-element@1.6.3':
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.2.1
+
   '@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.13
@@ -7170,6 +7240,16 @@ snapshots:
       lodash: 4.17.21
       storybook: 8.3.6
       ts-dedent: 2.2.0
+
+  '@storybook/addon-designs@8.0.3(@storybook/blocks@8.3.6(patch_hash=y35duw5fdippxf3miw2qetguwq)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6))(@storybook/components@8.3.6(storybook@8.3.6))(@storybook/theming@8.3.6(storybook@8.3.6))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@figspec/react': 1.0.3(react@18.3.1)
+    optionalDependencies:
+      '@storybook/blocks': 8.3.6(patch_hash=y35duw5fdippxf3miw2qetguwq)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
+      '@storybook/components': 8.3.6(storybook@8.3.6)
+      '@storybook/theming': 8.3.6(storybook@8.3.6)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@storybook/addon-docs@8.3.6(storybook@8.3.6)(webpack-sources@3.2.3)':
     dependencies:
@@ -7643,6 +7723,8 @@ snapshots:
       '@types/http-errors': 2.0.4
       '@types/node': 22.7.9
       '@types/send': 0.17.4
+
+  '@types/trusted-types@2.0.7': {}
 
   '@types/unist@2.0.11': {}
 
@@ -9891,6 +9973,22 @@ snapshots:
   lilconfig@3.1.2: {}
 
   lines-and-columns@1.2.4: {}
+
+  lit-element@3.3.3:
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.2.1
+      '@lit/reactive-element': 1.6.3
+      lit-html: 2.8.0
+
+  lit-html@2.8.0:
+    dependencies:
+      '@types/trusted-types': 2.0.7
+
+  lit@2.8.0:
+    dependencies:
+      '@lit/reactive-element': 1.6.3
+      lit-element: 3.3.3
+      lit-html: 2.8.0
 
   lite-vimeo-embed@0.3.0: {}
 

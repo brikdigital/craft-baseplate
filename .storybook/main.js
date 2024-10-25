@@ -5,6 +5,7 @@ const config = {
     '../templates/components/**/*.stories.@(json|yml)',
   ],
   addons: [
+    '@storybook/addon-designs',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/manager-api',
