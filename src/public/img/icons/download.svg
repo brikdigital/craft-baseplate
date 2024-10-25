@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path fill="currentColor" fill-rule="evenodd"
+        d="M10.043 13.043a1 1 0 0 1 1.414 0L16 17.586l4.543-4.543a1 1 0 0 1 1.414 1.414l-5.25 5.25a1 1 0 0 1-1.414 0l-5.25-5.25a1 1 0 0 1 0-1.414Z"
+        clip-rule="evenodd" />
+    <path fill="currentColor" fill-rule="evenodd" d="M16 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Z"
+        clip-rule="evenodd" />
+    <path fill="currentColor" fill-rule="evenodd"
+        d="M5 18a1 1 0 0 1 1 1v7h20v-7a1 1 0 1 1 2 0v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7a1 1 0 0 1 1-1Z"
+        clip-rule="evenodd" />
+</svg>

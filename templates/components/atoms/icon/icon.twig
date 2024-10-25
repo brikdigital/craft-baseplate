@@ -1,0 +1,16 @@
+{% set icon = icon is defined and icon|length ? icon : false %}
+{% set size = size is defined and size|length ? size : 'medium' %}
+{% set iconClasses = iconClasses is defined and iconClasses|length ? iconClasses : '' %}
+
+{% switch size %}
+	{% case 'large' %}
+		{% set sizeClasses = 'size-8' %}
+	{% case 'medium' %}
+		{% set sizeClasses = 'size-6' %}
+	{% case 'small' %}
+		{% set sizeClasses = 'size-4' %}
+{% endswitch %}
+
+{% if icon %}
+	{{ inlineSvg('icons/'~ icon, 'fill-current ' ~ sizeClasses ~ ' ' ~ iconClasses, { sanitize: true, namespace: true }) }}
+{% endif %}

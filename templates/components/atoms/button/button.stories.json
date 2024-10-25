@@ -18,7 +18,7 @@
         "'Anchor link'": "a"
       },
       "table": {
-        "category": "Default"
+        "category": "(1) Default"
       }
     },
     "theme": {
@@ -33,7 +33,7 @@
         "'Text light'": "textLight"
       },
       "table": {
-        "category": "Default"
+        "category": "(1) Default"
       }
     },
     "size": {
@@ -46,7 +46,7 @@
         "Small": "small"
       },
       "table": {
-        "category": "Default"
+        "category": "(1) Default"
       }
     },
     "text": {
@@ -55,7 +55,7 @@
       "defaultValue": "",
       "control": "text",
       "table": {
-        "category": "Default"
+        "category": "(1) Default"
       }
     },
     "url": {
@@ -64,7 +64,7 @@
       "defaultValue": "",
       "control": "text",
       "table": {
-        "category": "Url"
+        "category": "(3) Url"
       }
     },
     "target": {
@@ -79,7 +79,7 @@
         "Top": "_top"
       },
       "table": {
-        "category": "Url"
+        "category": "(3) Url"
       }
     },
     "icon": {
@@ -88,7 +88,7 @@
       "defaultValue": "",
       "control": "text",
       "table": {
-        "category": "Icon"
+        "category": "(4) Icon"
       }
     },
     "iconPosition": {
@@ -98,7 +98,7 @@
       "options": ["left", "right"],
       "defaultValue": "left",
       "table": {
-        "category": "Icon"
+        "category": "(4) Icon"
       }
     },
     "fullWidth": {
@@ -112,7 +112,7 @@
         "'Mobile only'": "mobile"
       },
       "table": {
-        "category": "Button"
+        "category": "(2) Button"
       }
     },
     "buttonClasses": {
@@ -121,7 +121,7 @@
       "defaultValue": "",
       "control": "text",
       "table": {
-        "category": "Default"
+        "category": "(1) Default"
       }
     },
     "rel": {
@@ -133,7 +133,7 @@
       "options": ["noopener", "noreferrer", "nofollow", "opener", "next", "prev", "search"],
       "defaultValue": "",
       "table": {
-        "category": "Url"
+        "category": "(3) Url"
       }
     },
     "type": {
@@ -147,7 +147,7 @@
         "Reset": "reset"
       },
       "table": {
-        "category": "Button"
+        "category": "(2) Button"
       }
     },
     "role": {
@@ -156,7 +156,7 @@
       "control": "text",
       "defaultValue": "",
       "table": {
-        "category": "Button"
+        "category": "(2) Button"
       }
     },
     "disabled": {
@@ -165,7 +165,7 @@
       "control": "boolean",
       "defaultValue": "false",
       "table": {
-        "category": "Button"
+        "category": "(2) Button"
       }
     }
   },

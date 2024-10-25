@@ -11,7 +11,7 @@
     } %} #}
 
 
-{% set image = craft.assets.id(68).one() %}
+{# {% set image = craft.assets.id(68).one() %}
 {% set imageMobile = craft.assets.id(68).one() %}
 
 
@@ -40,7 +40,7 @@
 )}}
 
 
-<h2>lorem ipsum</h2>
+<h2>lorem ipsum</h2> #}
 
 
 {# {{ pppicture(
@@ -50,10 +50,14 @@
         [imageMobile, [800, 1600, 1, 'webp'], 'webp'],
         [imageMobile, [800, 1600, 1, 'jpg']]
     ],
- {
+    {
         lazysizes: true,
         placeholder: 'blurhash'
     }
 ) }} #}
+
+
+
+
 
 {% endblock %}
