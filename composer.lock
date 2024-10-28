@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7704299892d9deb000d8ebd801496369",
+    "content-hash": "9b18848e40d059c1d48cb78457dfd91c",
     "packages": [
         {
             "name": "amphp/amp",
@@ -817,11 +817,6 @@
         {
             "name": "aws/aws-sdk-php",
             "version": "3.324.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "702da8ee8a9dbae919c3559b8f4dba61cd8355b0"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/702da8ee8a9dbae919c3559b8f4dba61cd8355b0",
@@ -839,25 +834,6 @@
                 "mtdowling/jmespath.php": "^2.6",
                 "php": ">=7.2.5",
                 "psr/http-message": "^1.0 || ^2.0"
-            },
-            "require-dev": {
-                "andrewsville/php-token-reflection": "^1.4",
-                "aws/aws-php-sns-message-validator": "~1.0",
-                "behat/behat": "~3.0",
-                "composer/composer": "^1.10.22",
-                "dms/phpunit-arraysubset-asserts": "^0.4.0",
-                "doctrine/cache": "~1.4",
-                "ext-dom": "*",
-                "ext-openssl": "*",
-                "ext-pcntl": "*",
-                "ext-sockets": "*",
-                "nette/neon": "^2.3",
-                "paragonie/random_compat": ">= 2",
-                "phpunit/phpunit": "^5.6.3 || ^8.5 || ^9.5",
-                "psr/cache": "^1.0",
-                "psr/simple-cache": "^1.0",
-                "sebastian/comparator": "^1.2.3 || ^4.0",
-                "yoast/phpunit-polyfills": "^1.0"
             },
             "suggest": {
                 "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
@@ -883,7 +859,6 @@
                     "src/data/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -905,11 +880,6 @@
                 "s3",
                 "sdk"
             ],
-            "support": {
-                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
-                "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.324.10"
-            },
             "time": "2024-10-24T18:08:37+00:00"
         },
         {
@@ -1368,11 +1338,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.4.7.1",
+            "version": "5.4.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/7f26db4a36c374117c281707a22b5493335e042b",
-                "reference": "7f26db4a36c374117c281707a22b5493335e042b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/8c354fc15b0fba8a8b9363f0f98883a76e57795f",
+                "reference": "8c354fc15b0fba8a8b9363f0f98883a76e57795f",
                 "shasum": ""
             },
             "require": {
@@ -1469,7 +1439,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-10-09T08:30:12+00:00"
+            "time": "2024-10-22T19:14:27+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -5246,11 +5216,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "5.1.4",
+            "version": "5.1.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d70c6fd10f7fee7c450ac9098f69661f9933d337",
-                "reference": "d70c6fd10f7fee7c450ac9098f69661f9933d337",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2ac2e093c39c72d7b95cf03c4481d5ca66476ff2",
+                "reference": "2ac2e093c39c72d7b95cf03c4481d5ca66476ff2",
                 "shasum": ""
             },
             "require": {
@@ -5302,7 +5272,7 @@
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
                 "source": "https://github.com/nystudio107/craft-seomatic"
             },
-            "time": "2024-09-29T23:30:19+00:00"
+            "time": "2024-10-21T23:19:03+00:00"
         },
         {
             "name": "nystudio107/craft-templatecomments",
@@ -6561,11 +6531,11 @@
         },
         {
             "name": "putyourlightson/craft-blitz",
-            "version": "5.9.0",
+            "version": "5.9.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/e99e25c1e7eaa60a737a59c31b703c4038537f90",
-                "reference": "e99e25c1e7eaa60a737a59c31b703c4038537f90",
+                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/caf1babf0ca159460e7465f445849af665815dde",
+                "reference": "caf1babf0ca159460e7465f445849af665815dde",
                 "shasum": ""
             },
             "require": {
@@ -6609,7 +6579,7 @@
                 "source": "https://github.com/putyourlightson/craft-blitz",
                 "issues": "https://github.com/putyourlightson/craft-blitz/issues"
             },
-            "time": "2024-10-04T15:41:40+00:00"
+            "time": "2024-10-22T17:39:24+00:00"
         },
         {
             "name": "putyourlightson/craft-sherlock",
@@ -7055,6 +7025,65 @@
             "time": "2024-08-08T11:34:30+00:00"
         },
         {
+            "name": "spacecatninja/imager-x-power-pack",
+            "version": "1.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spacecatninja/craft-imager-x-power-pack/zipball/55829251555c23b640b1e2d9419394a031a002ce",
+                "reference": "55829251555c23b640b1e2d9419394a031a002ce",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.5.0|^5.0.0",
+                "ext-imagick": "*",
+                "php": "^8.0.2",
+                "spacecatninja/imager-x": "^4.3.0|^5.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Imager X Power Pack",
+                "handle": "imager-x-power-pack",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/spacecatninja/craft-imager-x-power-pack/master/CHANGELOG.md",
+                "components": [],
+                "class": "spacecatninja\\imagerxpowerpack\\PowerPack"
+            },
+            "autoload": {
+                "psr-4": {
+                    "spacecatninja\\imagerxpowerpack\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SPACECATNINJA",
+                    "homepage": "https://www.spacecat.ninja"
+                }
+            ],
+            "description": "Unlocks a stash of hidden weapons in your quest to optimize images, while simultaniously saving time and cognitive load.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "imager",
+                "lazyload",
+                "picture",
+                "responsive-images",
+                "sizes",
+                "srcset"
+            ],
+            "support": {
+                "docs": "https://github.com/spacecatninja/craft-imager-x-power-pack/blob/master/README.md",
+                "issues": "https://github.com/spacecatninja/craft-imager-x-power-pack/issues"
+            },
+            "time": "2024-09-24T11:31:39+00:00"
+        },
+        {
             "name": "spicyweb/craft-batch-actions",
             "version": "2.0.1",
             "dist": {
@@ -7114,11 +7143,6 @@
         {
             "name": "spicyweb/craft-embedded-assets",
             "version": "5.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spicywebau/craft-embedded-assets.git",
-                "reference": "57c2ddafc90d4aabbab83effeca57428f158527f"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/spicywebau/craft-embedded-assets/zipball/57c2ddafc90d4aabbab83effeca57428f158527f",
@@ -7129,10 +7153,6 @@
                 "craftcms/cms": "^5.0.0",
                 "embed/embed": "^4.4.10",
                 "php": "^8.0.2"
-            },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/rector": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -7148,7 +7168,6 @@
                     "spicyweb\\embeddedassets\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7170,10 +7189,10 @@
                 "youtube"
             ],
             "support": {
-                "docs": "https://github.com/spicywebau/craft-embedded-assets/blob/5.2.0/README.md",
                 "issues": "https://github.com/spicywebau/craft-embedded-assets/issues",
-                "rss": "https://github.com/spicywebau/craft-embedded-assets/commits/5.x.atom",
-                "source": "https://github.com/spicywebau/craft-embedded-assets"
+                "source": "https://github.com/spicywebau/craft-embedded-assets",
+                "docs": "https://github.com/spicywebau/craft-embedded-assets/blob/5.2.0/README.md",
+                "rss": "https://github.com/spicywebau/craft-embedded-assets/commits/5.x.atom"
             },
             "time": "2024-10-25T04:14:49+00:00"
         },
@@ -9389,11 +9408,11 @@
         },
         {
             "name": "verbb/hyper",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/hyper/zipball/6997230c84e474fc8068242266e6f072b98d6b46",
-                "reference": "6997230c84e474fc8068242266e6f072b98d6b46",
+                "url": "https://api.github.com/repos/verbb/hyper/zipball/2b6e8154c1896a7c858bec7d24f7f4d8d22fb328",
+                "reference": "2b6e8154c1896a7c858bec7d24f7f4d8d22fb328",
                 "shasum": ""
             },
             "require": {
@@ -9439,7 +9458,7 @@
                 "docs": "https://github.com/verbb/hyper",
                 "rss": "https://github.com/verbb/hyper/commits/v2.atom"
             },
-            "time": "2024-10-10T08:28:48+00:00"
+            "time": "2024-10-20T01:48:40+00:00"
         },
         {
             "name": "verbb/knock-knock",
@@ -9495,11 +9514,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/248ac0437255d439907dc6562952636ad72c5533",
-                "reference": "248ac0437255d439907dc6562952636ad72c5533",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/97748fa6f0567b0ebc7b99391aeb47df115380c2",
+                "reference": "97748fa6f0567b0ebc7b99391aeb47df115380c2",
                 "shasum": ""
             },
             "require": {
@@ -9544,7 +9563,7 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2024-09-07T10:16:54+00:00"
+            "time": "2024-10-20T01:56:07+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -11026,8 +11045,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },
