@@ -1,29 +1,43 @@
-{% set image = url is defined and url|length ? url : null %}
+{% set image = image is defined and image|length ? image : null %}
 {% set imageMobile = imageMobile is defined and imageMobile|length ? imageMobile : image %}
-{% set alt = alt is defined and alt|length ? alt : '' %}
 {% set imageClasses = imageClasses is defined and imageClasses|length ? imageClasses : '' %}
-{% set attributes = {} %}
+{% set alt = alt is defined and alt|length ? alt : '' %}
 {% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : '' %}
-
+{% set transform = transform is defined and transform|length ? transform : 'default' %}
+{% set attributes = {} %}
 {% if wrapperClasses %}
-{% set attributes = {
-	class: [wrapperClasses|join(' ')]
-} %}
+    {% set attributes = {
+        class: [wrapperClasses|join(' ')]
+    } %}
 {% endif %}
 
+{% if craft.imager.hasNamedTransform(transform~'Mobile') %}
+	{% set mobileTransform = transform~'Mobile' %}
+{% else %}
+	{% set mobileTransform = transform %}
+{% endif %}
 
 {% if image %}
     {{ pppicture(
         [
-            [image, [1200, 2000, 16/9, 'webp'], 768, 'webp'],
-            [image, [1200, 2000, 16/9, 'jpg'], 768],
-            [imageMobile, [400, 1600, 1, 'webp'], 'webp'],
-            [imageMobile, [400, 1600, 1, 'jpg']]
+            [image, [1000, 2000, 16/9, 'avif'], 'avif'],
+            [image, [1000, 2000, 16/9, 'webp'], 'webp'],
+            [image, [1000, 2000, 16/9]]
+        ]
+    ) }}
+
+
+    {# {{ pppicture(
+        [
+            [image, transform, 768, 'webp'],
+            [image, transform, 768],
+            [imageMobile, mobileTransform, 'webp'],
+            [imageMobile, mobileTransform]
         ],
         {
             'data-sizes': 'auto',
             class: 'lazyload w-full '~imageClasses,
-            loading: 'eager',
+            loading: 'lazy',
             decoding: 'async',
             alt: alt,
         },
@@ -31,7 +45,6 @@
             lazysizes: true,
             placeholder: 'blurhash'
         }
-    )|attr(attributes)
-}}
-
+        )|attr(attributes)
+    }} #}
 {% endif %}

@@ -8,13 +8,13 @@
     }
   },
   "argTypes": {
-    "url": {
+    "image": {
       "name": "Link",
       "description": "The link to the displayed image",
       "control": "text",
       "defaultValue": "https://http.cat/404"
     },
-    "urlMobile": {
+    "imageMobile": {
       "name": "Link to mobbile image",
       "description": "The link to the displayed image on mobile. If empty, the desktop image will be used.",
       "control": "text",
@@ -43,8 +43,8 @@
     {
       "name": "Default",
       "args": {
-        "url": "https://http.cat/404",
-        "urlMobile": "",
+        "image": "https://http.cat/404",
+        "imageMobile": "",
         "alt": "Lorem ipsum dolar sit amet",
         "imageClasses": ""
       }
