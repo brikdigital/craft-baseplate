@@ -1,0 +1,14 @@
+{% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'p' %}
+{% set text = text is defined and text|length ? text : '' %}
+{% set color = color is defined and color|length ? color : 'text-secondary' %}
+{% set headingClasses = headingClasses is defined and headingClasses|length ? headingClasses : '' %}
+{% set textTransform = textTransform is defined and textTransform|length ? textTransform : '' %}
+{% set baseClasses = 'text-base lg:text-xl leading-tight font-bold inline' %}
+{% set cssClasses = baseClasses ~ ' ' ~ color ~ ' ' ~ textTransform ~ ' ' ~ headingClasses %}
+
+{% if text %}
+	{{ tag(htmlTag, {
+        class: [cssClasses|join(' ')],
+        text: text
+    }) }}
+{% endif %}

@@ -1,54 +1,25 @@
 {% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'h2' %}
 {% set text = text is defined and text|length ? text : '' %}
-{% set pre = pre is defined and pre|length ? pre : '' %}
-
 {% set size = size is defined and size|length ? size : 'medium' %}
-{% set align = align is defined and align|length ? align : 'left' %}
-{% set color = color is defined and color|length ? color : ' text-primary' %}
-{% set colorPre = colorPre is defined and colorPre|length ? colorPre : ' text-secondary' %}
+{% set color = color is defined and color|length ? color : 'text-primary' %}
 {% set headingClasses = headingClasses is defined and headingClasses|length ? headingClasses : '' %}
-{% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : '' %}
-{% set upperCase = uppercase is defined and uppercase|length ? ' uppercase' : '' %}
-
-{% set cssClass = 'font-extrabold block' %}
-{% set preCssClass = 'text-base lg:text-xl leading-tight font-bold mb-2' %}
+{% set textTransform = textTransform is defined and textTransform|length ? textTransform : '' %}
+{% set baseClasses = 'font-extrabold block' %}
 
 {% switch size %}
-    {% case 'small' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-20 lg:text-24 xl:text-32' %}
-    {% case 'medium' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-28 md:text-32 lg:text-40' %}
-    {% case 'large' %}
-        {% set cssClass = cssClass ~ ' leading-tight text-40 lg:text-60' %}
+	{% case 'small' %}
+		{% set baseClasses = baseClasses ~ ' ' ~ 'leading-tight text-20 lg:text-24 xl:text-32' %}
+	{% case 'medium' %}
+		{% set baseClasses = baseClasses ~ ' ' ~ 'leading-tight text-28 md:text-32 lg:text-40' %}
+	{% case 'large' %}
+		{% set baseClasses = baseClasses ~ ' ' ~ 'leading-tight text-40 lg:text-60' %}
 {% endswitch %}
 
-{% switch align %}
-    {% case 'left' %}
-        {% set cssClass = cssClass ~ ' ml-0 text-left ' %}
-        {% set preCssClass = preCssClass ~ ' ml-0 text-left ' %}
-    {% case 'right' %}
-        {% set cssClass = cssClass ~ ' mr-0 text-right ' %}
-        {% set preCssClass = preCssClass ~ ' mr-0 text-right ' %}
-    {% case 'center' %}
-        {% set cssClass = cssClass ~ ' mx-auto text-center ' %}
-        {% set preCssClass = preCssClass ~ ' mx-auto text-center ' %}
-{% endswitch %}
+{% set cssClasses = baseClasses ~ ' ' ~ color ~ ' ' ~ textTransform ~ ' ' ~ headingClasses %}
 
-{% set cssClass = cssClass ~ color ~ ' '~ headingClasses ~ upperCase %}
-{% set preCssClass = preCssClass ~ colorPre %}
-
-{% if text or pre %}
-    <hgroup class="{{ wrapperClasses }}">
-        {% if pre %}
-            {{ tag('p', {
-                class: [preCssClass|join(', ')],
-                text: pre
-            }) }}
-        {% endif %}
-
-        {{ tag(htmlTag, {
-            class: [cssClass|join(', ')],
-            text: text
-        }) }}
-    </hgroup>
+{% if text %}
+	{{ tag(htmlTag, {
+		class: [cssClasses|join(' ')],
+		text: text
+	}) }}
 {% endif %}
