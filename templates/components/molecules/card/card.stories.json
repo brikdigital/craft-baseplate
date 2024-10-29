@@ -1,0 +1,79 @@
+{
+  "title": "Components/Molecules/Card",
+  "parameters": {
+    "docs": {
+      "story": {
+        "inline": true
+      }
+    }
+  },
+  "argTypes": {
+    "preText": {
+      "name": "Pre heading text",
+      "description": "The text of the pre-heading.",
+      "control": "text",
+      "defaultValue": "",
+      "table": {
+        "category": "(1) Default"
+      }
+    },
+    "headingText": {
+      "name": "Heading text",
+      "description": "The heading text.",
+      "control": "text",
+      "defaultValue": "",
+      "table": {
+        "category": "(1) Default"
+      }
+    },
+    "body": {
+      "name": "Body",
+      "description": "The body text.",
+      "defaultValue": "",
+      "control": "text",
+      "table": {
+        "category": "(1) Default"
+      }
+    },
+    "image": {
+      "name": "Image",
+      "description": "The card image.",
+      "control": "text",
+      "defaultValue": "https://http.cat/404",
+      "table": {
+        "category": "(1) Default"
+      }
+    },
+    "url": {
+      "name": "Link",
+      "description": "The card link.",
+      "control": "text",
+      "defaultValue": "https://www.brik.digital",
+      "table": {
+        "category": "(1) Default"
+      }
+    },
+    "buttonText": {
+      "name": "Button text",
+      "description": "The button text.",
+      "control": "text",
+      "defaultValue": "Meer info",
+      "table": {
+        "category": "(1) Default"
+      }
+    }
+  },
+  "stories": [
+    {
+      "name": "Card",
+      "args": {
+        "preText": "Card pre title",
+        "headingText": "Card title",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies.",
+        "image": "https://http.cat/404",
+        "url": "https://www.brik.digital",
+        "buttonText": "Meer info"
+      }
+    }
+  ]
+}
