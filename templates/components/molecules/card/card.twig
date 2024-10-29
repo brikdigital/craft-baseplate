@@ -1,17 +1,30 @@
+{# Card content #}
 {% set preText = preText is defined and preText|length ? preText : '' %}
 {% set headingText = headingText is defined and headingText|length ? headingText : '' %}
-{% set image = image is defined and image|length ? image : null %}
 {% set body = body is defined and body|length ? body : null %}
+
+{# Card image #}
+{% set image = image is defined and image|length ? image : null %}
+{% set imageOverlay = imageOverlay is defined and imageOverlay|length ? imageOverlay : null %}
+
+{# Card link #}
 {% set url = url is defined and url|length ? url : null %}
 {% set buttonText = buttonText is defined and buttonText|length ? buttonText : 'Meer info'|t %}
 
 <article class="border-secondary flex flex-col items-start gap-4 p-6 border">
-    {% include "components/atoms/image/image.twig" with {
-        image: image,
-        alt: '',
-        imageClasses: '',
-        wrapperClasses: ''
-    } %}
+    {% if imageOverlay %}
+    <figure class="relative">
+        {{imageOverlay}}
+    {% endif %}
+        {% include "components/atoms/image/image.twig" with {
+            image: image,
+            alt: '',
+            imageClasses: '',
+            wrapperClasses: ''
+        } %}
+    {% if imageOverlay %}
+    </figure>
+	{% endif %}
 
     {% include "components/molecules/heading/heading.twig" with {
         preText: preText,

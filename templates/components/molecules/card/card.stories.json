@@ -14,7 +14,7 @@
       "control": "text",
       "defaultValue": "",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Card content"
       }
     },
     "headingText": {
@@ -23,7 +23,7 @@
       "control": "text",
       "defaultValue": "",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Card content"
       }
     },
     "body": {
@@ -32,7 +32,7 @@
       "defaultValue": "",
       "control": "text",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Card content"
       }
     },
     "image": {
@@ -41,7 +41,16 @@
       "control": "text",
       "defaultValue": "https://http.cat/404",
       "table": {
-        "category": "(1) Default"
+        "category": "(2) Card image"
+      }
+    },
+    "imageOverlay": {
+      "name": "Image content",
+      "description": "The card image overlay content.",
+      "control": "text",
+      "defaultValue": "",
+      "table": {
+        "category": "(2) Card image"
       }
     },
     "url": {
@@ -50,7 +59,7 @@
       "control": "text",
       "defaultValue": "https://www.brik.digital",
       "table": {
-        "category": "(1) Default"
+        "category": "(3) Card link"
       }
     },
     "buttonText": {
@@ -59,7 +68,7 @@
       "control": "text",
       "defaultValue": "Meer info",
       "table": {
-        "category": "(1) Default"
+        "category": "(3) Card link"
       }
     }
   },
