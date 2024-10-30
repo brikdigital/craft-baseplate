@@ -1,0 +1,23 @@
+{# Logo #}
+{% set logo = logo is defined and logo|length ? logo : 'logo' %}
+{% set logoClasses = logoClasses is defined and logoClasses|length ? logoClasses : 'w-36 h-auto' %}
+
+{# Url #}
+{% set target = target is defined and target|length ? target : null %}
+{% set url = url is defined and url|length ? url : null %}
+{% set attributes = {} %}
+
+{% if target %}
+	{% set attributes = attributes|merge({target: target}) %}
+	{% if target == '_blank'%}
+		{% set attributes = attributes|merge({rel: 'noopener noreferrer'}) %}
+	{% endif %}
+{% endif %}
+
+{% if url %}
+    <a href="{{url}}" {{attr(attributes)}}>
+{% endif %}
+{{ inlineSvg('logo/'~logo, logoClasses, { sanitize: true, namespace: true }) }}
+{% if url %}
+	</a>
+{% endif %}

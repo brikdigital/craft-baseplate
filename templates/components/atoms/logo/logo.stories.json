@@ -1,0 +1,75 @@
+{
+  "title": "Components/Atoms/Logo",
+  "parameters": {
+    "docs": {
+      "story": {
+        "inline": true
+      }
+    }
+  },
+  "argTypes": {
+    "logo": {
+      "name": "Logo",
+      "description": "The link to the logo. This uses Inline SVG, use only the logo name i.e. `logo`.",
+      "defaultValue": "logo",
+      "control": "text",
+      "table": {
+        "category": "(1) Logo"
+      }
+    },
+    "logoClasses": {
+      "name": "Logo classes",
+      "description": "Additional classes to add to the logo. Defaults to `w-36 h-auto`",
+      "defaultValue": "w-36 h-auto",
+      "table": {
+        "category": "(1) Logo"
+      },
+      "control": "text"
+    },
+    "url": {
+      "name": "Url",
+      "description": "The link for the button. Only used when the button is an anchor link.",
+      "defaultValue": "",
+      "control": "text",
+      "table": {
+        "category": "(2) Url"
+      }
+    },
+    "target": {
+      "name": "Target",
+      "description": "The target of the link. Defaults to `_self`. If the target is set to `_blank`, the rel will be set to `noopener noreferrer`.",
+      "defaultValue": "_self",
+      "control": "select",
+      "options": {
+        "Self": "_self",
+        "Blank": "_blank",
+        "Parent": "_parent",
+        "Top": "_top"
+      },
+      "table": {
+        "category": "(2) Url"
+      }
+    },
+    "linkClasses": {
+      "name": "Link classes",
+      "description": "Additional classes to add to the link. Defaults to `inline-flex`.",
+      "defaultValue": "inline-flex",
+      "control": "text",
+      "table": {
+        "category": "(2) Url"
+      }
+    }
+  },
+  "stories": [
+    {
+      "name": "Logo",
+      "args": {
+        "logo": "logo",
+        "logoClasses": "w-36 h-auto",
+        "url": "",
+        "target": "",
+        "linkClasses": "inline-flex"
+      }
+    }
+  ]
+}
