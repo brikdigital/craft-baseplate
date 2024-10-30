@@ -15,6 +15,10 @@ web_environment: []
 nodejs_version: "lts"
 corepack_enable: true
 ddev_version_constraint: ">= 1.23.5"
+web_extra_daemons:
+   - name: "craft-queue"
+     command: "/var/www/html/craft queue/listen"
+     directory: /var/www/html
 
 # Key features of DDEV's config.yaml:
 
