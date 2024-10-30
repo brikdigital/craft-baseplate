@@ -133,6 +133,63 @@
         "icon": "play",
         "iconClasses": "text-black"
       }
+    },
+    {
+      "name": "Facebook",
+      "args": {
+        "size": "medium",
+        "icon": "facebook",
+        "iconClasses": "text-black"
+      }
+    },
+    {
+      "name": "Linkedin",
+      "args": {
+        "size": "medium",
+        "icon": "linkedin",
+        "iconClasses": "text-black"
+      }
+    },
+    {
+      "name": "Instagram",
+      "args": {
+        "size": "medium",
+        "icon": "instagram",
+        "iconClasses": "text-black"
+      }
+    },
+    {
+      "name": "X",
+      "args": {
+        "size": "medium",
+        "icon": "x",
+        "iconClasses": "text-black"
+      }
+    },
+
+    {
+      "name": "Whatsapp",
+      "args": {
+        "size": "medium",
+        "icon": "whatsapp",
+        "iconClasses": "text-black"
+      }
+    },
+    {
+      "name": "Youtube",
+      "args": {
+        "size": "medium",
+        "icon": "youtube",
+        "iconClasses": "text-black"
+      }
+    },
+    {
+      "name": "Vimeo",
+      "args": {
+        "size": "medium",
+        "icon": "vimeo",
+        "iconClasses": "text-black"
+      }
     }
   ]
 }
