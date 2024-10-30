@@ -1,0 +1,49 @@
+{
+  "title": "Components/Atoms/Divider",
+  "parameters": {
+    "docs": {
+      "story": {
+        "inline": true
+      }
+    }
+  },
+  "argTypes": {
+    "height": {
+      "name": "Height",
+      "description": "The tailwind class that defines the height. Defaults to `h-0.5`",
+      "defaultValue": "h-0.5",
+      "control": "text",
+      "table": {
+        "category": "(1) Default"
+      }
+    },
+    "dividerClasses": {
+      "name": "Divder classes",
+      "description": "Additional classes to add to the divider.",
+      "defaultValue": "",
+      "table": {
+        "category": "(1) Default"
+      },
+      "control": "text"
+    },
+    "color": {
+      "name": "Divider color",
+      "description": "The tailwind class that defines the color. Defaults to `bg-secondary`",
+      "defaultValue": "bg-secondary",
+      "control": "text",
+      "table": {
+        "category": "(1) Default"
+      }
+    }
+  },
+  "stories": [
+    {
+      "name": "Divider",
+      "args": {
+        "height": "h-0.5",
+        "color": "bg-secondary",
+        "dividerClasses": ""
+      }
+    }
+  ]
+}

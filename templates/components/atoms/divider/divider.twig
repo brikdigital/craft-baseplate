@@ -1,0 +1,11 @@
+{% set height = height is defined and height|length ? height : 'h-0.5' %}
+{% set color = color is defined and color|length ? color : 'bg-primary' %}
+{% set dividerClasses = dividerClasses is defined and dividerClasses|length ? dividerClasses : '' %}
+
+{% set attributes = {
+	class: [height|join(' '), color|join(' '), dividerClasses|join(' '),]
+} %}
+
+{{ tag('hr',
+    attributes: attributes
+) }}
