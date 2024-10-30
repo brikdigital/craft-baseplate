@@ -300,9 +300,6 @@ export default {
         xl: '1200px',
         '2xl': '1400px',
         '3xl': '1536px',
-        'custom-portrait': {
-          raw: '(orientation: portrait) and (max-width: 767px)',
-        },
       },
       spacing: {
         '11.5': '2.875rem',

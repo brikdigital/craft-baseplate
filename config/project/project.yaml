@@ -1,4 +1,4 @@
-dateModified: 1729759319
+dateModified: 1730208919
 elementSources:
   craft\elements\Entry:
     -
@@ -62,13 +62,6 @@ fs:
       path: '@webroot/assets/files'
     type: craft\fs\Local
     url: '@assetsUrl/assets/files'
-  images:
-    hasUrls: true
-    name: Afbeeldingen
-    settings:
-      path: '@webroot/assets/images'
-    type: craft\fs\Local
-    url: '@assetsUrl/assets/images'
 meta:
   __names__:
     0f2289e3-d708-45a3-b730-da2a91d593e4: 'Afbeelding positie' # Afbeelding positie

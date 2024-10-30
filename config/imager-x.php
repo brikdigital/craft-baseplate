@@ -50,7 +50,7 @@ return [
         'transformer' => 'craft',
         // 'imgixProfile' => 'live',
         // 'fillTransforms' => false,
-        'imagerUrl' => App::env('IMGIX_DEV_URL'),
+        'imagerUrl' => App::env('IMGIX_DEV_URL')
     ],
     // Staging environment settings
     'staging' => [

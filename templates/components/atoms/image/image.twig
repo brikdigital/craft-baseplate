@@ -11,8 +11,8 @@
     } %}
 {% endif %}
 
-{% if craft.imager.hasNamedTransform(transform~'Mobile') %}
-	{% set mobileTransform = transform~'Mobile' %}
+{% if craft.imager.hasNamedTransform(transform ~ 'Mobile') %}
+	{% set mobileTransform = transform ~ 'Mobile' %}
 {% else %}
 	{% set mobileTransform = transform %}
 {% endif %}
@@ -20,23 +20,16 @@
 {% if image %}
     {{ pppicture(
         [
-            [image, [1000, 2000, 16/9, 'avif'], 'avif'],
-            [image, [1000, 2000, 16/9, 'webp'], 'webp'],
-            [image, [1000, 2000, 16/9]]
-        ]
-    ) }}
-
-
-    {# {{ pppicture(
-        [
-            [image, transform, 768, 'webp'],
+            [image, transform~ 'Avif', 768, 'avif'],
+            [image, transform~ 'Webp', 768, 'webp'],
             [image, transform, 768],
-            [imageMobile, mobileTransform, 'webp'],
+            [imageMobile, mobileTransform ~ 'Avif', 'avif'],
+            [imageMobile, mobileTransform ~ 'Webp', 'webp'],
             [imageMobile, mobileTransform]
         ],
         {
             'data-sizes': 'auto',
-            class: 'lazyload w-full '~imageClasses,
+            class: 'lazyload w-full '~imageClasses  ,
             loading: 'lazy',
             decoding: 'async',
             alt: alt,
@@ -46,5 +39,5 @@
             placeholder: 'blurhash'
         }
         )|attr(attributes)
-    }} #}
+    }}
 {% endif %}
