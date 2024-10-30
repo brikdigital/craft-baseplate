@@ -1,16 +1,24 @@
+{# Image #}
 {% set image = image is defined and image|length ? image : null %}
 {% set imageMobile = imageMobile is defined and imageMobile|length ? imageMobile : image %}
-{% set imageClasses = imageClasses is defined and imageClasses|length ? imageClasses : '' %}
 {% set alt = alt is defined and alt|length ? alt : '' %}
-{% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : '' %}
+
+{# Settings #}
+{% set loading = loading is defined and loading|length ? loading : 'lazy' %}
+{% set fetchpriority = fetchpriority is defined and fetchpriority|length ? fetchpriority : 'auto' %}
 {% set transform = transform is defined and transform|length ? transform : 'default' %}
+
+{# Classes #}
 {% set attributes = {} %}
+{% set imageClasses = imageClasses is defined and imageClasses|length ? imageClasses : '' %}
+{% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : '' %}
 {% if wrapperClasses %}
     {% set attributes = {
         class: [wrapperClasses|join(' ')]
     } %}
 {% endif %}
 
+{# Transform #}
 {% if craft.imager.hasNamedTransform(transform ~ 'Mobile') %}
 	{% set mobileTransform = transform ~ 'Mobile' %}
 {% else %}
@@ -30,7 +38,8 @@
         {
             'data-sizes': 'auto',
             class: 'lazyload w-full '~imageClasses  ,
-            loading: 'lazy',
+            loading: loading,
+            fetchpriority: fetchpriority,
             decoding: 'async',
             alt: alt,
         },
