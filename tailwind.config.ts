@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss';
 import forms from '@tailwindcss/forms';
-import typography from '@tailwindcss/typography';
 import debugScreens from 'tailwindcss-debug-screens';
 import colors from 'tailwindcss/colors';
 
@@ -124,175 +123,6 @@ export default {
   // Extend the default Tailwind config here
   theme: {
     extend: {
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            maxWidth: 'none',
-            color: theme('colors.gray.600'),
-            fontSize: '16px',
-            lineHeight: theme('lineHeight.relaxed'),
-            fontWeight: theme('fontWeight.normal'),
-            strong: {
-              // color: theme('colors.black'),
-              color: 'inherit',
-              fontWeight: theme('fontWeight.extrabold'),
-            },
-            a: {
-              color: theme('colors.black'),
-              textDecoration: 'none',
-            },
-            'h2, h3, h4, h5, h6': {
-              fontFamily: `${theme('fontFamily.sans')}`,
-              fontWeight: theme('fontWeight.bold'),
-              color: theme('colors.black'),
-              lineHeight: theme('lineHeight.tight'),
-            },
-            h2: {
-              marginTop: '0',
-              marginBottom: '1.5rem',
-              fontSize: '32px',
-            },
-            h3: {
-              marginTop: '2rem',
-              marginBottom: '1rem',
-              fontSize: '24px',
-            },
-            h4: {
-              marginTop: '2rem',
-              marginBottom: '1rem',
-              fontSize: '20px',
-            },
-            p: {
-              marginTop: '0px',
-              marginBottom: '1rem',
-            },
-            'ul, ol': {
-              br: {
-                lineHeight: 0,
-              },
-            },
-            'ul.checkmarks': {
-              listStyle: 'none',
-              '>': {
-                li: {
-                  marginTop: '0',
-                  marginBottom: '0.625em',
-                  textAlign: 'left',
-                  position: 'relative',
-                  '&::before': {
-                    position: 'absolute',
-                    content: '""',
-                    width: '13px',
-                    height: '10px',
-                    backgroundColor: 'transparent',
-                    borderRadius: '0',
-                    // backgroundImage: "url('@/img/icons/check.svg')",
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'contain',
-                    top: '8px',
-                    left: '-23px',
-                  },
-                },
-              },
-            },
-            ul: {
-              '>': {
-                li: {
-                  marginTop: '0',
-                  marginBottom: '0.625em',
-                  textAlign: 'left',
-                  '&::marker': {
-                    color: 'inherit',
-                  },
-                },
-              },
-            },
-            ol: {
-              '>': {
-                li: {
-                  marginTop: '0',
-                  marginBottom: '0.625em',
-                  textAlign: 'left',
-                  '&::marker': {
-                    color: 'inherit',
-                  },
-                },
-              },
-            },
-            tbody: {
-              td: {
-                paddingTop: 0,
-                paddingBottom: 0,
-              },
-              tr: {
-                borderBottomWidth: '0',
-                borderBottomColor: theme('colors.transparent'),
-              },
-            },
-            iframe: {
-              width: '100%',
-            },
-          },
-        },
-        lg: {
-          css: {
-            fontSize: '21px',
-            lineHeight: theme('lineHeight.relaxed'),
-            h2: {
-              marginTop: '0',
-              marginBottom: '1.5rem',
-              fontSize: '40px',
-            },
-            h3: {
-              marginTop: '2rem',
-              marginBottom: '1rem',
-              fontSize: '32px',
-            },
-            h4: {
-              marginTop: '2rem',
-              marginBottom: '1rem',
-              fontSize: '24px',
-            },
-            p: {
-              marginTop: '0',
-              marginBottom: '1.125rem',
-            },
-            'ul.checkmarks': {
-              listStyle: 'none',
-              '>': {
-                li: {
-                  marginTop: '0',
-                  marginBottom: '0.625em',
-                  position: 'relative',
-                  '&::before': {
-                    width: '23px',
-                    height: '16px',
-                    top: '10px',
-                    left: '-23px',
-                  },
-                },
-              },
-            },
-          },
-        },
-        white: {
-          css: {
-            color: theme('colors.white'),
-            'h2, h3, h4, h5, h6': {
-              color: theme('colors.white'),
-            },
-            'ul.checkmarks': {
-              '>': {
-                li: {
-                  '&::before': {
-                    // backgroundImage: "url('@/img/icons/check-white.svg')",
-                  },
-                },
-              },
-            },
-          },
-        },
-      }),
       screens: {
         sm: '640px',
         md: '768px',
@@ -317,8 +147,13 @@ export default {
         '14xl': '136rem',
       },
       lineHeight: {
-        tight: '1.2',
-        relaxed: '1.6',
+        90: '0.90',
+        100: '1.00',
+        110: '1.10',
+        120: '1.20',
+        140: '1.40',
+        160: '1.60',
+        200: '2.00',
       },
       zIndex: {
         '-1': '-1',
@@ -331,6 +166,8 @@ export default {
       },
       backgroundImage: {
         overlay: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 69.66%, rgba(0, 0, 0, 0.8) 90.29%)',
+        'check-secondary': "url('https://craft-baseplate.ddev.site/dist/img/icons/check.svg')",
+        'check-white': "url('https://craft-baseplate.ddev.site/dist/img/icons/check-white.svg')",
       },
     },
     // Replace the default Tailwind config here
@@ -401,7 +238,6 @@ export default {
   plugins: [
     debugScreens,
     forms,
-    typography,
     ({ addComponents, theme }) => {
       addComponents({
         '.container': {

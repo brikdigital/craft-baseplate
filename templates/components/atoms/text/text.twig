@@ -1,0 +1,10 @@
+{% import "_macros/retcon" as retcon %}
+{% set theme = theme is defined and theme|length ? theme : 'default' %}
+
+{% if html %}
+	{% if theme == 'darkBg' %}
+		{{ retcon.darkBg(html) }}
+	{% else %}
+		{{ retcon.default(html) }}
+	{% endif %}
+{% endif %}

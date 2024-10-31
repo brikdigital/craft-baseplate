@@ -1,0 +1,37 @@
+{%- macro default(field) -%}
+    {{ field | retcon([
+        ['attr', 'h2', { class: 'font-semibold text-primary text-32 md:text-36 leading-120 mb-6' }],
+        ['attr', 'h3', { class: 'font-semibold text-primary text-24 md:text-28 leading-120 mb-6' }],
+        ['attr', 'h4', { class: 'font-semibold text-primary text-18 md:text-22 leading-120 mb-6' }],
+        ['attr', 'a', { class: 'text-primary border-b hover:border-none' }],
+        ['attr', 'strong', { class: 'font-semibold' }],
+        ['attr', 'p', { class: 'mb-6 text-16 leading-160 opacity-80 text-16 md:text-18' }],
+        ['attr', 'ul', { class: 'mb-6 flex flex-col gap-4' }],
+        ['attr', 'ul li', { class: 'pl-8 text-16 md:text-18 leading-16 relative before:absolute before:content-[""] before:w-5 before:h-4 before:top-2 before:left-0 before:bg-check-secondary before:bg-no-repeat before:bg-contain' }],
+        ['attr', 'ol', { class: 'list-decimal pl-5 mb-6 flex flex-col gap-4' }],
+        ['attr', 'ol li', { class: 'pl-3 text-16 md:text-18 leading-160' }],
+        ['wrap', 'table', '.overflow-x-auto' ],
+        ['attr', 'table', { class: 'mb-6' }],
+        ['attr', 'th, td', { class: 'text-left text-16 md:text-18 leading-160 pr-4' }],
+        ['attr', 'blockquote', { class: 'p-4 my-4 bg-gray-50 border-l-4 border-gray-300 text-16 md:text-18' }],
+    ]) }}
+{%- endmacro -%}
+
+{%- macro darkBg(field) -%}
+	{{ field | retcon([
+        ['attr', 'h2', { class: 'text-white font-semibold text-32 md:text-36 leading-120 mb-6' }],
+        ['attr', 'h3', { class: 'text-white font-semibold text-24 md:text-28 leading-120 mb-6' }],
+        ['attr', 'h4', { class: 'text-white font-semibold text-18 md:text-22 leading-120 mb-6' }],
+        ['attr', 'a', { class: 'text-white border-b hover:border-none' }],
+        ['attr', 'strong', { class: 'font-semibold' }],
+        ['attr', 'p', { class: 'text-white mb-6 text-16 leading-160 opacity-80 text-16 md:text-18' }],
+        ['attr', 'ul', { class: 'mb-6 flex flex-col gap-4' }],
+        ['attr', 'ul li', { class: 'text-white pl-8 text-16 md:text-18 leading-16 relative before:absolute before:content-[""] before:w-5 before:h-4 before:top-2 before:left-0 before:bg-check-white before:bg-no-repeat before:bg-contain' }],
+        ['attr', 'ol', { class: 'list-decimal pl-5 mb-6 flex flex-col gap-4' }],
+        ['attr', 'ol li', { class: 'text-white pl-3 text-16 md:text-18 leading-160' }],
+        ['wrap', 'table', '.overflow-x-auto' ],
+        ['attr', 'table', { class: 'mb-6' }],
+        ['attr', 'th, td', { class: 'text-white text-left text-16 md:text-18 leading-160 pr-4' }],
+        ['attr', 'blockquote', { class: 'text-white p-4 my-4 bg-primary border-l-4 border-secondary text-16 md:text-18' }],
+    ]) }}
+{%- endmacro -%}
