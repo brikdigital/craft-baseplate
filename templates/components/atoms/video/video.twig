@@ -1,0 +1,19 @@
+
+{% if posterImage is defined and posterImage|length > 0 %}
+	{% set size = 'aspect-16/9' %}
+	{% set transformedImages = craft.imager.transformImage(posterImage, size) %}
+{% endif %}
+
+{% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : 'lazyload w-full h-full' %}
+
+<video
+	class="{{wrapperClasses}}"
+	{{ loop == true ? 'loop' : ''}}
+	{{ loop == true ? 'muted' : ''}}
+	{{ controls == true ? 'controls' : ''}}
+	{{ autoPlay == true ? 'autoplay' : ''}}
+	{% if posterImage is defined and posterImage|length > 0 %}
+		poster="{{transformedImages[0].url}}"
+	{% endif %}
+	data-src="{{video}}">
+</video>

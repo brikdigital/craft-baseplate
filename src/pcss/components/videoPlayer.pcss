@@ -1,0 +1,25 @@
+/*
+  https://www.vidstack.io/docs/player/components/layouts/default-layout#css-variables
+  https://www.vidstack.io/docs/player/components/layouts/plyr-layout?styling=default-theme
+*/
+
+:root {
+  --video-brand: theme('colors.secondary.DEFAULT');
+  --audio-border-radius: 0.25rem;
+
+  --plyr-color-main: theme('colors.secondary.DEFAULT');
+  --video-border-radius: 0;
+}
+
+.plyr__control--overlaid {
+  --plyr-video-control-color: theme('colors.primary.DEFAULT');
+
+  &:hover {
+    --plyr-video-control-background-hover: theme('colors.primary.DEFAULT');
+    --plyr-video-control-color-hover: theme('colors.secondary.DEFAULT');
+  }
+}
+
+.slider-track-fill {
+  width: var(theme('colors.secondary.DEFAULT'), 0%);
+}

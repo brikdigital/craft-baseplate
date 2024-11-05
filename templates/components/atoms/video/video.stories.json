@@ -1,0 +1,98 @@
+{
+  "title": "Components/Atoms/Video",
+  "parameters": {
+    "docs": {
+      "story": {
+        "inline": true
+      }
+    }
+  },
+  "argTypes": {
+    "video": {
+      "name": "Video",
+      "description": "The link to the video.",
+      "defaultValue": "",
+      "control": "text",
+      "table": {
+        "category": "(1) Video"
+      }
+    },
+    "autoPlay": {
+      "name": "Autoplay",
+      "description": "The link to the video.",
+      "defaultValue": false,
+      "control": "boolean",
+      "table": {
+        "category": "(2) Settings"
+      }
+    },
+    "playsInline": {
+      "name": "Plays inline",
+      "description": "Plays the video inline",
+      "defaultValue": true,
+      "control": "boolean",
+      "table": {
+        "category": "(2) Settings"
+      }
+    },
+    "controls": {
+      "name": "Controls",
+      "description": "If the controls should be displayed.",
+      "defaultValue": true,
+      "control": "boolean",
+      "table": {
+        "category": "(2) Settings"
+      }
+    },
+    "loop": {
+      "name": "Loop",
+      "description": "If the video should loop.",
+      "defaultValue": false,
+      "control": "boolean",
+      "table": {
+        "category": "(2) Settings"
+      }
+    },
+    "muted": {
+      "name": "Muted",
+      "description": "If the video should be muted.",
+      "defaultValue": false,
+      "control": "boolean",
+      "table": {
+        "category": "(2) Settings"
+      }
+    },
+    "posterImage": {
+      "name": "Poster Image",
+      "description": "The poster image.",
+      "defaultValue": "",
+      "control": "text",
+      "table": {
+        "category": "(2) Settings"
+      }
+    },
+    "wrapperClasses": {
+      "name": "Wrapper classes",
+      "description": "The classes to apply to the wrapper. Defaults to `lazyload w-full h-full`",
+      "defaultValue": "lazyload w-full h-full",
+      "control": "text",
+      "table": {
+        "category": "(2) Settings"
+      }
+    }
+  },
+  "stories": [
+    {
+      "name": "Video",
+      "args": {
+        "video": "https://craft-baseplate.ddev.site/assets/files/Video/file_example_MP4_480_1_5MG_2024-11-01-114244_ibhr.mp4",
+        "autoPlay": true,
+        "playsInline": true,
+        "controls": false,
+        "loop": true,
+        "muted": true,
+        "posterImage": "https://http.cat/404"
+      }
+    }
+  ]
+}

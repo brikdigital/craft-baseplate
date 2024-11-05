@@ -1,4 +1,4 @@
-dateModified: 1730208919
+dateModified: 1730724760
 elementSources:
   craft\elements\Entry:
     -
@@ -175,6 +175,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  imager-x-video-adapter:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   inlinesvg:
     edition: standard
     enabled: true
@@ -247,6 +251,10 @@ plugins:
     licenseKey: RJCO2QIR903LDU5NNASV1722
     schemaVersion: 1.1.0
   typogrify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  video-utils:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

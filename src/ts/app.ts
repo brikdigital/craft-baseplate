@@ -15,6 +15,14 @@ const components: Component[] = [
     name: 'swiper',
     selector: '[data-swiper]',
   },
+  {
+    name: 'vidstack',
+    selector: 'media-player',
+  },
+  {
+    name: 'glightbox',
+    selector: '.video-popup, .glightbox',
+  },
 ];
 
 for (let component of components) {

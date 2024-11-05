@@ -1,11 +1,44 @@
-{% set color =
-    color == "primary"
-        ? "bg-primary"
-        : color == "secondary"
-            ? "bg-secondary"
-            : ""
-%}
+{% set posterImage = posterImage is defined and posterImage|length ? posterImage : null  %}
 
-<{{ html_tag }} class="{{ color }}">
-    test
-</{{ html_tag }}>
+{% if posterImage is null and 'youtube' in video %}
+	{% set posterImage = 'https://img.youtube.com/vi/'~video|getYoutubeId~'/hqdefault.jpg' %}
+{% elseif posterImage is null and 'vimeo' in video %}
+	{% set posterImage = 'https://vumbnail.com/'~video|getVimeoId~'_large.jpg' %}
+{% elseif posterImage is null and video ends with '.mp4' %}
+    {% set posterImage = video %}
+{% endif %}
+
+{% set autoPlay = false %}
+{% if type == 'inlineAutoplay' %}
+	{% set autoPlay = true %}
+{% endif %}
+
+{% set buttonClasses = '-translate-x-1/2 -translate-y-1/2 transform z-10 size-16 lg:size-20 absolute top-1/2 left-1/2 z-10 place-items-center rounded-full bg-secondary outline-none cursor-pointer group-hover:bg-primary group-hover:text-secondary transition ease-in-out duration-200' %}
+{% set iconClasses = 'fill-current block size-5 lg:size-6 -mr-px' %}
+
+{% if type == 'inline' or type == 'inlineAutoplay' %}
+    <media-player class="relative group" title="" src="{{ video }}" {{ autoPlay ? 'autoplay muted' : '' }}>
+        <media-provider>
+            <media-poster class="vds-poster" src="{{posterImage}}" alt=""></media-poster>
+        </media-provider>
+        <media-play-button class="group">
+            <media-icon class="hidden group-data-[paused]:grid {{buttonClasses}}">
+                {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
+            </media-icon>
+        </media-play-button>
+        <media-video-layout></media-video-layout>
+    </media-player>
+{% else %}
+    <a href="{{video}}" class="video-popup relative z-0 block group">
+        <button class="grid {{buttonClasses}}">
+            {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
+        </button>
+
+        {% include "components/atoms/image/image.twig" with {
+            image: posterImage,
+            transform: 'aspect-16/9',
+            imageClasses: '',
+            wrapperClasses: ''
+        } %}
+    </a>
+{% endif %}

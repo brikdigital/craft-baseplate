@@ -1,8 +1,8 @@
 import dedent from "dedent";
 import { match } from "ts-pattern";
 import { Canvas, Title, Subtitle, ArgTypes, Source, Meta, Description, Primary, Story, Stories, Controls } from '@storybook/blocks';
-import * as comStories from './videoPlayer.stories.json';
-import templateSource from './videoPlayer.twig?raw';
+import * as comStories from './video.stories.json';
+import templateSource from './video.twig?raw';
 
 <Meta of={comStories} name="Docs"/>
 
@@ -24,7 +24,7 @@ A video with all required values.
 <Source
     language="twig"
     code={dedent`
-        {% include "components/molecules/videoPlayer/videoPlayer.twig" with {\n${
+        {% include "components/atoms/video/video.twig" with {\n${
             Object.keys(comStories.default.argTypes).map(key => {
                 let value = comStories.default.argTypes[key].defaultValue;
                 value = match(typeof value)
