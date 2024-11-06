@@ -1,0 +1,29 @@
+
+
+{% for block in entry.blocks %}
+    {# <pre>
+        {{ dump(block.type) }}
+    </pre> #}
+    {% for item in block.media %}
+        {{item.kind}}<br>
+        {{item.url}}<br>
+        {{item.fallbackImage}}<br>
+        {{item.displayMethod}}
+
+        {# {{item.displayMethod}} #}
+
+        {# <pre>
+            {{ dump(item.url) }}
+        </pre> #}
+
+        <br><br>
+    {% endfor %}
+{% endfor %}
+
+{#
+{% switch entry.blocks %}
+
+    {% case "textMedia" %}
+        sadd
+
+{% endswitch %} #}

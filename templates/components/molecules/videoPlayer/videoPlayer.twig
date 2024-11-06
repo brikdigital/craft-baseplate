@@ -1,4 +1,5 @@
-{% set posterImage = posterImage is defined and posterImage|length ? posterImage : null  %}
+{% set posterImage = posterImage|default(null)  %}
+{% set transform = transform|default('aspect-16/9')  %}
 
 {% if posterImage is null and 'youtube' in video %}
 	{% set posterImage = 'https://img.youtube.com/vi/'~video|getYoutubeId~'/hqdefault.jpg' %}
@@ -13,32 +14,33 @@
 	{% set autoPlay = true %}
 {% endif %}
 
-{% set buttonClasses = '-translate-x-1/2 -translate-y-1/2 transform z-10 size-16 lg:size-20 absolute top-1/2 left-1/2 z-10 place-items-center rounded-full bg-secondary outline-none cursor-pointer group-hover:bg-primary group-hover:text-secondary transition ease-in-out duration-200' %}
-{% set iconClasses = 'fill-current block size-5 lg:size-6 -mr-px' %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+{% set buttonClasses = '-translate-x-1/2 -translate-y-1/2 transform z-10 size-56 lg:size-64 absolute top-1/2 left-1/2 z-10 place-items-center rounded-full bg-secondary outline-none cursor-pointer group-hover:bg-primary group-hover:text-secondary transition ease-in-out duration-200' %}
+{% set iconClasses = 'fill-current block size-16 lg:size-20 -mr-px' %}
 
 {% if type == 'inline' or type == 'inlineAutoplay' %}
-    <media-player class="relative group" title="" src="{{ video }}" {{ autoPlay ? 'autoplay muted' : '' }}>
-        <media-provider>
-            <media-poster class="vds-poster" src="{{posterImage}}" alt=""></media-poster>
-        </media-provider>
-        <media-play-button class="group">
-            <media-icon class="hidden group-data-[paused]:grid {{buttonClasses}}">
-                {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
-            </media-icon>
-        </media-play-button>
-        <media-video-layout></media-video-layout>
-    </media-player>
+  <media-player class="relative group {{wrapperClasses}}" title="" src="{{ video }}" {{ autoPlay ? 'autoplay muted' : '' }}>
+    <media-provider>
+      <media-poster class="vds-poster" src="{{posterImage}}" alt=""></media-poster>
+    </media-provider>
+    <media-play-button class="group">
+        <media-icon class="hidden group-data-[paused]:grid {{buttonClasses}}">
+          {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
+        </media-icon>
+    </media-play-button>
+    <media-video-layout></media-video-layout>
+  </media-player>
 {% else %}
-    <a href="{{video}}" class="video-popup relative z-0 block group">
-        <button class="grid {{buttonClasses}}">
-            {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
-        </button>
+  <a href="{{video}}" class="video-popup relative z-0 block group {{wrapperClasses}}">
+    <button class="grid {{buttonClasses}}">
+        {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
+    </button>
 
-        {% include "components/atoms/image/image.twig" with {
-            image: posterImage,
-            transform: 'aspect-16/9',
-            imageClasses: '',
-            wrapperClasses: ''
-        } %}
-    </a>
+    {% include "components/atoms/image/image.twig" with {
+        image: posterImage,
+        transform: transform,
+        imageClasses: '',
+        wrapperClasses: ''
+    } %}
+  </a>
 {% endif %}

@@ -33,7 +33,7 @@ export default function swiper() {
     switch (sliderData.type) {
       case 'fullWidth':
         typeOptions = {
-          spaceBetween: 16,
+          spaceBetween: 0,
           slidesPerView: 1,
         };
         break;

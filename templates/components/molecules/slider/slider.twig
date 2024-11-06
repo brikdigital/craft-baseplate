@@ -1,5 +1,5 @@
 {% set sliderType = sliderType|default('fullWidth') %}
-{% set content = content|default('') %}
+{% set slides = slides|default('') %}
 
 {% if showNavigation is not defined %}
   {% set showNavigation = true %}
@@ -7,8 +7,8 @@
 
 {% set showPagination = showPagination|default(false) %}
 
-{% if STORYBOOK is defined %}
-  {% set slides = [
+{% if STORYBOOK is defined and slides is not defined %}
+  {% set sliderItems = [
     {
       preText: 'Lorem ipsum',
       headingText: 'Dolar sit amet',
@@ -59,8 +59,8 @@
     },
   ] %}
 
-  {% set content %}
-    {% for slide in slides %}
+  {% set slides %}
+    {% for slide in sliderItems %}
       {% include "components/molecules/card/card.twig" with {
         preText: slide.preText,
         headingText: slide.headingText,
@@ -74,12 +74,12 @@
   {% endset %}
 {% endif %}
 
-<div class="w-full overflow-hidden relative py-14 lg:py-20" data-swiper='{
+<div class="w-full overflow-hidden relative" data-swiper='{
     "type": "{{sliderType}}",
     "minSlides": 1
   }'>
   <div class="swiper-wrapper">
-    {{ content }}
+    {{ slides }}
   </div>
 
   {% if showNavigation %}
