@@ -4,10 +4,6 @@ import ComponentLoader, { Component } from './loader';
 const componentLoader = new ComponentLoader();
 const components: Component[] = [
   {
-    name: 'general',
-    selector: 'body',
-  },
-  {
     name: 'lazysizes',
     selector: '.lazyload',
   },
