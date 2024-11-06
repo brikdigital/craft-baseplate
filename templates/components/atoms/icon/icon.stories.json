@@ -35,7 +35,7 @@
       "defaultValue": "medium",
       "control": "select",
       "table": {
-        "category": "(2) Default"
+        "category": "(2) Settings"
       },
       "options": {
         "Large": "large",
@@ -48,7 +48,7 @@
       "description": "Additional classes to add to the icon. Make sure to add a color class to set the color of the icon.",
       "defaultValue": "text-black",
       "table": {
-        "category": "(2) Default"
+        "category": "(2) Settings"
       },
       "control": "text"
     }

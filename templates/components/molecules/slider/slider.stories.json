@@ -27,7 +27,7 @@
         "'Full width'": "fullWidth"
       },
       "table": {
-        "category": "(2) Options"
+        "category": "(2) Settings"
       }
     },
     "showNavigation": {
@@ -36,7 +36,7 @@
       "control": "boolean",
       "defaultValue": true,
       "table": {
-        "category": "(2) Options"
+        "category": "(2) Settings"
       }
     },
     "showPagination": {
@@ -45,7 +45,7 @@
       "control": "boolean",
       "defaultValue": false,
       "table": {
-        "category": "(2) Options"
+        "category": "(2) Settings"
       }
     }
   },

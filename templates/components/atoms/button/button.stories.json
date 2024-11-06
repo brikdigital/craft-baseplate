@@ -18,7 +18,7 @@
         "'Anchor link'": "a"
       },
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Settings"
       }
     },
     "theme": {
@@ -33,7 +33,7 @@
         "'Text light'": "textLight"
       },
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Settings"
       }
     },
     "size": {
@@ -46,7 +46,7 @@
         "Small": "small"
       },
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Settings"
       }
     },
     "text": {
@@ -55,7 +55,7 @@
       "defaultValue": "",
       "control": "text",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Settings"
       }
     },
     "url": {
@@ -121,7 +121,7 @@
       "defaultValue": "",
       "control": "text",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Settings"
       }
     },
     "rel": {

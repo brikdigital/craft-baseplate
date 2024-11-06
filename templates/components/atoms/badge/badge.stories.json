@@ -14,7 +14,7 @@
       "control": "select",
       "defaultValue": "span",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Badge"
       },
       "options": {
         "'span'": "span",
@@ -28,7 +28,7 @@
       "defaultValue": "primary",
       "control": "select",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Badge"
       },
       "options": {
         "Primary": "primary",
@@ -41,7 +41,7 @@
       "defaultValue": "medium",
       "control": "select",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Badge"
       },
       "options": {
         "Large": "large",
@@ -54,7 +54,7 @@
       "description": "The text of the badge.",
       "defaultValue": "",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Badge"
       },
       "control": "text"
     },
@@ -87,7 +87,7 @@
       "description": "Additional classes to add to the badge.",
       "defaultValue": "",
       "table": {
-        "category": "(1) Default"
+        "category": "(1) Badge"
       },
       "control": "text"
     }
