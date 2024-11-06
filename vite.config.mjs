@@ -39,24 +39,27 @@ export default defineConfig(({ command }) => ({
     strictPort: true,
   },
   plugins: [
-    // PluginCritical({
-    //   criticalUrl: 'https://craft-baseplate.ddev.site',
-    //   criticalBase: './public_html/dist/critical/',
-    //   criticalPages: [{ uri: '/', template: 'index' }],
-    //   criticalConfig: {},
-    // }),
-    // ViteFaviconsPlugin({
-    //   logo: "./src/img/favicon-src.png",
-    //   favicons: {
-    //     // theme_color: '#000000',
-    //   },
-    //   inject: false,
-    //   outputPath: 'favicons',
-    // }),
+    ...(process.env.BUDDY === true || process.env.BUDDY === 'true'
+      ? [
+          PluginCritical({
+            criticalUrl: 'https://craft-baseplate.ddev.site',
+            criticalBase: './public_html/dist/critical/',
+            criticalPages: [{ uri: '/', template: 'index' }],
+            criticalConfig: {},
+          }),
+        ]
+      : []),
+    ViteFaviconsPlugin({
+      logo: './src/img/favicon/favicon-src.svg',
+      favicons: {
+        // theme_color: '#000000',
+      },
+      inject: false,
+      outputPath: 'favicons',
+    }),
     // legacy({
     //   targets: ['defaults', 'not IE 11'],
     // }),
-    manifestSRI(),
     viteCompression({
       filter: /\.(js|mjs|json|css|map)$/i,
     }),
