@@ -3,14 +3,14 @@
 {% set size = size is defined and size|length ? size : 'large' %}
 {% set text = text is defined and text|length ? text : 'Meer info'|t %}
 {% set target = target is defined and target|length ? target : '_self' %}
-{% set icon = icon is defined ? icon : false %}
-{% set iconPosition = iconPosition is defined ? iconPosition : 'left' %}
-{% set type = type is defined and type|length ? type : 'button' %}
-{% set fullWidth = fullWidth is defined ? fullWidth : 'auto' %}
-{% set buttonClasses = buttonClasses is defined and buttonClasses|length ? buttonClasses : false %}
-{% set rel = rel is defined ? rel : false %}
-{% set role = role is defined ? role : false %}
-{% set disabled = disabled is defined and disabled|length ? disabled : false %}
+{% set icon = icon|default(false) %}
+{% set iconPosition = iconPosition|default('left') %}
+{% set type = type|default('button') %}
+{% set fullWidth = fullWidth|default('auto') %}
+{% set buttonClasses = buttonClasses|default(false) %}
+{% set rel = rel|default(false) %}
+{% set role = role|default(false) %}
+{% set disabled = disabled|default(false) %}
 {% set baseClasses = 'inline-flex items-center justify-center font-bold text-base transition ease-in-out duration-150' %}
 
 {% switch theme %}
@@ -30,11 +30,11 @@
 
 {% switch size %}
 	{% case 'large' %}
-        {% set fontSize = 'text-18' %}
-		{% set padding = 'px-5 py-3' %}
+		{% set fontSize = 'text-18' %}
+		{% set padding = 'px-20 py-12' %}
 	{% case 'small' %}
-        {% set fontSize = 'text-16' %}
-		{% set padding = 'px-3 py-2' %}
+		{% set fontSize = 'text-16' %}
+		{% set padding = 'px-12 py-8' %}
 {% endswitch %}
 
 {% switch fullWidth %}
@@ -84,13 +84,13 @@
 <{{ htmlTag }} {{attr(attributes)}}>
     {% apply spaceless %}
 		{% if icon and iconPosition == 'left' %}
-			{{ inlineSvg(icon, 'mr-2 size-5 fill-current', { sanitize: true, namespace: true }) }}
+			{{ inlineSvg(icon, 'mr-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
 		{% endif %}
 
 		{{ text }}
 
 		{% if icon and iconPosition == 'right' %}
-			{{ inlineSvg(icon, 'ml-2 size-5 fill-current', { sanitize: true, namespace: true }) }}
+			{{ inlineSvg(icon, 'ml-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
 		{% endif %}
     {% endapply %}
 </{{ htmlTag }}>

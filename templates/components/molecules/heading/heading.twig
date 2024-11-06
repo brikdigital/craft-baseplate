@@ -27,7 +27,7 @@
 {% endswitch %}
 
 {% if headingText or preText %}
-    <hgroup class="flex flex-col gap-2 {{ wrapperClasses }}">
+    <hgroup class="flex flex-col gap-8 {{ wrapperClasses }}">
         {% include "components/atoms/preHeading/preHeading.twig" with {
             htmlTag: preHtmlTag,
             text: preText,

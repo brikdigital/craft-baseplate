@@ -15,17 +15,17 @@
 {% endswitch %}
 
 {% set attributes = {
-    text: text,
+  text: text,
 	class: [baseClasses|join(' '), themeClasses|join(' '),]
 } %}
 
 {% switch size %}
 	{% case 'large' %}
-        {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-16 px-2 py-1']}) %}
+    {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-16 px-10 py-4']}) %}
 	{% case 'medium' %}
-        {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-14 px-3 py-1']}) %}
+    {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-14 px-8 py-3']}) %}
 	{% case 'small' %}
-        {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-12 px-2 py-0.5']}) %}
+    {% set attributes = attributes|merge({class: [attributes.class|join(' '), 'text-12 px-6 py-2']}) %}
 {% endswitch %}
 
 {% if badgeClasses %}
@@ -44,5 +44,5 @@
 {% endif %}
 
 {{ tag(htmlTag,
-    attributes: attributes
+  attributes: attributes
 ) }}
