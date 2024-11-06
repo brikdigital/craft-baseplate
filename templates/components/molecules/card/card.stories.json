@@ -70,6 +70,15 @@
       "table": {
         "category": "(3) Card link"
       }
+    },
+    "wrapperClasses": {
+      "name": "Wrapper classes",
+      "description": "The wrapper classes.",
+      "control": "text",
+      "defaultValue": "",
+      "table": {
+        "category": "(4) Options"
+      }
     }
   },
   "stories": [
@@ -81,7 +90,8 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultricies.",
         "image": "https://http.cat/404",
         "url": "https://www.brik.digital",
-        "buttonText": "Meer info"
+        "buttonText": "Meer info",
+        "wrapperClasses": ""
       }
     }
   ]

@@ -18,6 +18,7 @@
       "name": "Type",
       "description": "The type of the video",
       "control": "select",
+      "defaultValue": "inline",
       "options": {
         "Inline": "inline",
         "'Inline autoplay'": "inlineAutoplay",
@@ -27,6 +28,15 @@
     "posterImage": {
       "name": "Poster Image",
       "description": "The poster image.",
+      "defaultValue": "",
+      "control": "text",
+      "table": {
+        "category": "(2) Settings"
+      }
+    },
+    "wrapperClasses": {
+      "name": "Wrapper classes",
+      "description": "The wrapper classes.",
       "defaultValue": "",
       "control": "text",
       "table": {

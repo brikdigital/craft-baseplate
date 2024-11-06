@@ -8,30 +8,70 @@ export default function swiper() {
     let slides = slider.querySelectorAll('.swiper-slide');
     // we can be certain this is present, otherwise this module wouldn't be called
     let sliderData = JSON.parse(slider.dataset.swiper!);
-
     let buttonNext = slider.querySelector('.button-next');
     let buttonPrev = slider.querySelector('.button-prev');
+    let pagination = slider.querySelector('.swiper-pagination');
     let defaultOptions = {
       slidesPerView: 1.2,
       spaceBetween: 12,
       initialSlide: 0,
       grabCursor: true,
-      centeredSlides: true,
-      loop: true,
+      centeredSlides: false,
+      loop: false,
       navigation: {
         nextEl: buttonNext,
         prevEl: buttonPrev,
-        disabledClass: 'hidden',
+        disabledClass: 'opacity-50',
+      },
+      pagination: {
+        el: pagination,
+        clickable: true,
       },
     };
 
-    // NOTE: For reference, this line is where you'd construct your `typeOptions`
-    //       (e.g. the big switch statement that decides the Swiper type)
+    let typeOptions = {};
+    switch (sliderData.type) {
+      case 'fullWidth':
+        typeOptions = {
+          spaceBetween: 16,
+          slidesPerView: 1,
+        };
+        break;
+      case 'cards':
+        typeOptions = {
+          spaceBetween: 16,
+          slidesPerView: 1.2,
+          // centeredSlides: false,
+          breakpoints: {
+            768: {
+              slidesPerView: 1.8,
+              // centeredSlides: true,
+            },
+            1024: {
+              slidesPerView: 2.6,
+              // centeredSlides: true,
+            },
+            1280: {
+              slidesPerView: 3.4,
+              // centeredSlides: true,
+            },
+            // 1440: {
+            //   slidesPerView: 3.2,
+            //   // centeredSlides: true,
+            // },
+            // 1600: {
+            //   slidesPerView: 5,
+            //   // centeredSlides: true,
+            // },
+          },
+        };
+        break;
+    }
 
     let options = {
       ...{
         ...defaultOptions,
-        // ...typeOptions
+        ...typeOptions,
       },
       ...sliderData,
     };
@@ -46,18 +86,18 @@ export default function swiper() {
       };
     }
 
-    const swiper = new Swiper(slider, options);
+    new Swiper(slider, options);
 
     // TODO: change these when implementing a regular slider component
-    let additionalButtonNext = slider.closest('section')!.querySelectorAll('.mobile-button-next');
-    let additionalButtonPrev = slider.closest('section')!.querySelectorAll('.mobile-button-prev');
+    // let additionalButtonNext = slider.closest('section')!.querySelectorAll('.mobile-button-next');
+    // let additionalButtonPrev = slider.closest('section')!.querySelectorAll('.mobile-button-prev');
 
-    additionalButtonNext.forEach((button) => {
-      button.addEventListener('click', () => swiper.slideNext());
-    });
+    // additionalButtonNext.forEach((button) => {
+    //   button.addEventListener('click', () => swiper.slideNext());
+    // });
 
-    additionalButtonPrev.forEach((button) => {
-      button.addEventListener('click', () => swiper.slidePrev());
-    });
+    // additionalButtonPrev.forEach((button) => {
+    //   button.addEventListener('click', () => swiper.slidePrev());
+    // });
   });
 }

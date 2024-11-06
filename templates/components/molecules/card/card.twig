@@ -11,7 +11,10 @@
 {% set url = url is defined and url|length ? url : null %}
 {% set buttonText = buttonText is defined and buttonText|length ? buttonText : 'Meer info'|t %}
 
-<article class="border-secondary flex flex-col items-start gap-4 p-6 border">
+{# Options #}
+{% set wrapperClasses = wrapperClasses|default('') %}
+
+<article class="border-secondary flex flex-col items-start gap-16 p-24 border {{wrapperClasses}}">
     {% if imageOverlay %}
     <figure class="relative">
         {{imageOverlay|raw}}
@@ -20,7 +23,7 @@
             image: image,
             alt: '',
             imageClasses: '',
-            wrapperClasses: ''
+            wrapperClasses: 'w-full'
         } %}
     {% if imageOverlay %}
     </figure>
