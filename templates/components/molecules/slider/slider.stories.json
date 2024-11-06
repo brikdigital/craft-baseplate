@@ -51,10 +51,19 @@
   },
   "stories": [
     {
-      "name": "Slider",
+      "name": "Card slider",
       "args": {
         "slides": "",
         "sliderType": "cards",
+        "showNavigation": true,
+        "showPagination": false
+      }
+    },
+    {
+      "name": "Full width slider",
+      "args": {
+        "slides": "",
+        "sliderType": "fullWidth",
         "showNavigation": true,
         "showPagination": false
       }

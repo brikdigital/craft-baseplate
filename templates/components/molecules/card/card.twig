@@ -14,7 +14,7 @@
 {# Options #}
 {% set wrapperClasses = wrapperClasses|default('') %}
 
-<article class="border-secondary flex flex-col items-start gap-16 p-24 border {{wrapperClasses}}">
+<article class="border-secondary !flex flex-col items-start gap-16 p-24 border {{wrapperClasses}}">
     {% if imageOverlay %}
     <figure class="relative">
         {{imageOverlay|raw}}
