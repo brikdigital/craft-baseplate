@@ -3,6 +3,7 @@
 {% set bodyClasses = bodyClasses is defined ? bodyClasses : '' %}
 
 {% block response %}
+  {% minify %}
     <!doctype html>
     <html
         class='no-js scroll-smooth'
@@ -44,4 +45,5 @@
             </div>
         </body>
     </html>
+  {% endminify %}
 {% endblock %}
