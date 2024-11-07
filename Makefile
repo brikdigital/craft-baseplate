@@ -20,7 +20,7 @@ dev: build
 	ddev launch
 	ddev exec pnpm serve
 storybook:
-	ddev exec pnpm storybook dev --disable-telemetry -p 3001
+	ddev exec pnpm storybook dev --disable-telemetry --no-open -p 3001
 composer: up
 	ddev composer \
 		$(filter-out $@,$(MAKECMDGOALS))
