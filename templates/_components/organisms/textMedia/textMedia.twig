@@ -1,0 +1,104 @@
+{# Content position #}
+{% set contentPosition = contentPosition|default('left') %}
+
+{# Text position #}
+{% switch textPosition %}
+  {% case "start" %}
+    {% set positionClasses = '' %}
+  {% case "end" %}
+    {% set positionClasses = 'justify-end' %}
+  {% default %}
+    {% set positionClasses = 'justify-center' %}
+{% endswitch %}
+
+{# Text alignment #}
+{% switch textAlignment %}
+  {% case "right" %}
+    {% set alignmentClasses = 'text-right' %}
+  {% case "center" %}
+    {% set alignmentClasses = 'text-center' %}
+  {% default %}
+    {% set alignmentClasses = '' %}
+{% endswitch %}
+
+{# Storybook dummy data #}
+{% if STORYBOOK is defined %}
+	{% set content %}
+    {% include "_components/molecules/heading/heading.twig" with {
+      preText: "Dolar sit amte",
+      headingText: "Lorem ipsum",
+      wrapperClasses: "mb-4"
+    } %}
+
+    {% include "_components/atoms/text/text.twig" with {
+      html: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, a. Consequatur fuga cumque nihil aperiam! Hic corrupti optio culpa totam, dolorem quae distinctio nulla asperiores quidem quasi quis, itaque amet!</p>
+          <p>Sapiente nihil ullam quas? Commodi, dolor! Explicabo sunt, natus dolorem culpa, consequatur pariatur nihil veniam corrupti enim aspernatur soluta quod libero quasi expedita hic ipsum ipsam nemo qui! Beatae, iure?</p>",
+      theme: "default"
+    } %}
+	{% endset %}
+
+  {% set mediaItems = [
+    {
+        type: 'image',
+        url: 'https://http.cat/404',
+        alt: 'Lorem ipsum'
+    },
+    {
+        type: 'image',
+        url: 'https://http.cat/404',
+        alt: 'Lorem ipsum'
+    },
+    {
+        type: 'video',
+        url: 'https://vimeo.com/105887655',
+        fallBackImage: 'https://http.cat/403',
+        displayMethod: 'popup'
+    }
+    ]
+  %}
+
+  {% set transform = mediaItems|length > 1 ? 'aspect-1/1' : 'default' %}
+
+  {% set sliderContent %}
+    {% for item in mediaItems %}
+      {% if item.type == 'image' %}
+        {% include "_components/atoms/image/image.twig" with {
+            image: item.url,
+            imageClasses: '',
+            transform: transform,
+            wrapperClasses: 'swiper-slide'
+        } %}
+      {% else %}
+        {% include "_components/molecules/videoPlayer/videoPlayer.twig" with {
+            video: item.url,
+            type: item.displayMethod,
+            posterImage: item.fallBackImage,
+            transform: transform,
+            wrapperClasses: "swiper-slide"
+        } %}
+      {% endif %}
+    {% endfor %}
+  {% endset %}
+{% endif %}
+
+<section class="w-full">
+	<div class="container flex flex-col gap-24 md:flex-row">
+    <div class="w-full flex flex-col md:w-1/2 {{positionClasses}} {{alignmentClasses}}">
+      {{ content }}
+    </div>
+
+    <div class="w-full md:w-1/2 pb-24 md:pb-0 {% if contentPosition == 'left' %}md:order-first{% endif %}">
+      {% if mediaItems|length >= 2 %}
+        {% include "_components/molecules/slider/slider.twig" with {
+            slides: sliderContent,
+            sliderType: "fullWidth",
+            showNavigation: true,
+            showPagination: false
+          }
+        %}
+      {% else %}
+        {{sliderContent}}
+      {% endif %}
+    </div>
+	</div>
+</section>

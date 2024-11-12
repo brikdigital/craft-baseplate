@@ -1,0 +1,48 @@
+{# Pre Heading #}
+{% set preText = preText is defined and preText|length ? preText : '' %}
+{% set preHtmlTag = preHtmlTag is defined and preHtmlTag|length ? preHtmlTag : 'p' %}
+{% set colorPre = colorPre is defined and colorPre|length ? colorPre : ' text-secondary' %}
+{% set preHeadingClasses = preHeadingClasses is defined and preHeadingClasses|length ? preHeadingClasses : '' %}
+{% set preTextTransform = preTextTransform is defined and preTextTransform|length ? preTextTransform : '' %}
+
+{# Heading #}
+{% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'h2' %}
+{% set headingText = headingText is defined and headingText|length ? headingText : '' %}
+{% set size = size is defined and size|length ? size : 'medium' %}
+{% set color = color is defined and color|length ? color : ' text-primary' %}
+{% set headingClasses = headingClasses is defined and headingClasses|length ? headingClasses : '' %}
+{% set textTransform = textTransform is defined and textTransform|length ? textTransform : '' %}
+
+{# Settings #}
+{% set align = align is defined and align|length ? align : 'left' %}
+{% set wrapperClasses = wrapperClasses is defined and wrapperClasses|length ? wrapperClasses : '' %}
+
+{% switch align %}
+    {% case 'left' %}
+        {% set wrapperClasses = 'text-left' ~ ' ' ~ wrapperClasses %}
+    {% case 'right' %}
+        {% set wrapperClasses = 'text-right' ~ ' ' ~ wrapperClasses %}
+    {% case 'center' %}
+        {% set wrapperClasses = 'text-center' ~ ' ' ~ wrapperClasses %}
+{% endswitch %}
+
+{% if headingText or preText %}
+    <hgroup class="flex flex-col gap-8 {{ wrapperClasses }}">
+        {% include "_components/atoms/preHeading/preHeading.twig" with {
+            htmlTag: preHtmlTag,
+            text: preText,
+            color: colorPre,
+            headingClasses: preHeadingClasses,
+            textTransform: preTextTransform
+        } %}
+
+        {% include "_components/atoms/heading/heading.twig" with {
+            htmlTag: htmlTag,
+            text: headingText,
+            size: size,
+            color: color,
+            headingClasses: headingClasses,
+            textTransform: textTransform
+        } %}
+    </hgroup>
+{% endif %}
