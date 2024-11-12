@@ -1,8 +1,8 @@
 {% set htmlTag = url is defined and url|length ? 'a' : 'button' %}
-{% set theme = theme is defined and theme|length ? theme : 'primary' %}
-{% set size = size is defined and size|length ? size : 'large' %}
-{% set text = text is defined and text|length ? text : 'Meer info'|t %}
-{% set target = target is defined and target|length ? target : '_self' %}
+{% set theme = theme|default('primary') %}
+{% set size = size|default('large') %}
+{% set text = text|default('Meer info'|t) %}
+{% set target = target|default('') %}
 {% set icon = icon|default(false) %}
 {% set iconPosition = iconPosition|default('left') %}
 {% set type = type|default('button') %}
