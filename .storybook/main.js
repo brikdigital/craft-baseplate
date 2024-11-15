@@ -12,14 +12,16 @@ const config = {
     '@storybook/theming',
     '@storybook/addon-a11y',
     '@storybook/blocks',
+    '@storybook/addon-mdx-gfm',
+    '@storybook/addon-webpack5-compiler-swc',
   ],
   framework: {
     name: '@storybook/server-webpack5',
     options: {},
   },
   core: {
-    builder: '@storybook/builder-webpack5',
-    disableTelemetry: true, // Disables telemetry https://storybook.js.org/telemetry
+    // Disables telemetry https://storybook.js.org/telemetry
+    disableTelemetry: true,
   },
   docs: {},
 };

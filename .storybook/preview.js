@@ -3,22 +3,24 @@
  * @see https://github.com/Lullabot/storybook-drupal-addon/blob/main/src/fetchStoryHtml.ts
  */
 
-import twig from "react-syntax-highlighter/dist/esm/languages/prism/twig";
-import {SyntaxHighlighter} from "@storybook/components";
+import twig from 'react-syntax-highlighter/dist/esm/languages/prism/twig';
+import { SyntaxHighlighter } from '@storybook/components';
 
-SyntaxHighlighter.registerLanguage("twig", twig)
+SyntaxHighlighter.registerLanguage('twig', twig);
 
 /** @type {import('@storybook/server').Preview} */
 const preview = {
   parameters: {
     controls: {
-      disableSaveFromUI: true
+      disableSaveFromUI: true,
     },
     server: {
       url: 'https://craft-baseplate.ddev.site',
       fetchStoryHtml,
     },
   },
+
+  tags: ['autodocs'],
 };
 export default preview;
 
