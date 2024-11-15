@@ -1,3 +1,5 @@
+import remarkGfm from 'remark-gfm';
+
 /** @type {import('@storybook/server-webpack5').StorybookConfig} */
 const config = {
   stories: [
@@ -12,8 +14,17 @@ const config = {
     '@storybook/theming',
     '@storybook/addon-a11y',
     '@storybook/blocks',
-    '@storybook/addon-mdx-gfm',
     '@storybook/addon-webpack5-compiler-swc',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        mdxPluginOptions: {
+          mdxCompileOptions: {
+            remarkPlugins: [remarkGfm],
+          },
+        },
+      },
+    },
   ],
   framework: {
     name: '@storybook/server-webpack5',

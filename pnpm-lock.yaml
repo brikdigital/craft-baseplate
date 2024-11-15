@@ -56,15 +56,15 @@ importers:
       '@storybook/addon-designs':
         specifier: ^8.0.4
         version: 8.0.4(@storybook/blocks@8.4.4(patch_hash=y35duw5fdippxf3miw2qetguwq)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.4(prettier@3.3.3)))(@storybook/components@8.4.4(storybook@8.4.4(prettier@3.3.3)))(@storybook/theming@8.4.4(storybook@8.4.4(prettier@3.3.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/addon-docs':
+        specifier: ^8.4.4
+        version: 8.4.4(@types/react@18.3.12)(storybook@8.4.4(prettier@3.3.3))(webpack-sources@3.2.3)
       '@storybook/addon-essentials':
         specifier: ^8.4.4
         version: 8.4.4(@types/react@18.3.12)(storybook@8.4.4(prettier@3.3.3))(webpack-sources@3.2.3)
       '@storybook/addon-links':
         specifier: ^8.4.4
         version: 8.4.4(react@18.3.1)(storybook@8.4.4(prettier@3.3.3))
-      '@storybook/addon-mdx-gfm':
-        specifier: ^8.4.4
-        version: 8.4.4(storybook@8.4.4(prettier@3.3.3))
       '@storybook/addon-webpack5-compiler-swc':
         specifier: ^1.0.5
         version: 1.0.5(webpack@5.95.0)
@@ -173,6 +173,9 @@ importers:
       react-syntax-highlighter:
         specifier: ^15.5.0
         version: 15.6.1(react@18.3.1)
+      remark-gfm:
+        specifier: ^4.0.0
+        version: 4.0.0
       rollup-plugin-critical:
         specifier: ^1.0.12
         version: 1.0.14
@@ -1562,11 +1565,6 @@ packages:
     peerDependenciesMeta:
       react:
         optional: true
-
-  '@storybook/addon-mdx-gfm@8.4.4':
-    resolution: {integrity: sha512-dj98NGWowhSwWYn2LUaLMxHNvBY+73n9CFsELrttg24nOxmeRfku0uh2hp5epMmRMX3Fej7nCkKNJaU1fihZ+Q==}
-    peerDependencies:
-      storybook: ^8.4.4
 
   '@storybook/addon-measure@8.4.4':
     resolution: {integrity: sha512-KsjrwrXwrI+z7hKKfjyY1w1b0gLSLZmp15vIRJMELybWV0+4bZFLJGwMBOQFx+aWBED8yZrRV9OjTmoczawsZg==}
@@ -7311,14 +7309,6 @@ snapshots:
       ts-dedent: 2.2.0
     optionalDependencies:
       react: 18.3.1
-
-  '@storybook/addon-mdx-gfm@8.4.4(storybook@8.4.4(prettier@3.3.3))':
-    dependencies:
-      remark-gfm: 4.0.0
-      storybook: 8.4.4(prettier@3.3.3)
-      ts-dedent: 2.2.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@storybook/addon-measure@8.4.4(storybook@8.4.4(prettier@3.3.3))':
     dependencies:
