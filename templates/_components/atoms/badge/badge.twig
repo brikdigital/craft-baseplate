@@ -1,10 +1,10 @@
-{% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'span' %}
-{% set theme = theme is defined and theme|length ? theme : 'primary' %}
-{% set size = size is defined and size|length ? size : 'large' %}
-{% set text = text is defined and text|length ? text : 'Meer info'|t %}
-{% set url = url is defined and url|length ? url : false %}
-{% set target = target is defined and target|length ? target : '_self' %}
-{% set badgeClasses = badgeClasses is defined and badgeClasses|length ? badgeClasses : false %}
+{% set htmlTag = htmlTag|default('span') %}
+{% set theme = theme|default('beige') %}
+{% set size = size|default('large') %}
+{% set text = text|default(''|t) %}
+{% set url = url|default(false) %}
+{% set target = target|default('') %}
+{% set badgeClasses = badgeClasses|default(false) %}
 {% set baseClasses = 'inline-flex items-center justify-center font-bold text-base transition ease-in-out duration-150' %}
 
 {% switch theme %}
