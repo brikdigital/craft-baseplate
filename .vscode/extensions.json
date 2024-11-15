@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "biomejs.biome",
+    "unifiedjs.vscode-mdx",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "mblode.twig-language-2"
+  ]
+}

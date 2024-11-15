@@ -1,5 +1,7 @@
 {
   "prettier.configPath": "prettier.config.js",
+  "mdx.server.enable": true,
+
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
