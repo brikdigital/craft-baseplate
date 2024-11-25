@@ -52,6 +52,22 @@
         "type": "inline",
         "posterImage": "https://http.cat/404"
       }
+    },
+    {
+      "name": "Video autoplay",
+      "args": {
+        "video": "https://www.youtube.com/watch?v=K4TOrB7at0Y",
+        "type": "inlineAutoplay",
+        "posterImage": "https://http.cat/404"
+      }
+    },
+    {
+      "name": "Video popup",
+      "args": {
+        "video": "https://www.youtube.com/watch?v=K4TOrB7at0Y",
+        "type": "popup",
+        "posterImage": "https://http.cat/404"
+      }
     }
   ]
 }
