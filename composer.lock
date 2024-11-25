@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "993d08e9f0ceeaf53e5a4bdba593f48a",
+    "content-hash": "8b1f75f25c21c4a8c0e87b1c671add2a",
     "packages": [
         {
             "name": "amphp/amp",
@@ -4129,6 +4129,49 @@
                 "ws"
             ],
             "time": "2024-03-23T07:42:40+00:00"
+        },
+        {
+            "name": "lexisother/composer-patches-regex",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lexisother/composer-patches-regex.git",
+                "reference": "eb4c9e1de8eccab98a7052564c919815083ac5ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lexisother/composer-patches-regex/zipball/eb4c9e1de8eccab98a7052564c919815083ac5ed",
+                "reference": "eb4c9e1de8eccab98a7052564c919815083ac5ed",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "lexisother\\Composer\\Plugin",
+                "plugin-modifies-downloads": true,
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "lexisother\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "support": {
+                "issues": "https://github.com/lexisother/composer-patches-regex/issues",
+                "source": "https://github.com/lexisother/composer-patches-regex/tree/1.1.0"
+            },
+            "time": "2024-11-22T10:55:24+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
