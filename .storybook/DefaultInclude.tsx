@@ -11,6 +11,9 @@ export default function DefaultInclude({ story: comStories }: { story: Of }) {
   const path = state.primaryStory.parameters.fileName
     .replace('./templates/', '')
     .replace('.stories.json', '.twig');
+  const hasArgs = Object.keys(comStories.default.argTypes).length > 0;
+
+  if (!hasArgs) return <Source language={'twig'} code={`{% include "${path}" %}`} />;
 
   return (
     <Source
