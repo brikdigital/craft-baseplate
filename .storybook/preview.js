@@ -15,8 +15,12 @@ const preview = {
       disableSaveFromUI: true,
     },
     server: {
-      url: 'https://craft-baseplate.ddev.site',
+      url: `${window.location.protocol}//${window.location.hostname}`,
       fetchStoryHtml,
+    },
+    marker: {
+      project: '',
+      mode: 'advanced',
     },
   },
 
