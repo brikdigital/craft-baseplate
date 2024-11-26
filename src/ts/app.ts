@@ -4,6 +4,10 @@ import ComponentLoader, { Component } from './loader';
 const componentLoader = new ComponentLoader();
 const components: Component[] = [
   {
+    name: 'skipToContent',
+    selector: '#skipToContent',
+  },
+  {
     name: 'lazysizes',
     selector: '.lazyload',
   },
