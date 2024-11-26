@@ -1,0 +1,17 @@
+{
+  "title": "Components/Atoms/Skip to content",
+  "parameters": {
+    "docs": {
+      "story": {
+        "inline": true
+      }
+    }
+  },
+  "argTypes": {},
+  "stories": [
+    {
+      "name": "Default",
+      "args": {}
+    }
+  ]
+}

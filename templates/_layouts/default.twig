@@ -37,6 +37,7 @@
             <meta name='csrf-token' content='{{ craft.app.request.getCsrfToken() }}'>
         </head>
         <body class="overflow-x-hidden relative flex flex-col min-h-screen antialiased {{ bodyClasses }} {{ devMode ? 'debug-screens' : '' }}">
+            {% include '_components/atoms/skipToContent/skipToContent.twig' %}
             <div id="app">
                 <main id="main" class="flex-[1_0_auto]">
                     {% block html %}

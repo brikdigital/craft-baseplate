@@ -75,6 +75,9 @@ export default {
         'check-secondary': "url('https://craft-baseplate.ddev.site/dist/img/icons/check.svg')",
         'check-white': "url('https://craft-baseplate.ddev.site/dist/img/icons/check-white.svg')",
       },
+      boxShadow: {
+        'skip-to-content': '0px 0px 800px 200px rgba(0,0,0, 0.75)',
+      },
     },
     // Replace the default Tailwind config here
     spacing: {
@@ -151,6 +154,7 @@ export default {
         DEFAULT: 'rgb(var(--color-secondary))',
       },
       error: '#FF0000',
+      'skip-to-content': 'rgb(var(--skip-to-content-bg))',
     },
   },
   variants: {},
