@@ -84,13 +84,17 @@
 <{{ htmlTag }} {{attr(attributes)}}>
     {% apply spaceless %}
 		{% if icon and iconPosition == 'left' %}
-			{{ inlineSvg(icon, 'mr-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
+      <span aria-hidden="true">
+        {{ inlineSvg(icon, 'mr-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
+      </span>
 		{% endif %}
 
 		{{ text }}
 
 		{% if icon and iconPosition == 'right' %}
-			{{ inlineSvg(icon, 'ml-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
+      <span aria-hidden="true">
+        {{ inlineSvg(icon, 'ml-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
+      </span>
 		{% endif %}
     {% endapply %}
 </{{ htmlTag }}>
