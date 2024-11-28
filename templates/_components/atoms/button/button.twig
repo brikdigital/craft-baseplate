@@ -81,8 +81,8 @@
 	{% endif %}
 {% endif %}
 
+{% apply spaceless %}
 <{{ htmlTag }} {{attr(attributes)}}>
-    {% apply spaceless %}
 		{% if icon and iconPosition == 'left' %}
       <span aria-hidden="true">
         {{ inlineSvg(icon, 'mr-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
@@ -96,5 +96,5 @@
         {{ inlineSvg(icon, 'ml-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
       </span>
 		{% endif %}
-    {% endapply %}
 </{{ htmlTag }}>
+{% endapply %}
