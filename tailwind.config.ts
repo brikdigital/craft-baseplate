@@ -168,7 +168,7 @@ export default {
       addComponents({
         '.container': {
           width: theme('width.full'),
-          maxWidth: theme('screen.3xl'),
+          maxWidth: theme('screens.3xl'),
           paddingLeft: theme('spacing.6'),
           paddingRight: theme('spacing.6'),
           paddingTop: theme('spacing.14'),
