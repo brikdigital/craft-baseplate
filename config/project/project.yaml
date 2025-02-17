@@ -1,4 +1,4 @@
-dateModified: 1735806693
+dateModified: 1739789436
 elementSources:
   craft\elements\Entry:
     -
@@ -74,6 +74,7 @@ meta:
     8f439fc2-311f-4f45-99c6-c482d129d1fd: Tag # Tag
     41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
+    65bb950b-bf8c-46a5-b2d3-8fa38ea6f215: 'Contact Form' # Contact Form
     86dfc9bd-0363-4046-a638-26e03cd481da: Afbeeldingen # Afbeeldingen
     87add8ee-18cc-4272-8a4c-4fd06d16ec25: 'Pagina''s' # Pagina's
     93f18740-c2f0-4e41-886e-b092eb38e71f: Layout # Layout
@@ -114,6 +115,7 @@ meta:
     d52247de-f951-467f-823c-4808b53741ca: 'Gedeeld blok' # Gedeeld blok
     da5e1cb9-b38a-47f2-8646-1b93b39aaf01: Afbeelding # Afbeelding
     db6df807-fdb5-4bef-a3f5-2ebb6800c0bd: Artikelen # Artikelen
+    dbd31f29-8b03-46f8-819a-181826ff96c0: New # New
     edb6d78c-27f5-4522-852d-2df53429bb71: Errors # Errors
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
     f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Gedeelde content blokken' # Gedeelde content blokken
@@ -161,6 +163,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: BY7V3CJSLY4KYJLEME6KD7A3
+    schemaVersion: 3.4.8
   hyper:
     edition: standard
     enabled: true
@@ -235,6 +242,10 @@ plugins:
     enabled: true
     licenseKey: GRU244F8YMODRETY1CG14ZFA
     schemaVersion: 1.0.2
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
   statuspaginator:
     edition: standard
     enabled: true
@@ -250,10 +261,6 @@ plugins:
     enabled: true
     licenseKey: RJCO2QIR903LDU5NNASV1722
     schemaVersion: 1.1.0
-  typogrify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   video-utils:
     edition: standard
     enabled: true
@@ -262,9 +269,13 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  wordsmith:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0.0
 system:
   edition: solo
   live: true
   name: Baseplate
-  schemaVersion: 5.5.0.0
+  schemaVersion: 5.6.0.2
   timeZone: America/Los_Angeles

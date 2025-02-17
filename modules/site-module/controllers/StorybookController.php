@@ -37,7 +37,7 @@ class StorybookController extends Controller
         $path = Craft::$app->path->getSiteTemplatesPath() . str_replace('stories.json', 'twig', $filename);
         $component = file_get_contents($path);
 
-        $component = "{% extends \"_layouts/default.twig\" %}\n{% set STORYBOOK = true %}\n{% block html %}\n$component\n{% endblock %}";
+        $component = "{% extends \"_layouts/storybook.twig\" %}\n{% set STORYBOOK = true %}\n{% block html %}\n$component\n{% endblock %}";
 
         $twig = Craft::$app->view->renderString($component, $request->post());
 

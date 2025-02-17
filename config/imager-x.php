@@ -16,51 +16,18 @@ return [
         'cacheDuration' => '31536000',
         'fillTransforms' => 'auto',
         'autoFillCount' => 'auto',
-        'imgixConfig' => [
-            'default' => [
-                'domain' => App::env('IMGIX_DOMAIN'),
-                'useHttps' => true,
-                'signKey' => App::env('IMGIX_SIGNKEY'),
-                'addPath' => [
-                    'images' => 'images',
-                    'files' => 'files',
-                ],
-                'sourceIsWebProxy' => false,
-                'useCloudSourcePath' => false,
-                'getExternalImageDimensions' => true,
-                'defaultParams' => ['auto'=>'compress,format', 'q'=>70],
-            ],
-            'live' => [
-                'domain' => App::env('IMGIX_DOMAIN'),
-                'useHttps' => true,
-                'signKey' => App::env('IMGIX_SIGNKEY'),
-                'addPath' => [
-                    'images' => 'images',
-                    'files' => 'files',
-                ],
-                'sourceIsWebProxy' => false,
-                'useCloudSourcePath' => false,
-                'getExternalImageDimensions' => true,
-                'defaultParams' => ['auto'=>'compress,format', 'q'=>70],
-            ]
-        ],
-        'imgixApiKey' => App::env('IMGIX_APIKEY'),
     ],
     'dev' => [
-        'transformer' => 'craft',
-        // 'imgixProfile' => 'live',
-        // 'fillTransforms' => false,
+        'transformer' => 'imageboss',
         'imagerUrl' => App::env('IMGIX_DEV_URL')
     ],
     // Staging environment settings
     'staging' => [
-        'transformer' => 'imgix',
-        'imgixProfile' => 'live'
+        'transformer' => 'imageboss',
     ],
 
     // Production environment settings
     'production' => [
-        'transformer' => 'imgix',
-        'imgixProfile' => 'live'
+        'transformer' => 'imageboss',
     ],
 ];

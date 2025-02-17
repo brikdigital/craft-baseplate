@@ -28,6 +28,11 @@ return GeneralConfig::create()
     ->useEmailAsUsername(true)
     ->sendPoweredByHeader(false)
     ->extraAllowedFileExtensions(['json'])
+    ->addTrailingSlashesToUrls(true)
+    ->cpTrigger(App::env('CP_TRIGGER') ?: 'brikcp')
+    ->runQueueAutomatically(false)
+    ->maxRevisions(5)
+    ->maxBackups(2)
     ->aliases([
         '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
         '@webroot' => dirname(__DIR__) . '/public_html',

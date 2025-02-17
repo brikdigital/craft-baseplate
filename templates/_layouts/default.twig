@@ -1,14 +1,19 @@
 {% extends "_layouts/base.twig" %}
 
+{% if getenv('CRAFT_DISABLE_CORS') == 1 %}
+    {% header "Access-Control-Allow-Origin: *" %}
+    {% header "Access-Control-Allow-Headers: *" %}
+{% endif %}
+
 {% set bodyClasses = bodyClasses is defined ? bodyClasses : '' %}
 
 {% block response %}
-  {% minify %}
-    <!doctype html>
-    <html
-        class='no-js scroll-smooth'
-        lang='{{ currentSite.language }}'
-        dir='{{ craft.app.i18n.getLocaleById(currentSite.id).getOrientation() }}'>
+    {% minify %}
+        <!doctype html>
+        <html
+                class='no-js scroll-smooth'
+                lang='{{ currentSite.language }}'
+                dir='{{ craft.app.i18n.getLocaleById(currentSite.id).getOrientation() }}'>
         <head>
             <style>
                 [x-cloak] {
@@ -23,8 +28,8 @@
             <meta http-equiv='X-UA-Compatible' content='IE=edge'>
             <meta charset='utf-8'>
             <meta
-                name='viewport'
-                content='width=device-width, initial-scale=1.0, viewport-fit=cover'>
+                    name='viewport'
+                    content='width=device-width, initial-scale=1.0, viewport-fit=cover'>
             <meta name='view-transition' content='same-origin'>
             <meta name='referrer' content='origin-when-cross-origin'>
             {# -- Favicons, webapp manifests, etc. -- #}
@@ -40,11 +45,12 @@
             {% include '_components/atoms/skipToContent/skipToContent.twig' %}
             <div id="app">
                 <main id="main" class="flex-[1_0_auto]">
+                    <a id="skipToContent"></a>
                     {% block html %}
                     {% endblock %}
                 </main>
             </div>
         </body>
-    </html>
-  {% endminify %}
+        </html>
+    {% endminify %}
 {% endblock %}

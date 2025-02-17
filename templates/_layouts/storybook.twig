@@ -1,0 +1,51 @@
+{% extends "_layouts/base.twig" %}
+
+{% set bodyClasses = bodyClasses|default('') %}
+
+{% block response %}
+    {% minify %}
+        <!doctype html>
+        <html
+                class='no-js scroll-smooth'
+                lang='{{ currentSite.language }}'
+                dir='{{ craft.app.i18n.getLocaleById(currentSite.id).getOrientation() }}'>
+            <head>
+                <style>
+                    [x-cloak] {
+                        display: none !important;
+                    }
+                </style>
+                <script>
+                    (function (H) {
+                        H.className = H.className.replace(/\bno-js\b/, 'js');
+                    })(document.documentElement);
+                </script>
+                <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+                <meta charset='utf-8'>
+                <meta
+                        name='viewport'
+                        content='width=device-width, initial-scale=1.0, viewport-fit=cover'>
+                <meta name='view-transition' content='same-origin'>
+                <meta name='referrer' content='origin-when-cross-origin'>
+                {# -- Favicons, webapp manifests, etc. -- #}
+                {{ craft.vite.inline("@webroot/dist/assets/favicons/webapp.html") }}
+
+                {% include '_includes/fonts.twig' %}
+                {% include '_includes/scripts.twig' %}
+
+                <meta name='csrf-token-name' content='{{ craft.app.config.general.csrfTokenName }}'>
+                <meta name='csrf-token' content='{{ craft.app.request.getCsrfToken() }}'>
+            </head>
+            <body class="overflow-x-hidden relative flex flex-col min-h-screen antialiased {{ bodyClasses }} {{ devMode ? 'debug-screens' : '' }}">
+                {% include '_components/atoms/skipToContent/skipToContent.twig' %}
+                <div id="app">
+                    <main id="main" class="flex-[1_0_auto]">
+                        <a id="skipToContent"></a>
+                        {% block html %}
+                        {% endblock %}
+                    </main>
+                </div>
+            </body>
+        </html>
+    {% endminify %}
+{% endblock %}
