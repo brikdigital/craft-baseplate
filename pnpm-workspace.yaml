@@ -1,0 +1,4 @@
+strictSsl: true
+strictDepBuilds: false
+packageManagerStrict: true
+registry: https://registry.npmjs.org/

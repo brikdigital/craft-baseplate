@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "author": "Brik.digital",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10",
+    "npm": "pnpm",
+    "yarn": "pnpm"
+  },
   "scripts": {
     "build": "NODE_ENV=production vite build",
     "format": "prettier --write src/**/*.{ts,pcss}",
