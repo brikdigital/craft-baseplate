@@ -15,8 +15,8 @@ return [
     '*' => [
         'profiles' => [
             'default' => [
-                'sourceName' => 'cda',
-                'signToken' => 'f560e1822bc59aaa732c9f8b66fc665cda25e3d8c3ac32b9299cf8273fe3dff4',
+                'sourceName' => '...',
+                'signToken' => '...',
                 'useCloudSourcePath' => true,
             ]
         ],

@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@storybook/blocks':
-    hash: ayoecfpsgiz6rmffa744ocvnla
+    hash: ca5fc7eb1637daa75b200ecd1bcb8ade1dec13eadecc61374f681468b0eb8cfd
     path: patches/@storybook__blocks.patch
 
 importers:
@@ -58,7 +58,7 @@ importers:
         version: 8.4.5(storybook@8.4.5(prettier@3.3.3))
       '@storybook/addon-designs':
         specifier: ^8.0.4
-        version: 8.0.4(@storybook/blocks@8.4.5(patch_hash=ayoecfpsgiz6rmffa744ocvnla)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3)))(@storybook/components@8.4.5(storybook@8.4.5(prettier@3.3.3)))(@storybook/theming@8.4.5(storybook@8.4.5(prettier@3.3.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 8.0.4(@storybook/blocks@8.4.5(patch_hash=ca5fc7eb1637daa75b200ecd1bcb8ade1dec13eadecc61374f681468b0eb8cfd)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3)))(@storybook/components@8.4.5(storybook@8.4.5(prettier@3.3.3)))(@storybook/theming@8.4.5(storybook@8.4.5(prettier@3.3.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-docs':
         specifier: ^8.4.5
         version: 8.4.5(@types/react@18.3.12)(storybook@8.4.5(prettier@3.3.3))(webpack-sources@3.2.3)
@@ -76,7 +76,7 @@ importers:
         version: 1.0.5(webpack@5.95.0)
       '@storybook/blocks':
         specifier: ^8.4.5
-        version: 8.4.5(patch_hash=ayoecfpsgiz6rmffa744ocvnla)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
+        version: 8.4.5(patch_hash=ca5fc7eb1637daa75b200ecd1bcb8ade1dec13eadecc61374f681468b0eb8cfd)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
       '@storybook/cli':
         specifier: ^8.4.5
         version: 8.4.5(@babel/preset-env@7.25.9(@babel/core@7.25.9))(prettier@3.3.3)
@@ -7281,11 +7281,11 @@ snapshots:
       storybook: 8.4.5(prettier@3.3.3)
       ts-dedent: 2.2.0
 
-  '@storybook/addon-designs@8.0.4(@storybook/blocks@8.4.5(patch_hash=ayoecfpsgiz6rmffa744ocvnla)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3)))(@storybook/components@8.4.5(storybook@8.4.5(prettier@3.3.3)))(@storybook/theming@8.4.5(storybook@8.4.5(prettier@3.3.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@storybook/addon-designs@8.0.4(@storybook/blocks@8.4.5(patch_hash=ca5fc7eb1637daa75b200ecd1bcb8ade1dec13eadecc61374f681468b0eb8cfd)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3)))(@storybook/components@8.4.5(storybook@8.4.5(prettier@3.3.3)))(@storybook/theming@8.4.5(storybook@8.4.5(prettier@3.3.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@figspec/react': 1.0.3(react@18.3.1)
     optionalDependencies:
-      '@storybook/blocks': 8.4.5(patch_hash=ayoecfpsgiz6rmffa744ocvnla)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
+      '@storybook/blocks': 8.4.5(patch_hash=ca5fc7eb1637daa75b200ecd1bcb8ade1dec13eadecc61374f681468b0eb8cfd)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
       '@storybook/components': 8.4.5(storybook@8.4.5(prettier@3.3.3))
       '@storybook/theming': 8.4.5(storybook@8.4.5(prettier@3.3.3))
       react: 18.3.1
@@ -7294,7 +7294,7 @@ snapshots:
   '@storybook/addon-docs@8.4.5(@types/react@18.3.12)(storybook@8.4.5(prettier@3.3.3))(webpack-sources@3.2.3)':
     dependencies:
       '@mdx-js/react': 3.1.0(@types/react@18.3.12)(react@18.3.1)
-      '@storybook/blocks': 8.4.5(patch_hash=ayoecfpsgiz6rmffa744ocvnla)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
+      '@storybook/blocks': 8.4.5(patch_hash=ca5fc7eb1637daa75b200ecd1bcb8ade1dec13eadecc61374f681468b0eb8cfd)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
       '@storybook/csf-plugin': 8.4.5(storybook@8.4.5(prettier@3.3.3))(webpack-sources@3.2.3)
       '@storybook/react-dom-shim': 8.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
       react: 18.3.1
@@ -7373,7 +7373,7 @@ snapshots:
       - '@swc/helpers'
       - webpack
 
-  '@storybook/blocks@8.4.5(patch_hash=ayoecfpsgiz6rmffa744ocvnla)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))':
+  '@storybook/blocks@8.4.5(patch_hash=ca5fc7eb1637daa75b200ecd1bcb8ade1dec13eadecc61374f681468b0eb8cfd)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))':
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/icons': 1.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)

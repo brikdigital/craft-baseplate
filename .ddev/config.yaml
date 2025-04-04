@@ -12,9 +12,9 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
-nodejs_version: "lts"
+nodejs_version: "22"
 corepack_enable: true
-ddev_version_constraint: ">= 1.23.5"
+ddev_version_constraint: ">= 1.24.4"
 webimage_extra_packages : [ffmpeg]
 web_extra_daemons:
    - name: "craft-queue"
