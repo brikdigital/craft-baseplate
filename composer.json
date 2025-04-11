@@ -8,7 +8,7 @@
     "clubstudioltd/craft-inline-svg": "^2.1",
     "craftcms/aws-s3": "^2.2",
     "craftcms/ckeditor": "4.5.0",
-    "craftcms/cms": "5.6.6",
+    "craftcms/cms": "5.6.17",
     "craftcms/postmark": "^3.1",
     "craftpulse/craft-colour-swatches": "5.1.0",
     "cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
