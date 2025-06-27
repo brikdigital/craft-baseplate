@@ -20,12 +20,10 @@
     "mmikkel/cp-field-inspect": "2.0.4",
     "mmikkel/retcon": "^3.2.1",
     "mostlyserious/craft-markerio": "2.2.0",
-    "mutation/translate": "4.2.0",
     "nystudio107/craft-minify": "^5.0",
     "nystudio107/craft-retour": "5.0.11",
     "nystudio107/craft-seomatic": "5.1.16",
     "nystudio107/craft-templatecomments": "5.0.4",
-    "nystudio107/craft-typogrify": "^5.0",
     "nystudio107/craft-vite": "^5.0",
     "putyourlightson/craft-blitz": "5.11.5",
     "putyourlightson/craft-sherlock": "5.1.2",
@@ -44,6 +42,7 @@
     "verbb/knock-knock": "3.0.3",
     "verbb/navigation": "3.0.8",
     "vlucas/phpdotenv": "^5.4.0",
+    "webrgp/craft-ignition": "v1.0.7",
     "yiisoft/yii2-redis": "^2.0"
   },
   "require-dev": {
@@ -71,6 +70,8 @@
   },
   "scripts": {
     "post-create-project-cmd": [
+      "@php -r \"unlink('.gitignore');\"",
+      "@php -r \"copy('.project.gitignore', '.gitignore');\"",
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\"",
       "@php -r \"unlink('composer.json');\"",
       "@php -r \"rename('composer.json.default', 'composer.json');\"",

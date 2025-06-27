@@ -175,6 +175,10 @@ plugins:
     enabled: true
     licenseKey: 1T6OC8567UE1DLN1ZYFL0OY1
     schemaVersion: 1.0.0
+  ignition:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   imager-x:
     edition: pro
     enabled: true
