@@ -1,12 +1,10 @@
-import { defineConfig } from 'vite';
-import legacy from '@vitejs/plugin-legacy';
-import ViteRestart from 'vite-plugin-restart';
-import viteCompression from 'vite-plugin-compression';
-import { ViteFaviconsPlugin } from 'vite-plugin-favicon2';
-import manifestSRI from 'vite-plugin-manifest-sri';
 import path from 'path';
 
-import PluginCritical from 'rollup-plugin-critical';
+import { defineConfig } from 'vite';
+import restart from 'vite-plugin-restart';
+import { compression, defineAlgorithm } from 'vite-plugin-compression2';
+import { ViteFaviconsPlugin as favicons } from 'vite-plugin-favicon2';
+import critical from 'rollup-plugin-critical';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
@@ -41,7 +39,7 @@ export default defineConfig(({ command }) => ({
   plugins: [
     ...(process.env.BUDDY === true || process.env.BUDDY === 'true'
       ? [
-          PluginCritical({
+          critical({
             criticalUrl: 'https://craft-baseplate.ddev.site',
             criticalBase: './public_html/dist/critical/',
             criticalPages: [{ uri: '/', template: 'index' }],
@@ -49,21 +47,16 @@ export default defineConfig(({ command }) => ({
           }),
         ]
       : []),
-    ViteFaviconsPlugin({
+    favicons({
       logo: './src/img/favicon/favicon-src.svg',
-      favicons: {
-        // theme_color: '#000000',
-      },
       inject: false,
       outputPath: 'favicons',
     }),
-    // legacy({
-    //   targets: ['defaults', 'not IE 11'],
-    // }),
-    viteCompression({
-      filter: /\.(js|mjs|json|css|map)$/i,
+    compression({
+      include: /\.(js|mjs|json|css|map)/i,
+      algorithms: ['gzip', 'brotliCompress', defineAlgorithm('deflate', { level: 9 })],
     }),
-    ViteRestart({
+    restart({
       reload: ['templates/**/*'],
     }),
   ],
