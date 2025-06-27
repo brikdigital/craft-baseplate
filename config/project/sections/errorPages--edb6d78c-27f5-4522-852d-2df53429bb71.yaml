@@ -7,7 +7,7 @@ maxAuthors: 1
 name: Errors
 propagationMethod: all
 siteSettings:
-  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Besaplete EN
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Baseplate EN
     enabledByDefault: true
     hasUrls: false
     template: null

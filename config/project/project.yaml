@@ -1,4 +1,4 @@
-dateModified: 1751011175
+dateModified: 1751013930
 elementSources:
   craft\elements\Entry:
     -
@@ -94,7 +94,7 @@ meta:
     82231ea7-a108-43d6-9a7a-78b4b9297fb2: 'Artikelen index' # Artikelen index
     437963f6-fffc-4014-921d-e13fd7b2315f: Tekst # Tekst
     25165387-9136-4739-86cb-59a989b1c003: Afbeelding # Afbeelding
-    a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Besaplete EN' # Besaplete EN
+    a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Baseplate EN' # Baseplate EN
     a43b9a82-d36b-47f2-9c34-fb66898b6fd1: 'Titel formaat' # Titel formaat
     afce72fb-dcb9-42e3-99d5-a4e1b6c32d71: "Foto's en/of video's" # Foto's en/of video's
     b5da10b5-92de-4de6-8ac4-619c4d1eccc6: 'Slider type' # Slider type
@@ -133,7 +133,7 @@ plugins:
   blitz:
     edition: standard
     enabled: true
-    licenseKey: 0IXJ6CQ5XRL49GR7OQL1KBK0
+    licenseKey: 5LFNBC5E60TXAOHBCSFOJP8O
     schemaVersion: 5.11.0
     settings:
       maxUriLength: 2048
@@ -168,17 +168,17 @@ plugins:
   formie:
     edition: standard
     enabled: true
-    licenseKey: BY7V3CJSLY4KYJLEME6KD7A3
+    licenseKey: 39WCCUE5PBMC2ZH6XF7YADSU
     schemaVersion: 3.4.8
   hyper:
     edition: standard
     enabled: true
-    licenseKey: OFJXXNZZ9YIB5M9HFWLM4BGN
+    licenseKey: 1T6OC8567UE1DLN1ZYFL0OY1
     schemaVersion: 1.0.0
   imager-x:
     edition: pro
     enabled: true
-    licenseKey: HB7TZKKGHZ462FW30NLD83JZ
+    licenseKey: SKZIQSLBPTEM4IV1YNGF8BBA
     schemaVersion: 4.0.0
   imager-x-power-pack:
     edition: standard
@@ -211,7 +211,7 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    licenseKey: TQUJX32I1CN41GWOXYF6BT6O
+    licenseKey: V8UFDBART8D7C2BHW3QLGIIF
     schemaVersion: 2.1.0
   position-fieldtype:
     edition: standard
@@ -228,12 +228,12 @@ plugins:
   retour:
     edition: standard
     enabled: true
-    licenseKey: RVHJ5DVL8OM9DS6WUXNRMBVK
+    licenseKey: UFBMB4N08O0MRFUCZJ959LVU
     schemaVersion: 3.0.12
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: 59THR9H5YX9CBVI8LNAEJSPU
+    licenseKey: TB4Z6WE11ERCBKLE8BQ4B8MG
     schemaVersion: 3.0.13
   sherlock:
     edition: lite
@@ -242,7 +242,7 @@ plugins:
   site-copy-x:
     edition: standard
     enabled: true
-    licenseKey: GRU244F8YMODRETY1CG14ZFA
+    licenseKey: T94GUOIGXENJ9601U79VP23P
     schemaVersion: 1.0.2
   sprig:
     edition: standard
@@ -258,11 +258,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  translations-admin:
-    edition: standard
-    enabled: true
-    licenseKey: RJCO2QIR903LDU5NNASV1722
-    schemaVersion: 1.1.0
   video-utils:
     edition: standard
     enabled: true

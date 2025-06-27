@@ -3,7 +3,7 @@ enabled: '1'
 handle: defaultEn
 hasUrls: true
 language: en
-name: 'Besaplete EN'
+name: 'Baseplate EN'
 primary: false
 siteGroup: c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a # Baseplate
 sortOrder: 2
