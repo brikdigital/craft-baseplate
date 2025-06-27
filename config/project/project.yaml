@@ -1,4 +1,4 @@
-dateModified: 1739789436
+dateModified: 1751011175
 elementSources:
   craft\elements\Entry:
     -
@@ -76,7 +76,7 @@ meta:
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
     65bb950b-bf8c-46a5-b2d3-8fa38ea6f215: 'Contact Form' # Contact Form
     86dfc9bd-0363-4046-a638-26e03cd481da: Afbeeldingen # Afbeeldingen
-    87add8ee-18cc-4272-8a4c-4fd06d16ec25: 'Pagina''s' # Pagina's
+    87add8ee-18cc-4272-8a4c-4fd06d16ec25: "Pagina's" # Pagina's
     93f18740-c2f0-4e41-886e-b092eb38e71f: Layout # Layout
     132fd44a-075e-4b36-a399-5270c429abdd: 'Artikel Type' # Artikel Type
     432be928-1cc7-435b-bd50-bf75c40a983c: 'Gedeelde content blokken' # Gedeelde content blokken
@@ -96,9 +96,9 @@ meta:
     25165387-9136-4739-86cb-59a989b1c003: Afbeelding # Afbeelding
     a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Besaplete EN' # Besaplete EN
     a43b9a82-d36b-47f2-9c34-fb66898b6fd1: 'Titel formaat' # Titel formaat
-    afce72fb-dcb9-42e3-99d5-a4e1b6c32d71: 'Foto''s en/of video''s' # Foto's en/of video's
+    afce72fb-dcb9-42e3-99d5-a4e1b6c32d71: "Foto's en/of video's" # Foto's en/of video's
     b5da10b5-92de-4de6-8ac4-619c4d1eccc6: 'Slider type' # Slider type
-    b7fa6983-cbe4-435a-a345-b065911c3442: 'Pagina''s' # Pagina's
+    b7fa6983-cbe4-435a-a345-b065911c3442: "Pagina's" # Pagina's
     b9f016c9-d8b3-49f8-acbe-3337414dd097: Artikelen # Artikelen
     b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Artikel type' # Artikel type
     b56c28d2-a08b-4291-80fd-4cff8f398791: Weergave # Weergave
@@ -134,7 +134,9 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 0IXJ6CQ5XRL49GR7OQL1KBK0
-    schemaVersion: 5.9.0
+    schemaVersion: 5.11.0
+    settings:
+      maxUriLength: 2048
   buttonbox:
     edition: standard
     enabled: true
@@ -232,7 +234,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 59THR9H5YX9CBVI8LNAEJSPU
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
   sherlock:
     edition: lite
     enabled: true
@@ -277,5 +279,5 @@ system:
   edition: solo
   live: true
   name: Baseplate
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.7.0.3
   timeZone: America/Los_Angeles

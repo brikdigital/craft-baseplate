@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: media
 instructions: null
-name: 'Foto''s en/of video''s'
+name: "Foto's en/of video's"
 searchable: false
 settings:
   allowSelfRelations: false
