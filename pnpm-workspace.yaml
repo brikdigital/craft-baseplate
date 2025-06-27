@@ -2,3 +2,13 @@ strictSsl: true
 strictDepBuilds: false
 packageManagerStrict: true
 registry: https://registry.npmjs.org/
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@swc/core'
+  - core-js
+  - esbuild
+  - lefthook
+  - puppeteer
+  - sharp
+patchedDependencies:
+  '@storybook/addon-docs': patches/@storybook__addon-docs.patch

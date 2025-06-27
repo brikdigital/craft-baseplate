@@ -3,11 +3,12 @@ import {
   IconButton,
   TooltipMessage,
   WithTooltip,
-} from '@storybook/components';
-import { useArgs, useGlobals, useStorybookState } from '@storybook/manager-api';
-import { API_DocsEntry } from '@storybook/types';
-import dedent from 'dedent';
+} from 'storybook/internal/components';
+import { useArgs, useGlobals, useStorybookState } from 'storybook/manager-api';
+import { API_DocsEntry } from 'storybook/internal/types';
 import React from 'react';
+import dedent from 'dedent';
+import { match } from 'ts-pattern';
 
 export const Tool = (): React.JSX.Element => {
   const copy = createCopyToClipboardFunction();
@@ -32,11 +33,19 @@ export const Tool = (): React.JSX.Element => {
         // this code is already ugly enough as it is, please just keep it intact
         // prettier-ignore
         copy(dedent`
-          {% include "${path}" with {\n${
-            Object.keys(args).map(key => {
+          {% include "${path}" with {\n${Object.keys(args)
+          .map((key) => {
               let value = args[key];
-              return `    ${key}: '${value}'`
-            }).join(',\n          ')}
+              value = match(typeof value)
+                .with('string', () => `"${value}"`)
+                .with('number', 'boolean', () => value)
+                .otherwise(
+                    () => `"The type of this option's default value wasn't recognized. Report this!"`,
+                );
+
+              return `    ${key}: ${value}`;
+            })
+            .join(',\n        ')}
           } %}
         `)
       }}

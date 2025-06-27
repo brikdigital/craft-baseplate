@@ -4,11 +4,11 @@
  */
 
 import twig from 'react-syntax-highlighter/dist/esm/languages/prism/twig';
-import { SyntaxHighlighter } from '@storybook/components';
+import { SyntaxHighlighter } from 'storybook/internal/components';
 
 SyntaxHighlighter.registerLanguage('twig', twig);
 
-/** @type {import('@storybook/server').Preview} */
+/** @type {import('@storybook/server-webpack5').Preview} */
 const preview = {
   parameters: {
     controls: {
@@ -45,7 +45,6 @@ export default preview;
  * @returns {HTMLElement}
  */
 function createNewBody(htmlDoc) {
-  console.log(htmlDoc);
   const main = htmlDoc.getElementById('main');
   const scripts = htmlDoc.getElementsByTagName('script');
   const newBody = htmlDoc.createElement('body');

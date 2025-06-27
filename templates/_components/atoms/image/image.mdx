@@ -1,8 +1,7 @@
-import dedent from "dedent";
-import { match } from "ts-pattern";
-import { Canvas, Title, Subtitle, ArgTypes, Source, Meta, Description, Primary, Story, Stories, Controls } from '@storybook/blocks';
+import { Canvas, Title, Subtitle, ArgTypes, Source, Meta, Description, Primary, Story, Stories, Controls } from '@storybook/addon-docs/blocks';
 import * as comStories from './image.stories.json';
 import templateSource from './image.twig?raw';
+import DefaultInclude from "../../../../.storybook/DefaultInclude";
 
 <Meta of={comStories} name="Docs"/>
 
@@ -21,17 +20,7 @@ import templateSource from './image.twig?raw';
 
 An image with all required values.
 
-<Source
-    language="twig"
-    code={dedent`
-        {% include "_components/atoms/image/image.twig" with {\n${
-            Object.keys(comStories.default.argTypes).map(key => {
-                let value = comStories.default.argTypes[key].defaultValue;
-                return `    ${key}: '${value}'`
-            }).join(',\n        ')}
-        } %}
-    `}
-/>
+<DefaultInclude />
 
 ## Source code
 [//]: # (Twig Template source code)
