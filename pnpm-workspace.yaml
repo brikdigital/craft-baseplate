@@ -1,14 +1,20 @@
-strictSsl: true
-strictDepBuilds: false
-packageManagerStrict: true
-registry: https://registry.npmjs.org/
 onlyBuiltDependencies:
   - '@biomejs/biome'
   - '@swc/core'
+  - '@tailwindcss/oxide'
   - core-js
   - esbuild
   - lefthook
   - puppeteer
   - sharp
+
+packageManagerStrict: true
+
 patchedDependencies:
   '@storybook/addon-docs': patches/@storybook__addon-docs.patch
+
+registry: https://registry.npmjs.org/
+
+strictDepBuilds: false
+
+strictSsl: true

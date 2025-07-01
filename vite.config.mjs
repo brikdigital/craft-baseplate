@@ -5,10 +5,24 @@ import restart from 'vite-plugin-restart';
 import { compression, defineAlgorithm } from 'vite-plugin-compression2';
 import { ViteFaviconsPlugin as favicons } from 'vite-plugin-favicon2';
 import critical from 'rollup-plugin-critical';
+import Inspect from 'vite-plugin-inspect';
+
+import inlineSVG from 'postcss-inline-svg';
+import pxtorem from 'postcss-pxtorem';
+import tailwindcss from '@tailwindcss/postcss';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
   base: command === 'serve' ? '' : '/dist/',
+  publicDir: path.resolve(__dirname, './src/public'),
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '@css': path.resolve(__dirname, 'src/pcss'),
+      '@ts': path.resolve(__dirname, 'src/ts'),
+    },
+  },
+
   build: {
     target: 'es2023',
     commonjsOptions: {
@@ -23,20 +37,16 @@ export default defineConfig(({ command }) => ({
       },
     },
   },
-  publicDir: path.resolve(__dirname, './src/public'),
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@css': path.resolve(__dirname, 'src/pcss'),
-      '@ts': path.resolve(__dirname, 'src/ts'),
+
+  css: {
+    postcss: {
+      plugins: [inlineSVG, pxtorem, tailwindcss],
     },
   },
-  server: {
-    host: '0.0.0.0',
-    port: 3000,
-    strictPort: true,
-  },
+
   plugins: [
+    Inspect(),
+    // We don't need Critical CSS locally
     ...(process.env.BUDDY === true || process.env.BUDDY === 'true'
       ? [
           critical({
@@ -60,4 +70,11 @@ export default defineConfig(({ command }) => ({
       reload: ['templates/**/*'],
     }),
   ],
+
+  server: {
+    host: '0.0.0.0',
+    port: 3000,
+    strictPort: true,
+    allowedHosts: ['craft-baseplate.ddev.site'],
+  },
 }));

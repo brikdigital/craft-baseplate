@@ -1,42 +1,32 @@
 import type { Config } from 'tailwindcss';
-import forms from '@tailwindcss/forms';
-import debugScreens from 'tailwindcss-debug-screens';
 import colors from 'tailwindcss/colors';
-
-function useMapDefaultColorPalette({
-  palette,
-  name,
-}: {
-  palette: Record<string, string>;
-  name: string;
-}) {
-  const colors = {
-    [name]: {},
-  };
-
-  Object.entries(palette).map((color) => {
-    colors[name][`${color[0]}`] = color[1];
-  });
-
-  return colors;
-}
 
 const size = (px: number) => ({ [px]: `${px / 16}rem` });
 const toRem = (px: number) => `${px / 16}rem`;
 
 export default {
   content: ['./templates/**/*.{twig,html,vue,js,ts}', './src/pcss/**/*.pcss'],
-  safelist: [
-    {
-      pattern: /bg-(white|gray|black|green|darkgreen|pink|darkpink|orange|darkorange)/,
-    },
-    { pattern: /col-span-(2|3|4|5|6|8|9|10)/ },
-    { pattern: /grid-cols-(2|3|4|5|6|8|9|10)/ },
-  ],
   darkMode: 'class', // or 'media' or 'class'
   // Extend the default Tailwind config here
   theme: {
     extend: {
+      colors: {
+        inherit: colors.inherit,
+        current: colors.current,
+        transparent: colors.transparent,
+        black: colors.black,
+        white: colors.white,
+        gray: colors.gray,
+        primary: {
+          DEFAULT: 'rgb(var(--color-primary))',
+        },
+        secondary: {
+          DEFAULT: 'rgb(var(--color-secondary))',
+        },
+        error: '#FF0000',
+        'skip-to-content': 'rgb(var(--skip-to-content-bg))',
+      },
+
       screens: {
         sm: toRem(640),
         md: toRem(768),
@@ -140,55 +130,5 @@ export default {
     fontFamily: {
       sans: ['Helvetica', 'Arial', 'sans-serif'],
     },
-    colors: {
-      inherit: colors.inherit,
-      current: colors.current,
-      transparent: colors.transparent,
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      primary: {
-        DEFAULT: 'rgb(var(--color-primary))',
-      },
-      secondary: {
-        DEFAULT: 'rgb(var(--color-secondary))',
-      },
-      error: '#FF0000',
-      'skip-to-content': 'rgb(var(--skip-to-content-bg))',
-    },
   },
-  variants: {},
-  corePlugins: {
-    container: false,
-  },
-  plugins: [
-    debugScreens,
-    forms,
-    ({ addComponents, theme }) => {
-      addComponents({
-        '.container': {
-          width: theme('width.full'),
-          maxWidth: theme('screens.3xl'),
-          paddingLeft: theme('spacing.6'),
-          paddingRight: theme('spacing.6'),
-          paddingTop: theme('spacing.14'),
-          paddingBottom: theme('spacing.14'),
-          margin: '0 auto',
-          '@screen lg': {
-            padding: theme('spacing.20'),
-          },
-        },
-        '.full-click': {
-          '&::after': {
-            content: "''",
-            zIndex: 10,
-            position: 'absolute',
-            inset: 0,
-            backgroundColor: 'transparent',
-            pointerEvents: 'auto',
-          },
-        },
-      });
-    },
-  ],
 } satisfies Config;
