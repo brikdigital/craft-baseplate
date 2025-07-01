@@ -98,6 +98,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.1.11
         version: 4.1.11
+      '@ttskch/prettier-plugin-tailwindcss-anywhere':
+        specifier: ^0.1.1
+        version: 0.1.1(prettier-plugin-tailwindcss@0.6.13(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.3.3))(@zackad/prettier-plugin-twig@0.16.0)(prettier@3.3.3))(prettier@3.3.3)
       '@types/alpinejs':
         specifier: ^3.13.10
         version: 3.13.10
@@ -1530,6 +1533,13 @@ packages:
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
+
+  '@ttskch/prettier-plugin-tailwindcss-anywhere@0.1.1':
+    resolution: {integrity: sha512-nJ/In8kZ7vLf8oXc6LJG1JJVJMOZNkFcjQVuEXGps1Gft9l2sLfcKWffp2H0agOGBpfWy+tagzZMN+iars+u+Q==}
+    engines: {node: '>= 20.9 < 24'}
+    peerDependencies:
+      prettier: ^3.0
+      prettier-plugin-tailwindcss: ^0.6
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -4951,6 +4961,9 @@ packages:
     resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
     engines: {node: '>=6'}
 
+  tslib@2.7.0:
+    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
+
   tslib@2.8.0:
     resolution: {integrity: sha512-jWVzBLplnCmoaTr13V9dYbiQ99wvZRd0vNWaDRg+aVYRcjDF3nDksxFDE/+fkXnKhpnUUkmx5pK/v8mCtLVqZA==}
 
@@ -6675,6 +6688,12 @@ snapshots:
     optional: true
 
   '@trysound/sax@0.2.0': {}
+
+  '@ttskch/prettier-plugin-tailwindcss-anywhere@0.1.1(prettier-plugin-tailwindcss@0.6.13(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.3.3))(@zackad/prettier-plugin-twig@0.16.0)(prettier@3.3.3))(prettier@3.3.3)':
+    dependencies:
+      prettier: 3.3.3
+      prettier-plugin-tailwindcss: 0.6.13(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.3.3))(@zackad/prettier-plugin-twig@0.16.0)(prettier@3.3.3)
+      tslib: 2.7.0
 
   '@tybys/wasm-util@0.9.0':
     dependencies:
@@ -10242,6 +10261,8 @@ snapshots:
       json5: 2.2.3
       minimist: 1.2.8
       strip-bom: 3.0.0
+
+  tslib@2.7.0: {}
 
   tslib@2.8.0: {}
 

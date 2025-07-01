@@ -87,7 +87,7 @@
       {{ content }}
     </div>
 
-    <div class="w-full md:w-1/2 pb-24 md:pb-0 {% if contentPosition == 'left' %}md:order-first{% endif %}">
+    <div class="{% if contentPosition == 'left' %}md:order-first{% endif %} w-full pb-24 md:w-1/2 md:pb-0">
       {% if mediaItems|length >= 2 %}
         {% include "_components/molecules/slider/slider.twig" with {
             slides: sliderContent,
