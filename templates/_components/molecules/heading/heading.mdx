@@ -1,9 +1,21 @@
-import { Canvas, Title, Subtitle, ArgTypes, Source, Meta, Description, Primary, Story, Stories, Controls } from '@storybook/addon-docs/blocks';
+import {
+	Canvas,
+	Title,
+	Subtitle,
+	ArgTypes,
+	Source,
+	Meta,
+	Description,
+	Primary,
+	Story,
+	Stories,
+	Controls,
+} from '@storybook/addon-docs/blocks';
 import * as comStories from './heading.stories.json';
 import templateSource from './heading.twig?raw';
-import DefaultInclude from "../../../../.storybook/DefaultInclude";
+import DefaultInclude from '../../../../.storybook/DefaultInclude';
 
-<Meta of={comStories} name="Docs"/>
+<Meta of={comStories} name="Docs" />
 
 <Title />
 <Subtitle />
@@ -12,6 +24,7 @@ import DefaultInclude from "../../../../.storybook/DefaultInclude";
 <Primary />
 
 ## Properties
+
 <Controls />
 
 <Stories of={comStories} />
@@ -23,4 +36,5 @@ A button with all required values.
 <DefaultInclude />
 
 ## Twig Template source code
+
 <Source code={templateSource} />

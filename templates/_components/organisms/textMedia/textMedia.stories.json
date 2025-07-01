@@ -1,80 +1,80 @@
 {
-  "title": "Components/Organisms/Text with media",
-  "parameters": {
-    "docs": {
-      "story": {
-        "inline": true
-      }
-    }
-  },
-  "argTypes": {
-    "contentPosition": {
-      "name": "Content position",
-      "description": "The position of the content. Defaults to `left`.",
-      "control": "inline-radio",
-      "options": ["left", "right"],
-      "defaultValue": "left",
-      "table": {
-        "category": "(2) Settings"
-      }
-    },
-    "content": {
-      "name": "Content",
-      "description": "The content",
-      "control": "text",
-      "defaultValue": "",
-      "table": {
-        "category": "(1) Content"
-      }
-    },
-    "media": {
-      "name": "Media",
-      "description": "The media",
-      "control": "text",
-      "defaultValue": "",
-      "table": {
-        "category": "(1) Content"
-      }
-    },
-    "textPosition": {
-      "name": "Text position",
-      "description": "The position of the text. Defaults to `center`.",
-      "control": "select",
-      "defaultValue": "start",
-      "options": {
-        "Centered": "centered",
-        "Start": "start",
-        "End": "end"
-      },
-      "table": {
-        "category": "(2) Settings"
-      }
-    },
-    "textAlignment": {
-      "name": "Text alignment",
-      "description": "The alignment of the text. Defaults to `left`.",
-      "control": "select",
-      "defaultValue": "left",
-      "options": {
-        "Left": "left",
-        "Center": "center",
-        "Right": "right"
-      },
-      "table": {
-        "category": "(2) Settings"
-      }
-    }
-  },
-  "stories": [
-    {
-      "name": "Default",
-      "args": {
-        "content": "",
-        "media": "",
-        "contentPosition": "left",
-        "textPosition": "centered",
-        "textAlignment": "left"
-      }
-    }
-  ]
+	"title": "Components/Organisms/Text with media",
+	"parameters": {
+		"docs": {
+			"story": {
+				"inline": true
+			}
+		}
+	},
+	"argTypes": {
+		"contentPosition": {
+			"name": "Content position",
+			"description": "The position of the content. Defaults to `left`.",
+			"control": "inline-radio",
+			"options": ["left", "right"],
+			"defaultValue": "left",
+			"table": {
+				"category": "(2) Settings"
+			}
+		},
+		"content": {
+			"name": "Content",
+			"description": "The content",
+			"control": "text",
+			"defaultValue": "",
+			"table": {
+				"category": "(1) Content"
+			}
+		},
+		"media": {
+			"name": "Media",
+			"description": "The media",
+			"control": "text",
+			"defaultValue": "",
+			"table": {
+				"category": "(1) Content"
+			}
+		},
+		"textPosition": {
+			"name": "Text position",
+			"description": "The position of the text. Defaults to `center`.",
+			"control": "select",
+			"defaultValue": "start",
+			"options": {
+				"Centered": "centered",
+				"Start": "start",
+				"End": "end"
+			},
+			"table": {
+				"category": "(2) Settings"
+			}
+		},
+		"textAlignment": {
+			"name": "Text alignment",
+			"description": "The alignment of the text. Defaults to `left`.",
+			"control": "select",
+			"defaultValue": "left",
+			"options": {
+				"Left": "left",
+				"Center": "center",
+				"Right": "right"
+			},
+			"table": {
+				"category": "(2) Settings"
+			}
+		}
+	},
+	"stories": [
+		{
+			"name": "Default",
+			"args": {
+				"content": "",
+				"media": "",
+				"contentPosition": "left",
+				"textPosition": "centered",
+				"textAlignment": "left"
+			}
+		}
+	]
 }

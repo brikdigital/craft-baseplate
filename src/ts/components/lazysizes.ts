@@ -1,19 +1,19 @@
 export default async function lazysizes() {
-  await import('lazysizes');
-  attachEventListeners();
+	await import('lazysizes');
+	attachEventListeners();
 }
 
 function attachEventListeners() {
-  // Hide all the placeholder images when lazyload image is unveiled (also works with AJAX loaded content)
-  document.addEventListener('lazyloaded', function (e) {
-    const imageThatJustLoaded = e.target as HTMLElement;
+	// Hide all the placeholder images when lazyload image is unveiled (also works with AJAX loaded content)
+	document.addEventListener('lazyloaded', function (e) {
+		const imageThatJustLoaded = e.target as HTMLElement;
 
-    imageThatJustLoaded.style.background = '';
-    // if (
-    //   imageThatJustLoaded.previousElementSibling &&
-    //   imageThatJustLoaded.previousElementSibling.classList.contains('placeholder')
-    // ) {
-    //   imageThatJustLoaded.previousElementSibling.classList.add('opacity-0');
-    // }
-  });
+		imageThatJustLoaded.style.background = '';
+		// if (
+		//   imageThatJustLoaded.previousElementSibling &&
+		//   imageThatJustLoaded.previousElementSibling.classList.contains('placeholder')
+		// ) {
+		//   imageThatJustLoaded.previousElementSibling.classList.add('opacity-0');
+		// }
+	});
 }

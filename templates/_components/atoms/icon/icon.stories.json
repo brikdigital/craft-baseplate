@@ -1,195 +1,195 @@
 {
-  "title": "Components/Atoms/Icon",
-  "parameters": {
-    "docs": {
-      "story": {
-        "inline": true
-      }
-    }
-  },
-  "argTypes": {
-    "icon": {
-      "name": "Icon",
-      "description": "The svg icon to display. This uses Inline SVG, use only the icon name i.e. `play`.",
-      "defaultValue": "",
-      "control": "select",
-      "options": {
-        "'Chevron left'": "chevron-left",
-        "'Chevron right'": "chevron-right",
-        "'Chevron up'": "chevron-up",
-        "'Chevron down'": "chevron-down",
-        "'Hamburger'": "hamburger",
-        "'Close'": "close",
-        "'Download'": "download",
-        "'Plus'": "plus",
-        "'Minus'": "minus",
-        "'Play'": "play"
-      },
-      "table": {
-        "category": "(1) Icon"
-      }
-    },
-    "size": {
-      "name": "Size",
-      "description": "The icon size, defaults to `medium`",
-      "defaultValue": "medium",
-      "control": "select",
-      "table": {
-        "category": "(2) Settings"
-      },
-      "options": {
-        "Large": "large",
-        "Medium": "medium",
-        "Small": "small"
-      }
-    },
-    "iconClasses": {
-      "name": "Icon classes",
-      "description": "Additional classes to add to the icon. Make sure to add a color class to set the color of the icon.",
-      "defaultValue": "text-black",
-      "table": {
-        "category": "(2) Settings"
-      },
-      "control": "text"
-    }
-  },
-  "stories": [
-    {
-      "name": "Chevron left",
-      "args": {
-        "size": "medium",
-        "icon": "chevron-left",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Chevron right",
-      "args": {
-        "size": "medium",
-        "icon": "chevron-right",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Chevron up",
-      "args": {
-        "size": "medium",
-        "icon": "chevron-up",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Chevron down",
-      "args": {
-        "size": "medium",
-        "icon": "chevron-down",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Hamburger",
-      "args": {
-        "size": "medium",
-        "icon": "hamburger",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Close",
-      "args": {
-        "size": "medium",
-        "icon": "close",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Download",
-      "args": {
-        "size": "medium",
-        "icon": "download",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Plus",
-      "args": {
-        "size": "medium",
-        "icon": "plus",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Minus",
-      "args": {
-        "size": "medium",
-        "icon": "minus",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Play",
-      "args": {
-        "size": "medium",
-        "icon": "play",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Facebook",
-      "args": {
-        "size": "medium",
-        "icon": "facebook",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Linkedin",
-      "args": {
-        "size": "medium",
-        "icon": "linkedin",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Instagram",
-      "args": {
-        "size": "medium",
-        "icon": "instagram",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "X",
-      "args": {
-        "size": "medium",
-        "icon": "x",
-        "iconClasses": "text-black"
-      }
-    },
+	"title": "Components/Atoms/Icon",
+	"parameters": {
+		"docs": {
+			"story": {
+				"inline": true
+			}
+		}
+	},
+	"argTypes": {
+		"icon": {
+			"name": "Icon",
+			"description": "The svg icon to display. This uses Inline SVG, use only the icon name i.e. `play`.",
+			"defaultValue": "",
+			"control": "select",
+			"options": {
+				"'Chevron left'": "chevron-left",
+				"'Chevron right'": "chevron-right",
+				"'Chevron up'": "chevron-up",
+				"'Chevron down'": "chevron-down",
+				"'Hamburger'": "hamburger",
+				"'Close'": "close",
+				"'Download'": "download",
+				"'Plus'": "plus",
+				"'Minus'": "minus",
+				"'Play'": "play"
+			},
+			"table": {
+				"category": "(1) Icon"
+			}
+		},
+		"size": {
+			"name": "Size",
+			"description": "The icon size, defaults to `medium`",
+			"defaultValue": "medium",
+			"control": "select",
+			"table": {
+				"category": "(2) Settings"
+			},
+			"options": {
+				"Large": "large",
+				"Medium": "medium",
+				"Small": "small"
+			}
+		},
+		"iconClasses": {
+			"name": "Icon classes",
+			"description": "Additional classes to add to the icon. Make sure to add a color class to set the color of the icon.",
+			"defaultValue": "text-black",
+			"table": {
+				"category": "(2) Settings"
+			},
+			"control": "text"
+		}
+	},
+	"stories": [
+		{
+			"name": "Chevron left",
+			"args": {
+				"size": "medium",
+				"icon": "chevron-left",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Chevron right",
+			"args": {
+				"size": "medium",
+				"icon": "chevron-right",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Chevron up",
+			"args": {
+				"size": "medium",
+				"icon": "chevron-up",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Chevron down",
+			"args": {
+				"size": "medium",
+				"icon": "chevron-down",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Hamburger",
+			"args": {
+				"size": "medium",
+				"icon": "hamburger",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Close",
+			"args": {
+				"size": "medium",
+				"icon": "close",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Download",
+			"args": {
+				"size": "medium",
+				"icon": "download",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Plus",
+			"args": {
+				"size": "medium",
+				"icon": "plus",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Minus",
+			"args": {
+				"size": "medium",
+				"icon": "minus",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Play",
+			"args": {
+				"size": "medium",
+				"icon": "play",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Facebook",
+			"args": {
+				"size": "medium",
+				"icon": "facebook",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Linkedin",
+			"args": {
+				"size": "medium",
+				"icon": "linkedin",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Instagram",
+			"args": {
+				"size": "medium",
+				"icon": "instagram",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "X",
+			"args": {
+				"size": "medium",
+				"icon": "x",
+				"iconClasses": "text-black"
+			}
+		},
 
-    {
-      "name": "Whatsapp",
-      "args": {
-        "size": "medium",
-        "icon": "whatsapp",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Youtube",
-      "args": {
-        "size": "medium",
-        "icon": "youtube",
-        "iconClasses": "text-black"
-      }
-    },
-    {
-      "name": "Vimeo",
-      "args": {
-        "size": "medium",
-        "icon": "vimeo",
-        "iconClasses": "text-black"
-      }
-    }
-  ]
+		{
+			"name": "Whatsapp",
+			"args": {
+				"size": "medium",
+				"icon": "whatsapp",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Youtube",
+			"args": {
+				"size": "medium",
+				"icon": "youtube",
+				"iconClasses": "text-black"
+			}
+		},
+		{
+			"name": "Vimeo",
+			"args": {
+				"size": "medium",
+				"icon": "vimeo",
+				"iconClasses": "text-black"
+			}
+		}
+	]
 }
