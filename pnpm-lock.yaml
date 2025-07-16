@@ -51,8 +51,8 @@ importers:
         specifier: ^1.9.4
         version: 1.9.4
       '@etchteam/storybook-addon-marker':
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^6.0.0
+        version: 6.0.0(storybook@9.0.14(@testing-library/dom@10.4.0)(prettier@3.3.3))
       '@storybook/addon-a11y':
         specifier: ^9.0.13
         version: 9.0.14(storybook@9.0.14(@testing-library/dom@10.4.0)(prettier@3.3.3))
@@ -679,8 +679,10 @@ packages:
     resolution: {integrity: sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@etchteam/storybook-addon-marker@5.0.0':
-    resolution: {integrity: sha512-UuOJ8t2kTLpdyhM4P0cQvx7CQPYmso8GKfGbasAMPxeK4GyaEohkuYFe5BpVIFaMjYoHRauMC8r9vR7ZM7LmDQ==}
+  '@etchteam/storybook-addon-marker@6.0.0':
+    resolution: {integrity: sha512-1UXYQ1ye54fuRca0mI/G4CyMPQjtV5Q1yS5k+DcUTJkbBrR9R9t7yZH4RmlukdBdiXufOLMIrdlwvfIkIKjt8w==}
+    peerDependencies:
+      storybook: ^9.0.0
 
   '@figspec/components@1.0.3':
     resolution: {integrity: sha512-fBwHzJ4ouuOUJEi+yBZIrOy+0/fAjB3AeTcIHTT1PRxLz8P63xwC7R0EsIJXhScIcc+PljGmqbbVJCjLsnaGYA==}
@@ -5778,9 +5780,10 @@ snapshots:
       '@eslint/core': 0.13.0
       levn: 0.4.1
 
-  '@etchteam/storybook-addon-marker@5.0.0':
+  '@etchteam/storybook-addon-marker@6.0.0(storybook@9.0.14(@testing-library/dom@10.4.0)(prettier@3.3.3))':
     dependencies:
       '@marker.io/browser': 0.19.0
+      storybook: 9.0.14(@testing-library/dom@10.4.0)(prettier@3.3.3)
 
   '@figspec/components@1.0.3':
     dependencies:

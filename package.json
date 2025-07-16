@@ -30,7 +30,7 @@
 		"@biomejs/cli-darwin-arm64": "^1.9.4",
 		"@biomejs/cli-darwin-x64": "^1.9.4",
 		"@biomejs/cli-linux-x64": "^1.9.4",
-		"@etchteam/storybook-addon-marker": "^5.0.0",
+		"@etchteam/storybook-addon-marker": "^6.0.0",
 		"@storybook/addon-a11y": "^9.0.13",
 		"@storybook/addon-designs": "^10.0.1",
 		"@storybook/addon-docs": "^9.0.13",
