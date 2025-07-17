@@ -1,98 +1,98 @@
 {
-  "name": "brikdigital/craft-baseplate",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "license": "MPL-2.0",
-  "require": {
-    "aodihis/video-utils": "^3.0.2",
-    "brik-digital/craft-statuspaginator": "^5.0",
-    "clubstudioltd/craft-inline-svg": "^2.1",
-    "craftcms/aws-s3": "2.2.3",
-    "craftcms/ckeditor": "4.9.0",
-    "craftcms/cms": "5.8.6",
-    "craftcms/postmark": "^3.1",
-    "craftpulse/craft-colour-swatches": "5.1.0",
-    "cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
-    "goldinteractive/craft-sitecopy": "^2.1",
-    "hybridinteractive/craft-position-fieldtype": "^5.0",
-    "lexisother/composer-patches-regex": "^1.1",
-    "mmikkel/cp-clearcache": "^2.0",
-    "mmikkel/cp-field-inspect": "2.0.4",
-    "mmikkel/retcon": "^3.2.1",
-    "mostlyserious/craft-markerio": "2.2.0",
-    "nystudio107/craft-minify": "^5.0",
-    "nystudio107/craft-retour": "5.0.11",
-    "nystudio107/craft-seomatic": "5.1.16",
-    "nystudio107/craft-templatecomments": "5.0.4",
-    "nystudio107/craft-vite": "^5.0",
-    "putyourlightson/craft-blitz": "5.11.5",
-    "putyourlightson/craft-sherlock": "5.1.2",
-    "putyourlightson/craft-sprig": "3.6.1",
-    "spacecatninja/imager-x": "5.1.4",
-    "spacecatninja/imager-x-power-pack": "^1.0.5",
-    "spacecatninja/imager-x-video-adapter": "^1.1.0",
-    "spicyweb/craft-batch-actions": "2.1.0",
-    "spicyweb/craft-embedded-assets": "5.4.3",
-    "superbig/craft-mjml": "^5.0",
-    "topshelfcraft/wordsmith": "^5.0.0",
-    "verbb/buttonbox": "^5.0.0",
-    "verbb/expanded-singles": "3.0.2",
-    "verbb/formie": "3.0.31",
-    "verbb/hyper": "2.2.6",
-    "verbb/icon-picker": "^3.0.4",
-    "verbb/knock-knock": "3.0.3",
-    "verbb/navigation": "3.0.9",
-    "vlucas/phpdotenv": "^5.4.0",
-    "webrgp/craft-ignition": "v1.0.7",
-    "yiisoft/yii2-redis": "^2.0"
-  },
-  "require-dev": {
-    "craftcms/generator": "^2.0.0",
-    "nystudio107/craft-autocomplete": "^1.12",
-    "yiisoft/yii2-shell": "^2.0.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "brikdigital\\sitemodule\\": "modules/site-module/"
-    }
-  },
-  "config": {
-    "allow-plugins": {
-      "craftcms/plugin-installer": true,
-      "cweagans/composer-patches": true,
-      "lexisother/composer-patches-regex": true,
-      "yiisoft/yii2-composer": true
-    },
-    "sort-packages": true,
-    "optimize-autoloader": true,
-    "platform": {
-      "php": "8.2"
-    }
-  },
-  "scripts": {
-    "post-create-project-cmd": [
-      "@php -r \"unlink('.gitignore');\"",
-      "@php -r \"copy('.project.gitignore', '.gitignore');\"",
-      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\"",
-      "@php -r \"unlink('composer.json');\"",
-      "@php -r \"rename('composer.json.default', 'composer.json');\"",
-      "@composer dump-autoload -o",
-      "@php craft setup/welcome"
-    ]
-  },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/lexisother/craft-statuspaginator"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/cweagans/composer-patches.git"
-    },
-    {
-      "type": "composer",
-      "url": "https://composer.craftcms.com",
-      "canonical": false
-    }
-  ]
+	"name": "brikdigital/craft-baseplate",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "MPL-2.0",
+	"require": {
+		"aodihis/video-utils": "^3.0.2",
+		"brik-digital/craft-statuspaginator": "^5.0",
+		"clubstudioltd/craft-inline-svg": "^2.1",
+		"craftcms/aws-s3": "2.2.3",
+		"craftcms/ckeditor": "4.9.0",
+		"craftcms/cms": "5.8.6",
+		"craftcms/postmark": "^3.1",
+		"craftpulse/craft-colour-swatches": "5.1.0",
+		"cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
+		"goldinteractive/craft-sitecopy": "^2.1",
+		"hybridinteractive/craft-position-fieldtype": "^5.0",
+		"lexisother/composer-patches-regex": "^1.1",
+		"mmikkel/cp-clearcache": "^2.0",
+		"mmikkel/cp-field-inspect": "2.0.4",
+		"mmikkel/retcon": "^3.2.1",
+		"mostlyserious/craft-markerio": "2.2.0",
+		"nystudio107/craft-minify": "^5.0",
+		"nystudio107/craft-retour": "5.0.11",
+		"nystudio107/craft-seomatic": "5.1.16",
+		"nystudio107/craft-templatecomments": "5.0.4",
+		"nystudio107/craft-vite": "^5.0",
+		"putyourlightson/craft-blitz": "5.11.5",
+		"putyourlightson/craft-sherlock": "5.1.2",
+		"putyourlightson/craft-sprig": "3.6.1",
+		"spacecatninja/imager-x": "5.1.4",
+		"spacecatninja/imager-x-power-pack": "^1.0.5",
+		"spacecatninja/imager-x-video-adapter": "^1.1.0",
+		"spicyweb/craft-batch-actions": "2.1.0",
+		"spicyweb/craft-embedded-assets": "5.4.3",
+		"superbig/craft-mjml": "^5.0",
+		"topshelfcraft/wordsmith": "^5.0.0",
+		"verbb/buttonbox": "^5.0.0",
+		"verbb/expanded-singles": "3.0.2",
+		"verbb/formie": "3.0.31",
+		"verbb/hyper": "2.2.6",
+		"verbb/icon-picker": "^3.0.4",
+		"verbb/knock-knock": "3.0.3",
+		"verbb/navigation": "3.0.9",
+		"vlucas/phpdotenv": "^5.4.0",
+		"webrgp/craft-ignition": "v1.0.7",
+		"yiisoft/yii2-redis": "^2.0"
+	},
+	"require-dev": {
+		"craftcms/generator": "^2.0.0",
+		"nystudio107/craft-autocomplete": "^1.12",
+		"yiisoft/yii2-shell": "^2.0.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"brikdigital\\sitemodule\\": "modules/site-module/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"craftcms/plugin-installer": true,
+			"cweagans/composer-patches": true,
+			"lexisother/composer-patches-regex": true,
+			"yiisoft/yii2-composer": true
+		},
+		"sort-packages": true,
+		"optimize-autoloader": true,
+		"platform": {
+			"php": "8.2"
+		}
+	},
+	"scripts": {
+		"post-create-project-cmd": [
+			"@php -r \"unlink('.gitignore');\"",
+			"@php -r \"copy('.project.gitignore', '.gitignore');\"",
+			"@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\"",
+			"@php -r \"unlink('composer.json');\"",
+			"@php -r \"rename('composer.json.default', 'composer.json');\"",
+			"@composer dump-autoload -o",
+			"@php craft setup/welcome"
+		]
+	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/lexisother/craft-statuspaginator"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/cweagans/composer-patches.git"
+		},
+		{
+			"type": "composer",
+			"url": "https://composer.craftcms.com",
+			"canonical": false
+		}
+	]
 }
