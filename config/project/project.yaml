@@ -1,4 +1,4 @@
-dateModified: 1751013930
+dateModified: 1752667190
 elementSources:
   craft\elements\Entry:
     -
@@ -51,9 +51,14 @@ elementSources:
       key: 'section:b20babee-2b3a-4f80-9384-15e7b592cdc9' # Artikel type
       type: native
 email:
-  fromEmail: dev@brik.digital
-  fromName: Baseplate
-  transportType: craft\mail\transportadapters\Sendmail
+  fromEmail: $SYSTEM_EMAIL
+  fromName: $SYSTEM_EMAIL_SENDER
+  replyToEmail: null
+  template: null
+  transportSettings:
+    messageStream: $POSTMARK_BROADCAST_ID
+    token: $POSTMARK_API
+  transportType: craftcms\postmark\Adapter
 fs:
   files:
     hasUrls: true
@@ -93,6 +98,7 @@ meta:
     79253ff9-2016-4c72-9a06-3c35a6a690f4: Advanced # Advanced
     82231ea7-a108-43d6-9a7a-78b4b9297fb2: 'Artikelen index' # Artikelen index
     437963f6-fffc-4014-921d-e13fd7b2315f: Tekst # Tekst
+    12976062-797d-4c3f-bba9-b08f9517d734: Root # Root
     25165387-9136-4739-86cb-59a989b1c003: Afbeelding # Afbeelding
     a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Baseplate EN' # Baseplate EN
     a43b9a82-d36b-47f2-9c34-fb66898b6fd1: 'Titel formaat' # Titel formaat
@@ -175,6 +181,10 @@ plugins:
     enabled: true
     licenseKey: 1T6OC8567UE1DLN1ZYFL0OY1
     schemaVersion: 1.0.0
+  icon-picker:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.2.3
   ignition:
     edition: standard
     enabled: true
@@ -278,5 +288,5 @@ system:
   edition: solo
   live: true
   name: Baseplate
-  schemaVersion: 5.7.0.3
+  schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles

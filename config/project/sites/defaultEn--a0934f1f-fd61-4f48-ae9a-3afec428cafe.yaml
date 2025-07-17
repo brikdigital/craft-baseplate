@@ -1,4 +1,4 @@
-baseUrl: $PRIMARY_SITE_URL_EN
+baseUrl: $DEFAULT_SITE_URL_EN
 enabled: '1'
 handle: defaultEn
 hasUrls: true
