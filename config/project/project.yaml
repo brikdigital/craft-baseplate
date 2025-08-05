@@ -1,4 +1,4 @@
-dateModified: 1752667190
+dateModified: 1754390279
 elementSources:
   craft\elements\Entry:
     -
@@ -184,6 +184,7 @@ plugins:
   icon-picker:
     edition: standard
     enabled: true
+    licenseKey: IN06BRA1RSJPVUUOW2GC3XN1
     schemaVersion: 1.2.3
   ignition:
     edition: standard
