@@ -4,14 +4,14 @@ pre-commit:
     format:
       priority: 1
       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,css,pcss,json,jsonc,yml}'
-      run: ddev exec npx prettier --write {staged_files} && git update-index --again
+      run: ddev pnpm prettier --write {staged_files} && git update-index --again
     check:
       priority: 2
       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx}'
       run:
-        biome check --write --no-errors-on-unmatched --files-ignore-unknown=true
+        ddev pnpm biome check --write --no-errors-on-unmatched --files-ignore-unknown=true
         --vcs-use-ignore-file=true {staged_files} && git update-index --again
     tsc:
       priority: 3
       glob: '*.{ts,d.cts,d.mts,tsx}'
-      run: ddev exec npx tsc --noemit
+      run: ddev pnpm tsc --noemit
