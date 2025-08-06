@@ -11,11 +11,21 @@ export default {
 			name: 'Pre heading',
 			description: 'The smaller heading above the main one',
 			control: 'text',
+			table: {
+				defaultValue: {
+					summary: 'some pre heading',
+				},
+			},
 		},
 		heading: {
 			name: 'Heading',
 			description: 'The large heading of the block',
 			control: 'text',
+			table: {
+				defaultValue: {
+					summary: 'some heading',
+				},
+			},
 		},
 	},
 } satisfies Meta;
