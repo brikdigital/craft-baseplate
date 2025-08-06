@@ -32,16 +32,18 @@ class StorybookController extends Controller
         if (!$filename) {
             throw new ComponentNotFoundException("Impossible to find a story with an empty story file name.");
         }
-        $filename = str_replace('./templates', '', $filename);
+        $filename = str_replace(
+            array('./templates', 'stories.json', 'stories.yml', 'stories.ts', 'stories.tsx'),
+            array('', 'twig', 'twig', 'twig', 'twig'),
+            $filename
+        );
 
         $path = Craft::$app->path->getSiteTemplatesPath() . str_replace('stories.json', 'twig', $filename);
         $component = file_get_contents($path);
 
         $component = "{% extends \"_layouts/storybook.twig\" %}\n{% set STORYBOOK = true %}\n{% block html %}\n$component\n{% endblock %}";
 
-        $twig = Craft::$app->view->renderString($component, $request->post());
-
-        return $twig;
+        return Craft::$app->view->renderString($component, $request->post());
     }
 
     private function returnEarlyForCors()

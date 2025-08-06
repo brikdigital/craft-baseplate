@@ -1,0 +1,37 @@
+import {
+	Title,
+	Subtitle,
+	Source,
+	Meta,
+	Description,
+	Primary,
+	Stories,
+	Controls,
+} from '@storybook/addon-docs/blocks';
+import * as comStories from './text.stories.ts';
+import templateSource from './text.twig?raw';
+import DefaultInclude from '../../../../.storybook/DefaultInclude';
+
+<Meta of={comStories} name="Docs" />
+
+<Title />
+<Subtitle />
+<Description />
+
+<Primary />
+
+## Properties
+
+<Controls />
+
+<Stories of={comStories} />
+
+### Examples
+
+A video with all required values.
+
+<DefaultInclude />
+
+## Twig Template source code
+
+<Source code={templateSource} />
