@@ -1,0 +1,7 @@
+enabled: true
+handle: defaultIconsFeather
+name: 'Standaard open source icons'
+settings:
+  cssAttribute: data-feather
+sortOrder: 2
+type: verbb\iconpicker\iconsets\Feather

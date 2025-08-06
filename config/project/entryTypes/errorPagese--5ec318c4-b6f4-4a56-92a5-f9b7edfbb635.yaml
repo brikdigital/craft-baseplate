@@ -54,7 +54,7 @@ fieldLayouts:
           -
             dateAdded: '2024-10-17T10:46:14+00:00'
             elementCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst (uitgebreid)
             handle: errorText
             includeInCards: false
             instructions: null

@@ -1,15 +1,16 @@
 columnSuffix: null
 handle: singleImage
 instructions: null
-name: Afbeelding
+name: 'Afbeelding (enkel)'
 searchable: true
 settings:
   allowSelfRelations: false
   allowSubfolders: false
-  allowUploads: true
+  allowUploads: false
   allowedKinds:
     - image
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
@@ -23,11 +24,11 @@ settings:
   restrictedLocationSubpath: null
   selectionLabel: 'Selecteer een afbeelding'
   showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources:
-    - 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
+  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

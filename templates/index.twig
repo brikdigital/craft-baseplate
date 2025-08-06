@@ -1,4 +1,8 @@
 {% extends '_layouts/default.twig' %}
 
 {% block html %}
+    {% set events = craft.entries().section('events').isFuture('eventDate', 'event', true).all() %}
+    {% for event in events %}
+        {{ event.title }} <br />
+    {% endfor %}
 {% endblock %}

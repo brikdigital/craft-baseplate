@@ -1,6 +1,8 @@
-color: null
+color: lime
+description: null
 fieldLayouts:
-  423d92a3-0b09-4352-a62e-933eadb8f7d0:
+  c7d242bb-3be9-4058-9df6-06b9eb939dda:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -10,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-10-17T14:07:40+00:00'
+            dateAdded: '2025-07-25T08:16:05+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -25,20 +27,21 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f308d32a-0693-4745-a07d-a5470ad42806
+            uid: d30083e9-8f34-4d29-9673-1675e6db9677
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-10-17T14:09:57+00:00'
+            dateAdded: '2025-07-25T08:34:46+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 86dfc9bd-0363-4046-a638-26e03cd481da # Afbeeldingen
+            fieldUid: d1928b4f-7613-41fb-9e2b-4756e2c31adb # Evenement datum
             handle: null
             includeInCards: false
             instructions: null
@@ -47,37 +50,21 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ae46fdda-3827-478d-a156-737c67818edc
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-17T14:09:57+00:00'
-            elementCondition: null
-            fieldUid: 767c68f7-a42c-4402-a640-46af0c267fb7 # Afbeelding ratio
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 36feded6-f341-4bfc-a5bb-9b72294b51d5
+            uid: 26fae542-a62a-4a10-ad25-df1b293405b8
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: f782a9ed-17d0-4127-98f3-a53b3f49f46a
+        uid: c9ab4af8-37fb-450e-acc9-bb06204cabfb
         userCondition: null
-handle: image
-hasTitleField: false
-icon: image
-name: Afbeelding
+handle: event
+hasTitleField: true
+icon: calendar
+name: Evenement
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

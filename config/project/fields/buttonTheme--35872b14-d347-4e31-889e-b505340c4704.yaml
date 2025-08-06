@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: displayMethod
+handle: buttonTheme
 instructions: null
-name: Weergave
+name: 'Knop thema'
 searchable: false
 settings:
   customOptions: false
@@ -12,13 +12,13 @@ settings:
       __assoc__:
         -
           - label
-          - Pop-up
+          - Primair
         -
           - showLabel
           - '1'
         -
           - value
-          - popUp
+          - primary
         -
           - imageUrl
           - ''
@@ -32,13 +32,13 @@ settings:
       __assoc__:
         -
           - label
-          - 'Pop-up en automatisch afspelen'
+          - Secundair
         -
           - showLabel
           - '1'
         -
           - value
-          - autoplayPopUp
+          - secondary
         -
           - imageUrl
           - ''
@@ -52,33 +52,13 @@ settings:
       __assoc__:
         -
           - label
-          - Inline
+          - 'Alleen tekst'
         -
           - showLabel
           - '1'
         -
           - value
-          - inline
-        -
-          - imageUrl
-          - ''
-        -
-          - imageAlign
-          - left
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Inline en automatisch afspelen'
-        -
-          - showLabel
-          - '1'
-        -
-          - value
-          - inlineAutoplay
+          - textOnly
         -
           - imageUrl
           - ''
@@ -89,5 +69,5 @@ settings:
           - default
           - ''
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: verbb\buttonbox\fields\Buttons

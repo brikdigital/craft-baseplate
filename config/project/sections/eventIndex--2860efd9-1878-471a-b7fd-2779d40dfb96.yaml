@@ -1,0 +1,33 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 34e6d645-f593-49c5-bbed-6e80bd5b8fd4 # Agenda
+handle: eventIndex
+maxAuthors: 1
+name: Agenda
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Baseplate EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _section/events/index.twig
+    uriFormat: agenda
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: true
+    template: _section/events/index.twig
+    uriFormat: agenda
+type: single

@@ -1,16 +1,17 @@
 columnSuffix: null
 handle: images
 instructions: null
-name: Afbeeldingen
+name: 'Afbeelding (meerdere)'
 searchable: true
 settings:
   allowSelfRelations: false
   allowSubfolders: false
-  allowUploads: true
+  allowUploads: false
   allowedKinds:
     - image
   branchLimit: null
-  defaultUploadLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa'
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: null
@@ -19,15 +20,15 @@ settings:
   restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa'
+  restrictedLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSearchInput: true
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources:
-    - 'volume:008f6cb3-012d-4339-ab10-9df3eec5f3aa'
+  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: large

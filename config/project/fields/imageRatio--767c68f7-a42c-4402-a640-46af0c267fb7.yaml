@@ -4,15 +4,22 @@ instructions: null
 name: 'Afbeelding ratio'
 searchable: false
 settings:
+  customOptions: false
   options:
     -
       __assoc__:
         -
           - label
-          - Standaard
+          - 'Afbeelding standaard'
         -
           - value
           - default
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - '1'
@@ -25,6 +32,12 @@ settings:
           - value
           - aspect-1/1
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -35,6 +48,12 @@ settings:
         -
           - value
           - aspect-4/3
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''
@@ -47,6 +66,12 @@ settings:
           - value
           - aspect-5/2
         -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
           - default
           - ''
     -
@@ -57,6 +82,12 @@ settings:
         -
           - value
           - aspect-16/9
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
         -
           - default
           - ''

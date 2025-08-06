@@ -69,64 +69,73 @@ fs:
     url: '@assetsUrl/assets/files'
 meta:
   __names__:
-    0f2289e3-d708-45a3-b730-da2a91d593e4: 'Afbeelding positie' # Afbeelding positie
     1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: 'Artikelen index' # Artikelen index
     4f08eaca-189d-42fc-9987-cbed19663296: 'Maximaal aantal berichten' # Maximaal aantal berichten
     4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
     5fe4b921-1ad2-4cce-bf81-bb2fe1f766a3: 'Externe url' # Externe url
+    8cdbea37-6d9b-4922-b11e-97df6d3660b2: 'Standaard open source icons' # Standaard open source icons
     8d87bf9f-8546-434b-a971-6407e109f8aa: Blokken # Blokken
     8f439fc2-311f-4f45-99c6-c482d129d1fd: Tag # Tag
+    10e2197c-c763-463e-998a-a704543fd784: 'Platte tekst' # Platte tekst
+    34e6d645-f593-49c5-bbed-6e80bd5b8fd4: Agenda # Agenda
     41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
     65bb950b-bf8c-46a5-b2d3-8fa38ea6f215: 'Contact Form' # Contact Form
-    86dfc9bd-0363-4046-a638-26e03cd481da: Afbeeldingen # Afbeeldingen
+    86dfc9bd-0363-4046-a638-26e03cd481da: 'Afbeelding (meerdere)' # Afbeelding (meerdere)
     87add8ee-18cc-4272-8a4c-4fd06d16ec25: "Pagina's" # Pagina's
     93f18740-c2f0-4e41-886e-b092eb38e71f: Layout # Layout
     132fd44a-075e-4b36-a399-5270c429abdd: 'Artikel Type' # Artikel Type
     432be928-1cc7-435b-bd50-bf75c40a983c: 'Gedeelde content blokken' # Gedeelde content blokken
+    596b60e6-cde4-48fb-9853-a567dcb99ece: Knoppen # Knoppen
     0619bf3f-de22-4525-8261-a10f5454eee0: Homepage # Homepage
     731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO Instellingen' # SEO Instellingen
     767c68f7-a42c-4402-a640-46af0c267fb7: 'Afbeelding ratio' # Afbeelding ratio
     889f70a7-0949-425c-a9be-060721269cf0: 'Tekst positie' # Tekst positie
-    927fe6b5-4220-425e-b5a5-cd1948cea056: Ondertitel # Ondertitel
+    2860efd9-1878-471a-b7fd-2779d40dfb96: Agenda # Agenda
     5026f9b8-4a01-4754-8e5b-e71d9e17f5c8: Thema # Thema
     7205ce0b-82c8-45e4-8400-08ceaf7f7576: Bestanden # Bestanden
+    7990d129-e4e9-488d-b9ca-0347364425e1: 'Icoon positie' # Icoon positie
     18915ee7-c649-4733-ab93-d96d10d1b46a: Video # Video
+    35872b14-d347-4e31-889e-b505340c4704: 'Knop thema' # Knop thema
     54058ce4-020d-4535-9931-d69993419df7: Artikelen # Artikelen
     74716a14-5d9a-4002-bc77-51f38589d539: 'Artikel grid' # Artikel grid
     79253ff9-2016-4c72-9a06-3c35a6a690f4: Advanced # Advanced
     82231ea7-a108-43d6-9a7a-78b4b9297fb2: 'Artikelen index' # Artikelen index
-    437963f6-fffc-4014-921d-e13fd7b2315f: Tekst # Tekst
-    12976062-797d-4c3f-bba9-b08f9517d734: Root # Root
+    437963f6-fffc-4014-921d-e13fd7b2315f: 'Tekst (uitgebreid)' # Tekst (uitgebreid)
+    12976062-797d-4c3f-bba9-b08f9517d734: 'Standaard custom icons' # Standaard custom icons
     25165387-9136-4739-86cb-59a989b1c003: Afbeelding # Afbeelding
     a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Baseplate EN' # Baseplate EN
     a43b9a82-d36b-47f2-9c34-fb66898b6fd1: 'Titel formaat' # Titel formaat
-    afce72fb-dcb9-42e3-99d5-a4e1b6c32d71: "Foto's en/of video's" # Foto's en/of video's
+    aa444200-2ca2-44f0-b001-737e424c99a8: Evenement # Evenement
+    ae59b117-731a-4efe-83b6-33186b75a174: 'Agenda items' # Agenda items
     b5da10b5-92de-4de6-8ac4-619c4d1eccc6: 'Slider type' # Slider type
     b7fa6983-cbe4-435a-a345-b065911c3442: "Pagina's" # Pagina's
     b9f016c9-d8b3-49f8-acbe-3337414dd097: Artikelen # Artikelen
     b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Artikel type' # Artikel type
     b56c28d2-a08b-4291-80fd-4cff8f398791: Weergave # Weergave
-    b5386dfa-66c8-4d08-bbcc-38503a3862c9: Video # Video
+    b5386dfa-66c8-4d08-bbcc-38503a3862c9: ' Video' #  Video
     bb9f38f1-c5e0-4ed6-9d09-97f29487de56: Type # Type
     bc6369ec-7f21-4151-a8ad-85cec976c987: 'Artikel type' # Artikel type
     c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Knoppen # Knoppen
+    c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22: Knop # Knop
     c798cdf5-723e-4cdc-8ac1-6c527b1a14a6: Bovenkop # Bovenkop
     c957c2ee-ff8a-4973-8111-58c21b775495: Tekst # Tekst
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
-    cffde261-31c9-424a-9d39-86be6078c848: 'Tekst (met foto en/of video)' # Tekst (met foto en/of video)
+    cffde261-31c9-424a-9d39-86be6078c848: 'Tekst met media' # Tekst met media
     d4a4bc7c-6065-4510-878b-e4e3ef6ec1ce: Type # Type
+    d544c7a1-06b0-46c7-b2a6-8987f2c6bd84: 'Tekst (simpel)' # Tekst (simpel)
     d602da2a-239f-4f18-93fd-8047af89cdd0: Kop # Kop
+    d1928b4f-7613-41fb-9e2b-4756e2c31adb: 'Evenement datum' # Evenement datum
     d52247de-f951-467f-823c-4808b53741ca: 'Gedeeld blok' # Gedeeld blok
-    da5e1cb9-b38a-47f2-8646-1b93b39aaf01: Afbeelding # Afbeelding
     db6df807-fdb5-4bef-a3f5-2ebb6800c0bd: Artikelen # Artikelen
     dbd31f29-8b03-46f8-819a-181826ff96c0: New # New
+    dcaf6647-c88d-48cf-adf6-9b3e1d3150b1: Icoon # Icoon
+    e325439d-f974-4c27-a2d9-2fe44cce12bb: Quote # Quote
     edb6d78c-27f5-4522-852d-2df53429bb71: Errors # Errors
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
     f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Gedeelde content blokken' # Gedeelde content blokken
-    f659e4e5-e885-4efe-918b-f9ea22bef550: Afbeelding # Afbeelding
-    fb34806c-754c-4b9f-8df1-4fa15eef8a16: 'Foto en/of video' # Foto en/of video
+    f659e4e5-e885-4efe-918b-f9ea22bef550: 'Afbeelding (enkel)' # Afbeelding (enkel)
 plugins:
   aws-s3:
     edition: standard
@@ -140,7 +149,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 5LFNBC5E60TXAOHBCSFOJP8O
-    schemaVersion: 5.11.0
+    schemaVersion: 5.12.0
     settings:
       maxUriLength: 2048
   buttonbox:
@@ -163,6 +172,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  date-range:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   embeddedassets:
     edition: standard
     enabled: true
@@ -175,7 +188,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 39WCCUE5PBMC2ZH6XF7YADSU
-    schemaVersion: 3.4.8
+    schemaVersion: 3.4.9
   hyper:
     edition: standard
     enabled: true
@@ -184,7 +197,7 @@ plugins:
   icon-picker:
     edition: standard
     enabled: true
-    licenseKey: IN06BRA1RSJPVUUOW2GC3XN1
+    licenseKey: J4W1IUEVPQ73RRDC75MD3L1Q
     schemaVersion: 1.2.3
   imager-x:
     edition: pro
@@ -285,5 +298,6 @@ system:
   edition: solo
   live: true
   name: Baseplate
+  retryDuration: 60
   schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles

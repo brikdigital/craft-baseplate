@@ -9,7 +9,7 @@ return [
     'devServerPublic' => Craft::getAlias('@web') . ':3000',
     'errorEntry' => 'src/js/app.js',
     'manifestPath' => Craft::getAlias('@webroot') . '/dist/.vite/manifest.json',
-    'serverPublic' => Craft::getAlias('@web')  . '/dist/',
+    'serverPublic' => '/dist/',
 
     /**
      * @var string File system path (or URL) to where the Critical CSS files are stored

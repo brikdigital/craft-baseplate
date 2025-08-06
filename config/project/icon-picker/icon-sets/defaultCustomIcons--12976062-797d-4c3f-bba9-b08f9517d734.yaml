@@ -1,6 +1,6 @@
 enabled: true
-handle: root
-name: Root
+handle: defaultCustomIcons
+name: 'Standaard custom icons'
 settings:
   folder: '[root]'
 sortOrder: 1

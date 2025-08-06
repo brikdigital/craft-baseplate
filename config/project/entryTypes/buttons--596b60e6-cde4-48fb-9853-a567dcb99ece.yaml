@@ -1,0 +1,42 @@
+color: null
+description: null
+fieldLayouts:
+  112e3f4b-f9b7-4b80-9744-589601ca03c3:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:a85f34c5-cbe5-4c5c-a2f5-094a900830de'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-04T12:40:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Knoppen
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a85f34c5-cbe5-4c5c-a2f5-094a900830de
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 4cff2a67-7061-44d6-a823-28681e3e0aa0
+        userCondition: null
+handle: buttons
+hasTitleField: false
+icon: bars-progress
+name: Knoppen
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

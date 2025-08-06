@@ -1,0 +1,13 @@
+columnSuffix: null
+handle: eventDate
+instructions: null
+name: 'Evenement datum'
+searchable: false
+settings:
+  endAfterStart: '1'
+  showEndTime: '1'
+  showStartTime: '1'
+  someAttribute: 'Some Default'
+translationKeyFormat: null
+translationMethod: none
+type: studioespresso\daterange\fields\DateRangeField

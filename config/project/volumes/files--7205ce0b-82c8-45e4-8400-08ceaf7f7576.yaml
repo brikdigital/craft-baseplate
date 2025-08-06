@@ -2,6 +2,7 @@ altTranslationKeyFormat: null
 altTranslationMethod: site
 fieldLayouts:
   e17e7aa0-5388-41e8-ab4e-f5c831357200:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -69,86 +70,6 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\assets\AltField
             uid: 16df8543-04e0-4f57-9cdb-6f3f800466b5
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-21T11:31:42+00:00'
-            elementCondition:
-              class: craft\elements\conditions\assets\AssetCondition
-              conditionRules:
-                -
-                  class: craft\elements\conditions\assets\FileTypeConditionRule
-                  operator: in
-                  uid: 9b673091-d9fc-48de-b816-3f68ed80b36a
-                  values:
-                    - image
-              elementType: craft\elements\Asset
-              fieldContext: global
-            fieldUid: 927fe6b5-4220-425e-b5a5-cd1948cea056 # Ondertitel
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f8e18660-c2a4-41bc-977e-acf0a2548488
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-21T11:35:04+00:00'
-            elementCondition:
-              class: craft\elements\conditions\assets\AssetCondition
-              conditionRules:
-                -
-                  class: craft\elements\conditions\assets\FileTypeConditionRule
-                  operator: in
-                  uid: e4fff7fe-14de-4e82-9d7d-d12a883c195a
-                  values:
-                    - video
-                    - json
-              elementType: craft\elements\Asset
-              fieldContext: global
-            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding
-            handle: fallbackImage
-            includeInCards: false
-            instructions: null
-            label: 'Alternatieve afbeelding'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 28027c29-ae91-4d71-9636-8640aebc9c78
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-21T11:37:01+00:00'
-            elementCondition:
-              class: craft\elements\conditions\assets\AssetCondition
-              conditionRules:
-                -
-                  class: craft\elements\conditions\assets\FileTypeConditionRule
-                  operator: in
-                  uid: 9ba910ad-8535-4e79-8616-1c02ee46b848
-                  values:
-                    - video
-                    - json
-              elementType: craft\elements\Asset
-              fieldContext: global
-            fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 34aefb31-ce8b-41fb-aabe-91a250815131
             userCondition: null
             warning: null
             width: 100

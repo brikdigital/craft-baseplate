@@ -1,0 +1,91 @@
+color: null
+description: null
+fieldLayouts:
+  d55354d9-b68b-4186-80c6-1057a2933087:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-25T09:38:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d544c7a1-06b0-46c7-b2a6-8987f2c6bd84 # Tekst (simpel)
+            handle: quote
+            includeInCards: false
+            instructions: null
+            label: Quote
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9fd487d-6443-4093-820d-c8ed7a1d03a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-25T09:38:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 318e3c51-633f-4352-8068-5d67e1cf4f0c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-25T09:38:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 10e2197c-c763-463e-998a-a704543fd784 # Platte tekst
+            handle: quoteName
+            includeInCards: false
+            instructions: null
+            label: Naam
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4cbbb32-6092-4dcd-85d8-c3e05bf12657
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-25T09:38:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 10e2197c-c763-463e-998a-a704543fd784 # Platte tekst
+            handle: function
+            includeInCards: false
+            instructions: null
+            label: Functie
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fc1bb0c-201d-4347-82f9-91ea33044402
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: bb21026f-f0e8-4475-999f-880f75eebd63
+        userCondition: null
+handle: quote
+hasTitleField: false
+icon: message-quote
+name: Quote
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{quote| striptags}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

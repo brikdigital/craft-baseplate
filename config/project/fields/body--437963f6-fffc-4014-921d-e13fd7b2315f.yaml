@@ -1,20 +1,41 @@
 columnSuffix: null
 handle: body
 instructions: null
-name: Tekst
+name: 'Tekst (uitgebreid)'
 searchable: true
 settings:
   availableTransforms: ''
   availableVolumes: ''
+  characterLimit: null
   ckeConfig: 79253ff9-2016-4c72-9a06-3c35a6a690f4 # Advanced
   createButtonLabel: null
   defaultTransform: null
-  enableSourceEditingForNonAdmins: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 25165387-9136-4739-86cb-59a989b1c003 # Afbeelding
+    -
+      __assoc__:
+        -
+          - uid
+          - b5386dfa-66c8-4d08-bbcc-38503a3862c9 #  Video
+    -
+      __assoc__:
+        -
+          - uid
+          - 596b60e6-cde4-48fb-9853-a567dcb99ece # Knoppen
+  expandEntryButtons: true
+  fullGraphqlData: false
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: true
+  sourceEditingGroups:
+    - __ADMINS__
   wordLimit: null
 translationKeyFormat: null
 translationMethod: site

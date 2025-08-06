@@ -1,0 +1,53 @@
+columnSuffix: null
+handle: iconPosition
+instructions: null
+name: 'Icoon positie'
+searchable: false
+settings:
+  customOptions: false
+  displayAsGraphic: null
+  displayFullwidth: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Links
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - left
+        -
+          - imageUrl
+          - ''
+        -
+          - imageAlign
+          - left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - right
+        -
+          - imageUrl
+          - ''
+        -
+          - imageAlign
+          - left
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: verbb\buttonbox\fields\Buttons

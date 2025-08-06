@@ -1,6 +1,8 @@
-color: null
+color: sky
+description: null
 fieldLayouts:
   3173e383-b0bc-4b0f-9e90-1541b5a32b2d:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -25,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -40,12 +42,12 @@ fieldLayouts:
         userCondition: null
 handle: articleType
 hasTitleField: true
-icon: text
+icon: layer-group
 name: 'Artikel type'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,20 +1,25 @@
 columnSuffix: null
-handle: figcaption
+handle: plainBody
 instructions: null
-name: Ondertitel
+name: 'Tekst (simpel)'
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
+  characterLimit: null
   ckeConfig: 41e5ebbf-a8cc-4e04-95e6-9c888e2423e7 # Simple
   createButtonLabel: null
   defaultTransform: null
-  enableSourceEditingForNonAdmins: false
+  expandEntryButtons: false
+  fullGraphqlData: false
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  showWordCount: true
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none
