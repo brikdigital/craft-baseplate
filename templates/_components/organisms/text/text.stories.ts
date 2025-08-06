@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/server';
 
 export default {
+	title: 'Components/Organisms/Text',
 	parameters: {
 		controls: {
 			expanded: true,

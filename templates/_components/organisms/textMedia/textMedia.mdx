@@ -1,17 +1,14 @@
 import {
-	Canvas,
 	Title,
 	Subtitle,
-	ArgTypes,
 	Source,
 	Meta,
 	Description,
 	Primary,
-	Story,
 	Stories,
 	Controls,
 } from '@storybook/addon-docs/blocks';
-import * as comStories from './textMedia.stories.json';
+import * as comStories from './textMedia.stories.ts';
 import templateSource from './textMedia.twig?raw';
 import DefaultInclude from '../../../../.storybook/DefaultInclude';
 
@@ -29,9 +26,7 @@ import DefaultInclude from '../../../../.storybook/DefaultInclude';
 
 <Stories of={comStories} />
 
-### Examples
-
-A text with media component with all required values.
+### Example
 
 <DefaultInclude />
 
