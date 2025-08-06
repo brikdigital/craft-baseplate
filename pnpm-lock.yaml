@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  vite: npm:rolldown-vite@^7.0.12
+
 patchedDependencies:
   '@storybook/addon-docs':
     hash: 2b1645f66f5cbf1f279c72c6be5be07f08d18e13e7412fd07a5ebdf48f263086

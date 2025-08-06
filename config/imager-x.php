@@ -18,7 +18,7 @@ return [
         'autoFillCount' => 'auto',
     ],
     'dev' => [
-        'transformer' => 'imageboss',
+        'transformer' => 'craft',
         'imagerUrl' => App::env('IMGIX_DEV_URL')
     ],
     // Staging environment settings

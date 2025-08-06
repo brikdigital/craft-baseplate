@@ -1,18 +1,19 @@
 {
-  "include": ["./src/ts/**/*"],
-  "exclude": ["node_modules", "dist", "testing"],
-  "compilerOptions": {
-    "target": "ES2023",
-    "module": "ES2022",
-    "outDir": "dist",
-    "strict": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Bundler",
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "types": ["vite/client"],
-    "typeRoots": ["./node_modules", "types"]
-  }
+	"include": ["./src/ts/**/*"],
+	"exclude": ["node_modules", "dist", "testing"],
+	"compilerOptions": {
+		"target": "ES2023",
+		"module": "ES2022",
+		"outDir": "dist",
+		"strict": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"jsx": "preserve",
+		"types": ["vite/client"],
+		"typeRoots": ["./node_modules", "types"]
+	}
 }
