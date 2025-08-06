@@ -1,4 +1,4 @@
-dateModified: 1754390279
+dateModified: 1754469931
 elementSources:
   craft\elements\Entry:
     -
@@ -186,10 +186,6 @@ plugins:
     enabled: true
     licenseKey: IN06BRA1RSJPVUUOW2GC3XN1
     schemaVersion: 1.2.3
-  ignition:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   imager-x:
     edition: pro
     enabled: true

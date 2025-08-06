@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96e7236c0733bd065bfbaf2061a5735f",
+    "content-hash": "304f7716d7d71ce59136904500e37ff9",
     "packages": [
         {
             "name": "amphp/amp",
@@ -14759,59 +14759,6 @@
             "time": "2023-07-05T14:23:37+00:00"
         },
         {
-            "name": "webrgp/craft-ignition",
-            "version": "v1.0.7",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webrgp/craft-ignition/zipball/5feb59c8fe589cbaf970a845f8ca7e8cf8acc4ee",
-                "reference": "5feb59c8fe589cbaf970a845f8ca7e8cf8acc4ee",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.3.0 || ^5.0.0",
-                "webrgp/craft-ignition-core": "^1.1.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Ignition",
-                "handle": "ignition",
-                "developer": "Rodrigo Passos",
-                "developerUrl": "https://rodrigopassos.com/",
-                "changelogUrl": "https://raw.githubusercontent.com/webrgp/craft-ignition/main/CHANGELOG.md",
-                "class": "webrgp\\ignitionplugin\\Ignition"
-            },
-            "autoload": {
-                "psr-4": {
-                    "webrgp\\ignitionplugin\\": "src/"
-                }
-            },
-            "license": [
-                "mit"
-            ],
-            "authors": [
-                {
-                    "name": "Rodrigo Passos",
-                    "homepage": "https://rodrigopassos.com"
-                }
-            ],
-            "description": "Ignition error handling alternative for Craft CMS.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craftcms",
-                "error",
-                "error-reporting",
-                "ignition",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/webrgp/craft-ignition/issues?state=open",
-                "source": "https://github.com/webrgp/craft-ignition",
-                "docs": "https://github.com/webrgp/craft-ignition/blob/master/README.md"
-            },
-            "time": "2025-06-19T17:30:42+00:00"
-        },
-        {
             "name": "webrgp/craft-ignition-core",
             "version": "v1.1.0",
             "source": {
@@ -15741,8 +15688,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },

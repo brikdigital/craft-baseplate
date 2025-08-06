@@ -43,7 +43,7 @@
 		"verbb/knock-knock": "3.0.3",
 		"verbb/navigation": "3.0.9",
 		"vlucas/phpdotenv": "^5.4.0",
-		"webrgp/craft-ignition": "v1.0.7",
+		"webrgp/craft-ignition-core": "^1.1",
 		"yiisoft/yii2-redis": "^2.0"
 	},
 	"require-dev": {

@@ -17,6 +17,7 @@
  */
 
 use craft\helpers\App;
+use webrgp\ignition\web\IgnitionErrorHandler;
 
 return [
     'components' => [
@@ -34,5 +35,9 @@ return [
             // Instantiate and return it
             return Craft::createObject($config);
         },
+        'errorHandler' => [
+            'class' => IgnitionErrorHandler::class,
+            'errorAction' => 'templates/render-error'
+        ]
     ],
 ];
