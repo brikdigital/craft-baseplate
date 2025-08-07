@@ -33,7 +33,7 @@ class StorybookController extends Controller
             throw new ComponentNotFoundException("Impossible to find a story with an empty story file name.");
         }
         $filename = str_replace(
-            array('./templates', 'stories.json', 'stories.yml', 'stories.ts', 'stories.tsx'),
+            array('./templates', 'stories.json', 'stories.yml', 'stories.tsx', 'stories.ts'),
             array('', 'twig', 'twig', 'twig', 'twig'),
             $filename
         );
