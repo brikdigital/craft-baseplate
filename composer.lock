@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4a4650ead8613285b1d0b068e08f735",
+    "content-hash": "6f2c448976f52d619c89024a921cea5f",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1682,11 +1682,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.8.12",
+            "version": "5.8.13.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/43bd41904ddf2902006a96e68e324af3b520ac9b",
-                "reference": "43bd41904ddf2902006a96e68e324af3b520ac9b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/f9b7b6bb6bc73ff57ee2dec85a362b7761bf8d38",
+                "reference": "f9b7b6bb6bc73ff57ee2dec85a362b7761bf8d38",
                 "shasum": ""
             },
             "require": {
@@ -1783,7 +1783,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2025-07-30T00:05:47+00:00"
+            "time": "2025-08-07T01:31:12+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -16053,8 +16053,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },
