@@ -1,4 +1,4 @@
-dateModified: 1754553047
+dateModified: 1754560271
 elementSources:
   craft\elements\Entry:
     -
@@ -165,10 +165,6 @@ plugins:
     enabled: true
     schemaVersion: 1.4.3
   cp-clearcache:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  cp-field-inspect:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

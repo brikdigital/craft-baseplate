@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f2c448976f52d619c89024a921cea5f",
+    "content-hash": "db9afabee7468b39650c97d69bde80ef",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3301,37 +3301,6 @@
             "time": "2015-06-11T16:06:02+00:00"
         },
         {
-            "name": "goldinteractive/craft-sitecopy",
-            "version": "2.1.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Goldinteractive/craft-sitecopy/zipball/b48f10481eca644c7a7b48946cc5db0ac731808e",
-                "reference": "b48f10481eca644c7a7b48946cc5db0ac731808e",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "site-copy-x",
-                "name": "Site Copy X",
-                "developer": "Gold Interactive",
-                "developerUrl": "http://goldinteractive.ch",
-                "class": "goldinteractive\\sitecopy\\SiteCopy",
-                "hasSettings": true
-            },
-            "autoload": {
-                "psr-4": {
-                    "goldinteractive\\sitecopy\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "time": "2024-08-06T08:26:55+00:00"
-        },
-        {
             "name": "google/auth",
             "version": "v1.47.1",
             "source": {
@@ -6057,57 +6026,6 @@
             "time": "2024-03-30T12:01:58+00:00"
         },
         {
-            "name": "mmikkel/cp-field-inspect",
-            "version": "2.0.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mmikkel/CpFieldInspect-Craft/zipball/ac990c3c3102880649136ddc543781b36b296833",
-                "reference": "ac990c3c3102880649136ddc543781b36b296833",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "CP Field Inspect",
-                "handle": "cp-field-inspect",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/mmikkel/CpFieldInspect-Craft/master/CHANGELOG.md",
-                "class": "mmikkel\\cpfieldinspect\\CpFieldInspect"
-            },
-            "autoload": {
-                "psr-4": {
-                    "mmikkel\\cpfieldinspect\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mats Mikkel Rummelhoff",
-                    "homepage": "https://vaersaagod.no"
-                }
-            ],
-            "description": "Inspect field handles and easily edit field and element source settings",
-            "keywords": [
-                "cms",
-                "cp field inspect",
-                "craft",
-                "craft-plugin",
-                "craftcms"
-            ],
-            "support": {
-                "docs": "https://github.com/mmikkel/CpFieldInspect-Craft/blob/master/README.md",
-                "issues": "https://github.com/mmikkel/CpFieldInspect-Craft/issues"
-            },
-            "time": "2025-01-26T11:01:13+00:00"
-        },
-        {
             "name": "mmikkel/retcon",
             "version": "3.2.1",
             "dist": {
@@ -6862,6 +6780,37 @@
                 }
             ],
             "time": "2025-01-08T20:10:23+00:00"
+        },
+        {
+            "name": "nst/craft-sitecopy",
+            "version": "2.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neustadt-swiss/craft-sitecopy/zipball/b48f10481eca644c7a7b48946cc5db0ac731808e",
+                "reference": "b48f10481eca644c7a7b48946cc5db0ac731808e",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "site-copy-x",
+                "name": "Site Copy X",
+                "developer": "Gold Interactive",
+                "developerUrl": "http://goldinteractive.ch",
+                "class": "goldinteractive\\sitecopy\\SiteCopy",
+                "hasSettings": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "goldinteractive\\sitecopy\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "time": "2024-08-06T08:26:55+00:00"
         },
         {
             "name": "nystudio107/craft-code-editor",
@@ -16053,8 +16002,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
