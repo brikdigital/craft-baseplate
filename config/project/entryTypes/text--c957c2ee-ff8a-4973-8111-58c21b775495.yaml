@@ -1,90 +1,15 @@
 color: null
+description: null
 fieldLayouts:
   16610ec8-0d62-42a6-8839-4522cccaa5aa:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-10-17T10:24:00+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: bd726045-6533-4fb4-bea4-1bb4c8340dbc
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-10-17T12:58:11+00:00'
-            elementCondition: null
-            fieldUid: c798cdf5-723e-4cdc-8ac1-6c527b1a14a6 # Bovenkop
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4daa58b4-dc7d-4932-aa2e-eabaee2c76b4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-17T12:58:11+00:00'
-            elementCondition: null
-            fieldUid: d602da2a-239f-4f18-93fd-8047af89cdd0 # Kop
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9a447533-1477-4d76-90ef-c6cf80c729b7
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-17T12:58:11+00:00'
-            elementCondition: null
-            fieldUid: 8f439fc2-311f-4f45-99c6-c482d129d1fd # Tag
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7a2ae08f-b3fa-49c7-b009-e4725a6d33ef
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-17T12:58:11+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst (uitgebreid)
             handle: null
@@ -99,38 +24,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: '2024-10-17T12:58:11+00:00'
-            elementCondition: null
-            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Knoppen
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e90e2cee-3c6f-4070-9be5-218520e2a88d
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-17T12:58:52+00:00'
-            elementCondition: null
-            fieldUid: 5026f9b8-4a01-4754-8e5b-e71d9e17f5c8 # Thema
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 63c779c7-d576-43a9-9013-99c8f32a9cee
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: 3cd0ba4b-e0ec-4248-a095-643591dc081a
         userCondition: null
@@ -140,8 +33,8 @@ icon: font-case
 name: Tekst
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
