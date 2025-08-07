@@ -1,6 +1,11 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import { defineMain } from '@storybook/server-webpack5/node';
 
-const config: StorybookConfig = {
+export default defineMain({
+	core: (config) => {
+		if (!config) return;
+		config.disableTelemetry = true;
+		return config;
+	},
 	stories: [
 		'../templates/_components/**/*.mdx',
 		'../templates/_components/**/*.stories.@(json|yml|ts|tsx)',
@@ -17,5 +22,4 @@ const config: StorybookConfig = {
 		name: '@storybook/server-webpack5',
 		options: {},
 	},
-};
-export default config;
+});
