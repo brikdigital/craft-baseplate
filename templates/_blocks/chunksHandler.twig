@@ -1,0 +1,20 @@
+{% set wrapperClasses = wrapperClasses|default('') %}
+{% set variant = variant|default('chunks') %}
+
+{% if editorContent %}
+    <div class="chunks {{ wrapperClasses }}">
+        {% for chunk in editorContent %}
+            {% if chunk.type == 'markup' %}
+                {% include '_components/atoms/text/text.twig' with {
+                    html: chunk,
+                    variant: variant
+                } only %}
+            {% else %}
+                {% include '_components/blocks.twig' with {
+                    blocks: [chunk.entry],
+                    isInText: true
+                } only %}
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}

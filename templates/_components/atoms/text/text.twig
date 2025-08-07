@@ -1,10 +1,11 @@
-{% import "_macros/retcon" as retcon %}
-{% set theme = theme is defined and theme|length ? theme : 'default' %}
+{% import '_macros/retcon.twig' as retcon %}
+{% set variant = variant is defined and variant|length ? variant : 'default' %}
 
 {% if html %}
-	{% if theme == 'darkBg' %}
-		{{ retcon.darkBg(html) }}
-	{% else %}
-		{{ retcon.default(html) }}
-	{% endif %}
+	{% switch variant %}
+		{% case 'darkBg' %}
+			{{ retcon.darkBg(html) }}
+		{% default %}
+			{{ retcon.default(html) }}
+	{% endswitch %}
 {% endif %}

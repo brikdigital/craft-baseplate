@@ -1,5 +1,8 @@
+{% set isInText = isInText|default(false) %}
+
 {% if blocks is defined %}
-    {% for block in blocks.all() %}
-        {% include "_blocks/" ~ block.type ~ ".twig" with { block: block } %}
+    {% set blocks = blocks is array ? blocks : blocks.all() %}
+    {% for block in blocks %}
+        {% include "_blocks/" ~ block.type ~ ".twig" with { block: block, isInText: isInText } %}
     {% endfor %}
 {% endif %}

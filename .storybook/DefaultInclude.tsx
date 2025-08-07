@@ -6,7 +6,9 @@ export default function DefaultInclude() {
 	const { story } = useOf('story', ['story']);
 	const path = story.parameters.fileName
 		.replace('./templates', '')
-		.replace('.stories.json', '.twig');
+		.replace('.stories.json', '.twig')
+		.replace('.stories.ts', '.twig')
+		.replace('.stories.tsx', '.twig');
 	const hasArgs = Object.keys(story.argTypes).length > 0;
 
 	if (!hasArgs) return <Source language={'twig'} code={`{% include "${path}" %}`} />;
