@@ -26,6 +26,7 @@
     "putyourlightson/craft-sherlock": "5.2.0",
     "putyourlightson/craft-sprig": "3.6.1",
     "spacecatninja/imager-x": "5.1.6",
+    "spacecatninja/imager-x-imageboss-transformer": "^3.0.1",
     "spacecatninja/imager-x-power-pack": "^1.0.5",
     "spacecatninja/imager-x-video-adapter": "^1.1.0",
     "spicyweb/craft-batch-actions": "2.1.0",
@@ -75,11 +76,13 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/lexisother/craft-statuspaginator"
+      "url": "https://github.com/lexisother/craft-statuspaginator",
+      "no-api": true
     },
     {
       "type": "vcs",
-      "url": "https://github.com/cweagans/composer-patches.git"
+      "url": "https://github.com/cweagans/composer-patches.git",
+      "no-api": true
     },
     {
       "type": "composer",

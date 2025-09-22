@@ -1,4 +1,4 @@
-dateModified: 1754560271
+dateModified: 1758536814
 elementSources:
   craft\elements\Entry:
     -
@@ -200,6 +200,10 @@ plugins:
     enabled: true
     licenseKey: SKZIQSLBPTEM4IV1YNGF8BBA
     schemaVersion: 4.0.0
+  imager-x-imageboss-transformer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   imager-x-power-pack:
     edition: standard
     enabled: true
