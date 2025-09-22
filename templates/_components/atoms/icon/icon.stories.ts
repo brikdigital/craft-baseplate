@@ -53,6 +53,7 @@ export default {
 		},
 	},
 } satisfies Meta;
+
 export const ChevronLeft: StoryObj = {
 	args: {
 		size: 'medium',
@@ -60,135 +61,6 @@ export const ChevronLeft: StoryObj = {
 		iconClasses: 'text-black',
 	},
 };
-// {
-// 	"name": "Chevron right",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "chevron-right",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Chevron up",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "chevron-up",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Chevron down",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "chevron-down",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Hamburger",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "hamburger",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Close",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "close",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Download",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "download",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Plus",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "plus",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Minus",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "minus",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Play",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "play",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Facebook",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "facebook",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Linkedin",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "linkedin",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Instagram",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "instagram",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "X",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "x",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-//
-// {
-// 	"name": "Whatsapp",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "whatsapp",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Youtube",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "youtube",
-// 		"iconClasses": "text-black"
-// 	}
-// },
-// {
-// 	"name": "Vimeo",
-// 	"args": {
-// 		"size": "medium",
-// 		"icon": "vimeo",
-// 		"iconClasses": "text-black"
-// 	}
-// }
 
 export const ChevronRight: StoryObj = {
 	args: {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db9afabee7468b39650c97d69bde80ef",
+    "content-hash": "25696b3a3e62572a83102507ff095444",
     "packages": [
         {
             "name": "amphp/amp",
@@ -9220,6 +9220,63 @@
                 "issues": "https://github.com/spacecatninja/craft-imager-x/issues"
             },
             "time": "2025-07-24T20:11:18+00:00"
+        },
+        {
+            "name": "spacecatninja/imager-x-imageboss-transformer",
+            "version": "3.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spacecatninja/craft-imager-x-imageboss-transformer/zipball/4167fd91be6de1ee11bd0aa5455ef44bf7d6d4dc",
+                "reference": "4167fd91be6de1ee11bd0aa5455ef44bf7d6d4dc",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0-beta.1",
+                "php": "^8.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Imager X ImageBoss Transformer",
+                "handle": "imager-x-imageboss-transformer",
+                "schemaVersion": "2.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/spacecatninja/craft-imager-x-imageboss-transformer/master/CHANGELOG.md",
+                "components": [],
+                "class": "spacecatninja\\imagebosstransformer\\ImageBossTransformer"
+            },
+            "autoload": {
+                "psr-4": {
+                    "spacecatninja\\imagebosstransformer\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SPACECATNINJA",
+                    "homepage": "https://www.spacecat.ninja"
+                }
+            ],
+            "description": "ImageBoss transformer for Imager X",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "image",
+                "imageboss",
+                "picture",
+                "responsive",
+                "srcset",
+                "transform"
+            ],
+            "support": {
+                "docs": "https://github.com/spacecatninja/craft-imager-x-imageboss-transformer/blob/master/README.md",
+                "issues": "https://github.com/spacecatninja/craft-imager-x-imageboss-transformer/issues"
+            },
+            "time": "2024-06-16T16:37:04+00:00"
         },
         {
             "name": "spacecatninja/imager-x-power-pack",
