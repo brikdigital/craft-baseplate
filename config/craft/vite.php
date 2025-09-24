@@ -1,14 +1,15 @@
 <?php
 
-use craft\helpers\App;
+use CraftCms\Aliases\Aliases;
+use CraftCms\Cms\Support\Env;
 
 return [
-    'useDevServer' => App::env('CRAFT_ENVIRONMENT') == 'dev' ? true : false,
+    'useDevServer' => Env::get('CRAFT_ENVIRONMENT') == 'dev' ? true : false,
     'checkDevServer' => true,
     'devServerInternal' => 'http://localhost:3000',
-    'devServerPublic' => Craft::getAlias('@web') . ':3000',
+    'devServerPublic' => Aliases::get('@web') . ':3000',
     'errorEntry' => 'src/js/app.js',
-    'manifestPath' => Craft::getAlias('@webroot') . '/dist/.vite/manifest.json',
+    'manifestPath' => Aliases::get('@webroot') . '/dist/.vite/manifest.json',
     'serverPublic' => '/dist/',
 
     /**

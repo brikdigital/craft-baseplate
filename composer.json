@@ -9,7 +9,7 @@
 		"clubstudioltd/craft-inline-svg": "^2.1",
 		"craftcms/aws-s3": "2.2.3",
 		"craftcms/ckeditor": "4.9.0",
-		"craftcms/cms": "5.8.13.1",
+		"craftcms/cms": "6.x-dev as 5.8.0",
 		"craftcms/postmark": "^3.1",
 		"craftpulse/craft-colour-swatches": "5.1.0",
 		"cweagans/composer-patches": "dev-main#5269693119b245e273db052f12ab23d74aca26fc",
@@ -43,12 +43,11 @@
 		"verbb/icon-picker": "3.0.5",
 		"verbb/knock-knock": "3.0.4",
 		"verbb/navigation": "3.0.10",
-		"vlucas/phpdotenv": "^5.4.0",
 		"webrgp/craft-ignition-core": "^1.1",
 		"yiisoft/yii2-redis": "^2.0"
 	},
 	"require-dev": {
-		"craftcms/generator": "^2.0.0",
+		"craftcms/generator": "3.x-dev",
 		"nystudio107/craft-autocomplete": "^1.12",
 		"yiisoft/yii2-shell": "^2.0.3"
 	},
@@ -65,10 +64,7 @@
 			"yiisoft/yii2-composer": true
 		},
 		"sort-packages": true,
-		"optimize-autoloader": true,
-		"platform": {
-			"php": "8.2"
-		}
+		"optimize-autoloader": true
 	},
 	"scripts": {
 		"post-create-project-cmd": [
@@ -78,6 +74,10 @@
 			"@php -r \"unlink('composer.json');\"",
 			"@php -r \"rename('composer.json.default', 'composer.json');\"",
 			"@composer dump-autoload -o"
+		],
+		"post-autoload-dump": [
+			"Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+			"@php artisan package:discover --ansi"
 		]
 	},
 	"repositories": [
