@@ -1,4 +1,4 @@
-dateModified: 1758536814
+dateModified: 1762252993
 elementSources:
   craft\elements\Entry:
     -
@@ -184,7 +184,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 39WCCUE5PBMC2ZH6XF7YADSU
-    schemaVersion: 3.4.9
+    schemaVersion: 3.4.10
   hyper:
     edition: standard
     enabled: true
@@ -236,7 +236,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: V8UFDBART8D7C2BHW3QLGIIF
-    schemaVersion: 2.1.0
+    schemaVersion: 2.1.1
   position-fieldtype:
     edition: standard
     enabled: true
