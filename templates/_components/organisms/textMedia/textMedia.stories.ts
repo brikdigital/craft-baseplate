@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/server';
+import { Meta, StoryObj } from '@storybook/server-webpack5';
 
 const wait = (ms: number) => new Promise<void>((res) => setTimeout(res, ms));
 

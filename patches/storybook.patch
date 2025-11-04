@@ -1,0 +1,13 @@
+diff --git a/dist/core-server/presets/common-manager.js b/dist/core-server/presets/common-manager.js
+index bebcbbc35e10d92fc5d43d0c7cb60b0aa94db880..0d9901973d1198e3d4b177513c00fe49cdff2971 100644
+--- a/dist/core-server/presets/common-manager.js
++++ b/dist/core-server/presets/common-manager.js
+@@ -5149,7 +5149,7 @@ var ArgsTable = /* @__PURE__ */ __name((props) => {
+         ...common
+       }
+     ))
+-  )), Object.entries(groups.sections).map(([category, section]) => React36.createElement(SectionRow, { key: category, label: category, level: "section", colSpan }, section.ungrouped.map((row) => React36.createElement(ArgRow, { key: row.key, row, arg: args && args[row.key], ...common })), Object.entries(section.subsections).map(([subcategory, subsection]) => React36.createElement(
++  )), Object.entries(groups.sections).sort((a, b)=>a[0].localeCompare(b[0])).map(([category, section]) => React36.createElement(SectionRow, { key: category, label: category, level: "section", colSpan }, section.ungrouped.map((row) => React36.createElement(ArgRow, { key: row.key, row, arg: args && args[row.key], ...common })), Object.entries(section.subsections).map(([subcategory, subsection]) => React36.createElement(
+     SectionRow,
+     {
+       key: subcategory,

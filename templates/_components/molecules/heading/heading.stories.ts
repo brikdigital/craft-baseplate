@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/server';
+import { Meta, StoryObj } from '@storybook/server-webpack5';
 
 export default {
 	title: 'Components/Molecules/Heading',
