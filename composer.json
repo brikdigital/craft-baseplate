@@ -73,6 +73,7 @@
 	"scripts": {
 		"post-create-project-cmd": [
 			"@php -r \"unlink('.gitignore');\"",
+			"@php -r \"unlink('LICENSE')\"",
 			"@php -r \"copy('.project.gitignore', '.gitignore');\"",
 			"@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\"",
 			"@php -r \"unlink('composer.json');\"",
