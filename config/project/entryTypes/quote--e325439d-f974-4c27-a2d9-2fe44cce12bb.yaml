@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d544c7a1-06b0-46c7-b2a6-8987f2c6bd84 # Tekst (simpel)
             handle: quote
-            includeInCards: false
             instructions: null
             label: Quote
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,10 +28,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -47,10 +43,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 10e2197c-c763-463e-998a-a704543fd784 # Platte tekst
             handle: quoteName
-            includeInCards: false
             instructions: null
             label: Naam
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -64,10 +58,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 10e2197c-c763-463e-998a-a704543fd784 # Platte tekst
             handle: function
-            includeInCards: false
             instructions: null
             label: Functie
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

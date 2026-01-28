@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 86dfc9bd-0363-4046-a638-26e03cd481da # Afbeelding (meerdere)
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,10 +28,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 767c68f7-a42c-4402-a640-46af0c267fb7 # Afbeelding ratio
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,6 +40,7 @@ fieldLayouts:
         name: Inhoud
         uid: 3cdae63a-9575-4f7b-9fbf-0b8af1241278
         userCondition: null
+    thumbFieldKey: 'layoutElement:1e52c8a4-7bc9-4501-aa38-df6fbe8ca1ae'
 handle: images
 hasTitleField: false
 icon: image

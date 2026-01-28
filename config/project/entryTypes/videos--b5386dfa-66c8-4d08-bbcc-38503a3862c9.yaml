@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,10 +28,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -59,10 +55,8 @@ fieldLayouts:
               fieldContext: global
             fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -88,10 +82,8 @@ fieldLayouts:
               fieldContext: global
             fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
             handle: inlineVideo
-            includeInCards: false
             instructions: null
             label: 'Autoplay video'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -102,6 +94,7 @@ fieldLayouts:
         name: Inhoud
         uid: 473d7c5d-e8cd-4eef-8cbc-655958eea1e7
         userCondition: null
+    thumbFieldKey: 'layoutElement:47d6cdeb-0953-4712-bb4d-5ddbc7c31fc0'
 handle: videos
 hasTitleField: false
 icon: video
