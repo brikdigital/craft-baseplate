@@ -7,11 +7,25 @@ settings:
   availableTransforms: ''
   availableVolumes: '*'
   characterLimit: null
-  ckeConfig: 41e5ebbf-a8cc-4e04-95e6-9c888e2423e7 # Simple
-  createButtonLabel: null
+  css: null
+  cssFile: null
   defaultTransform: null
-  expandEntryButtons: false
   fullGraphqlData: false
+  headingLevels:
+    - 2
+    - 3
+    - 4
+  js: null
+  jsFile: null
+  options:
+    link:
+      decorators:
+        isExternal:
+          attributes:
+            rel: 'noopener noreferrer'
+            target: _blank
+          label: 'Open in a new tab'
+          mode: manual
   parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
@@ -20,6 +34,12 @@ settings:
   showWordCount: false
   sourceEditingGroups:
     - __ADMINS__
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

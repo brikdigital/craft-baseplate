@@ -7,27 +7,35 @@ settings:
   availableTransforms: ''
   availableVolumes: ''
   characterLimit: null
-  ckeConfig: 79253ff9-2016-4c72-9a06-3c35a6a690f4 # Advanced
-  createButtonLabel: null
+  css: ".ck.ck-content ul + ul, .ck.ck-content ul + ol, .ck.ck-content ol + ul, .ck.ck-content ol + ol {\r\n  margin-top: 20px;\r\n}"
+  cssFile: null
   defaultTransform: null
   entryTypes:
     -
-      __assoc__:
-        -
-          - uid
-          - 25165387-9136-4739-86cb-59a989b1c003 # Afbeelding
+      expanded: true
+      uid: 25165387-9136-4739-86cb-59a989b1c003 # Afbeelding
     -
-      __assoc__:
-        -
-          - uid
-          - b5386dfa-66c8-4d08-bbcc-38503a3862c9 #  Video
+      expanded: true
+      uid: b5386dfa-66c8-4d08-bbcc-38503a3862c9 #  Video
     -
-      __assoc__:
-        -
-          - uid
-          - 596b60e6-cde4-48fb-9853-a567dcb99ece # Knoppen
-  expandEntryButtons: true
+      expanded: true
+      uid: 596b60e6-cde4-48fb-9853-a567dcb99ece # Knoppen
   fullGraphqlData: false
+  headingLevels:
+    - 2
+    - 3
+    - 4
+  js: null
+  jsFile: null
+  options:
+    link:
+      decorators:
+        isExternal:
+          attributes:
+            rel: 'noopener noreferrer'
+            target: _blank
+          label: 'Open in a new tab'
+          mode: manual
   parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
@@ -36,6 +44,20 @@ settings:
   showWordCount: true
   sourceEditingGroups:
     - __ADMINS__
+  toolbar:
+    - heading
+    - createEntry
+    - '|'
+    - numberedList
+    - bulletedList
+    - outdent
+    - indent
+    - '|'
+    - bold
+    - italic
+    - link
+    - findAndReplace
+    - sourceEditing
   wordLimit: null
 translationKeyFormat: null
 translationMethod: site

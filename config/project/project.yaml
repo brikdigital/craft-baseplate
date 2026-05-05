@@ -1,4 +1,4 @@
-dateModified: 1769595321
+dateModified: 1777969820
 elementSources:
   craft\elements\Entry:
     -
@@ -79,7 +79,6 @@ meta:
     8f439fc2-311f-4f45-99c6-c482d129d1fd: Tag # Tag
     10e2197c-c763-463e-998a-a704543fd784: 'Platte tekst' # Platte tekst
     34e6d645-f593-49c5-bbed-6e80bd5b8fd4: Agenda # Agenda
-    41e5ebbf-a8cc-4e04-95e6-9c888e2423e7: Simple # Simple
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
     65bb950b-bf8c-46a5-b2d3-8fa38ea6f215: 'Contact Form' # Contact Form
     86dfc9bd-0363-4046-a638-26e03cd481da: 'Afbeelding (meerdere)' # Afbeelding (meerdere)
@@ -100,7 +99,6 @@ meta:
     35872b14-d347-4e31-889e-b505340c4704: 'Knop thema' # Knop thema
     54058ce4-020d-4535-9931-d69993419df7: Artikelen # Artikelen
     74716a14-5d9a-4002-bc77-51f38589d539: 'Artikel grid' # Artikel grid
-    79253ff9-2016-4c72-9a06-3c35a6a690f4: Advanced # Advanced
     82231ea7-a108-43d6-9a7a-78b4b9297fb2: 'Artikelen index' # Artikelen index
     437963f6-fffc-4014-921d-e13fd7b2315f: 'Tekst (uitgebreid)' # Tekst (uitgebreid)
     12976062-797d-4c3f-bba9-b08f9517d734: 'Standaard custom icons' # Standaard custom icons
@@ -159,7 +157,7 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.0.0.1
   colour-swatches:
     edition: standard
     enabled: true
@@ -184,7 +182,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 39WCCUE5PBMC2ZH6XF7YADSU
-    schemaVersion: 3.4.10
+    schemaVersion: 3.4.12
   hyper:
     edition: standard
     enabled: true
@@ -236,7 +234,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: V8UFDBART8D7C2BHW3QLGIIF
-    schemaVersion: 2.1.1
+    schemaVersion: 2.1.2
   position-fieldtype:
     edition: standard
     enabled: true
