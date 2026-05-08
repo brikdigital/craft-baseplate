@@ -1,0 +1,12 @@
+{% extends '_layouts/default.twig' %}
+
+
+{% block html %}
+
+	{{entry.title}}
+
+	{% include '_components/blocks.twig' with {
+		blocks: entry.blocks ? entry.blocks.eagerly().all() : [],
+	} %}
+
+{% endblock %}

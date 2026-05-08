@@ -5,4 +5,9 @@
     {% for event in events %}
         {{ event.title }} <br />
     {% endfor %}
+
+    {% include '_components/blocks.twig' with {
+		blocks: entry.blocks ? entry.blocks.eagerly().all() : [],
+	} %}
+
 {% endblock %}

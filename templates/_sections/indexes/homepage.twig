@@ -1,0 +1,13 @@
+{% extends '_layouts/default.twig' %}
+{% import '_macros/retcon.twig' as retcon %}
+
+
+{% block html %}
+
+	{{entry.title}}
+
+	{% include '_components/blocks.twig' with {
+		blocks: entry.blocks ? entry.blocks.eagerly().all() : [],
+	} %}
+
+{% endblock %}

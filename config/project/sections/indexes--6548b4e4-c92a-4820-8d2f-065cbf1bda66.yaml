@@ -1,0 +1,33 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 4f69e3ac-43b6-46cc-acad-80ce9804fd2a # Homepage
+  -
+    uid: 1bf7f973-b634-4c7e-adbc-e71f1a4c70f8 # Artikelen
+  -
+    uid: 34e6d645-f593-49c5-bbed-6e80bd5b8fd4 # Evenementen
+handle: indexes
+maxAuthors: 1
+name: Indexes
+previewTargets:
+  -
+    label: 'Primaire invoer-pagina'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Baseplate EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/indexes/_entry
+    uriFormat: '{parent.uri}/{slug}'
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/indexes/_entry
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: a87787a9-9f76-483a-8411-360876c84ba7
+type: structure

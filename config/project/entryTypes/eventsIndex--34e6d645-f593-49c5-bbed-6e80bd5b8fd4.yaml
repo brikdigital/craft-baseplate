@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: lime
 description: null
 fieldLayouts:
@@ -38,10 +39,11 @@ fieldLayouts:
         name: Inhoud
         uid: e0f99001-422c-4614-abd2-f84ab63bbe10
         userCondition: null
-handle: eventIndex
+    thumbFieldKey: null
+handle: eventsIndex
 hasTitleField: true
 icon: calendar-days
-name: Agenda
+name: Evenementen
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
@@ -49,3 +51,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

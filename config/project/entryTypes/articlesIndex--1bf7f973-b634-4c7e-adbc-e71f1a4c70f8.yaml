@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 fieldLayouts:
   fde7c2bf-2bdb-44b4-bb64-87cb29e9bd3a:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -23,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,7 +38,9 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-10-17T10:57:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
             handle: null
             instructions: null
@@ -49,7 +54,9 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-10-17T10:57:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst (uitgebreid)
             handle: null
             instructions: null
@@ -63,7 +70,9 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-10-17T10:57:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Knoppen
             handle: null
             instructions: null
@@ -83,7 +92,9 @@ fieldLayouts:
         elements:
           -
             dateAdded: '2024-10-17T10:57:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
             handle: null
             instructions: null
@@ -103,7 +114,9 @@ fieldLayouts:
         elements:
           -
             dateAdded: '2024-10-17T10:57:11+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO Instellingen
             handle: null
             instructions: null
@@ -118,14 +131,16 @@ fieldLayouts:
         name: SEO
         uid: 5e61034d-d197-4b86-8fb3-825da79df710
         userCondition: null
+    thumbFieldKey: null
 handle: articlesIndex
 hasTitleField: true
 icon: newspaper
-name: 'Artikelen index'
+name: Artikelen
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'
