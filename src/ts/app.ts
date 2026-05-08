@@ -27,6 +27,14 @@ const components: Component[] = [
 		name: 'alpine',
 		selector: '[data-alpine]',
 	},
+	{
+		name: 'datastar',
+		selector: '[data-signals], [data-bind]',
+	},
+	{
+		name: 'datastar-inspector',
+		selector: 'datastar-inspector',
+	},
 ];
 
 for (let component of components) {
