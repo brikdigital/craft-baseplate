@@ -1,0 +1,42 @@
+@layer components {
+	:root {
+		--container-width: 1390px;
+		--container-padding: var(--margin);
+		--scrollbar: calc(100vw - 100%);
+		--viewport: calc(100vw - var(--scrollbar));
+		--fluid-area: max(
+			var(--container-padding),
+			calc((var(--viewport) - var(--container-width)) / 2)
+		);
+		--margin: 1.25rem;
+		--gutter: 1.25rem;
+		--m: var(--margin);
+		--g: var(--gutter);
+
+		/* grid */
+		--columns: 6;
+		--columns-width-total: calc(
+			var(--viewport) - (var(--fluid-area) * 2) + (var(--container-padding) * 2)
+		);
+		--gutter-width-total: calc((var(--columns) - 1) * var(--gutter));
+		--columns-width-total-without-gutters: calc(
+			var(--columns-width-total) - var(--gutter-width-total)
+		);
+		--column-width: calc(var(--columns-width-total-without-gutters) / var(--columns));
+
+		@media (min-width: theme(--breakpoint-md)) {
+			--columns: 12;
+			--margin: 1.5rem;
+			--container-padding: max(1.5rem, (1rem + 5vw));
+		}
+	}
+}
+
+@utility container {
+	width: 100%;
+	max-width: calc(var(--container-width) + (var(--container-padding) * 2));
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+}

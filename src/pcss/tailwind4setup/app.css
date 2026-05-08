@@ -1,0 +1,92 @@
+/* theme: depont */
+@import 'tailwindcss';
+
+@import './components/container.css';
+@import './components/spacing.css';
+@import './components/colors.css';
+@import './components/typography.css';
+
+@plugin 'tailwindcss-debug-screens';
+
+@theme {
+	--color-white: #fff;
+	--color-black: #000;
+	--color-blue: #000dff;
+
+	--font-*: initial;
+	--font-heading: 'FKDePontSans', sans-serif;
+	--font-text: 'FKDePontNeue', sans-serif;
+
+	--breakpoint-*: initial;
+	--breakpoint-xs: 480px;
+	--breakpoint-sm: 641px;
+	--breakpoint-md: 1025px;
+	--breakpoint-lg: 1281px;
+	--breakpoint-xl: 1441px;
+	--breakpoint-2xl: 1601px;
+	--breakpoint-3xl: 2001px;
+
+	--aspect-one-by-one: 1/1;
+	--aspect-three-by-four: 3/4;
+	--aspect-four-by-three: 4/3;
+	--aspect-sixteen-by-nine: 16/9;
+
+	--z-index-preview: 99999;
+}
+
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
+
+	html,
+	body {
+		@apply font-text;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeLegibility;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	[data-media-player] {
+		--plyr-color-main: #ffdf3c;
+		--plyr-border-radius: 0px;
+
+		--plyr-video-control-background: #ffdf3c;
+		--plyr-video-control-color: #000;
+		--plyr-video-control-color-hover: #000;
+
+		contain: layout !important;
+
+		.plyr__control--overlaid {
+			background-color: var(--plyr-video-control-background) !important;
+			border-radius: 0px !important;
+			svg {
+				margin-left: -2px;
+			}
+		}
+	}
+
+	/* For more information: https://getbootstrap.com/docs/5.0/helpers/stretched-link/ */
+	.stretched-link {
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			content: '';
+		}
+	}
+}

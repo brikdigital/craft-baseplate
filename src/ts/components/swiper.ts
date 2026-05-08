@@ -31,10 +31,11 @@ export default function swiper() {
 
 		let typeOptions = {};
 		switch (sliderData.type) {
-			case 'fullWidth':
+			case 'images':
 				typeOptions = {
 					spaceBetween: 0,
 					slidesPerView: 1,
+					loop: true,
 				};
 				break;
 			case 'cards':
