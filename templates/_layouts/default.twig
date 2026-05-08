@@ -48,7 +48,14 @@
                     <a id="skipToContent"></a>
                     {% block html %}
                     {% endblock %}
+
+                    {% if craft.app.env == 'dev' %}
+                        <datastar-inspector />
+                    {% endif %}
                 </main>
+
+                {% block offcanvas %}
+                {% endblock %}
             </div>
         </body>
         </html>
