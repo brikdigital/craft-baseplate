@@ -185,7 +185,7 @@ plugins:
   blitz:
     edition: standard
     enabled: true
-    licenseKey: 5LFNBC5E60TXAOHBCSFOJP8O
+    licenseKey: FEKJVGWWK8G0MZZHEKCNR950
     schemaVersion: 5.12.0
     settings:
       maxUriLength: 2048
@@ -212,22 +212,22 @@ plugins:
   formie:
     edition: standard
     enabled: true
-    licenseKey: 39WCCUE5PBMC2ZH6XF7YADSU
+    licenseKey: 435ASQ7ZIWT7QYQXDI5WQTZX
     schemaVersion: 3.4.12
   hyper:
     edition: standard
     enabled: true
-    licenseKey: 1T6OC8567UE1DLN1ZYFL0OY1
+    licenseKey: JDD5CBCNB6O91IA0SP9ZFTF9
     schemaVersion: 1.0.0
   icon-picker:
     edition: standard
     enabled: true
-    licenseKey: J4W1IUEVPQ73RRDC75MD3L1Q
+    licenseKey: FBHOI0B2BXG644AOX3NIQW3E
     schemaVersion: 1.2.3
   imager-x:
     edition: pro
     enabled: true
-    licenseKey: SKZIQSLBPTEM4IV1YNGF8BBA
+    licenseKey: TOFKTL8ADBOVD67S78HIN5NL
     schemaVersion: 4.0.0
   imager-x-imageboss-transformer:
     edition: standard
@@ -260,7 +260,7 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    licenseKey: V8UFDBART8D7C2BHW3QLGIIF
+    licenseKey: N94WJ8FJY1C9LSYZ747WGJP7
     schemaVersion: 2.1.2
   position-fieldtype:
     edition: standard
@@ -277,17 +277,17 @@ plugins:
   retour:
     edition: standard
     enabled: true
-    licenseKey: UFBMB4N08O0MRFUCZJ959LVU
+    licenseKey: Z1Y02W1WOYVRWEW8MUG2D38C
     schemaVersion: 3.0.12
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: TB4Z6WE11ERCBKLE8BQ4B8MG
+    licenseKey: 218WSFLLTRNDCBETFJPC9TIA
     schemaVersion: 3.0.13
   site-copy-x:
     edition: standard
     enabled: true
-    licenseKey: T94GUOIGXENJ9601U79VP23P
+    licenseKey: LPR7ZW6ZVCH60M0IXMQBW14A
     schemaVersion: 1.0.2
   statuspaginator:
     edition: standard
