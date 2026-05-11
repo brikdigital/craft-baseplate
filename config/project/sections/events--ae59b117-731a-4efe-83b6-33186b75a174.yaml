@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: aa444200-2ca2-44f0-b001-737e424c99a8 # Evenement
+    uid: aa444200-2ca2-44f0-b001-737e424c99a8
 handle: events
 maxAuthors: 1
 name: Evenementen

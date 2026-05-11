@@ -6,7 +6,7 @@ entryTypes:
   -
     uid: 1bf7f973-b634-4c7e-adbc-e71f1a4c70f8 # Artikelen
   -
-    uid: 34e6d645-f593-49c5-bbed-6e80bd5b8fd4 # Evenementen
+    uid: 34e6d645-f593-49c5-bbed-6e80bd5b8fd4
 handle: indexes
 maxAuthors: 1
 name: Indexes

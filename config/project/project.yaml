@@ -1,4 +1,4 @@
-dateModified: 1778246864
+dateModified: 1778493865
 elementSources:
   craft\elements\Entry:
     -
@@ -125,7 +125,6 @@ meta:
     8d87bf9f-8546-434b-a971-6407e109f8aa: Blokken # Blokken
     8f439fc2-311f-4f45-99c6-c482d129d1fd: Tag # Tag
     10e2197c-c763-463e-998a-a704543fd784: 'Platte tekst' # Platte tekst
-    34e6d645-f593-49c5-bbed-6e80bd5b8fd4: Evenementen # Evenementen
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
     65bb950b-bf8c-46a5-b2d3-8fa38ea6f215: 'Contact Form' # Contact Form
     86dfc9bd-0363-4046-a638-26e03cd481da: 'Afbeelding (meerdere)' # Afbeelding (meerdere)
@@ -150,7 +149,6 @@ meta:
     25165387-9136-4739-86cb-59a989b1c003: Afbeelding # Afbeelding
     a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Baseplate EN' # Baseplate EN
     a43b9a82-d36b-47f2-9c34-fb66898b6fd1: 'Titel formaat' # Titel formaat
-    aa444200-2ca2-44f0-b001-737e424c99a8: Evenement # Evenement
     ae59b117-731a-4efe-83b6-33186b75a174: Evenementen # Evenementen
     b5da10b5-92de-4de6-8ac4-619c4d1eccc6: 'Slider type' # Slider type
     b7fa6983-cbe4-435a-a345-b065911c3442: "Pagina's" # Pagina's
@@ -184,10 +182,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: '2.0'
-  batch-actions:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   blitz:
     edition: standard
     enabled: true
@@ -195,10 +189,6 @@ plugins:
     schemaVersion: 5.12.0
     settings:
       maxUriLength: 2048
-  buttonbox:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.0.0
   ckeditor:
     edition: standard
     enabled: true
@@ -211,15 +201,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  date-range:
+  datastar:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
   embeddedassets:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  expanded-singles:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -271,10 +257,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  mjml:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   navigation:
     edition: standard
     enabled: true
@@ -302,29 +284,17 @@ plugins:
     enabled: true
     licenseKey: TB4Z6WE11ERCBKLE8BQ4B8MG
     schemaVersion: 3.0.13
-  sherlock:
-    edition: lite
-    enabled: true
-    schemaVersion: 5.1.0
   site-copy-x:
     edition: standard
     enabled: true
     licenseKey: T94GUOIGXENJ9601U79VP23P
     schemaVersion: 1.0.2
-  sprig:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
   statuspaginator:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
     settings:
       token: $STATUSPAGINATOR_TOKEN
-  templatecomments:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   video-utils:
     edition: standard
     enabled: true

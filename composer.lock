@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57f82dfe58ce6e3f94e15d0145b76de9",
+    "content-hash": "b5be7b2e70ca39db92df45de7d7b836e",
     "packages": [
         {
             "name": "amphp/amp",
@@ -7545,54 +7545,6 @@
             "time": "2026-03-13T20:00:36+00:00"
         },
         {
-            "name": "nystudio107/craft-templatecomments",
-            "version": "5.0.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-templatecomments/zipball/cfe44c63d3b1db33f451b5326dde1a9145effade",
-                "reference": "cfe44c63d3b1db33f451b5326dde1a9145effade",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.9.0",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "class": "nystudio107\\templatecomments\\TemplateComments",
-                "handle": "templatecomments",
-                "name": "Template Comments"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\templatecomments\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com/"
-                }
-            ],
-            "description": "Adds a HTML comment with performance timings to demarcate `{% block %}`s and each Twig template that is included or extended.",
-            "keywords": [
-                "comments",
-                "craft-plugin",
-                "craftcms",
-                "debugging",
-                "twig"
-            ],
-            "support": {
-                "docs": "https://nystudio107.com/docs/template-comments/",
-                "issues": "https://nystudio107.com/plugins/template-comments/support",
-                "source": "https://github.com/nystudio107/craft-templatecomments"
-            },
-            "time": "2026-01-30T21:23:25+00:00"
-        },
-        {
             "name": "nystudio107/craft-twig-sandbox",
             "version": "5.0.5",
             "source": {
@@ -9167,95 +9119,88 @@
             "time": "2026-04-11T19:11:50+00:00"
         },
         {
-            "name": "putyourlightson/craft-sherlock",
-            "version": "5.2.1",
+            "name": "putyourlightson/craft-datastar",
+            "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sherlock/zipball/b16add2fb598dd0d798ea944802ddecf01225c3f",
-                "reference": "b16add2fb598dd0d798ea944802ddecf01225c3f",
+                "url": "https://api.github.com/repos/putyourlightson/craft-datastar/zipball/9f7fac2cee49bcc1e6b3e948d1147add1dc9c3f7",
+                "reference": "9f7fac2cee49bcc1e6b3e948d1147add1dc9c3f7",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.0",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Sherlock",
-                "handle": "sherlock",
-                "developer": "PutYourLightsOn",
-                "developerUrl": "https://putyourlightson.com/",
-                "documentationUrl": "https://putyourlightson.com/plugins/sherlock",
-                "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-sherlock/develop/CHANGELOG.md",
-                "class": "putyourlightson\\sherlock\\Sherlock"
-            },
-            "autoload": {
-                "psr-4": {
-                    "putyourlightson\\sherlock\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "description": "Security scanner and monitor to keep your site and CMS secure.",
-            "homepage": "https://putyourlightson.com/plugins/sherlock",
-            "keywords": [
-                "cms",
-                "craft",
-                "monitor",
-                "notifications",
-                "scanner",
-                "secure",
-                "security"
-            ],
-            "support": {
-                "docs": "https://putyourlightson.com/plugins/sherlock",
-                "source": "https://github.com/putyourlightson/craft-sherlock",
-                "issues": "https://github.com/putyourlightson/craft-sherlock/issues"
-            },
-            "time": "2026-04-14T14:04:25+00:00"
-        },
-        {
-            "name": "putyourlightson/craft-sprig",
-            "version": "3.7.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/08a3948dfe1f6d2f0cae5f7376a278deb41f4cff",
-                "reference": "08a3948dfe1f6d2f0cae5f7376a278deb41f4cff",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0",
-                "nystudio107/craft-code-editor": "^1.0",
-                "nystudio107/craft-twig-sandbox": "^5.0.2",
+                "craftcms/cms": "^5.4",
                 "php": "^8.2",
-                "putyourlightson/craft-sprig-core": "^3.7.2"
+                "putyourlightson/craft-datastar-module": "1.0.1"
             },
             "type": "craft-plugin",
             "extra": {
-                "name": "Sprig",
-                "handle": "sprig",
+                "handle": "datastar",
+                "name": "Datastar",
                 "developer": "PutYourLightsOn",
                 "developerUrl": "https://putyourlightson.com/",
-                "documentationUrl": "https://putyourlightson.com/plugins/sprig",
-                "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-sprig/develop/CHANGELOG.md",
-                "class": "putyourlightson\\sprig\\plugin\\Sprig"
+                "documentationUrl": "https://putyourlightson.com/plugins/datastar",
+                "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-datastar/develop/CHANGELOG.md",
+                "class": "putyourlightson\\datastar\\plugin\\Plugin"
             },
             "autoload": {
                 "psr-4": {
-                    "putyourlightson\\sprig\\plugin\\": "src/"
+                    "putyourlightson\\datastar\\plugin\\": "src/"
                 }
             },
             "license": [
                 "mit"
             ],
-            "description": "A reactive Twig component framework for Craft.",
-            "support": {
-                "docs": "https://putyourlightson.com/plugins/sprig",
-                "source": "https://github.com/putyourlightson/craft-sprig",
-                "issues": "https://github.com/putyourlightson/craft-sprig/issues"
+            "description": "A reactive hypermedia framework for Craft.",
+            "time": "2026-04-20T14:52:49+00:00"
+        },
+        {
+            "name": "putyourlightson/craft-datastar-module",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/putyourlightson/craft-datastar-module.git",
+                "reference": "b2b9eaad4a5db4555c4eb168adeab8854d036c8a"
             },
-            "time": "2026-02-17T23:25:18+00:00"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/putyourlightson/craft-datastar-module/zipball/b2b9eaad4a5db4555c4eb168adeab8854d036c8a",
+                "reference": "b2b9eaad4a5db4555c4eb168adeab8854d036c8a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.4",
+                "php": "^8.2",
+                "starfederation/datastar-php": "^1.0.0"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "markhuot/craft-pest-core": "^2.0.4",
+                "nystudio107/craft-autocomplete": "^1.12"
+            },
+            "type": "yii-module",
+            "autoload": {
+                "psr-4": {
+                    "putyourlightson\\datastar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "mit"
+            ],
+            "description": "A template-driven, reactive hypermedia framework for Craft.",
+            "support": {
+                "docs": "https://github.com/putyourlightson/craft-datastar-module",
+                "issues": "https://github.com/putyourlightson/craft-datastar-module/issues",
+                "source": "https://github.com/putyourlightson/craft-datastar-module"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/bencroker",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-04-20T14:57:42+00:00"
         },
         {
             "name": "putyourlightson/craft-sprig-core",
@@ -10164,63 +10109,6 @@
             "time": "2025-01-13T13:04:43+00:00"
         },
         {
-            "name": "spicyweb/craft-batch-actions",
-            "version": "2.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-batch-actions/zipball/2d49e8353486bb12bf4406c103996235eea64296",
-                "reference": "2d49e8353486bb12bf4406c103996235eea64296",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0-beta.2",
-                "php": "^8.2"
-            },
-            "suggest": {
-                "spicyweb/craft-neo": "Supports Neo 3.3.4 or later; copying/pasting support requires Neo 3.4.0 or later.",
-                "verbb/smith": "Required for copying/pasting Matrix blocks."
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "batch-actions",
-                "name": "Batch Actions",
-                "class": "spicyweb\\batchactions\\Plugin",
-                "changelogUrl": "https://github.com/spicywebau/craft-batch-actions/blob/2.x/CHANGELOG.md",
-                "downloadUrl": "https://github.com/spicywebau/craft-batch-actions/archive/refs/tags/2.1.0.zip"
-            },
-            "autoload": {
-                "psr-4": {
-                    "spicyweb\\batchactions\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Spicy Web",
-                    "email": "plugins@spicyweb.com.au",
-                    "homepage": "https://spicyweb.com.au/"
-                }
-            ],
-            "description": "A Craft CMS plugin for performing batch actions on Matrix and Neo blocks",
-            "keywords": [
-                "cms",
-                "craftcms",
-                "field",
-                "matrix",
-                "neo",
-                "plugin"
-            ],
-            "support": {
-                "issues": "https://github.com/spicywebau/craft-batch-actions/issues",
-                "source": "https://github.com/spicywebau/craft-batch-actions",
-                "docs": "https://github.com/spicywebau/craft-batch-actions/blob/2.1.0/README.md",
-                "rss": "https://github.com/spicywebau/craft-batch-actions/commits/2.x.atom"
-            },
-            "time": "2025-04-09T06:42:54+00:00"
-        },
-        {
             "name": "spicyweb/craft-embedded-assets",
             "version": "5.4.7",
             "dist": {
@@ -10533,6 +10421,53 @@
             "time": "2026-04-28T16:40:40+00:00"
         },
         {
+            "name": "starfederation/datastar-php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/starfederation/datastar-php.git",
+                "reference": "0114ec8e5f38f5ebb4f5c54deed21bf95ea39f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/starfederation/datastar-php/zipball/0114ec8e5f38f5ebb4f5c54deed21bf95ea39f11",
+                "reference": "0114ec8e5f38f5ebb4f5c54deed21bf95ea39f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "pestphp/pest": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "starfederation\\datastar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Croker",
+                    "homepage": "https://putyourlightson.com/",
+                    "role": "Author"
+                }
+            ],
+            "description": "A PHP SDK for working with Datastar.",
+            "support": {
+                "docs": "https://github.com/starfederation/datastar-php",
+                "issues": "https://github.com/starfederation/datastar-php/issues",
+                "source": "https://github.com/starfederation/datastar-php"
+            },
+            "time": "2026-04-16T18:20:32+00:00"
+        },
+        {
             "name": "stripe/stripe-php",
             "version": "v13.18.0",
             "dist": {
@@ -10577,56 +10512,6 @@
             "time": "2024-04-09T21:08:04+00:00"
         },
         {
-            "name": "studioespresso/craft-date-range",
-            "version": "5.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/studioespresso/craft-date-range/zipball/efacdc963e301bf1500ef2bdff95bfc1d5cec107",
-                "reference": "efacdc963e301bf1500ef2bdff95bfc1d5cec107",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Date Range Field",
-                "handle": "date-range",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/studioespresso/craft-date-range/master/CHANGELOG.md",
-                "class": "studioespresso\\daterange\\DateRange"
-            },
-            "autoload": {
-                "psr-4": {
-                    "studioespresso\\daterange\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Studio Espresso",
-                    "homepage": "https://www.studioespresso.co"
-                }
-            ],
-            "description": "Date range field",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "date range"
-            ],
-            "support": {
-                "docs": "https://github.com/studioespresso/craft-date-range/blob/master/README.md",
-                "issues": "https://github.com/studioespresso/craft-date-range/issues"
-            },
-            "time": "2026-02-22T15:37:36+00:00"
-        },
-        {
             "name": "sunra/php-simple-html-dom-parser",
             "version": "v1.5.2",
             "dist": {
@@ -10667,57 +10552,6 @@
                 "parser"
             ],
             "time": "2016-11-22T22:57:47+00:00"
-        },
-        {
-            "name": "superbig/craft-mjml",
-            "version": "5.0.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/superbigco/craft-mjml/zipball/e20796a5b6ed57678e4ebb073c4241c97838793c",
-                "reference": "e20796a5b6ed57678e4ebb073c4241c97838793c",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0",
-                "mikehaertl/php-shellcommand": "^1.4",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "MJML",
-                "handle": "mjml",
-                "hasCpSettings": true,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/superbigco/craft-mjml/master/CHANGELOG.md",
-                "class": "superbig\\mjml\\MJML"
-            },
-            "autoload": {
-                "psr-4": {
-                    "superbig\\mjml\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Superbig",
-                    "homepage": "https://superbig.co"
-                }
-            ],
-            "description": "Render Twig emails with MJML, the only framework that makes responsive email easy.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "mjml"
-            ],
-            "support": {
-                "docs": "https://github.com/superbigco/craft-mjml/blob/master/README.md",
-                "issues": "https://github.com/superbigco/craft-mjml/issues"
-            },
-            "time": "2026-02-13T11:29:43+00:00"
         },
         {
             "name": "symfony/cache",
@@ -14562,60 +14396,6 @@
                 }
             ],
             "time": "2025-07-18T14:03:48+00:00"
-        },
-        {
-            "name": "verbb/expanded-singles",
-            "version": "3.0.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/expanded-singles/zipball/72d6c2942245ae3e0d2aa34509fabfc064423913",
-                "reference": "72d6c2942245ae3e0d2aa34509fabfc064423913",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2",
-                "verbb/base": "^3.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Expanded Singles",
-                "handle": "expanded-singles",
-                "description": "Alters the Entries Index sidebar to list all Singles, rather than grouping them under a 'Singles' link.",
-                "documentationUrl": "https://github.com/verbb/expanded-singles",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/expanded-singles/craft-5/CHANGELOG.md",
-                "class": "verbb\\expandedsingles\\ExpandedSingles"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\expandedsingles\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Extract Single entries to be top-level entries.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "expanded singles"
-            ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/expanded-singles/issues?state=open",
-                "source": "https://github.com/verbb/expanded-singles",
-                "docs": "https://github.com/verbb/expanded-singles",
-                "rss": "https://github.com/verbb/expanded-singles/commits/v2.atom"
-            },
-            "time": "2025-07-18T14:04:19+00:00"
         },
         {
             "name": "verbb/formie",

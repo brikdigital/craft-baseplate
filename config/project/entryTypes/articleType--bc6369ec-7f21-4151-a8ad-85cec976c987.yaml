@@ -1,4 +1,5 @@
-color: sky
+allowLineBreaksInTitles: false
+color: null
 description: null
 fieldLayouts:
   3173e383-b0bc-4b0f-9e90-1541b5a32b2d:
@@ -38,6 +39,7 @@ fieldLayouts:
         name: Content
         uid: 612dcc1b-e9c6-4d81-9d88-655fdeb5ec85
         userCondition: null
+    thumbFieldKey: null
 handle: articleType
 hasTitleField: true
 icon: layer-group
@@ -49,3 +51,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'
