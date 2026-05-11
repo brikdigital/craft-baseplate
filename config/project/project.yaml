@@ -1,4 +1,4 @@
-dateModified: 1778493865
+dateModified: 1778495115
 elementSources:
   craft\elements\Entry:
     -
@@ -249,6 +249,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
+  maintenance-lock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   markerio:
     edition: standard
     enabled: true

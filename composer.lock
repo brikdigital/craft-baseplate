@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13d9b34e2dcf20a928c43922b9066b98",
+    "content-hash": "223495f55f60597f098c30177e49b9d6",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1209,6 +1209,64 @@
                 }
             ],
             "time": "2026-04-19T20:55:20+00:00"
+        },
+        {
+            "name": "brikdigital/craft-maintenance-lock",
+            "version": "5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brikdigital/craft-maintenance-lock.git",
+                "reference": "9db762905da0ba84cc362571eb996df3dcf8f5a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brikdigital/craft-maintenance-lock/zipball/9db762905da0ba84cc362571eb996df3dcf8f5a4",
+                "reference": "9db762905da0ba84cc362571eb996df3dcf8f5a4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.8.0",
+                "php": "^8.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Maintenance Lock",
+                "class": "brikdigital\\maintenancelock\\MaintenanceLock",
+                "handle": "maintenance-lock",
+                "developer": "Brik.digital"
+            },
+            "autoload": {
+                "psr-4": {
+                    "brikdigital\\maintenancelock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alyxia Sother",
+                    "homepage": "https://alyxia.dev"
+                },
+                {
+                    "name": "Brik.digital",
+                    "homepage": "https://brik.digital"
+                }
+            ],
+            "description": "Locks down the control panel during maintenance.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "issues": "https://github.com/brikdigital/craft-maintenance-lock/issues?state=open",
+                "rss": "https://github.com/brikdigital/craft-maintenance-lock/commits/v2.atom",
+                "source": "https://github.com/brikdigital/craft-maintenance-lock"
+            },
+            "time": "2026-02-26T11:25:05+00:00"
         },
         {
             "name": "brikdigital/craft-statuspaginator",
