@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5be7b2e70ca39db92df45de7d7b836e",
+    "content-hash": "13d9b34e2dcf20a928c43922b9066b98",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1211,12 +1211,18 @@
             "time": "2026-04-19T20:55:20+00:00"
         },
         {
-            "name": "brik-digital/craft-statuspaginator",
-            "version": "5.0.2",
+            "name": "brikdigital/craft-statuspaginator",
+            "version": "5.0.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lexisother/craft-statuspaginator",
-                "reference": "e915119c4552aa01e448b147769cb6e5e88bf1e0"
+                "url": "https://github.com/lexisother/craft-statuspaginator.git",
+                "reference": "3cc92ff80220f6fb304b4e188c3ee64420ef6ca6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lexisother/craft-statuspaginator/zipball/3cc92ff80220f6fb304b4e188c3ee64420ef6ca6",
+                "reference": "3cc92ff80220f6fb304b4e188c3ee64420ef6ca6",
+                "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^5.0.0",
@@ -1228,30 +1234,27 @@
             },
             "type": "craft-plugin",
             "extra": {
-                "handle": "statuspaginator",
                 "name": "Statuspaginator",
+                "class": "brikdigital\\statuspaginator\\Statuspaginator",
+                "handle": "statuspaginator",
                 "developer": "Brik.digital",
-                "documentationUrl": "",
-                "class": "brikdigital\\statuspaginator\\Statuspaginator"
+                "documentationUrl": ""
             },
             "autoload": {
                 "psr-4": {
                     "brikdigital\\statuspaginator\\": "src/"
                 }
             },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
             "description": "Periodically pings a Statuspaginator instance with version data.",
-            "time": "2024-08-09T09:16:50+00:00"
+            "support": {
+                "issues": "https://github.com/lexisother/craft-statuspaginator/issues",
+                "source": "https://github.com/lexisother/craft-statuspaginator/tree/5.0.6"
+            },
+            "time": "2026-03-20T11:38:18+00:00"
         },
         {
             "name": "cakephp/core",
@@ -16450,10 +16453,10 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

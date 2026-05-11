@@ -5,7 +5,7 @@
 	"license": "MPL-2.0",
 	"require": {
 		"aodihis/video-utils": "^3.0.2",
-		"brik-digital/craft-statuspaginator": "^5.0",
+		"brikdigital/craft-statuspaginator": "^5.0",
 		"clubstudioltd/craft-inline-svg": "^2.1",
 		"craftcms/aws-s3": "^2.3.0",
 		"craftcms/ckeditor": "^5.5.0",
@@ -76,11 +76,6 @@
 		]
 	},
 	"repositories": [
-		{
-			"type": "git",
-			"url": "https://github.com/lexisother/craft-statuspaginator",
-			"no-api": true
-		},
 		{
 			"type": "vcs",
 			"url": "https://github.com/cweagans/composer-patches.git",
