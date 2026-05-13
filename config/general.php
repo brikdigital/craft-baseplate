@@ -25,6 +25,9 @@ return GeneralConfig::create()
     ->defaultSearchTermOptions(['subLeft' => true, 'subRight' => true])
     ->errorTemplatePrefix('errors/')
     ->timezone('Europe/Amsterdam')
+    ->defaultCountryCode('NL')
+    ->defaultCpLanguage('nl-NL')
+    ->defaultCpLocale('nl-NL')
     ->omitScriptNameInUrls(true)
     ->usePathInfo(true)
     ->useEmailAsUsername(true)
@@ -35,6 +38,8 @@ return GeneralConfig::create()
     ->runQueueAutomatically(false)
     ->maxRevisions(5)
     ->maxBackups(2)
+    ->charset('utf8mb4')
+    ->collation('utf8mb4_unicode_520_ci')
     ->aliases([
         '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
         '@webroot' => dirname(__DIR__) . '/public_html',
