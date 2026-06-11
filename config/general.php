@@ -40,6 +40,7 @@ return GeneralConfig::create()
     ->maxBackups(2)
     ->charset('utf8mb4')
     ->collation('utf8mb4_unicode_520_ci')
+    ->asyncCsrfInputs()
     ->aliases([
         '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
         '@webroot' => dirname(__DIR__) . '/public_html',
