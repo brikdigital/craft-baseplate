@@ -19,7 +19,7 @@ return [
         'useRemoteIp' => false,
 
         'protectedUrls' => '',
-        'unprotectedUrls' => ['/actions/_statuspaginator/(.*)'],
+        'unprotectedUrls' => ['/actions/_statuspaginator/(.*)', '/formie/payment-webhooks/process-webhook(.*)'],
     ],
     'staging' => [
         'enabled' => true,
