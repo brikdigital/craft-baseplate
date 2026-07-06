@@ -4,6 +4,7 @@
 /vendor
 /node_modules
 /.pnpm-store
+/public_html/cache
 /public_html/dist
 /public_html/imager
 .DS_Store
