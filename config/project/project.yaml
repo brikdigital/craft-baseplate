@@ -1,4 +1,4 @@
-dateModified: 1778495115
+dateModified: 1785837451
 elementSources:
   craft\elements\Entry:
     -
@@ -15,9 +15,9 @@ elementSources:
       key: 'section:6548b4e4-c92a-4820-8d2f-065cbf1bda66' # Indexes
       page: Entries
       tableAttributes:
+        - type
         - status
-        - postDate
-        - expiryDate
+        - dateUpdated
         - link
       type: native
     -
@@ -33,6 +33,7 @@ elementSources:
       defaultSort:
         - postDate
         - desc
+      defaultViewMode: ''
       disabled: false
       key: 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Artikelen
       page: Entries
@@ -307,10 +308,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  wordsmith:
-    edition: standard
-    enabled: true
-    schemaVersion: 0.0.0.0
 system:
   edition: solo
   live: true

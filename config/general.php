@@ -38,8 +38,6 @@ return GeneralConfig::create()
     ->runQueueAutomatically(false)
     ->maxRevisions(5)
     ->maxBackups(2)
-    ->charset('utf8mb4')
-    ->collation('utf8mb4_unicode_520_ci')
     ->asyncCsrfInputs()
     ->aliases([
         '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
