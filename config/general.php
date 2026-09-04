@@ -40,7 +40,6 @@ return GeneralConfig::create()
     ->maxBackups(2)
     ->asyncCsrfInputs()
     ->aliases([
-        '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
         '@webroot' => dirname(__DIR__) . '/public_html',
         '@assetsUrl' => App::env('ASSETS_URL'),
         '@cloudfrontUrl' => App::env('CLOUDFRONT_URL'),
