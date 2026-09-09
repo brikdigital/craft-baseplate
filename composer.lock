@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96fa04e0fbeef8b1bad11d10d6d4bca7",
+    "content-hash": "7f69b497f0c8fbecd7c904245a0efb7d",
     "packages": [
         {
             "name": "amphp/amp",
@@ -7129,37 +7129,6 @@
             "time": "2025-01-08T20:10:23+00:00"
         },
         {
-            "name": "nst/craft-sitecopy",
-            "version": "2.1.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/neustadt-swiss/craft-sitecopy/zipball/b48f10481eca644c7a7b48946cc5db0ac731808e",
-                "reference": "b48f10481eca644c7a7b48946cc5db0ac731808e",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "site-copy-x",
-                "name": "Site Copy X",
-                "developer": "Gold Interactive",
-                "developerUrl": "http://goldinteractive.ch",
-                "class": "goldinteractive\\sitecopy\\SiteCopy",
-                "hasSettings": true
-            },
-            "autoload": {
-                "psr-4": {
-                    "goldinteractive\\sitecopy\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "time": "2024-08-06T08:26:55+00:00"
-        },
-        {
             "name": "nystudio107/craft-code-editor",
             "version": "1.0.29",
             "source": {
@@ -13657,6 +13626,38 @@
                 }
             ],
             "time": "2026-03-24T13:12:05+00:00"
+        },
+        {
+            "name": "teamnovu/craft-sitecopy",
+            "version": "4.0.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neustadt-swiss/craft-sitecopy/zipball/9cd4f5a3fe73b955ed1d7d0ff078e6bbf267773f",
+                "reference": "9cd4f5a3fe73b955ed1d7d0ff078e6bbf267773f",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.5.11|^5.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "site-copy-x",
+                "name": "Site Copy X",
+                "developer": "Novu",
+                "developerUrl": "https://novu.ch",
+                "class": "teamnovu\\sitecopy\\SiteCopy",
+                "hasSettings": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "teamnovu\\sitecopy\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "This plugin makes it easy to copy the content of an entry from a site to another",
+            "time": "2026-07-12T09:16:28+00:00"
         },
         {
             "name": "theiconic/name-parser",
