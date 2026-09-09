@@ -1,4 +1,4 @@
-dateModified: 1785837451
+dateModified: 1788939948
 elementSources:
   craft\elements\Entry:
     -
@@ -156,7 +156,7 @@ meta:
     b9f016c9-d8b3-49f8-acbe-3337414dd097: Artikelen # Artikelen
     b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Artikel type' # Artikel type
     b56c28d2-a08b-4291-80fd-4cff8f398791: Weergave # Weergave
-    b5386dfa-66c8-4d08-bbcc-38503a3862c9: ' Video' #  Video
+    b5386dfa-66c8-4d08-bbcc-38503a3862c9: ' Video' # Video
     bb9f38f1-c5e0-4ed6-9d09-97f29487de56: Type # Type
     bc6369ec-7f21-4151-a8ad-85cec976c987: 'Artikel type' # Artikel type
     c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Knoppen # Knoppen
@@ -183,6 +183,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: '2.0'
+  batch-actions:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   blitz:
     edition: standard
     enabled: true
@@ -190,6 +194,10 @@ plugins:
     schemaVersion: 5.12.0
     settings:
       maxUriLength: 2048
+  buttonbox:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
   ckeditor:
     edition: standard
     enabled: true
@@ -203,6 +211,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   datastar:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  date-range:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -230,10 +242,10 @@ plugins:
     enabled: true
     licenseKey: TOFKTL8ADBOVD67S78HIN5NL
     schemaVersion: 4.0.0
-  imager-x-imageboss-transformer:
+  imager-x-gumlet-transformer:
     edition: standard
     enabled: true
-    schemaVersion: 2.0.0
+    schemaVersion: 1.0.0
   imager-x-power-pack:
     edition: standard
     enabled: true
@@ -259,6 +271,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  mjml:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

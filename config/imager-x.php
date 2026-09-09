@@ -16,6 +16,7 @@ return [
         'cacheDuration' => '31536000',
         'fillTransforms' => 'auto',
         'autoFillCount' => 'auto',
+        'removeTransformsOnAssetFileops' => true, // Required for proper Gumlet purging
     ],
     'dev' => [
         'transformer' => 'craft',
@@ -23,11 +24,11 @@ return [
     ],
     // Staging environment settings
     'staging' => [
-        'transformer' => 'imageboss',
+        'transformer' => 'gumlet',
     ],
 
     // Production environment settings
     'production' => [
-        'transformer' => 'imageboss',
+        'transformer' => 'gumlet',
     ],
 ];
