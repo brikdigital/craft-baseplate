@@ -1,9 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - bc6369ec-7f21-4151-a8ad-85cec976c987 # Artikel type
+  -
+    uid: bc6369ec-7f21-4151-a8ad-85cec976c987 # Artikel type
 handle: articleType
 maxAuthors: 1
+minAuthors: 1
 name: 'Artikel type'
 propagationMethod: all
 siteSettings:

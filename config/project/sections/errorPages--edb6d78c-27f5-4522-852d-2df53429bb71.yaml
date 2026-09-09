@@ -1,9 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 5ec318c4-b6f4-4a56-92a5-f9b7edfbb635 # Errors
+  -
+    uid: 5ec318c4-b6f4-4a56-92a5-f9b7edfbb635 # Errors
 handle: errorPages
 maxAuthors: 1
+minAuthors: 1
 name: Errors
 propagationMethod: all
 siteSettings:

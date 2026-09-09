@@ -1,22 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 54058ce4-020d-4535-9931-d69993419df7 # Artikelen
+  -
+    uid: 54058ce4-020d-4535-9931-d69993419df7 # Artikelen
 handle: articles
 maxAuthors: 1
+minAuthors: 1
 name: Artikelen
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Baseplate EN
