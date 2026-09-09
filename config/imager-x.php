@@ -17,18 +17,7 @@ return [
         'fillTransforms' => 'auto',
         'autoFillCount' => 'auto',
         'removeTransformsOnAssetFileops' => true, // Required for proper Gumlet purging
-    ],
-    'dev' => [
-        'transformer' => 'craft',
-        'imagerUrl' => App::env('IMGIX_DEV_URL')
-    ],
-    // Staging environment settings
-    'staging' => [
         'transformer' => 'gumlet',
-    ],
-
-    // Production environment settings
-    'production' => [
-        'transformer' => 'gumlet',
+        'useForCpThumbs' => true,
     ],
 ];
