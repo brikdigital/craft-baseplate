@@ -1,4 +1,4 @@
-dateModified: 1788944803
+dateModified: 1792665003
 elementSources:
   craft\elements\Entry:
     -
@@ -102,9 +102,9 @@ email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SYSTEM_EMAIL_SENDER
   replyToEmail: null
-  template: null
+  template: ''
   transportSettings:
-    messageStream: $POSTMARK_BROADCAST_ID
+    messageStream: ''
     token: $POSTMARK_API
   transportType: craftcms\postmark\Adapter
 fs:
