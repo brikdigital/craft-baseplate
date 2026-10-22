@@ -6,7 +6,7 @@ return [
     'project' => App::env('MARKER_PROJECT_ID'),
     'enableWidgetFe' => App::env('MARKER_ENABLE_FRONTEND'),
     'enableWidgetCp' => App::env('MARKER_ENABLE_BACKEND'),
-    'requireLogin' => false,
+    'requireLogin' => true,
     'silent' => false,
     'renderDelay' => 1200,
     'keyboardShortcuts' => false,
