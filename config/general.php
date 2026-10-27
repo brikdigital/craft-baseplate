@@ -39,6 +39,7 @@ return GeneralConfig::create()
     ->maxRevisions(5)
     ->maxBackups(2)
     ->asyncCsrfInputs()
+    ->generateTransformsBeforePageLoad()
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/public_html',
         '@assetsUrl' => App::env('ASSETS_URL'),
