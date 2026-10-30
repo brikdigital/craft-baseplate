@@ -6,7 +6,7 @@
 	"require": {
 		"aodihis/video-utils": "^3.0.2",
 		"brikdigital/craft-maintenance-lock": "^5.1",
-		"brikdigital/craft-statuspaginator": "^5.0",
+		"brikdigital/craft-statuspaginator": "^5.1.0",
 		"clubstudioltd/craft-inline-svg": "^2.1",
 		"craftcms/aws-s3": "^2.3.2",
 		"craftcms/ckeditor": "^5.9.0",

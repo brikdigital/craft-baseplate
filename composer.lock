@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03b31010cf7418c8be9badbc5ef3fcc5",
+    "content-hash": "cce6f80092c4f2946aec6c77f9c04c48",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1331,16 +1331,16 @@
         },
         {
             "name": "brikdigital/craft-statuspaginator",
-            "version": "5.0.6",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lexisother/craft-statuspaginator.git",
-                "reference": "3cc92ff80220f6fb304b4e188c3ee64420ef6ca6"
+                "reference": "366273bd7be4266d379dc2d5ca894df0649ee5e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lexisother/craft-statuspaginator/zipball/3cc92ff80220f6fb304b4e188c3ee64420ef6ca6",
-                "reference": "3cc92ff80220f6fb304b4e188c3ee64420ef6ca6",
+                "url": "https://api.github.com/repos/lexisother/craft-statuspaginator/zipball/366273bd7be4266d379dc2d5ca894df0649ee5e8",
+                "reference": "366273bd7be4266d379dc2d5ca894df0649ee5e8",
                 "shasum": ""
             },
             "require": {
@@ -1371,9 +1371,10 @@
             "description": "Periodically pings a Statuspaginator instance with version data.",
             "support": {
                 "issues": "https://github.com/lexisother/craft-statuspaginator/issues",
-                "source": "https://github.com/lexisother/craft-statuspaginator/tree/5.0.6"
+                "source": "https://github.com/lexisother/craft-statuspaginator/tree/5.1.0"
             },
-            "time": "2026-03-20T11:38:18+00:00"
+            "time": "2026-10-23T10:10:30+00:00",
+            "published-time": "2026-10-23T10:11:46+00:00"
         },
         {
             "name": "cakephp/core",
@@ -16527,5 +16528,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }

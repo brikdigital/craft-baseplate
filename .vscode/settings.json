@@ -1,18 +1,19 @@
 {
-  "prettier.configPath": "prettier.config.js",
-  "mdx.server.enable": true,
+	"prettier.configPath": "prettier.config.js",
+	"mdx.server.enable": true,
 
-  "[javascript]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[postcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  }
+	"[javascript]": {
+		"editor.maxTokenizationLineLength": 2500,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[postcss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"js/ts.tsdk.path": "node_modules/typescript/lib"
 }
