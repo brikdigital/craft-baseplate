@@ -1,6 +1,6 @@
-@import './components/tailwind.pcss';
-@import './components/swiper.pcss';
-@import './components/videoPlayer.pcss';
+@import './components/tailwind.css';
+@import './components/swiper.css';
+@import './components/videoPlayer.css';
 
 @layer base {
 	:root {

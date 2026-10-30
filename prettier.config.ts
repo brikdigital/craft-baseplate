@@ -1,5 +1,7 @@
-module.exports = {
-	...require('eslint-config-dmitmel/prettier.config.js'),
+import cfg from 'eslint-config-dmitmel/prettier.config.js';
+
+export default {
+	...cfg,
 
 	useTabs: true,
 

@@ -2,14 +2,11 @@ import path from 'path';
 
 import { defineConfig } from 'vite';
 import restart from 'vite-plugin-restart';
-import { compression, defineAlgorithm } from 'vite-plugin-compression2';
+import { compression } from 'vite-plugin-compression2';
 import { ViteFaviconsPlugin as favicons } from 'vite-plugin-favicon2';
 import critical from 'rollup-plugin-critical';
 import Inspect from 'vite-plugin-inspect';
-
-import inlineSVG from 'postcss-inline-svg';
-import pxtorem from 'postcss-pxtorem';
-import tailwindcss from '@tailwindcss/postcss';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
@@ -39,15 +36,24 @@ export default defineConfig(({ command }) => ({
 	},
 
 	css: {
-		postcss: {
-			plugins: [inlineSVG, pxtorem, tailwindcss],
-		},
+		devSourcemap: true,
+		transformer: 'lightningcss',
 	},
 
 	plugins: [
 		Inspect(),
+		restart({
+			reload: ['templates/**/*'],
+		}),
+
+		tailwindcss({ optimize: true }),
+		compression({
+			include: /\.(js|mjs|json|css|map)/i,
+			algorithms: ['gzip', 'brotliCompress'],
+		}),
+
 		// We don't need Critical CSS locally
-		...(process.env.BUDDY === true || process.env.BUDDY === 'true'
+		...(process.env.BUDDY === 'true'
 			? [
 					critical({
 						criticalUrl: 'https://craft-baseplate.ddev.site',
@@ -62,13 +68,6 @@ export default defineConfig(({ command }) => ({
 					}),
 				]
 			: []),
-		compression({
-			include: /\.(js|mjs|json|css|map)/i,
-			algorithms: ['gzip', 'brotliCompress'],
-		}),
-		restart({
-			reload: ['templates/**/*'],
-		}),
 	],
 
 	server: {

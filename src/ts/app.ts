@@ -1,4 +1,4 @@
-import '@css/app.pcss';
+import '@css/app.css';
 import ComponentLoader, { type Component } from './loader';
 
 const componentLoader = new ComponentLoader();
