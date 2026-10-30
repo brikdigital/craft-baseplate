@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37c0284e0dbdf7f0f6fb97e8c2a258fa",
+    "content-hash": "b35d23c51486c525a7fd6feab9417c52",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3324,16 +3324,16 @@
         },
         {
             "name": "embed/embed",
-            "version": "v4.4.17",
+            "version": "v4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-embed/Embed.git",
-                "reference": "b2ea091a5586c14ea5f2c5bf52fb0ef38e5aef87"
+                "reference": "813886d98cbc6988e6d4c2bf5043418551431796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-embed/Embed/zipball/b2ea091a5586c14ea5f2c5bf52fb0ef38e5aef87",
-                "reference": "b2ea091a5586c14ea5f2c5bf52fb0ef38e5aef87",
+                "url": "https://api.github.com/repos/php-embed/Embed/zipball/813886d98cbc6988e6d4c2bf5043418551431796",
+                "reference": "813886d98cbc6988e6d4c2bf5043418551431796",
                 "shasum": ""
             },
             "require": {
@@ -3354,10 +3354,13 @@
                 "friendsofphp/php-cs-fixer": "^2.0",
                 "nyholm/psr7": "^1.2",
                 "oscarotero/php-cs-fixer-config": "^1.0",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-strict-rules": "^2.0",
                 "phpunit/phpunit": "^9.0",
                 "symfony/css-selector": "^5.0"
             },
             "suggest": {
+                "ext-intl": "To resolve internationalized domain names when protecting against SSRF",
                 "symfony/css-selector": "If you want to get elements using css selectors"
             },
             "type": "library",
@@ -3393,7 +3396,7 @@
             "support": {
                 "email": "oom@oscarotero.com",
                 "issues": "https://github.com/oscarotero/Embed/issues",
-                "source": "https://github.com/php-embed/Embed/tree/v4.4.17"
+                "source": "https://github.com/php-embed/Embed/tree/v4.5.2"
             },
             "funding": [
                 {
@@ -3409,7 +3412,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2025-05-13T12:42:29+00:00"
+            "time": "2026-10-27T19:47:43+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -14553,25 +14556,25 @@
         },
         {
             "name": "verbb/hyper",
-            "version": "2.3.6",
+            "version": "3.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/hyper/zipball/2480358b24dbbb910349d585e3519aa3b613f701",
-                "reference": "2480358b24dbbb910349d585e3519aa3b613f701",
+                "url": "https://api.github.com/repos/verbb/hyper/zipball/b293281226da0b218fdd7b64b3f37c3b41773a8c",
+                "reference": "b293281226da0b218fdd7b64b3f37c3b41773a8c",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.0.0",
-                "embed/embed": "^3.0.0 || ^4.0.0",
+                "craftcms/cms": "^5.9",
+                "embed/embed": "^4.0.0",
                 "nystudio107/craft-plugin-vite": "^5.0.0",
                 "php": "^8.2",
-                "verbb/base": "^3.0.0"
+                "verbb/base": "^3.0.20"
             },
             "type": "craft-plugin",
             "extra": {
                 "name": "Hyper",
                 "handle": "hyper",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/hyper/craft-5/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/hyper/beta/CHANGELOG.md",
                 "class": "verbb\\hyper\\Hyper"
             },
             "autoload": {
@@ -14601,9 +14604,9 @@
                 "issues": "https://github.com/verbb/hyper/issues?state=open",
                 "source": "https://github.com/verbb/hyper",
                 "docs": "https://github.com/verbb/hyper",
-                "rss": "https://github.com/verbb/hyper/commits/v2.atom"
+                "rss": "https://github.com/verbb/hyper/commits/beta.atom"
             },
-            "time": "2026-04-29T23:55:00+00:00"
+            "time": "2026-10-28T10:01:25+00:00"
         },
         {
             "name": "verbb/icon-picker",
