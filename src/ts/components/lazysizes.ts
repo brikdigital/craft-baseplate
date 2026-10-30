@@ -5,7 +5,7 @@ export default async function lazysizes() {
 
 function attachEventListeners() {
 	// Hide all the placeholder images when lazyload image is unveiled (also works with AJAX loaded content)
-	document.addEventListener('lazyloaded', function (e) {
+	document.addEventListener('lazyloaded', (e) => {
 		const imageThatJustLoaded = e.target as HTMLElement;
 
 		imageThatJustLoaded.style.background = '';

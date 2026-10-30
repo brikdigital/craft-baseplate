@@ -1,4 +1,4 @@
 export default async function datastarInspector() {
-	// @ts-ignore
+	// @ts-expect-error no declaration file
 	await import('../vendored/datastar-inspector.js');
 }

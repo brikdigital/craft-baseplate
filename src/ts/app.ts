@@ -1,5 +1,5 @@
 import '@css/app.pcss';
-import ComponentLoader, { Component } from './loader';
+import ComponentLoader, { type Component } from './loader';
 
 const componentLoader = new ComponentLoader();
 const components: Component[] = [
@@ -37,7 +37,7 @@ const components: Component[] = [
 	},
 ];
 
-for (let component of components) {
+for (const component of components) {
 	componentLoader.loadComponent(component.name, component.selector, component.plugins ?? []);
 }
 

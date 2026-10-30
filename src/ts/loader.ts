@@ -1,4 +1,4 @@
-import DOMHelper from './utils/domHelper';
+import { onDynamicContent } from './utils/domHelper';
 
 export interface Component {
 	name: string;
@@ -13,14 +13,14 @@ interface Plugin {
 }
 
 export default class ComponentLoader {
-	public async loadComponent(componentName: string, selector: string, plugins: Plugin[] = []) {
+	public loadComponent(componentName: string, selector: string, plugins: Plugin[] = []) {
 		// NOTE: Maybe we can pass the elements down to the component's default function?
 		const elements = document.querySelectorAll(selector);
 		if (elements.length > 0) {
 			this.initComponent(componentName, plugins);
 		}
 
-		DOMHelper.onDynamicContent(document.documentElement, selector, (_elements) => {
+		onDynamicContent(document.documentElement, selector, (_elements) => {
 			this.initComponent(componentName, plugins);
 		});
 	}

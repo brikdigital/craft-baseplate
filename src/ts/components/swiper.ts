@@ -2,16 +2,18 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 export default function swiper() {
-	let sliders = document.querySelectorAll('[data-swiper]') as NodeListOf<HTMLElement>;
+	const sliders = document.querySelectorAll('[data-swiper]') as NodeListOf<HTMLElement>;
 
 	sliders.forEach((slider, _index) => {
-		let slides = slider.querySelectorAll('.swiper-slide');
+		if (!slider.dataset.swiper) return;
+
+		const slides = slider.querySelectorAll('.swiper-slide');
 		// we can be certain this is present, otherwise this module wouldn't be called
-		let sliderData = JSON.parse(slider.dataset.swiper!);
-		let buttonNext = slider.querySelector('.button-next');
-		let buttonPrev = slider.querySelector('.button-prev');
-		let pagination = slider.querySelector('.swiper-pagination');
-		let defaultOptions = {
+		const sliderData = JSON.parse(slider.dataset.swiper);
+		const buttonNext = slider.querySelector('.button-next');
+		const buttonPrev = slider.querySelector('.button-prev');
+		const pagination = slider.querySelector('.swiper-pagination');
+		const defaultOptions = {
 			slidesPerView: 1.2,
 			spaceBetween: 12,
 			initialSlide: 0,
