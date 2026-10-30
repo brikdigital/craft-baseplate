@@ -194,15 +194,6 @@ importers:
       '@biomejs/biome':
         specifier: ^2.3.13
         version: 2.3.13
-      '@biomejs/cli-darwin-arm64':
-        specifier: ^2.3.13
-        version: 2.3.13
-      '@biomejs/cli-darwin-x64':
-        specifier: ^2.3.13
-        version: 2.3.13
-      '@biomejs/cli-linux-x64':
-        specifier: ^2.3.13
-        version: 2.3.13
       '@etchteam/storybook-addon-marker':
         specifier: 7.0.0
         version: 7.0.0(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -267,15 +258,6 @@ importers:
         specifier: github:dmitmel/eslint-config-dmitmel
         version: https://codeload.github.com/dmitmel/eslint-config-dmitmel/tar.gz/54527c0cd399b50ae1b73b0bf0311db63f70306c(eslint@9.13.0(jiti@2.6.1)(supports-color@8.1.1))
       lefthook:
-        specifier: ^2.0.16
-        version: 2.0.16
-      lefthook-darwin-arm64:
-        specifier: ^2.0.16
-        version: 2.0.16
-      lefthook-darwin-x64:
-        specifier: ^2.0.16
-        version: 2.0.16
-      lefthook-linux-x64:
         specifier: ^2.0.16
         version: 2.0.16
       postcss:
@@ -6028,9 +6010,11 @@ snapshots:
       '@biomejs/cli-win32-arm64': 2.3.13
       '@biomejs/cli-win32-x64': 2.3.13
 
-  '@biomejs/cli-darwin-arm64@2.3.13': {}
+  '@biomejs/cli-darwin-arm64@2.3.13':
+    optional: true
 
-  '@biomejs/cli-darwin-x64@2.3.13': {}
+  '@biomejs/cli-darwin-x64@2.3.13':
+    optional: true
 
   '@biomejs/cli-linux-arm64-musl@2.3.13':
     optional: true
@@ -6041,7 +6025,8 @@ snapshots:
   '@biomejs/cli-linux-x64-musl@2.3.13':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.3.13': {}
+  '@biomejs/cli-linux-x64@2.3.13':
+    optional: true
 
   '@biomejs/cli-win32-arm64@2.3.13':
     optional: true
@@ -9146,9 +9131,11 @@ snapshots:
 
   lazysizes@5.3.2: {}
 
-  lefthook-darwin-arm64@2.0.16: {}
+  lefthook-darwin-arm64@2.0.16:
+    optional: true
 
-  lefthook-darwin-x64@2.0.16: {}
+  lefthook-darwin-x64@2.0.16:
+    optional: true
 
   lefthook-freebsd-arm64@2.0.16:
     optional: true
@@ -9159,7 +9146,8 @@ snapshots:
   lefthook-linux-arm64@2.0.16:
     optional: true
 
-  lefthook-linux-x64@2.0.16: {}
+  lefthook-linux-x64@2.0.16:
+    optional: true
 
   lefthook-openbsd-arm64@2.0.16:
     optional: true

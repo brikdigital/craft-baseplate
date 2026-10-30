@@ -5,11 +5,21 @@ allowBuilds:
   puppeteer: true
   sharp: true
 
+supportedArchitectures:
+  cpu:
+    - arm64
+    - x64
+  os:
+    - darwin
+    - linux
+  libc:
+    - glibc
+    - musl
+
+strictDepBuilds: false
+strictSsl: true
+
 # Enable this when we decide to use it again I guess
 # patchedDependencies:
 #   '@storybook/addon-docs': patches/@storybook__addon-docs.patch
 #   storybook: patches/storybook.patch
-
-strictDepBuilds: false
-
-strictSsl: true
