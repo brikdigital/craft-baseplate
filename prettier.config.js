@@ -6,7 +6,7 @@ module.exports = {
 	plugins: ['prettier-plugin-tailwindcss', '@ttskch/prettier-plugin-tailwindcss-anywhere'],
 
 	// prettier-plugin-tailwindcss
-	tailwindStylesheet: './src/pcss/app.pcss',
+	// tailwindStylesheet: './src/pcss/app.pcss',
 	tailwindConfig: './tailwind.config.ts',
 
 	overrides: [

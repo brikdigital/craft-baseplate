@@ -5,9 +5,6 @@ allowBuilds:
   puppeteer: true
   sharp: true
 
-overrides:
-  vite: "npm:rolldown-vite@^7.1.20"
-
 # Enable this when we decide to use it again I guess
 # patchedDependencies:
 #   '@storybook/addon-docs': patches/@storybook__addon-docs.patch

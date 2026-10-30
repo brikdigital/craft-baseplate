@@ -14,12 +14,12 @@ import tailwindcss from '@tailwindcss/postcss';
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
 	base: command === 'serve' ? '' : '/dist/',
-	publicDir: path.resolve(__dirname, './src/public'),
+	publicDir: path.resolve(import.meta.dirname, 'src/public'),
 	resolve: {
 		alias: {
-			'@': path.resolve(__dirname, 'src'),
-			'@css': path.resolve(__dirname, 'src/pcss'),
-			'@ts': path.resolve(__dirname, 'src/ts'),
+			'@': path.resolve(import.meta.dirname, 'src'),
+			'@css': path.resolve(import.meta.dirname, 'src/pcss'),
+			'@ts': path.resolve(import.meta.dirname, 'src/ts'),
 		},
 	},
 
@@ -30,10 +30,10 @@ export default defineConfig(({ command }) => ({
 		},
 		manifest: true,
 		sourcemap: false,
-		outDir: path.resolve(__dirname, 'public_html/dist/'),
+		outDir: path.resolve(import.meta.dirname, 'public_html/dist/'),
 		rollupOptions: {
 			input: {
-				app: path.resolve(__dirname, 'src/ts/app.ts'),
+				app: path.resolve(import.meta.dirname, 'src/ts/app.ts'),
 			},
 		},
 	},
@@ -55,13 +55,13 @@ export default defineConfig(({ command }) => ({
 						criticalPages: [{ uri: '/', template: 'index' }],
 						criticalConfig: {},
 					}),
+					favicons({
+						logo: './src/img/favicon/favicon-src.svg',
+						inject: false,
+						outputPath: 'favicons',
+					}),
 				]
 			: []),
-		favicons({
-			logo: './src/img/favicon/favicon-src.svg',
-			inject: false,
-			outputPath: 'favicons',
-		}),
 		compression({
 			include: /\.(js|mjs|json|css|map)/i,
 			algorithms: ['gzip', 'brotliCompress'],
