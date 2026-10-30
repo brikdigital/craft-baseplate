@@ -1,7 +1,7 @@
 name: craft-baseplate
 type: craftcms
 docroot: public_html
-php_version: "8.2"
+php_version: "8.5"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
@@ -12,9 +12,9 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
-nodejs_version: "22"
+nodejs_version: "26"
 corepack_enable: true
-ddev_version_constraint: ">= 1.24.4"
+ddev_version_constraint: ">= 1.25.5"
 webimage_extra_packages : [ffmpeg]
 web_extra_daemons:
    - name: "craft-queue"

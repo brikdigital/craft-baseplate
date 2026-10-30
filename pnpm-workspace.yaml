@@ -1,19 +1,17 @@
-onlyBuiltDependencies:
-  - '@biomejs/biome'
-  - '@swc/core'
-  - '@tailwindcss/oxide'
-  - core-js
-  - esbuild
-  - lefthook
-  - puppeteer
-  - sharp
+allowBuilds:
+  "@swc/core": true
+  esbuild: true
+  lefthook: true
+  puppeteer: true
+  sharp: true
 
-packageManagerStrict: true
+overrides:
+  vite: "npm:rolldown-vite@^7.1.20"
 
-patchedDependencies:
-  '@storybook/addon-docs': patches/@storybook__addon-docs.patch
-
-registry: https://registry.npmjs.org/
+# Enable this when we decide to use it again I guess
+# patchedDependencies:
+#   '@storybook/addon-docs': patches/@storybook__addon-docs.patch
+#   storybook: patches/storybook.patch
 
 strictDepBuilds: false
 
