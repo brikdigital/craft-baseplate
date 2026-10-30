@@ -40,7 +40,7 @@
 		"verbb/hyper": "^3.0.2",
 		"verbb/icon-picker": "^3.0.10",
 		"verbb/knock-knock": "3.0.5",
-		"verbb/navigation": "^3.0.20",
+		"verbb/navigation": "^4.0.13",
 		"vlucas/phpdotenv": "^5.4.0",
 		"webrgp/craft-ignition-core": "^1.1",
 		"yiisoft/yii2-redis": "^2.0"

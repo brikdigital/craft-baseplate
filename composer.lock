@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b35d23c51486c525a7fd6feab9417c52",
+    "content-hash": "34aeb25e75877355620089b122dc3321",
     "packages": [
         {
             "name": "amphp/amp",
@@ -14719,17 +14719,18 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "3.0.20",
+            "version": "4.0.13",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/632aecbbedd61442879f23495c9803d900f986a1",
-                "reference": "632aecbbedd61442879f23495c9803d900f986a1",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/c39b719ed72d78b262c8a8677d8054b138356cab",
+                "reference": "c39b719ed72d78b262c8a8677d8054b138356cab",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.0.0",
+                "craftcms/cms": "^5.9.11",
+                "nystudio107/craft-plugin-vite": "^5.0.0",
                 "php": "^8.2",
-                "verbb/base": "^3.0.0"
+                "verbb/base": "^3.0.20"
             },
             "type": "craft-plugin",
             "extra": {
@@ -14752,7 +14753,7 @@
                     "homepage": "https://verbb.io"
                 }
             ],
-            "description": "Create navigation menus for your site.",
+            "description": "A Craft CMS plugin for building nested site navigation.",
             "keywords": [
                 "cms",
                 "craft",
@@ -14768,7 +14769,7 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2026-04-16T01:57:15+00:00"
+            "time": "2026-10-28T10:02:02+00:00"
         },
         {
             "name": "verbb/tiptap",
