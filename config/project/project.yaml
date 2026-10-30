@@ -1,4 +1,4 @@
-dateModified: 1792665003
+dateModified: 1793348515
 elementSources:
   craft\elements\Entry:
     -
@@ -118,6 +118,7 @@ fs:
 meta:
   __names__:
     1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: Artikelen # Artikelen
+    3b5e939d-5880-4f47-ab94-dddf2d6f3f21: Archived # Archived
     4f08eaca-189d-42fc-9987-cbed19663296: 'Maximaal aantal berichten' # Maximaal aantal berichten
     4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
@@ -127,7 +128,6 @@ meta:
     8f439fc2-311f-4f45-99c6-c482d129d1fd: Tag # Tag
     10e2197c-c763-463e-998a-a704543fd784: 'Platte tekst' # Platte tekst
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
-    65bb950b-bf8c-46a5-b2d3-8fa38ea6f215: 'Contact Form' # Contact Form
     86dfc9bd-0363-4046-a638-26e03cd481da: 'Afbeelding (meerdere)' # Afbeelding (meerdere)
     87add8ee-18cc-4272-8a4c-4fd06d16ec25: "Pagina's" # Pagina's
     93f18740-c2f0-4e41-886e-b092eb38e71f: Layout # Layout
@@ -136,6 +136,7 @@ meta:
     596b60e6-cde4-48fb-9853-a567dcb99ece: Knoppen # Knoppen
     731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO Instellingen' # SEO Instellingen
     767c68f7-a42c-4402-a640-46af0c267fb7: 'Afbeelding ratio' # Afbeelding ratio
+    830fde48-892d-46e6-90f8-24b6cfd0f316: Draft # Draft
     889f70a7-0949-425c-a9be-060721269cf0: 'Tekst positie' # Tekst positie
     5026f9b8-4a01-4754-8e5b-e71d9e17f5c8: Thema # Thema
     6548b4e4-c92a-4820-8d2f-065cbf1bda66: Indexes # Indexes
@@ -158,6 +159,7 @@ meta:
     b56c28d2-a08b-4291-80fd-4cff8f398791: Weergave # Weergave
     b5386dfa-66c8-4d08-bbcc-38503a3862c9: ' Video' # Video
     bb9f38f1-c5e0-4ed6-9d09-97f29487de56: Type # Type
+    bbe7c8a3-9f54-437e-b3a9-714b21468aab: Active # Active
     bc6369ec-7f21-4151-a8ad-85cec976c987: 'Artikel type' # Artikel type
     c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Knoppen # Knoppen
     c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22: Knop # Knop
@@ -226,7 +228,110 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 435ASQ7ZIWT7QYQXDI5WQTZX
-    schemaVersion: 3.4.12
+    schemaVersion: 4.0.89
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      alertEmailsUserGroup: null
+      allowHiddenFieldTemplates: true
+      allowHtmlFieldTemplateIncludes: true
+      allowHtmlFieldTwig: true
+      allowLegacySignatureImageUrls: true
+      allowMultiSelectDropdowns: true
+      allowPhoneCountrySelector: true
+      allowPublicVolumes: true
+      allowedSubmitMethods: both
+      anonymousFormBootstrapRateLimit: 30
+      anonymousFormRateWindowSeconds: 60
+      anonymousFormRefreshRateLimit: 120
+      compatibilityMode: false
+      completionQueryAllowlist:
+        - utm_source
+        - utm_medium
+        - utm_campaign
+        - utm_term
+        - utm_content
+      defaultCpSubmissionFieldConditions: follow
+      defaultEmailTemplate: ''
+      defaultErrorMessagePosition: verbb\formie\positions\BelowInput
+      defaultExportFolder: '@storage/formie-export'
+      defaultFormStencil: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      deliveryEvidenceRetentionDays: 30
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableMultiPageForms: true
+      enableUnloadWarning: true
+      encryptionKey: null
+      errorAriaLive: polite
+      filterIntegrationMapping: true
+      includeDraftElementUsage: false
+      includeFlatpickrCss: true
+      includeRevisionElementUsage: false
+      integrationAlertEmails: null
+      integrationAlertEmailsUserGroup: null
+      integrationApiErrorHandling:
+        -
+          __assoc__:
+            -
+              - severity
+              - rate_limited
+            -
+              - action
+              - logWarning
+        -
+          __assoc__:
+            -
+              - severity
+              - rejected
+            -
+              - action
+              - logWarning
+        -
+          __assoc__:
+            -
+              - severity
+              - failure
+            -
+              - action
+              - failQueue
+      maxEmailAttachmentSizeMb: 15
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      maxStagedUploadBytes: 67108864
+      maxStagedUploadFiles: 50
+      outputConsoleMessages: true
+      paymentWebhookProxyUrl: null
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      plainTextHtmlSanitizationMode: preserve
+      pluginName: Formie
+      queuePriority: null
+      redirectUri: null
+      reportAsyncExportRowThreshold: 1000
+      reportExportSingleUseDownload: true
+      reportInteractiveExportExpiryHours: 72
+      reportScheduledExportExpiryHours: 48
+      reportTablePageSize: 100
+      requireHtmlPurification: false
+      saveResumeTokenTtlDays: 14
+      sendEmailAlerts: false
+      sendIntegrationAlerts: false
+      sentNotifications: true
+      setOnlyCurrentPagePayload: false
+      staticCacheRefreshOnLoad: false
+      submissionSidebarFormOrder: dateCreatedDesc
+      submissionStateRetentionDays: 30
+      submissionsBehaviour: all
+      useCssLayers: false
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+      validateCustomTemplates: true
   hyper:
     edition: standard
     enabled: true
