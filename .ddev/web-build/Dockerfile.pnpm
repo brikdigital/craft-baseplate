@@ -1,0 +1,9 @@
+RUN <<BASH
+PNPM_SCRIPT=$(printf '%s\n' \
+  'export PNPM_HOME="/mnt/ddev-global-cache/pnpm"' \
+  'export pnpm_config_store_dir="$PNPM_HOME"' \
+  'export npm_config_store_dir="$PNPM_HOME"'
+)
+echo "$PNPM_SCRIPT" >> /etc/bash.bashrc
+echo "$PNPM_SCRIPT" >> /etc/bash.nointeractive.bashrc
+BASH
