@@ -1,19 +1,13 @@
 {% extends "_layouts/base.twig" %}
 
-{% if getenv('CRAFT_DISABLE_CORS') == 1 %}
-    {% header "Access-Control-Allow-Origin: *" %}
-    {% header "Access-Control-Allow-Headers: *" %}
-{% endif %}
-
-{% set bodyClasses = bodyClasses is defined ? bodyClasses : '' %}
+{% set bodyClasses = bodyClasses|default('') %}
 
 {% block response %}
-    {% minify %}
-        <!doctype html>
-        <html
-                class='no-js scroll-smooth'
-                lang='{{ currentSite.language }}'
-                dir='{{ craft.app.i18n.getLocaleById(currentSite.id).getOrientation() }}'>
+    <!doctype html>
+    <html
+            class='no-js scroll-smooth'
+            lang='{{ currentSite.language }}'
+            dir='{{ craft.app.i18n.getLocaleById(currentSite.id).getOrientation() }}'>
         <head>
             <style>
                 [x-cloak] {
@@ -45,16 +39,8 @@
                     <a id="skipToContent"></a>
                     {% block html %}
                     {% endblock %}
-
-                    {% if craft.app.env == 'dev' %}
-                        <datastar-inspector />
-                    {% endif %}
                 </main>
-
-                {% block offcanvas %}
-                {% endblock %}
             </div>
         </body>
-        </html>
-    {% endminify %}
+    </html>
 {% endblock %}

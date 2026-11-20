@@ -1,0 +1,59 @@
+{% extends "_layouts/base.twig" %}
+
+{% if getenv('CRAFT_DISABLE_CORS') == 1 %}
+    {% header "Access-Control-Allow-Origin: *" %}
+    {% header "Access-Control-Allow-Headers: *" %}
+{% endif %}
+
+{% set bodyClasses = bodyClasses is defined ? bodyClasses : '' %}
+
+{% block response %}
+    <!doctype html>
+    <html
+            class='no-js scroll-smooth'
+            lang='{{ currentSite.language }}'
+            dir='{{ I18N.getLocaleById(currentSite.id).getOrientation() }}'>
+    <head>
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+        <script>
+            (function (H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js');
+            })(document.documentElement);
+        </script>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta charset='utf-8'>
+        <meta
+                name='viewport'
+                content='width=device-width, initial-scale=1.0, viewport-fit=cover'>
+        <meta name='view-transition' content='same-origin'>
+        <meta name='referrer' content='origin-when-cross-origin'>
+        {# -- Favicons, webapp manifests, etc. -- #}
+        {{ vite(['resources/ts/app.ts', 'resources/css/app.css']) }}
+{#            {{ craft.vite.inline("@webroot/dist/assets/favicons/webapp.html") }}#}
+
+        {% include '_includes/fonts.twig' %}
+{#            {% include '_includes/scripts.twig' %}#}
+    </head>
+    <body class="overflow-x-hidden relative flex flex-col min-h-screen antialiased {{ bodyClasses }} {{ devMode ? 'debug-screens' : '' }}">
+        {% include '_components/atoms/skipToContent/skipToContent.twig' %}
+        <div id="app">
+            <main id="main" class="flex-[1_0_auto]">
+                <a id="skipToContent"></a>
+                {% block html %}
+                {% endblock %}
+
+                {% if app().env == 'local' %}
+                    <datastar-inspector />
+                {% endif %}
+            </main>
+
+            {% block offcanvas %}
+            {% endblock %}
+        </div>
+    </body>
+    </html>
+{% endblock %}
