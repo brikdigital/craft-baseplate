@@ -5,13 +5,13 @@ pre-commit:
       priority: 1
       glob: '*.{js,ts,cjs,mjs,mts,d.cts,d.mts,jsx,tsx,mdx,css,pcss,json,jsonc,yml}'
       exclude:
-        - src/ts/vendored/**
+        - resources/ts/vendored/**
       run: ddev pnpm prettier --write {staged_files} && git update-index --again
     check:
       priority: 2
       glob: '*.{js,ts,cjs,mjs,mts,d.cts,d.mts,jsx,tsx}'
       exclude:
-        - src/ts/vendored/**
+        - resources/ts/vendored/**
       run:
         ddev pnpm biome check --write --no-errors-on-unmatched --files-ignore-unknown=true
         --vcs-use-ignore-file=true {staged_files} && git update-index --again

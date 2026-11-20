@@ -1,6 +1,7 @@
 import path from 'path';
 
 import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
 import restart from 'vite-plugin-restart';
 import { compression } from 'vite-plugin-compression2';
 import { ViteFaviconsPlugin as favicons } from 'vite-plugin-favicon2';
@@ -14,9 +15,9 @@ export default defineConfig(({ command }) => ({
 	publicDir: path.resolve(import.meta.dirname, 'src/public'),
 	resolve: {
 		alias: {
-			'@': path.resolve(import.meta.dirname, 'src'),
-			'@css': path.resolve(import.meta.dirname, 'src/pcss'),
-			'@ts': path.resolve(import.meta.dirname, 'src/ts'),
+			'@': path.resolve(import.meta.dirname, 'resources'),
+			'@css': path.resolve(import.meta.dirname, 'resources/css'),
+			'@ts': path.resolve(import.meta.dirname, 'resources/ts'),
 		},
 	},
 
@@ -25,14 +26,7 @@ export default defineConfig(({ command }) => ({
 		commonjsOptions: {
 			transformMixedEsModules: true,
 		},
-		manifest: true,
 		sourcemap: false,
-		outDir: path.resolve(import.meta.dirname, 'public_html/dist/'),
-		rollupOptions: {
-			input: {
-				app: path.resolve(import.meta.dirname, 'src/ts/app.ts'),
-			},
-		},
 	},
 
 	css: {
@@ -42,11 +36,13 @@ export default defineConfig(({ command }) => ({
 
 	plugins: [
 		Inspect(),
-		restart({
-			reload: ['templates/**/*'],
-		}),
 
+		laravel({
+			input: ['resources/ts/app.ts', 'resources/css/app.css'],
+			refresh: true,
+		}),
 		tailwindcss({ optimize: true }),
+
 		compression({
 			include: /\.(js|mjs|json|css|map)/i,
 			algorithms: ['gzip', 'brotliCompress'],
@@ -55,6 +51,7 @@ export default defineConfig(({ command }) => ({
 		// We don't need Critical CSS locally
 		...(process.env.BUDDY === 'true'
 			? [
+					// NOTE(alyxia/craft_6): Maybe we don't need Critical CSS at all...
 					critical({
 						criticalUrl: 'https://craft-baseplate.ddev.site',
 						criticalBase: './public_html/dist/critical/',
@@ -77,6 +74,9 @@ export default defineConfig(({ command }) => ({
 		origin: `${process.env.DDEV_PRIMARY_URL}:3000`,
 		cors: {
 			origin: /https?:\/\/([A-Za-z0-9\-.]+)?(\.ddev\.site)(?::\d+)?$/,
+		},
+		watch: {
+			ignored: ['**/storage/framework/views/**'],
 		},
 	},
 }));

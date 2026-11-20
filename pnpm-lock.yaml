@@ -227,6 +227,9 @@ importers:
       eslint-config-dmitmel:
         specifier: github:dmitmel/eslint-config-dmitmel
         version: https://codeload.github.com/dmitmel/eslint-config-dmitmel/tar.gz/53eaaf8e38ae1273aa3f8bd58c07e7ed28e38c7f(eslint@9.13.0(jiti@2.7.0)(supports-color@7.2.0))
+      laravel-vite-plugin:
+        specifier: ^3.2.1
+        version: 3.2.1(vite@8.3.8(@types/node@25.0.10)(esbuild@0.27.2)(jiti@2.7.0)(terser@5.46.0)(yaml@2.8.2))
       lefthook:
         specifier: ^2.2.2
         version: 2.2.2
@@ -2591,6 +2594,17 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
+  laravel-vite-plugin@3.2.1:
+    resolution: {integrity: sha512-VqWn6U4YC1zRYVDlR/hu7JHesXqwj+DsEBSlVAe7al1MlAE5aYslyuyYV7v47DCGLGKJZxfbaZnApsIHdYIBJA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+    peerDependencies:
+      fontaine: ^0.8.0 || ^1.0.0
+      vite: ^8.0.0
+    peerDependenciesMeta:
+      fontaine:
+        optional: true
+
   lazysizes@5.3.2:
     resolution: {integrity: sha512-22UzWP+Vedi/sMeOr8O7FWimRVtiNJV2HCa+V8+peZOw6QbswN9k58VUhd7i6iK5bw5QkYrF01LJbeJe0PV8jg==}
 
@@ -3915,6 +3929,9 @@ packages:
     resolution: {integrity: sha512-cI47pXLsrboI6/w5JHQF0/z6/Z5QtLadCvQBKMWa156pEGJzNTXAPkf4B4cBDg0Qfyo2h2cJsmoKUeXQWjbDiA==}
     peerDependencies:
       vite: '>=2.0.0'
+
+  vite-plugin-full-reload@1.2.0:
+    resolution: {integrity: sha512-kz18NW79x0IHbxRSHm0jttP4zoO9P9gXh+n6UTwlNKnviTTEpOlum6oS9SmecrTtSr+muHEn5TUuC75UovQzcA==}
 
   vite-plugin-inspect@12.1.0:
     resolution: {integrity: sha512-RTUOcJ0EklTBfx5CRbt7YkFAB072qUBk/QeBCUacVVrp/mFPzs3UdWJvnLt1GzHbJ9qoG2rrOdHhtdE9KbNBFw==}
@@ -6396,6 +6413,13 @@ snapshots:
 
   kind-of@6.0.3: {}
 
+  laravel-vite-plugin@3.2.1(vite@8.3.8(@types/node@25.0.10)(esbuild@0.27.2)(jiti@2.7.0)(terser@5.46.0)(yaml@2.8.2)):
+    dependencies:
+      picocolors: 1.1.1
+      tinyglobby: 0.2.17
+      vite: 8.3.8(@types/node@25.0.10)(esbuild@0.27.2)(jiti@2.7.0)(terser@5.46.0)(yaml@2.8.2)
+      vite-plugin-full-reload: 1.2.0
+
   lazysizes@5.3.2: {}
 
   lefthook-android-arm64@2.2.2:
@@ -7688,6 +7712,11 @@ snapshots:
       vite: 8.3.8(@types/node@25.0.10)(esbuild@0.27.2)(jiti@2.7.0)(terser@5.46.0)(yaml@2.8.2)
     transitivePeerDependencies:
       - debug
+
+  vite-plugin-full-reload@1.2.0:
+    dependencies:
+      picocolors: 1.1.1
+      picomatch: 2.3.1
 
   vite-plugin-inspect@12.1.0(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.8(@types/node@25.0.10)(esbuild@0.27.2)(jiti@2.7.0)(terser@5.46.0)(yaml@2.8.2)):
     dependencies:

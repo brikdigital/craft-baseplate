@@ -1,5 +1,5 @@
 {
-	"include": ["./src/ts/**/*"],
+	"include": ["./resources/ts/**/*"],
 	"exclude": ["node_modules", "dist", "testing"],
 	"compilerOptions": {
 		"target": "ES2023",

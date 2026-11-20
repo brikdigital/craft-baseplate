@@ -1,14 +1,14 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
 	"vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
-	"files": { "ignoreUnknown": false, "includes": ["**/src/ts/**/*.ts"] },
+	"files": { "ignoreUnknown": false, "includes": ["**/resources/ts/**/*.ts"] },
 	"formatter": {
 		"enabled": false
 	},
 	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
-		"includes": ["**/src/ts/**/*.ts"],
+		"includes": ["**/resources/ts/**/*.ts"],
 		"rules": {
 			"preset": "recommended",
 			"complexity": {

@@ -13,7 +13,7 @@
 	},
 	"scripts": {
 		"build": "NODE_ENV=production vite build",
-		"format": "prettier --write src/**/*.{ts,css} templates",
+		"format": "prettier --write resources/**/*.{ts,css} resources/views",
 		"serve": "NODE_ENV=dev vite"
 	},
 	"dependencies": {
@@ -36,6 +36,7 @@
 		"@types/react": "^18.3.12",
 		"@zackad/prettier-plugin-twig": "^0.18.0",
 		"eslint-config-dmitmel": "github:dmitmel/eslint-config-dmitmel",
+		"laravel-vite-plugin": "^3.2.1",
 		"lefthook": "^2.2.2",
 		"prettier": "^3.10.1",
 		"prettier-plugin-tailwindcss": "^0.8.1",

@@ -1,0 +1,4 @@
+- Take a look at Craft 6 template and re-add the post-create-project-cmd stuff
+- Re-add site-module
+- All templates are probably broken; fix them
+- All entry types/sections need a review
