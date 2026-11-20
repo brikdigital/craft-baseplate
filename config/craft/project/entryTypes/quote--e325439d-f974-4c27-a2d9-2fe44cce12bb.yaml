@@ -15,7 +15,7 @@ fieldLayouts:
             label: Quote
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: e9fd487d-6443-4093-820d-c8ed7a1d03a7
             userCondition: null
             warning: null
@@ -29,7 +29,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 318e3c51-633f-4352-8068-5d67e1cf4f0c
             userCondition: null
             warning: null
@@ -43,7 +43,7 @@ fieldLayouts:
             label: Naam
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: a4cbbb32-6092-4dcd-85d8-c3e05bf12657
             userCondition: null
             warning: null
@@ -57,7 +57,7 @@ fieldLayouts:
             label: Functie
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 7fc1bb0c-201d-4347-82f9-91ea33044402
             userCondition: null
             warning: null

@@ -15,7 +15,7 @@ fieldLayouts:
             label: null
             required: true
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 20b37303-47ac-4b57-884e-7401a60a35ab
             userCondition: null
             warning: null

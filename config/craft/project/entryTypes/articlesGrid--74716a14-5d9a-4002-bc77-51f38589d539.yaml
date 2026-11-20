@@ -26,7 +26,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
             uid: 79643fba-2e17-446c-a4a0-2f697ed86465
             userCondition: null
             warning: null
@@ -39,7 +39,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: a7f75e51-2cee-48bb-a17b-e968022c464a
             userCondition: null
             warning: null
@@ -52,7 +52,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 76edee0c-e516-45e2-8891-6c86cf8a3bb8
             userCondition: null
             warning: null
@@ -65,7 +65,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 2a3c64f0-0814-4ce0-b876-5b7e3df130ef
             userCondition: null
             warning: null
@@ -78,7 +78,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 2fcc9364-eb5d-4027-a6f4-6eb6a6a8b3ef
             userCondition: null
             warning: null
@@ -91,14 +91,14 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 77b99e4f-1ed9-4f4a-a143-0e171b85f7e9
             userCondition: null
             warning: null
             width: 100
           - dateAdded: '2024-10-18T13:00:02+00:00'
             elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
             uid: adb91080-5a53-4dc4-b87d-596bfb42efd9
             userCondition: null
           - dateAdded: '2024-10-18T13:00:02+00:00'
@@ -109,7 +109,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 821acc0d-8ca9-4855-b6bb-68eb6e0c7cea
             userCondition: null
             warning: null
@@ -122,7 +122,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 1d05b5f3-f153-4651-922e-6ee9b1aebe4d
             userCondition: null
             warning: null

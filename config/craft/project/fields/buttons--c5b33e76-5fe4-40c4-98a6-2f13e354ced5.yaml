@@ -156,7 +156,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -178,7 +178,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -200,7 +200,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -521,7 +521,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -543,7 +543,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -565,7 +565,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -880,7 +880,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -902,7 +902,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -924,7 +924,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1239,7 +1239,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1261,7 +1261,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1283,7 +1283,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1598,7 +1598,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1620,7 +1620,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1642,7 +1642,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1963,7 +1963,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -1985,7 +1985,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -2007,7 +2007,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -2328,7 +2328,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -2350,7 +2350,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -2372,7 +2372,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -2693,7 +2693,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -2715,7 +2715,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -2737,7 +2737,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3052,7 +3052,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3074,7 +3074,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3096,7 +3096,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3411,7 +3411,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3433,7 +3433,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3455,7 +3455,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3773,7 +3773,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3798,7 +3798,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false
@@ -3823,7 +3823,7 @@ settings:
                           - __assoc__:
                               -
                                 - type
-                                - craft\fieldlayoutelements\CustomField
+                                - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
                               -
                                 - required
                                 - false

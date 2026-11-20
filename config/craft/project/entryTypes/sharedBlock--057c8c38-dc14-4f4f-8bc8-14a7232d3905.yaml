@@ -26,7 +26,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
             uid: a4cb5d76-f682-40d7-8279-d4112412d2aa
             userCondition: null
             warning: null
@@ -39,7 +39,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: a3522863-b089-4f06-a08b-8fcc3af84fd0
             userCondition: null
             warning: null

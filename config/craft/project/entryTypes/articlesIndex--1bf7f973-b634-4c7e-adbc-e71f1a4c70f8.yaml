@@ -29,7 +29,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
             uid: ebe8b972-19e7-4053-bc12-b8c93bc3af37
             userCondition: null
             warning: null
@@ -44,7 +44,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 00df0122-2922-441b-8c37-29d4bbb7e676
             userCondition: null
             warning: null
@@ -59,7 +59,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 8fb46f0d-ddc2-4ea5-b276-b384d6664590
             userCondition: null
             warning: null
@@ -74,7 +74,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 4363c03c-b0b0-4eee-8b03-b0ddda162214
             userCondition: null
             warning: null
@@ -94,7 +94,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 94adc43f-79e8-473e-a5ba-d414a51f9379
             userCondition: null
             warning: null
@@ -114,7 +114,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 3c19f18e-21d2-49a1-be07-26838c3b4f3d
             userCondition: null
             warning: null

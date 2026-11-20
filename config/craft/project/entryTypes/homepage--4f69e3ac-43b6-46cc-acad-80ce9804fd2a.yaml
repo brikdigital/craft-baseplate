@@ -53,7 +53,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 87e178ed-11ce-4a88-8950-a59bf5618ca7
             userCondition: null
             warning: null
@@ -75,7 +75,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: c553fc90-84cc-427a-ad06-752aba53be89
             userCondition: null
             warning: null

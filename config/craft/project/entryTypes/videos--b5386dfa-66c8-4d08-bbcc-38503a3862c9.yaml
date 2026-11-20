@@ -15,7 +15,7 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 657379c9-a5be-401b-be03-570da952fb0d
             userCondition: null
             warning: null
@@ -29,57 +29,33 @@ fieldLayouts:
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 47d6cdeb-0953-4712-bb4d-5ddbc7c31fc0
             userCondition: null
             warning: null
             width: 100
           - dateAdded: '2025-07-18T14:56:35+00:00'
             editCondition: null
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                - class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
-                  layoutElementUid: 657379c9-a5be-401b-be03-570da952fb0d
-                  operator: in
-                  uid: 63b756eb-e96c-482a-9973-867964e6a9d7
-                  values:
-                    - popUp
-              elementType: craft\elements\Entry
-              fieldContext: global
             fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
             handle: null
             instructions: null
             label: null
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: adc7d38b-7f29-464e-9af5-c78dbc225b4c
             userCondition: null
             warning: null
             width: 100
           - dateAdded: '2025-07-18T15:14:34+00:00'
             editCondition: null
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                - class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
-                  layoutElementUid: 657379c9-a5be-401b-be03-570da952fb0d
-                  operator: in
-                  uid: 670f3ca4-b20e-4e62-85d5-c9b2593d5698
-                  values:
-                    - autoplayPopUp
-              elementType: craft\elements\Entry
-              fieldContext: global
             fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
             handle: inlineVideo
             instructions: null
             label: 'Autoplay video'
             required: false
             tip: null
-            type: craft\fieldlayoutelements\CustomField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 1eb93f40-9fd8-4662-9e76-70cd23a26a3b
             userCondition: null
             warning: null

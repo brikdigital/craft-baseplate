@@ -29,7 +29,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
             uid: 3545e9dd-d192-4f22-b903-c24e026aeac8
             userCondition: null
             warning: null
