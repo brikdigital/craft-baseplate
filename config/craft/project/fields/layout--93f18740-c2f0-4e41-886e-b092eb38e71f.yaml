@@ -1,9 +1,9 @@
-columnSuffix: null
 handle: layout
 instructions: null
 name: Layout
 searchable: false
 settings:
+  customOptions: false
   options:
     - __assoc__:
         -
@@ -22,9 +22,8 @@ settings:
         -
           - value
           - wide
-        -
-          - default
-          - ''
+tip: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Dropdown
+type: CraftCms\Cms\Field\Dropdown
+warning: null

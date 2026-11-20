@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: body
 instructions: null
 name: 'Tekst (uitgebreid)'
@@ -10,6 +9,8 @@ settings:
   css: ".ck.ck-content ul + ul, .ck.ck-content ul + ol, .ck.ck-content ol + ul, .ck.ck-content ol + ol {\r\n  margin-top: 20px;\r\n}"
   cssFile: null
   defaultTransform: null
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
   entryTypes:
     - expanded: true
       uid: 25165387-9136-4739-86cb-59a989b1c003 # Afbeelding
@@ -22,6 +23,10 @@ settings:
     - 2
     - 3
     - 4
+  htmlSanitizer: default
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
   js: null
   jsFile: null
   options:
@@ -34,8 +39,7 @@ settings:
           label: 'Open in a new tab'
           mode: manual
   parseEmbeds: false
-  purifierConfig: null
-  purifyHtml: true
+  sanitizeHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: true
@@ -56,6 +60,8 @@ settings:
     - findAndReplace
     - sourceEditing
   wordLimit: null
+tip: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\ckeditor\Field
+type: CraftCms\Ckeditor\Field
+warning: null

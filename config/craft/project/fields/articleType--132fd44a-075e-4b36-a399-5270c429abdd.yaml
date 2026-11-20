@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: articleType
 instructions: null
 name: 'Artikel Type'
@@ -6,17 +5,22 @@ searchable: true
 settings:
   allowSelfRelations: false
   branchLimit: null
+  defaultPlacement: end
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
   selectionLabel: 'Selecteer artikel type'
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: false
+  showUnpermittedSections: true
   sources:
     - 'section:b20babee-2b3a-4f80-9384-15e7b592cdc9' # Artikel type
   targetSiteId: null
+  thumbSize: sm
   validateRelatedElements: false
   viewMode: list
+tip: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Entries
+type: CraftCms\Cms\Field\Entries
+warning: null

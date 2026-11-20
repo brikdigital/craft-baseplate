@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: sharedBlock
 instructions: null
 name: 'Gedeeld blok'
@@ -6,17 +5,22 @@ searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
+  defaultPlacement: end
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
   selectionLabel: 'Kies een blok'
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: false
+  showUnpermittedSections: true
   sources:
     - 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Gedeelde content blokken
   targetSiteId: null
+  thumbSize: sm
   validateRelatedElements: false
   viewMode: list
+tip: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Entries
+type: CraftCms\Cms\Field\Entries
+warning: null

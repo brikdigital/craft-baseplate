@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: imageRatio
 instructions: null
 name: 'Afbeelding ratio'
@@ -7,19 +6,13 @@ settings:
   customOptions: false
   options:
     - __assoc__:
-        -
+        0:
           - label
           - 'Afbeelding standaard'
-        -
+        1:
           - value
           - default
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
+        4:
           - default
           - '1'
     - __assoc__:
@@ -29,15 +22,6 @@ settings:
         -
           - value
           - aspect-1/1
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
-          - default
-          - ''
     - __assoc__:
         -
           - label
@@ -45,15 +29,6 @@ settings:
         -
           - value
           - aspect-4/3
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
-          - default
-          - ''
     - __assoc__:
         -
           - label
@@ -61,15 +36,6 @@ settings:
         -
           - value
           - aspect-5/2
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
-          - default
-          - ''
     - __assoc__:
         -
           - label
@@ -77,15 +43,8 @@ settings:
         -
           - value
           - aspect-16/9
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
-          - default
-          - ''
+tip: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Dropdown
+type: CraftCms\Cms\Field\Dropdown
+warning: null

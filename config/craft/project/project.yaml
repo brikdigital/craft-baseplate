@@ -1,4 +1,4 @@
-dateModified: 1795176640
+dateModified: 1795181108
 elementSources:
   CraftCms\Cms\Entry\Elements\Entry:
     - defaultSort:
@@ -196,6 +196,11 @@ meta:
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
     f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Gedeelde content blokken' # Gedeelde content blokken
     f659e4e5-e885-4efe-918b-f9ea22bef550: 'Afbeelding (enkel)' # Afbeelding (enkel)
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 6.0.0.0
 system:
   edition: solo
   name: Baseplate

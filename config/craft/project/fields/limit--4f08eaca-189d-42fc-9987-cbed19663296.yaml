@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: limit
 instructions: null
 name: 'Maximaal aantal berichten'
@@ -12,7 +11,10 @@ settings:
   previewCurrency: null
   previewFormat: decimal
   size: null
+  step: null
   suffix: null
+tip: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Number
+type: CraftCms\Cms\Field\Number
+warning: null

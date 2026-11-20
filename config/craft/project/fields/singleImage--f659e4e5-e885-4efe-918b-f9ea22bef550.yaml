@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: singleImage
 instructions: null
 name: 'Afbeelding (enkel)'
@@ -7,8 +6,6 @@ settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: false
-  allowedKinds:
-    - image
   branchLimit: null
   defaultPlacement: end
   defaultUploadLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
@@ -17,21 +14,58 @@ settings:
   maxRelations: 1
   minRelations: null
   previewMode: full
-  restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
   restrictedLocationSubpath: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - CraftCms\Cms\Asset\Elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - forQuery
+        - false
+      -
+        - class
+        - CraftCms\Cms\Asset\Conditions\AssetCondition
+      -
+        - conditionRules
+        - __assoc__:
+            -
+              - operator
+              - and
+            -
+              - rules
+              -
+                - __assoc__:
+                    -
+                      - class
+                      - CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
+                    -
+                      - uid
+                      - ba222d83-8790-4df9-843a-6b58d61a0499
+                    -
+                      - operator
+                      - in
+                    -
+                      - values
+                      -
+                        - image
   selectionLabel: 'Selecteer een afbeelding'
-  showCardsInGrid: false
   showSearchInput: true
   showSiteMenu: true
-  showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'
   targetSiteId: null
+  thumbSize: sm
   validateRelatedElements: false
   viewMode: list
+tip: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Assets
+type: CraftCms\Cms\Field\Assets
+warning: null

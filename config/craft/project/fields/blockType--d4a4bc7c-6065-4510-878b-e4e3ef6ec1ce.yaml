@@ -1,9 +1,9 @@
-columnSuffix: null
 handle: blockType
 instructions: null
 name: Type
 searchable: false
 settings:
+  customOptions: false
   options:
     - __assoc__:
         -
@@ -22,9 +22,6 @@ settings:
         -
           - value
           - textImage
-        -
-          - default
-          - ''
     - __assoc__:
         -
           - label
@@ -32,9 +29,8 @@ settings:
         -
           - value
           - textVideo
-        -
-          - default
-          - ''
+tip: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Dropdown
+type: CraftCms\Cms\Field\Dropdown
+warning: null

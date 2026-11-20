@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: articles
 instructions: null
 name: Artikelen
@@ -6,17 +5,22 @@ searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
+  defaultPlacement: end
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
   selectionLabel: 'Selecteer artikelen'
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: false
+  showUnpermittedSections: true
   sources:
     - 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Artikelen
   targetSiteId: null
+  thumbSize: sm
   validateRelatedElements: false
   viewMode: list
+tip: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Entries
+type: CraftCms\Cms\Field\Entries
+warning: null

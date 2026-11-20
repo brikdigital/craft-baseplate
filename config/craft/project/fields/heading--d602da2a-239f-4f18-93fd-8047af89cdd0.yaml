@@ -1,4 +1,3 @@
-columnSuffix: null
 handle: heading
 instructions: null
 name: Kop
@@ -11,6 +10,8 @@ settings:
   multiline: false
   placeholder: null
   uiMode: normal
+tip: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\PlainText
+type: CraftCms\Cms\Field\PlainText
+warning: null
