@@ -1,0 +1,132 @@
+color: null
+description: null
+fieldLayouts:
+  67374a86-2379-435f-8483-8200c10be10f:
+    cardThumbAlignment: start
+    tabs:
+      - elementCondition: null
+        elements:
+          - dateAdded: '2024-10-17T14:19:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst (uitgebreid)
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f79737d3-3082-4a23-8d8c-71e25f001b9d
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2024-10-17T14:43:42+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 889f70a7-0949-425c-a9be-060721269cf0 # Tekst positie
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77e07e2c-cbf4-41e5-b2b5-7b9ca7ae8074
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T15:11:42+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4ec6b37-962a-4592-a3e0-4c7481055728
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2024-10-17T14:19:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 767c68f7-a42c-4402-a640-46af0c267fb7 # Afbeelding ratio
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bfe0b10-2a05-445a-b2c1-48f4f9c55c0f
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T15:11:42+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f74b6406-d6fc-4982-b3ee-98311563055e
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T15:11:42+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61540616-9de6-46d8-9685-7bf21a3cabd1
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T15:11:42+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                - class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
+                  layoutElementUid: 61540616-9de6-46d8-9685-7bf21a3cabd1
+                  operator: in
+                  uid: 1510c385-5f0b-41c2-a83a-bb229c640c11
+                  values:
+                    - autoplayPopUp
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
+            handle: inlineVideo
+            instructions: null
+            label: 'Autoplay video'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a4fa622-035c-4bee-9cad-ab437d1555e5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: d13bf530-6e70-49d4-834d-ebbb71c354c1
+        userCondition: null
+    thumbFieldKey: 'layoutElement:e4ec6b37-962a-4592-a3e0-4c7481055728'
+handle: textMedia
+hasTitleField: false
+icon: photo-film
+name: 'Tekst met media'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

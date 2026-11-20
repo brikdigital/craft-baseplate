@@ -1,0 +1,101 @@
+color: null
+description: null
+fieldLayouts:
+  bf3c09f7-9526-4d00-afa3-366757350733:
+    cardThumbAlignment: start
+    tabs:
+      - elementCondition: null
+        elements:
+          - dateAdded: '2025-07-18T14:56:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 657379c9-a5be-401b-be03-570da952fb0d
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2024-10-18T08:59:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47d6cdeb-0953-4712-bb4d-5ddbc7c31fc0
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T14:56:35+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                - class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
+                  layoutElementUid: 657379c9-a5be-401b-be03-570da952fb0d
+                  operator: in
+                  uid: 63b756eb-e96c-482a-9973-867964e6a9d7
+                  values:
+                    - popUp
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: adc7d38b-7f29-464e-9af5-c78dbc225b4c
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T15:14:34+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                - class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: b56c28d2-a08b-4291-80fd-4cff8f398791 # Weergave
+                  layoutElementUid: 657379c9-a5be-401b-be03-570da952fb0d
+                  operator: in
+                  uid: 670f3ca4-b20e-4e62-85d5-c9b2593d5698
+                  values:
+                    - autoplayPopUp
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
+            handle: inlineVideo
+            instructions: null
+            label: 'Autoplay video'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1eb93f40-9fd8-4662-9e76-70cd23a26a3b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 473d7c5d-e8cd-4eef-8cbc-655958eea1e7
+        userCondition: null
+    thumbFieldKey: 'layoutElement:47d6cdeb-0953-4712-bb4d-5ddbc7c31fc0'
+handle: videos
+hasTitleField: false
+icon: video
+name: ' Video'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,87 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
+fieldLayouts:
+  e17e7aa0-5388-41e8-ab4e-f5c831357200:
+    cardThumbAlignment: end
+    cardThumbStyle: auto
+    tabs:
+      - elementCondition: null
+        elements:
+          - autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-11-20T11:30:07+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Assets\AssetTitleField
+            uid: 8b453ee7-9152-4edc-ab8a-97d0433608e7
+            userCondition: null
+            warning: null
+            width: 100
+          - attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2026-11-20T11:35:15+00:00'
+            disabled: false
+            elementCondition:
+              class: CraftCms\Cms\Asset\Conditions\AssetCondition
+              conditionRules:
+                operator: and
+                rules:
+                  - class: CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
+                    operator: in
+                    uid: 7051ac14-933b-46a9-9469-683480b2613b
+                    values:
+                      - image
+              elementType: null
+              fieldContext: global
+              forQuery: false
+            id: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Assets\AltField
+            uid: 55e26ea9-c788-4346-a89e-18de2bb6f51f
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Inhoud
+        type: content
+        uid: 8ad123d3-9d13-44f2-8ee8-651a013bd0c3
+        userCondition: null
+fs: local
+handle: files
+hasUrls: false
+name: Bestanden
+propagationMethod: all
+sortOrder: 2
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

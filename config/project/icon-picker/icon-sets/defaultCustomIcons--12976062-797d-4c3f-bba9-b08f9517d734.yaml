@@ -1,7 +1,0 @@
-enabled: true
-handle: defaultCustomIcons
-name: 'Standaard custom icons'
-settings:
-  folder: '[root]'
-sortOrder: 1
-type: verbb\iconpicker\iconsets\SvgFolder
