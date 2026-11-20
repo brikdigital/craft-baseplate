@@ -4,6 +4,7 @@ description: null
 fieldLayouts:
   50aab429-a7f0-497c-b300-1394e96159e9:
     cardThumbAlignment: end
+    cardThumbStyle: normal
     cardView:
       - 'layoutElement:57fcb81c-b287-418f-8796-01677872a139'
     tabs:
@@ -13,12 +14,13 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-10-17T10:46:40+00:00'
+            dateAdded: '2026-11-20T12:09:34+00:00'
             disabled: false
             elementCondition: null
             id: null
             inputType: null
             instructions: null
+            instructionsPosition: before
             label: null
             max: null
             min: null
@@ -31,8 +33,8 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f09f5bb0-04de-40c3-ae8d-0e5e5232dbf9
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
+            uid: 760c79ed-365b-4f94-964f-7faea732047a
             userCondition: null
             warning: null
             width: 100
@@ -96,7 +98,9 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+        icon: null
         name: Hero
+        type: content
         uid: 280d0b11-2ca3-4847-b5f1-e1c616ff596f
         userCondition: null
       - elementCondition: null
@@ -116,7 +120,9 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+        icon: null
         name: Inhoud
+        type: content
         uid: 76adffcd-c050-4fa2-b0f8-1398fe379a9d
         userCondition: null
       - elementCondition: null
@@ -181,7 +187,9 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+        icon: null
         name: Kaart
+        type: content
         uid: c040dc7d-589b-468f-924e-0b08f1e20365
         userCondition: null
       - elementCondition: null
@@ -201,14 +209,19 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+        icon: null
         name: SEO
+        type: content
         uid: 74336115-e013-42aa-8ff1-2cc27a8df8a0
         userCondition: null
-    thumbFieldKey: 'layoutElement:6a54e5b7-59cd-4703-9f03-b7462008705d'
+    thumbSources:
+      - 'layoutElement:6a54e5b7-59cd-4703-9f03-b7462008705d'
 handle: articles
 hasTitleField: true
 icon: newspaper
 name: Artikelen
+showExpiryDateField: true
+showPostDateField: true
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
