@@ -108,27 +108,26 @@ class MigrateSinglesController extends Controller
         }
 
         foreach ($this->entriesService->getSectionsByType('single') as $single) {
-            $singleEntry = Entry::find()
+            $singleEntries = Entry::find()
                 ->section($single->handle)
                 ->siteId('*')
                 ->status(null)
-                ->unique()
-                ->one();
-            if (!$singleEntry) {
+                ->all();
+            if (!$singleEntries) {
                 $this->stderr("No single found for $single->handle\n");
                 continue;
             }
 
-            foreach ($single->getSiteSettings() as $siteId => $siteSetting) {
+            /** @var Entry $singleEntry */
+            foreach ($singleEntries as $singleEntry) {
                 $newAttributes = [
                     'sectionId' => $indexesSection->id,
-                    'siteId' => $siteId,
-                    'slug' => preg_replace('#/legacy$#', '',  $siteSetting->uriFormat),
+                    'slug' => preg_replace('#/legacy$#', '',  $singleEntry->getUriFormat()),
                 ];
 
                 $this->elementsService->duplicateElement($singleEntry, $newAttributes);
 
-                $this->stdout("Migrated single $single->handle for siteId $siteId\n");
+                $this->stdout("Migrated single $single->handle for siteId $singleEntry->siteId\n");
             }
         }
     }
@@ -152,15 +151,17 @@ class MigrateSinglesController extends Controller
                 ->site('*')
                 ->status(null)
                 ->all();
+            
+            /** @var Node $navNode */
             foreach ($navNodes as $navNode) {
-                // slug stores the target site ID (e.g. on NL-site you can link to entry on FR-site)
-                $newEntry = $this->getReplacementEntry($navNode->slug, $singleEntry->typeId);
+                // Ensure target site ID (e.g. on NL-site you can link to entry on FR-site)
+                $newEntry = $this->getReplacementEntry($navNode->getElementSiteId(), $singleEntry->typeId);
                 if (!$newEntry) {
                     $this->stderr("No indexes entry found for $single->handle on site ID $navNode->slug\n");
                     return;
                 }
 
-                $navNode->elementId = $newEntry->id;
+                $navNode->setLinkedElementId($newEntry->id);
                 $this->elementsService->saveElement($navNode);
 
                 $this->stdout("Updated menu node $navNode->title ($navNode->id) on site ID $navNode->siteId to reference $newEntry->title ($newEntry->id)\n");
