@@ -18,8 +18,6 @@ ddev restart
 
 To start the Vite dev server, use either `ddev pnpm serve` or `make dev`. (the latter of which is a legacy command)
 
-Additionally, there is a Storybook install that you can start with `make storybook`. This will be accessible on `project-name.ddev.site:3001`.
-
 ## Instructions for migrating singles to indexes (separated by site)
 
 ### Prepare
@@ -50,16 +48,6 @@ When ready to deploy to production
 4. When confirmed everything is working: Delete all old sections of singles
 
 ## Notes when updating dependencies
-
-### Storybook
-
-Do NOT manually bump Storybook's version through `pnpm` commands or `package.json` edits.
-
-`pnpm dlx storybook@latest upgrade` will guide you through the process and make the necessary edits to the code if needed.
-
-### React and Webpack
-
-These are solely here for Storybook. Do NOT update these unless Storybook itself has updated React or Webpack.
 
 ### Biome, Prettier & Lefthook
 

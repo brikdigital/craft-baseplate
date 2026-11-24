@@ -18,8 +18,3 @@ supportedArchitectures:
 
 strictDepBuilds: false
 strictSsl: true
-
-# Enable this when we decide to use it again I guess
-# patchedDependencies:
-#   '@storybook/addon-docs': patches/@storybook__addon-docs.patch
-#   storybook: patches/storybook.patch

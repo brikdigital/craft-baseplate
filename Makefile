@@ -5,9 +5,9 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 
-.PHONY: build dev composer craft pull up install storybook
+.PHONY: build dev composer craft pull up install
 
-test: dev storybook
+test: dev
 
 build: up
 	ddev exec pnpm build
@@ -19,8 +19,6 @@ clean:
 dev: build
 	ddev launch
 	ddev exec pnpm serve
-storybook:
-	ddev exec pnpm storybook dev --disable-telemetry --no-open -p 3001
 composer: up
 	ddev composer \
 		$(filter-out $@,$(MAKECMDGOALS))
