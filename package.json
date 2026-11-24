@@ -31,9 +31,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.6.4",
-		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/forms": "^0.5.11",
-		"@tailwindcss/line-clamp": "^0.4.4",
 		"@tailwindcss/vite": "^4.3.5",
 		"@ttskch/prettier-plugin-tailwindcss-anywhere": "^0.2.0",
 		"@types/alpinejs": "^3.17.0",

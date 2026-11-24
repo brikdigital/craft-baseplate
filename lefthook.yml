@@ -3,7 +3,7 @@ pre-commit:
   commands:
     format:
       priority: 1
-      glob: '*.{js,ts,cjs,mjs,mts,d.cts,d.mts,jsx,tsx,mdx,css,pcss,json,jsonc,yml}'
+      glob: '*.{js,ts,cjs,mjs,mts,d.cts,d.mts,jsx,tsx,mdx,css,json,jsonc,yml}'
       exclude:
         - src/ts/vendored/**
       run: ddev pnpm prettier --write {staged_files} && git update-index --again

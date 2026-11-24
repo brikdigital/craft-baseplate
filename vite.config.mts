@@ -15,7 +15,7 @@ export default defineConfig(({ command }) => ({
 	resolve: {
 		alias: {
 			'@': path.resolve(import.meta.dirname, 'src'),
-			'@css': path.resolve(import.meta.dirname, 'src/pcss'),
+			'@css': path.resolve(import.meta.dirname, 'src/styles'),
 			'@ts': path.resolve(import.meta.dirname, 'src/ts'),
 		},
 	},
@@ -35,18 +35,13 @@ export default defineConfig(({ command }) => ({
 		},
 	},
 
-	css: {
-		devSourcemap: true,
-		transformer: 'lightningcss',
-	},
-
 	plugins: [
 		Inspect(),
 		restart({
 			reload: ['templates/**/*'],
 		}),
 
-		tailwindcss({ optimize: true }),
+		tailwindcss(),
 		compression({
 			include: /\.(js|mjs|json|css|map)/i,
 			algorithms: ['gzip', 'brotliCompress'],

@@ -1,0 +1,6 @@
+@theme {
+	--color-primary: rgb(37 4 54);
+	--color-secondary: rgb(243 178 214);
+	--color-error: #ff0000;
+	--color-skip-to-content: rgb(0 0 0);
+}

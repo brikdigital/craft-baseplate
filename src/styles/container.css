@@ -1,0 +1,80 @@
+@layer components {
+	:root {
+		--container-width: 150rem;
+		--container-padding: 1.25rem;
+		--gutter: 1.25rem;
+		--scrollbar: calc(100vw - 100%);
+		--viewport: calc(100vw - var(--scrollbar));
+		--fluid-area: max(
+			var(--container-padding),
+			calc((var(--viewport) - var(--container-width)) / 2)
+		);
+
+		@media (min-width: theme(--breakpoint-md)) {
+			--gutter: 2.5rem;
+			--container-padding: 2.5rem;
+		}
+	}
+}
+
+@utility container {
+	width: 100%;
+	max-width: calc(var(--container-width) + (var(--container-padding) * 2));
+	margin-inline: auto;
+	padding-inline: var(--container-padding);
+}
+
+@utility container-half {
+	width: 100%;
+	max-width: calc(calc(var(--container-width) + (var(--container-padding) * 2)) / 2);
+	margin-inline: auto;
+	padding-inline: var(--container-padding);
+}
+
+@utility container-no-bleed {
+	width: 100%;
+	max-width: calc(var(--container-width) + (var(--container-padding) * 2));
+	margin-inline: auto;
+	padding-inline: 0;
+}
+
+@utility container-plus-right {
+	width: 100%;
+	padding-inline-start: var(--fluid-area);
+	padding-inline-end: var(--container-padding);
+}
+
+@utility container-plus-left {
+	width: 100%;
+	padding-inline-start: var(--container-padding);
+	padding-inline-end: var(--fluid-area);
+}
+
+@utility container-bleed-left {
+	margin-inline-start: calc(
+		max(var(--container-padding), (100vw - var(--container-width)) / 2) * -1
+	);
+}
+
+@utility container-bleed-right {
+	margin-inline-end: calc(max(var(--container-padding), (100vw - var(--container-width)) / 2) * -1);
+}
+
+@utility container-grid {
+	width: 100%;
+	gap: var(--gutter);
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	max-width: calc(var(--container-width) + (var(--container-padding) * 2));
+	margin-inline: auto;
+	padding-inline-start: var(--container-padding);
+	padding-inline-end: var(--container-padding);
+
+	@media (min-width: theme(--breakpoint-md)) {
+		grid-template-columns: repeat(8, minmax(0, 1fr));
+	}
+
+	@media (min-width: theme(--breakpoint-lg)) {
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+	}
+}

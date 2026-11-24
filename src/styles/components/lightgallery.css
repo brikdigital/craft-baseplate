@@ -1,0 +1,34 @@
+@reference '../theme.css';
+
+/* Make the poster image cover the video */
+.lg-outer .lg-html5,
+.lg-outer .lg-video-cont .lg-object {
+	object-fit: cover;
+}
+
+.lg-outer .lg-video-play-button {
+	@apply size-56 max-w-none rounded-full bg-secondary text-black hover:bg-primary hover:text-secondary lg:size-64;
+
+	transition:
+		transform 0.25s cubic-bezier(0.17, 0.88, 0.32, 1.28),
+		opacity 0.1s,
+		background-color 0.2s ease-in-out,
+		color 0.2s ease-in-out;
+}
+
+.lg-outer .lg-video-play-icon-bg,
+.lg-outer .lg-video-play-icon-circle {
+	display: none;
+}
+
+.lg-outer .lg-video-play-icon {
+	@apply -mr-px size-16 max-w-none opacity-100 lg:size-20;
+
+	background: currentColor;
+	mask: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 27 31%22%3E%3Cpath d=%22M1.227 0C.902 0 .59.136.36.378A1.327 1.327 0 0 0 0 1.297V29.708c0 .343.13.671.36.914.23.242.542.378.867.378.256 0 .505-.085.712-.242l.003.002 24.341-14.087c.214-.103.395-.268.522-.476a1.341 1.341 0 0 0-.01-1.411 1.244 1.244 0 0 0-.545-.477L1.942.24h-.003A1.186 1.186 0 0 0 1.227 0Z%22/%3E%3C/svg%3E')
+		center / contain no-repeat;
+}
+
+.lg-outer .lg-video-play-icon > * {
+	display: none;
+}

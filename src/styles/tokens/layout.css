@@ -1,0 +1,17 @@
+@theme {
+	/* Set the base to 1px: p-16 = 16px, gap-24 = 24px */
+	--spacing: 0.0625rem;
+
+	--container-8xl: 88rem;
+	--container-9xl: 96rem;
+	--container-10xl: 104rem;
+	--container-11xl: 112rem;
+	--container-12xl: 120rem;
+	--container-13xl: 128rem;
+	--container-14xl: 136rem;
+
+	--aspect-landscape: 3 / 2;
+	--aspect-portrait: 2 / 3;
+
+	--shadow-skip-to-content: 0px 0px 800px 200px rgb(0 0 0 / 0.75);
+}

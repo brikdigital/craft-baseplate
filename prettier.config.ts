@@ -8,8 +8,7 @@ export default {
 	plugins: ['prettier-plugin-tailwindcss', '@ttskch/prettier-plugin-tailwindcss-anywhere'],
 
 	// prettier-plugin-tailwindcss
-	// tailwindStylesheet: './src/pcss/app.pcss',
-	tailwindConfig: './tailwind.config.ts',
+	tailwindStylesheet: './src/styles/app.css',
 
 	overrides: [
 		{

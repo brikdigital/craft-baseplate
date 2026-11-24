@@ -10,5 +10,5 @@
 
 .swup-progress-bar {
 	height: 4px;
-	background-color: rgb(var(--color-primary));
+	background-color: var(--color-primary);
 }

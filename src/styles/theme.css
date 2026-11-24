@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin 'tailwindcss-debug-screens';
+
+@import './tokens/colors.css';
+@import './tokens/layout.css';
+@import './tokens/typography.css';
+
+@layer base {
+	html,
+	body {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeLegibility;
+	}
+
+	[x-cloak] {
+		display: none !important;
+	}
+
+	/* Tailwind 4 no longer shows a pointer on clickable elements */
+	:where(
+		button:not(:disabled),
+		[role='button']:not([aria-disabled='true']),
+		summary,
+		select,
+		label[for]
+	) {
+		cursor: pointer;
+	}
+
+	:where(button:disabled, [aria-disabled='true']) {
+		cursor: not-allowed;
+	}
+}
