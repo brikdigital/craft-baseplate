@@ -12,15 +12,31 @@
 use CraftCms\Cms\Config\GeneralConfig;
 
 return GeneralConfig::create()
-    // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
+    ->allowedFileExtensions(['jpg', 'png', 'jpeg', 'webp', 'gif', 'svg', 'mp4', 'wov', 'mp3', 'wav', 'pdf', 'zip', 'csv', 'rar'])
+    ->maxUploadFileSize('256M')
+    ->extraAllowedFileExtensions(['json'])
+//    ->userSessionDuration(30*(24*60*60))
     ->defaultWeekStartDay(1)
-    // Preload Single entries as Twig variables
     ->preloadSingles()
-    // Prevent user enumeration attacks
     ->preventUserEnumeration()
-    // Prevent the front-end Login page
+    ->enableGql(false)
+    ->defaultSearchTermOptions(['subLeft' => true, 'subRight' => true])
+//    ->errorTemplatePrefix('errors/')
+    ->timezone('Europe/Amsterdam')
+    ->defaultCountryCode('NL')
+//    ->defaultCpLanguage('nl-NL') // this causes an exception?
+    ->defaultCpLocale('nl-NL')
+//    ->omitScriptNameInUrls(true)
+//    ->usePathInfo(true)
+    ->sendPoweredByHeader(false)
+    ->cpTrigger(env('CP_TRIGGER', 'brikcp'))
+    ->baseCpUrl(env('CRAFT_BASE_CP_URL'))
+    ->runQueueAutomatically(false)
+    ->maxRevisions(5)
+    ->maxBackups(2)
+//    ->asyncCsrfInputs()
+//    ->generateTransformsBeforePageLoad()
     ->loginPath(false)
-    // Set the @webroot alias so the clear-caches command knows where to find CP resources
     ->aliases([
         '@webroot' => public_path(),
     ])
