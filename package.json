@@ -49,7 +49,8 @@
 		"vite": "^8.3.6",
 		"vite-plugin-compression2": "^2.5.4",
 		"vite-plugin-favicon2": "^1.1.5",
-		"vite-plugin-inspect": "^12.1.0"
+		"vite-plugin-inspect": "^12.1.0",
+		"vite-plugin-restart": "^2.0.0"
 	},
 	"packageManager": "pnpm@12.21.0+sha512.66fd8278ee28935ce951792d34367ff3af5c432a2756445823029533835b8da529bbe0be5130afd56ed0713fb8789e47bad82d93bd5ae2fe54b15562d6276ef0"
 }

@@ -1,6 +1,7 @@
 import path from 'path';
 
 import { defineConfig } from 'vite';
+import restart from 'vite-plugin-restart';
 import { compression } from 'vite-plugin-compression2';
 import { ViteFaviconsPlugin as favicons } from 'vite-plugin-favicon2';
 import critical from 'rollup-plugin-critical';
@@ -36,7 +37,12 @@ export default defineConfig(({ command }) => ({
 
 	plugins: [
 		tailwindcss(),
+
 		Inspect(),
+		restart({
+			reload: ['templates/**/*'],
+		}),
+
 		...(command === 'build'
 			? [
 					favicons({
@@ -62,24 +68,6 @@ export default defineConfig(({ command }) => ({
 					}),
 				]
 			: []),
-
-		// Reload the browser when a template changes
-		{
-			name: 'reload',
-			configureServer(server) {
-				const { ws, watcher } = server;
-
-				function handleFileChange(file: string) {
-					if (file.endsWith('.twig')) {
-						ws.send({ type: 'full-reload' });
-					}
-				}
-
-				watcher.on('add', handleFileChange);
-				watcher.on('change', handleFileChange);
-				watcher.on('unlink', handleFileChange);
-			},
-		},
 	],
 
 	server: {
