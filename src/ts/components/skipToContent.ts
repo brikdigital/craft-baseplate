@@ -1,19 +1,8 @@
+// Move focus to <main> so keyboard and screen reader users continue from the content (swup may swallow the hash jump)
 export default function skipToContent() {
-	const el = document.querySelector('#skipToContent') as HTMLElement;
-	const els = Array.from(document.querySelectorAll("[role='heading'], h1, h2, h3")).filter(
-		elementFilter,
-	);
+	const link = document.querySelector<HTMLAnchorElement>('#skipToContent a');
 
-	el.addEventListener('click', () => {
-		if (els[0]) (els[0] as HTMLElement).focus();
+	link?.addEventListener('click', () => {
+		document.querySelector<HTMLElement>('#main')?.focus();
 	});
-}
-
-function elementFilter(e: Element): boolean {
-	if (e && e.getBoundingClientRect().width > 0 && e.getBoundingClientRect().height > 0) {
-		const style = window.getComputedStyle(e);
-		return style.display !== 'none' && style.visibility !== 'hidden' && style.clip === 'auto';
-	} else {
-		return false;
-	}
 }

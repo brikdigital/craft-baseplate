@@ -40,20 +40,18 @@
         </head>
         <body class="overflow-x-hidden relative flex flex-col min-h-screen antialiased {{ bodyClasses }} {{ devMode ? 'debug-screens' : '' }}">
             {% include '_components/atoms/skipToContent/skipToContent.twig' %}
-            <div id="app">
-                <main id="main" class="flex-[1_0_auto]">
-                    <a id="skipToContent"></a>
-                    {% block html %}
-                    {% endblock %}
 
-                    {% if craft.app.env == 'dev' %}
-                        <datastar-inspector />
-                    {% endif %}
-                </main>
-
-                {% block offcanvas %}
+            <main id="main" tabindex="-1" class="flex-[1_0_auto] focus:outline-none">
+                {% block html %}
                 {% endblock %}
-            </div>
+
+                {% if craft.app.env == 'dev' %}
+                    <datastar-inspector />
+                {% endif %}
+            </main>
+
+            {% block offcanvas %}
+            {% endblock %}
         </body>
         </html>
     {% endminify %}
