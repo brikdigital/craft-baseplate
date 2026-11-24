@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cce6f80092c4f2946aec6c77f9c04c48",
+    "content-hash": "5b3fef40db9d52caf89d4ef056f92cef",
     "packages": [
         {
             "name": "amphp/amp",
@@ -1373,8 +1373,7 @@
                 "issues": "https://github.com/lexisother/craft-statuspaginator/issues",
                 "source": "https://github.com/lexisother/craft-statuspaginator/tree/5.1.0"
             },
-            "time": "2026-10-23T10:10:30+00:00",
-            "published-time": "2026-10-23T10:11:46+00:00"
+            "time": "2026-10-23T10:10:30+00:00"
         },
         {
             "name": "cakephp/core",
@@ -7389,54 +7388,6 @@
                 "source": "https://github.com/nystudio107/craft-seomatic"
             },
             "time": "2026-07-30T19:56:33+00:00"
-        },
-        {
-            "name": "nystudio107/craft-templatecomments",
-            "version": "5.0.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-templatecomments/zipball/cfe44c63d3b1db33f451b5326dde1a9145effade",
-                "reference": "cfe44c63d3b1db33f451b5326dde1a9145effade",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.9.0",
-                "php": "^8.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "class": "nystudio107\\templatecomments\\TemplateComments",
-                "handle": "templatecomments",
-                "name": "Template Comments"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\templatecomments\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com/"
-                }
-            ],
-            "description": "Adds a HTML comment with performance timings to demarcate `{% block %}`s and each Twig template that is included or extended.",
-            "keywords": [
-                "comments",
-                "craft-plugin",
-                "craftcms",
-                "debugging",
-                "twig"
-            ],
-            "support": {
-                "docs": "https://nystudio107.com/docs/template-comments/",
-                "issues": "https://nystudio107.com/plugins/template-comments/support",
-                "source": "https://github.com/nystudio107/craft-templatecomments"
-            },
-            "time": "2026-01-30T21:23:25+00:00"
         },
         {
             "name": "nystudio107/craft-twig-sandbox",
@@ -16528,5 +16479,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.11.0"
+    "plugin-api-version": "2.9.0"
 }
