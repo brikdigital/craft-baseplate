@@ -13,6 +13,7 @@ export default function pageTransitions() {
 	swup = new Swup({
 		containers: ['#main'],
 		animationSelector: '#main',
+		ignoreVisit: (_url, { el } = {}) => !!el?.closest('[data-no-swup], [data-lightbox]'),
 		plugins: [
 			new SwupHeadPlugin({
 				persistAssets: true,

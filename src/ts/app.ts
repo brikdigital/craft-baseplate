@@ -20,12 +20,12 @@ const components: Component[] = [
 		selector: '[data-swiper]',
 	},
 	{
-		name: 'vidstack',
-		selector: 'media-player',
+		name: 'videojs',
+		selector: 'video-player',
 	},
 	{
-		name: 'glightbox',
-		selector: '.video-popup, .glightbox',
+		name: 'lightgallery',
+		selector: '[data-lightbox]',
 	},
 	{
 		name: 'alpine',

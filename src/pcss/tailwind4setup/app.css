@@ -59,25 +59,6 @@
 		display: none;
 	}
 
-	[data-media-player] {
-		--plyr-color-main: #ffdf3c;
-		--plyr-border-radius: 0px;
-
-		--plyr-video-control-background: #ffdf3c;
-		--plyr-video-control-color: #000;
-		--plyr-video-control-color-hover: #000;
-
-		contain: layout !important;
-
-		.plyr__control--overlaid {
-			background-color: var(--plyr-video-control-background) !important;
-			border-radius: 0px !important;
-			svg {
-				margin-left: -2px;
-			}
-		}
-	}
-
 	/* For more information: https://getbootstrap.com/docs/5.0/helpers/stretched-link/ */
 	.stretched-link {
 		&::after {

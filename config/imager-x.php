@@ -20,4 +20,9 @@ return [
         'transformer' => 'gumlet',
         'useForCpThumbs' => true,
     ],
+
+    'dev' => [
+        'transformer' => 'craft',
+        'useForCpThumbs' => false,
+    ],
 ];
