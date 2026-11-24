@@ -175,6 +175,21 @@ importers:
 
   .:
     dependencies:
+      '@swup/a11y-plugin':
+        specifier: ^5.2.1
+        version: 5.2.1(swup@4.10.0)
+      '@swup/head-plugin':
+        specifier: ^2.3.1
+        version: 2.3.1(swup@4.10.0)
+      '@swup/preload-plugin':
+        specifier: ^3.2.12
+        version: 3.2.12(swup@4.10.0)
+      '@swup/progress-plugin':
+        specifier: ^3.2.0
+        version: 3.2.0(swup@4.10.0)
+      '@swup/scroll-plugin':
+        specifier: ^4.0.0
+        version: 4.0.0
       alpinejs:
         specifier: ^3.17.5
         version: 3.17.5
@@ -193,6 +208,9 @@ importers:
       lite-youtube-embed:
         specifier: ^0.3.4
         version: 0.3.4
+      swup:
+        specifier: ^4.10.0
+        version: 4.10.0
       vidstack:
         specifier: ^1.15.7
         version: 1.15.7(webpack-sources@3.3.3)
@@ -1223,6 +1241,32 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@swup/a11y-plugin@5.2.1':
+    resolution: {integrity: sha512-n7gphzG+LBuE1RZVYpMxVELqDVFtUNhbehoVZsUiKXaAEkQV64YASe42XmffRnwzmLVtNHBFOSUKd21whctUBg==}
+    peerDependencies:
+      swup: ^4.0.0
+
+  '@swup/head-plugin@2.3.1':
+    resolution: {integrity: sha512-kdv60fO9c0/3+K40f7Fj/uV34nSuuPeCsld83J5uVVFizOmoovA737C5M1Iqac5Spf2GLU7q+mhN6AbohSIBjA==}
+    peerDependencies:
+      swup: ^4.6.0
+
+  '@swup/plugin@4.0.0':
+    resolution: {integrity: sha512-3Kq31BJxnzoPg643YxGoWQggoU6VPKZpdE5CqqmP7wwkpCYTzkRmrfcQ29mGhsSS7xfS7D33iZoBiwY+wPoo2A==}
+
+  '@swup/preload-plugin@3.2.12':
+    resolution: {integrity: sha512-syDXSjN9ltEenkAhOtRx0yxJWNBSmZncZUNmiuZbtoImdwMTL6/GJue1LOCzRxemOE1wttui1SkgqJyEcu6UIA==}
+    peerDependencies:
+      swup: ^4.0.0
+
+  '@swup/progress-plugin@3.2.0':
+    resolution: {integrity: sha512-Ur+D4+aee9swR6pn7JbEyGMwVP1BTcN5ygjlno7IaSQ/vMZbuJ73po1RkKlIi86p+/PZ+1kynkH4K4eMZuHKKg==}
+    peerDependencies:
+      swup: ^4.0.0
+
+  '@swup/scroll-plugin@4.0.0':
+    resolution: {integrity: sha512-13cR7zVGanAVgdJwszTPuyZxJ8cVo0ylGgVsf2OF/hZUzEpvmrd0pMdo3d4v8O6c+bB/np6hpCHPDLxkmL40xg==}
+
   '@szmarczak/http-timer@4.0.6':
     resolution: {integrity: sha512-4BAffykYOgO+5nzBWYwE3W90sBgLJoUPRWWcL8wlyiM8IB8ipJz3UMJ9KXQd1RKQXpKp8Tutn80HZtWsu2u76w==}
     engines: {node: '>=10'}
@@ -1733,6 +1777,9 @@ packages:
     resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}
     engines: {node: '>=4.0.0'}
 
+  compute-scroll-into-view@3.2.2:
+    resolution: {integrity: sha512-X+jf3y2j3TbtxA3fq3/kBNiSnD1QlIChiIQdAc2Yo1LtOc0yjO1TzgxWJf8PwtKPGgSvSfWUlVvrb7vGx1eYWA==}
+
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
@@ -1881,6 +1928,9 @@ packages:
   delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
+
+  delegate-it@6.4.0:
+    resolution: {integrity: sha512-NbMljKgnyvQQFLRx3hjPs2x++R3GzIZgvtINq/Q7PzxiC58CSG+N2RT8x4qF7JhkFZI4h9zZ1BszoJYdYREkbA==}
 
   delegates@1.0.0:
     resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==}
@@ -2158,6 +2208,9 @@ packages:
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
+
+  focus-options-polyfill@1.6.0:
+    resolution: {integrity: sha512-uyrAmLZrPnUItQY5wTdg31TO9GGZRGsh/jmohUg9oLmLi/sw5y7LlTV/mwyd6rvbxIOGwmRiv6LcTS8w7Bk9NQ==}
 
   follow-redirects@1.15.9:
     resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
@@ -3145,6 +3198,9 @@ packages:
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
+  path-to-regexp@6.3.0:
+    resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
+
   path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -3668,6 +3724,9 @@ packages:
   swiper@14.4.0:
     resolution: {integrity: sha512-6axnAuBsttFJe0gwsM5tT203/Bts0vcI+FwIX6dqFE4pUFVW6qrdRprNFQVxOYMW7V0S6A/KIqJ6JaPpNN2MCw==}
     engines: {node: '>= 4.7.0'}
+
+  swup@4.10.0:
+    resolution: {integrity: sha512-bzl5u94ovy5YDc+6No28De2TgMWK47Ym0uuMpN9kmzu+NWm3/mhQrmRPjArsFpfVTWO1nMFUZrKRwpRjS6eNJg==}
 
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
@@ -4948,6 +5007,36 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@swup/a11y-plugin@5.2.1(swup@4.10.0)':
+    dependencies:
+      '@swup/plugin': 4.0.0
+      focus-options-polyfill: 1.6.0
+      swup: 4.10.0
+
+  '@swup/head-plugin@2.3.1(swup@4.10.0)':
+    dependencies:
+      '@swup/plugin': 4.0.0
+      swup: 4.10.0
+
+  '@swup/plugin@4.0.0':
+    dependencies:
+      swup: 4.10.0
+
+  '@swup/preload-plugin@3.2.12(swup@4.10.0)':
+    dependencies:
+      '@swup/plugin': 4.0.0
+      swup: 4.10.0
+
+  '@swup/progress-plugin@3.2.0(swup@4.10.0)':
+    dependencies:
+      '@swup/plugin': 4.0.0
+      swup: 4.10.0
+
+  '@swup/scroll-plugin@4.0.0':
+    dependencies:
+      '@swup/plugin': 4.0.0
+      compute-scroll-into-view: 3.2.2
+
   '@szmarczak/http-timer@4.0.6':
     dependencies:
       defer-to-connect: 2.0.1
@@ -5437,6 +5526,8 @@ snapshots:
 
   common-tags@1.8.2: {}
 
+  compute-scroll-into-view@3.2.2: {}
+
   concat-map@0.0.1: {}
 
   confbox@0.1.8: {}
@@ -5602,6 +5693,10 @@ snapshots:
   define-lazy-prop@3.0.0: {}
 
   delayed-stream@1.0.0: {}
+
+  delegate-it@6.4.0:
+    dependencies:
+      typed-query-selector: 2.12.3
 
   delegates@1.0.0: {}
 
@@ -5916,6 +6011,8 @@ snapshots:
       keyv: 4.5.4
 
   flatted@3.3.3: {}
+
+  focus-options-polyfill@1.6.0: {}
 
   follow-redirects@1.15.9(debug@4.4.3(supports-color@7.2.0)):
     optionalDependencies:
@@ -6862,6 +6959,8 @@ snapshots:
 
   path-parse@1.0.7: {}
 
+  path-to-regexp@6.3.0: {}
+
   path-type@4.0.0: {}
 
   pathe@2.0.3: {}
@@ -7434,6 +7533,11 @@ snapshots:
       picocolors: 1.1.1
 
   swiper@14.4.0: {}
+
+  swup@4.10.0:
+    dependencies:
+      delegate-it: 6.4.0
+      path-to-regexp: 6.3.0
 
   symbol-tree@3.2.4: {}
 

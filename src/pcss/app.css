@@ -1,6 +1,7 @@
 @import './components/tailwind.css';
 @import './components/swiper.css';
 @import './components/videoPlayer.css';
+@import './components/page-transition.css';
 
 @layer base {
 	:root {

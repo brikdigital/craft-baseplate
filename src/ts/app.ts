@@ -8,6 +8,10 @@ const components: Component[] = [
 		selector: '#skipToContent',
 	},
 	{
+		name: 'swup',
+		selector: '#main',
+	},
+	{
 		name: 'lazysizes',
 		selector: '.lazyload',
 	},
