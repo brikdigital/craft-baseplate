@@ -32,7 +32,7 @@ storybook-static
 /public/build
 /public/hot
 /public/storage
-/public/vendor/craft
+/public/vendor
 /storage/*.key
 /storage/pail
 _ide_helper.php

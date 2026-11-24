@@ -1,4 +1,4 @@
-dateModified: 1795182458
+dateModified: 1795513899
 elementSources:
   CraftCms\Cms\Entry\Elements\Entry:
     - defaultSort:
@@ -205,5 +205,5 @@ system:
   edition: solo
   name: Baseplate
   retryDuration: 60
-  schemaVersion: 6.0.0.36
+  schemaVersion: 6.0.0.42
   timeZone: Europe/Amsterdam

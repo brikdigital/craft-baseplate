@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42747ca59b45ca65fddc8680087bc350",
+    "content-hash": "e52818fff88b8d0e220a680ca4745664",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -545,26 +545,21 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "6.0.0-beta.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/cms.git",
-                "reference": "05ce9b81be3704fb27da3a5a6670accfa49ec9a9"
-            },
+            "version": "6.0.0-beta.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/05ce9b81be3704fb27da3a5a6670accfa49ec9a9",
-                "reference": "05ce9b81be3704fb27da3a5a6670accfa49ec9a9",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/1927d0dcfe95005917d089becf435effef71803d",
+                "reference": "1927d0dcfe95005917d089becf435effef71803d",
                 "shasum": ""
             },
             "require": {
                 "bacon/bacon-qr-code": "^3.0",
                 "commerceguys/addressing": "^2.3.0",
                 "composer/semver": "^3.3.2",
-                "craftcms/cms-assets": "self.version",
+                "craftcms/cms-assets": "6.0.0-beta.2",
                 "craftcms/laravel-aliases": "^2.0",
                 "craftcms/laravel-dependency-aware-cache": "^1.2.3",
-                "craftcms/laravel-ruleset-validation": "^1.1",
+                "craftcms/laravel-ruleset-validation": "^1.1.1",
                 "craftcms/plugin-installer": "~1.6.0",
                 "craftcms/server-check": "~6.0.0",
                 "craftcms/url-validator": "^1.0",
@@ -583,7 +578,7 @@
                 "guzzlehttp/guzzle": "^7.2.0",
                 "inertiajs/inertia-laravel": "^3.0",
                 "intervention/image": "^4.2",
-                "laravel/ai": "^1.2",
+                "laravel/ai": "^1.4",
                 "laravel/framework": "^13.38",
                 "laravel/passport": "^13.0",
                 "laravel/wayfinder": "^0.1.23",
@@ -614,30 +609,6 @@
                 "yiisoft/translator": "^3.2",
                 "yiisoft/translator-message-php": "^1.1"
             },
-            "require-dev": {
-                "barryvdh/laravel-debugbar": "^4.2",
-                "craftcms/test-plugin": "1.0.1",
-                "dg/bypass-finals": "^1.9",
-                "driftingly/rector-laravel": "^2.6.2",
-                "fakerphp/faker": "^1.19.0",
-                "intervention/image-driver-vips": "^4.1",
-                "larastan/larastan": "^3.13",
-                "laravel/boost": "^2.10.3",
-                "laravel/pao": "^1.0",
-                "laravel/pint": "^1.22",
-                "laravel/socialite": "^5.23",
-                "league/flysystem-aws-s3-v3": "^3.35",
-                "orchestra/testbench": "^11.0",
-                "pestphp/pest": "^5.0",
-                "pestphp/pest-plugin-agent": "^5.0",
-                "pestphp/pest-plugin-arch": "^5.0",
-                "pestphp/pest-plugin-browser": "^5.2",
-                "pestphp/pest-plugin-laravel": "^5.0",
-                "phpbench/phpbench": "^1.7",
-                "phpstan/phpstan": "^2.1",
-                "rector/rector": "^2.3",
-                "spatie/laravel-typescript-transformer": "^3.2"
-            },
             "suggest": {
                 "ext-exif": "Adds support for parsing image EXIF data.",
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
@@ -648,74 +619,73 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "aliases": {
-                        "Ai": "CraftCms\\Cms\\Support\\Facades\\Ai",
-                        "Gql": "CraftCms\\Cms\\Support\\Facades\\Gql",
-                        "I18N": "CraftCms\\Cms\\Support\\Facades\\I18N",
-                        "Path": "CraftCms\\Cms\\Support\\Facades\\Path",
-                        "Twig": "CraftCms\\Cms\\Support\\Facades\\Twig",
-                        "OAuth": "CraftCms\\Cms\\Support\\Facades\\OAuth",
-                        "Sites": "CraftCms\\Cms\\Support\\Facades\\Sites",
-                        "Users": "CraftCms\\Cms\\Support\\Facades\\Users",
-                        "Assets": "CraftCms\\Cms\\Support\\Facades\\Assets",
-                        "Drafts": "CraftCms\\Cms\\Support\\Facades\\Drafts",
-                        "Fields": "CraftCms\\Cms\\Support\\Facades\\Fields",
-                        "Images": "CraftCms\\Cms\\Support\\Facades\\Images",
-                        "Search": "CraftCms\\Cms\\Support\\Facades\\Search",
-                        "Anchors": "CraftCms\\Cms\\Support\\Facades\\Anchors",
-                        "BulkOps": "CraftCms\\Cms\\Support\\Facades\\BulkOps",
-                        "Entries": "CraftCms\\Cms\\Support\\Facades\\Entries",
-                        "Folders": "CraftCms\\Cms\\Support\\Facades\\Folders",
-                        "Plugins": "CraftCms\\Cms\\Support\\Facades\\Plugins",
-                        "Updates": "CraftCms\\Cms\\Support\\Facades\\Updates",
-                        "Volumes": "CraftCms\\Cms\\Support\\Facades\\Volumes",
-                        "Elements": "CraftCms\\Cms\\Support\\Facades\\Elements",
-                        "Markdown": "CraftCms\\Cms\\Support\\Facades\\Markdown",
-                        "Sections": "CraftCms\\Cms\\Support\\Facades\\Sections",
-                        "Security": "CraftCms\\Cms\\Support\\Facades\\Security",
-                        "Template": "CraftCms\\Cms\\Support\\Facades\\Template",
-                        "Addresses": "CraftCms\\Cms\\Support\\Facades\\Addresses",
-                        "HtmlStack": "CraftCms\\Cms\\Support\\Facades\\HtmlStack",
-                        "Revisions": "CraftCms\\Cms\\Support\\Facades\\Revisions",
-                        "Workflows": "CraftCms\\Cms\\Support\\Facades\\Workflows",
-                        "Activities": "CraftCms\\Cms\\Support\\Facades\\Activities",
-                        "Conditions": "CraftCms\\Cms\\Support\\Facades\\Conditions",
-                        "Deprecator": "CraftCms\\Cms\\Support\\Facades\\Deprecator",
-                        "EntryTypes": "CraftCms\\Cms\\Support\\Facades\\EntryTypes",
-                        "SiteGroups": "CraftCms\\Cms\\Support\\Facades\\SiteGroups",
-                        "Structures": "CraftCms\\Cms\\Support\\Facades\\Structures",
-                        "UserGroups": "CraftCms\\Cms\\Support\\Facades\\UserGroups",
-                        "AuthMethods": "CraftCms\\Cms\\Support\\Facades\\AuthMethods",
-                        "JobProgress": "CraftCms\\Cms\\Support\\Facades\\JobProgress",
-                        "AssetIndexer": "CraftCms\\Cms\\Support\\Facades\\AssetIndexer",
-                        "DeltaRegistry": "CraftCms\\Cms\\Support\\Facades\\DeltaRegistry",
-                        "ElementCaches": "CraftCms\\Cms\\Support\\Facades\\ElementCaches",
-                        "ProjectConfig": "CraftCms\\Cms\\Support\\Facades\\ProjectConfig",
-                        "TemplateHooks": "CraftCms\\Cms\\Support\\Facades\\TemplateHooks",
-                        "ElementActions": "CraftCms\\Cms\\Support\\Facades\\ElementActions",
-                        "ElementSources": "CraftCms\\Cms\\Support\\Facades\\ElementSources",
-                        "HtmlSanitizers": "CraftCms\\Cms\\Support\\Facades\\HtmlSanitizers",
-                        "InputNamespace": "CraftCms\\Cms\\Support\\Facades\\InputNamespace",
-                        "ElementActivity": "CraftCms\\Cms\\Support\\Facades\\ElementActivity",
-                        "ImageTransforms": "CraftCms\\Cms\\Support\\Facades\\ImageTransforms",
-                        "ResponseHeaders": "CraftCms\\Cms\\Support\\Facades\\ResponseHeaders",
-                        "UserPermissions": "CraftCms\\Cms\\Support\\Facades\\UserPermissions",
-                        "ElementExporters": "CraftCms\\Cms\\Support\\Facades\\ElementExporters"
-                    },
                     "providers": [
                         "CraftCms\\Cms\\Providers\\CraftServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "Activities": "CraftCms\\Cms\\Support\\Facades\\Activities",
+                        "Addresses": "CraftCms\\Cms\\Support\\Facades\\Addresses",
+                        "Ai": "CraftCms\\Cms\\Support\\Facades\\Ai",
+                        "Anchors": "CraftCms\\Cms\\Support\\Facades\\Anchors",
+                        "AssetIndexer": "CraftCms\\Cms\\Support\\Facades\\AssetIndexer",
+                        "Assets": "CraftCms\\Cms\\Support\\Facades\\Assets",
+                        "AuthMethods": "CraftCms\\Cms\\Support\\Facades\\AuthMethods",
+                        "BulkOps": "CraftCms\\Cms\\Support\\Facades\\BulkOps",
+                        "Conditions": "CraftCms\\Cms\\Support\\Facades\\Conditions",
+                        "DeltaRegistry": "CraftCms\\Cms\\Support\\Facades\\DeltaRegistry",
+                        "Deprecator": "CraftCms\\Cms\\Support\\Facades\\Deprecator",
+                        "Drafts": "CraftCms\\Cms\\Support\\Facades\\Drafts",
+                        "ElementActions": "CraftCms\\Cms\\Support\\Facades\\ElementActions",
+                        "ElementActivity": "CraftCms\\Cms\\Support\\Facades\\ElementActivity",
+                        "ElementCaches": "CraftCms\\Cms\\Support\\Facades\\ElementCaches",
+                        "ElementExporters": "CraftCms\\Cms\\Support\\Facades\\ElementExporters",
+                        "ElementSources": "CraftCms\\Cms\\Support\\Facades\\ElementSources",
+                        "Elements": "CraftCms\\Cms\\Support\\Facades\\Elements",
+                        "Entries": "CraftCms\\Cms\\Support\\Facades\\Entries",
+                        "EntryTypes": "CraftCms\\Cms\\Support\\Facades\\EntryTypes",
+                        "Fields": "CraftCms\\Cms\\Support\\Facades\\Fields",
+                        "Folders": "CraftCms\\Cms\\Support\\Facades\\Folders",
+                        "Gql": "CraftCms\\Cms\\Support\\Facades\\Gql",
+                        "HtmlSanitizers": "CraftCms\\Cms\\Support\\Facades\\HtmlSanitizers",
+                        "HtmlStack": "CraftCms\\Cms\\Support\\Facades\\HtmlStack",
+                        "I18N": "CraftCms\\Cms\\Support\\Facades\\I18N",
+                        "ImageTransforms": "CraftCms\\Cms\\Support\\Facades\\ImageTransforms",
+                        "Images": "CraftCms\\Cms\\Support\\Facades\\Images",
+                        "InputNamespace": "CraftCms\\Cms\\Support\\Facades\\InputNamespace",
+                        "JobProgress": "CraftCms\\Cms\\Support\\Facades\\JobProgress",
+                        "Markdown": "CraftCms\\Cms\\Support\\Facades\\Markdown",
+                        "OAuth": "CraftCms\\Cms\\Support\\Facades\\OAuth",
+                        "Path": "CraftCms\\Cms\\Support\\Facades\\Path",
+                        "Plugins": "CraftCms\\Cms\\Support\\Facades\\Plugins",
+                        "ProjectConfig": "CraftCms\\Cms\\Support\\Facades\\ProjectConfig",
+                        "ResponseHeaders": "CraftCms\\Cms\\Support\\Facades\\ResponseHeaders",
+                        "Revisions": "CraftCms\\Cms\\Support\\Facades\\Revisions",
+                        "Search": "CraftCms\\Cms\\Support\\Facades\\Search",
+                        "Sections": "CraftCms\\Cms\\Support\\Facades\\Sections",
+                        "Security": "CraftCms\\Cms\\Support\\Facades\\Security",
+                        "SiteGroups": "CraftCms\\Cms\\Support\\Facades\\SiteGroups",
+                        "Sites": "CraftCms\\Cms\\Support\\Facades\\Sites",
+                        "Structures": "CraftCms\\Cms\\Support\\Facades\\Structures",
+                        "Template": "CraftCms\\Cms\\Support\\Facades\\Template",
+                        "TemplateHooks": "CraftCms\\Cms\\Support\\Facades\\TemplateHooks",
+                        "Twig": "CraftCms\\Cms\\Support\\Facades\\Twig",
+                        "Updates": "CraftCms\\Cms\\Support\\Facades\\Updates",
+                        "UserGroups": "CraftCms\\Cms\\Support\\Facades\\UserGroups",
+                        "UserPermissions": "CraftCms\\Cms\\Support\\Facades\\UserPermissions",
+                        "Users": "CraftCms\\Cms\\Support\\Facades\\Users",
+                        "Volumes": "CraftCms\\Cms\\Support\\Facades\\Volumes",
+                        "Workflows": "CraftCms\\Cms\\Support\\Facades\\Workflows"
+                    }
                 }
             },
             "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
                 "psr-4": {
                     "CraftCms\\Cms\\": "src/"
-                }
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -733,28 +703,27 @@
                 "laravel"
             ],
             "support": {
-                "docs": "https://craftcms.com/docs/5.x/",
                 "email": "support@craftcms.com",
-                "forum": "https://craftcms.stackexchange.com/",
                 "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "rss": "https://github.com/craftcms/cms/releases.atom",
-                "source": "https://github.com/craftcms/cms"
+                "forum": "https://craftcms.stackexchange.com/",
+                "source": "https://github.com/craftcms/cms",
+                "docs": "https://craftcms.com/docs/5.x/",
+                "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2026-11-10T18:14:47+00:00",
-            "published-time": "2026-11-10T18:15:11+00:00"
+            "time": "2026-11-20T21:57:53+00:00"
         },
         {
             "name": "craftcms/cms-assets",
-            "version": "6.0.0-beta.1",
+            "version": "6.0.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms-assets.git",
-                "reference": "87acafef481f17c12a10170211bbccda42588dbd"
+                "reference": "19a4d7f4acbeaacc4976c55060f0d37920d0e08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms-assets/zipball/87acafef481f17c12a10170211bbccda42588dbd",
-                "reference": "87acafef481f17c12a10170211bbccda42588dbd",
+                "url": "https://api.github.com/repos/craftcms/cms-assets/zipball/19a4d7f4acbeaacc4976c55060f0d37920d0e08c",
+                "reference": "19a4d7f4acbeaacc4976c55060f0d37920d0e08c",
                 "shasum": ""
             },
             "type": "library",
@@ -764,10 +733,10 @@
             ],
             "description": "Built assets for Craft CMS.",
             "support": {
-                "source": "https://github.com/craftcms/cms-assets/tree/6.0.0-beta.1"
+                "source": "https://github.com/craftcms/cms-assets/tree/6.0.0-beta.2"
             },
-            "time": "2026-11-10T18:11:32+00:00",
-            "published-time": "2026-11-10T18:17:49+00:00"
+            "time": "2026-11-20T21:05:06+00:00",
+            "published-time": "2026-11-20T22:00:13+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -1024,11 +993,6 @@
         {
             "name": "craftcms/plugin-installer",
             "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/plugin-installer.git",
-                "reference": "bd1650e8da6d5ca7a8527068d3e51c34bc7b6b4f"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/bd1650e8da6d5ca7a8527068d3e51c34bc7b6b4f",
@@ -1039,9 +1003,6 @@
                 "composer-plugin-api": "^1.0 || ^2.0",
                 "php": ">=5.4"
             },
-            "require-dev": {
-                "composer/composer": "^1.0 || ^2.0"
-            },
             "type": "composer-plugin",
             "extra": {
                 "class": "craft\\composer\\Plugin"
@@ -1051,7 +1012,6 @@
                     "craft\\composer\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1064,16 +1024,7 @@
                 "installer",
                 "plugin"
             ],
-            "support": {
-                "docs": "https://craftcms.com/docs",
-                "email": "support@craftcms.com",
-                "forum": "https://craftcms.stackexchange.com/",
-                "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "rss": "https://craftcms.com/changelog.rss",
-                "source": "https://github.com/craftcms/cms"
-            },
-            "time": "2023-02-22T13:17:00+00:00",
-            "published-time": "2023-02-22T13:18:16+00:00"
+            "time": "2023-02-22T13:17:00+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1233,11 +1184,6 @@
         {
             "name": "defuse/php-encryption",
             "version": "v2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/defuse/php-encryption.git",
-                "reference": "f53396c2d34225064647a05ca76c1da9d99e5828"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/defuse/php-encryption/zipball/f53396c2d34225064647a05ca76c1da9d99e5828",
@@ -1249,10 +1195,6 @@
                 "paragonie/random_compat": ">= 2",
                 "php": ">=5.6.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "^5|^6|^7|^8|^9|^10",
-                "yoast/phpunit-polyfills": "^2.0.0"
-            },
             "bin": [
                 "bin/generate-defuse-key"
             ],
@@ -1262,7 +1204,6 @@
                     "Defuse\\Crypto\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1291,12 +1232,7 @@
                 "security",
                 "symmetric key cryptography"
             ],
-            "support": {
-                "issues": "https://github.com/defuse/php-encryption/issues",
-                "source": "https://github.com/defuse/php-encryption/tree/v2.4.0"
-            },
-            "time": "2023-06-19T06:10:36+00:00",
-            "published-time": "2023-06-19T06:16:55+00:00"
+            "time": "2023-06-19T06:10:36+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1376,16 +1312,16 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "7c2f25ed928553a3de389ccb99aa46c0eedb2d4d"
+                "reference": "9cc6668eac8bea1b5f2f3d35e73b0e9370836d0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/7c2f25ed928553a3de389ccb99aa46c0eedb2d4d",
-                "reference": "7c2f25ed928553a3de389ccb99aa46c0eedb2d4d",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/9cc6668eac8bea1b5f2f3d35e73b0e9370836d0c",
+                "reference": "9cc6668eac8bea1b5f2f3d35e73b0e9370836d0c",
                 "shasum": ""
             },
             "require": {
@@ -1442,7 +1378,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/collections/issues",
-                "source": "https://github.com/doctrine/collections/tree/3.1.0"
+                "source": "https://github.com/doctrine/collections/tree/3.1.1"
             },
             "funding": [
                 {
@@ -1458,8 +1394,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-29T20:41:02+00:00",
-            "published-time": "2026-04-29T20:41:48+00:00"
+            "time": "2026-11-03T10:57:17+00:00",
+            "published-time": "2026-11-23T16:16:12+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2205,22 +2141,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.16.3",
+            "version": "7.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c88a78082757dd5a0c44191651535259fcb6e605"
+                "reference": "f61ba5ea0a55032a55ddbb72cab7d307c1043654"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c88a78082757dd5a0c44191651535259fcb6e605",
-                "reference": "c88a78082757dd5a0c44191651535259fcb6e605",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f61ba5ea0a55032a55ddbb72cab7d307c1043654",
+                "reference": "f61ba5ea0a55032a55ddbb72cab7d307c1043654",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^2.6",
-                "guzzlehttp/psr7": "^2.13.4",
+                "guzzlehttp/promises": "^2.6.2",
+                "guzzlehttp/psr7": "^2.13.6",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.5 || ^3.0",
@@ -2313,7 +2249,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.16.3"
+                "source": "https://github.com/guzzle/guzzle/tree/7.17.0"
             },
             "funding": [
                 {
@@ -2329,21 +2265,21 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-17T16:23:09+00:00",
-            "published-time": "2026-11-17T16:23:41+00:00"
+            "time": "2026-11-22T16:49:11+00:00",
+            "published-time": "2026-11-22T16:50:19+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "a1b6aceb39165acd5c421239e6abfa1b83dbe224"
+                "reference": "72e93ed2b1f3d8c09d1460c950bd5726face7ccd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a1b6aceb39165acd5c421239e6abfa1b83dbe224",
-                "reference": "a1b6aceb39165acd5c421239e6abfa1b83dbe224",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/72e93ed2b1f3d8c09d1460c950bd5726face7ccd",
+                "reference": "72e93ed2b1f3d8c09d1460c950bd5726face7ccd",
                 "shasum": ""
             },
             "require": {
@@ -2398,7 +2334,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.6.1"
+                "source": "https://github.com/guzzle/promises/tree/2.6.2"
             },
             "funding": [
                 {
@@ -2414,21 +2350,21 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-20T00:03:12+00:00",
-            "published-time": "2026-11-20T00:04:27+00:00"
+            "time": "2026-11-21T03:45:23+00:00",
+            "published-time": "2026-11-21T03:46:19+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.13.5",
+            "version": "2.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "5aa00c5418afbe3f435910af0e98cb03d659c49d"
+                "reference": "2bd3dccf56e99cdacf74b1ad5e06a08a5a7739f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5aa00c5418afbe3f435910af0e98cb03d659c49d",
-                "reference": "5aa00c5418afbe3f435910af0e98cb03d659c49d",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2bd3dccf56e99cdacf74b1ad5e06a08a5a7739f2",
+                "reference": "2bd3dccf56e99cdacf74b1ad5e06a08a5a7739f2",
                 "shasum": ""
             },
             "require": {
@@ -2518,7 +2454,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.13.5"
+                "source": "https://github.com/guzzle/psr7/tree/2.13.6"
             },
             "funding": [
                 {
@@ -2534,8 +2470,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-19T20:34:53+00:00",
-            "published-time": "2026-11-19T20:36:04+00:00"
+            "time": "2026-11-21T23:48:40+00:00",
+            "published-time": "2026-11-21T23:49:39+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
@@ -2626,16 +2562,16 @@
         },
         {
             "name": "inertiajs/inertia-laravel",
-            "version": "v3.7.0",
+            "version": "v3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inertiajs/inertia-laravel.git",
-                "reference": "9d3f9060c1614565eb4d3a3208015ed01de347bb"
+                "reference": "ee6aa7a7cb0dc384573abec561a96fea4dc64af9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/9d3f9060c1614565eb4d3a3208015ed01de347bb",
-                "reference": "9d3f9060c1614565eb4d3a3208015ed01de347bb",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/ee6aa7a7cb0dc384573abec561a96fea4dc64af9",
+                "reference": "ee6aa7a7cb0dc384573abec561a96fea4dc64af9",
                 "shasum": ""
             },
             "require": {
@@ -2653,7 +2589,7 @@
                 "laravel/pint": "^1.16",
                 "mockery/mockery": "^1.3.3",
                 "orchestra/testbench": "^9.2|^10.0|^11.0",
-                "phpunit/phpunit": "^11.5|^12.0"
+                "phpunit/phpunit": "^11.5|^12.0|^13.0"
             },
             "suggest": {
                 "ext-pcntl": "Recommended when running the Inertia SSR server via the `inertia:start-ssr` artisan command."
@@ -2692,10 +2628,10 @@
             ],
             "support": {
                 "issues": "https://github.com/inertiajs/inertia-laravel/issues",
-                "source": "https://github.com/inertiajs/inertia-laravel/tree/v3.7.0"
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v3.8.0"
             },
-            "time": "2026-11-02T10:29:10+00:00",
-            "published-time": "2026-11-02T10:45:07+00:00"
+            "time": "2026-11-22T20:06:01+00:00",
+            "published-time": "2026-11-23T20:34:06+00:00"
         },
         {
             "name": "intervention/gif",
@@ -4149,26 +4085,26 @@
         },
         {
             "name": "league/oauth2-server",
-            "version": "9.4.1",
+            "version": "9.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth2-server.git",
-                "reference": "9d2f6fc0a0b5aa1bb02506971d3a4ecff2c6526c"
+                "reference": "afdb62ecc19bb13a855223465953ed4017a2d078"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-server/zipball/9d2f6fc0a0b5aa1bb02506971d3a4ecff2c6526c",
-                "reference": "9d2f6fc0a0b5aa1bb02506971d3a4ecff2c6526c",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-server/zipball/afdb62ecc19bb13a855223465953ed4017a2d078",
+                "reference": "afdb62ecc19bb13a855223465953ed4017a2d078",
                 "shasum": ""
             },
             "require": {
                 "defuse/php-encryption": "^2.4",
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "lcobucci/jwt": "^5.6",
+                "lcobucci/jwt": "^5.6 || ^5.7",
                 "league/event": "^3.0",
                 "league/uri": "^7.8",
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
                 "psr/clock": "^1.0",
                 "psr/http-message": "^2.0",
                 "psr/http-server-middleware": "^1.0"
@@ -4178,7 +4114,7 @@
                 "lncd/oauth2": "*"
             },
             "require-dev": {
-                "laminas/laminas-diactoros": "^3.8",
+                "laminas/laminas-diactoros": "^3.8 || ^3.10",
                 "paragonie/random_compat": "^9.99.100",
                 "php-parallel-lint/php-parallel-lint": "^1.4",
                 "phpstan/extension-installer": "^1.4.3",
@@ -4234,7 +4170,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/oauth2-server/issues",
-                "source": "https://github.com/thephpleague/oauth2-server/tree/9.4.1"
+                "source": "https://github.com/thephpleague/oauth2-server/tree/9.5.0"
             },
             "funding": [
                 {
@@ -4242,8 +4178,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-25T15:24:07+00:00",
-            "published-time": "2026-06-25T15:28:46+00:00"
+            "time": "2026-11-20T19:37:37+00:00",
+            "published-time": "2026-11-20T19:40:29+00:00"
         },
         {
             "name": "league/uri",
@@ -4512,11 +4448,6 @@
         {
             "name": "markbaker/complex",
             "version": "3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MarkBaker/PHPComplex.git",
-                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
@@ -4526,19 +4457,12 @@
             "require": {
                 "php": "^7.2 || ^8.0"
             },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
-                "phpcompatibility/php-compatibility": "^9.3",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
-                "squizlabs/php_codesniffer": "^3.7"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Complex\\": "classes/src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4554,21 +4478,11 @@
                 "complex",
                 "mathematics"
             ],
-            "support": {
-                "issues": "https://github.com/MarkBaker/PHPComplex/issues",
-                "source": "https://github.com/MarkBaker/PHPComplex/tree/3.0.2"
-            },
-            "time": "2022-12-06T16:21:08+00:00",
-            "published-time": "2022-12-06T16:27:52+00:00"
+            "time": "2022-12-06T16:21:08+00:00"
         },
         {
             "name": "markbaker/matrix",
             "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MarkBaker/PHPMatrix.git",
-                "reference": "728434227fe21be27ff6d86621a1b13107a2562c"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/728434227fe21be27ff6d86621a1b13107a2562c",
@@ -4578,23 +4492,12 @@
             "require": {
                 "php": "^7.1 || ^8.0"
             },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
-                "phpcompatibility/php-compatibility": "^9.3",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phploc/phploc": "^4.0",
-                "phpmd/phpmd": "2.*",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
-                "sebastian/phpcpd": "^4.0",
-                "squizlabs/php_codesniffer": "^3.7"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Matrix\\": "classes/src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4611,12 +4514,7 @@
                 "matrix",
                 "vector"
             ],
-            "support": {
-                "issues": "https://github.com/MarkBaker/PHPMatrix/issues",
-                "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.1"
-            },
-            "time": "2022-12-02T22:17:43+00:00",
-            "published-time": "2022-12-02T22:55:17+00:00"
+            "time": "2022-12-02T22:17:43+00:00"
         },
         {
             "name": "mcp/sdk",
@@ -4794,27 +4692,26 @@
         },
         {
             "name": "moneyphp/money",
-            "version": "v4.9.0",
+            "version": "v4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moneyphp/money.git",
-                "reference": "d49ee625c6ba79b9d7a228ce153b02fc1032152b"
+                "reference": "8b7d0557d5583999f656cce22f0a177d3d040039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moneyphp/money/zipball/d49ee625c6ba79b9d7a228ce153b02fc1032152b",
-                "reference": "d49ee625c6ba79b9d7a228ce153b02fc1032152b",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/8b7d0557d5583999f656cce22f0a177d3d040039",
+                "reference": "8b7d0557d5583999f656cce22f0a177d3d040039",
                 "shasum": ""
             },
             "require": {
                 "ext-bcmath": "*",
                 "ext-filter": "*",
-                "ext-json": "*",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
+                "php": "~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0"
             },
             "require-dev": {
                 "cache/taggable-cache": "^1.1.0",
-                "doctrine/coding-standard": "^12.0",
+                "doctrine/coding-standard": "^14.0",
                 "doctrine/instantiator": "^1.5.0 || ^2.0",
                 "ext-gmp": "*",
                 "ext-intl": "*",
@@ -4825,9 +4722,9 @@
                 "php-http/message": "^1.16.0",
                 "php-http/mock-client": "^1.6.0",
                 "phpbench/phpbench": "^1.2.5",
-                "phpstan/extension-installer": "^1.4",
-                "phpstan/phpstan": "^2.1.9",
-                "phpstan/phpstan-phpunit": "^2.0",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^2.3.7",
+                "phpstan/phpstan-phpunit": "^2.1.2",
                 "phpunit/phpunit": "^10.5.9",
                 "psr/cache": "^1.0.1 || ^2.0 || ^3.0",
                 "ticketswap/phpstan-error-formatter": "^1.1"
@@ -4878,10 +4775,10 @@
             ],
             "support": {
                 "issues": "https://github.com/moneyphp/money/issues",
-                "source": "https://github.com/moneyphp/money/tree/v4.9.0"
+                "source": "https://github.com/moneyphp/money/tree/v4.10.0"
             },
-            "time": "2026-05-04T20:23:15+00:00",
-            "published-time": "2026-05-04T20:25:20+00:00"
+            "time": "2026-11-23T19:18:31+00:00",
+            "published-time": "2026-11-23T19:19:11+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5706,11 +5603,6 @@
         {
             "name": "paragonie/random_compat",
             "version": "v9.99.100",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
@@ -5720,15 +5612,10 @@
             "require": {
                 "php": ">= 7"
             },
-            "require-dev": {
-                "phpunit/phpunit": "4.*|5.*",
-                "vimeo/psalm": "^1"
-            },
             "suggest": {
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5746,22 +5633,11 @@
                 "pseudorandom",
                 "random"
             ],
-            "support": {
-                "email": "info@paragonie.com",
-                "issues": "https://github.com/paragonie/random_compat/issues",
-                "source": "https://github.com/paragonie/random_compat"
-            },
-            "time": "2020-10-15T08:29:30+00:00",
-            "published-time": "2020-10-15T08:34:16+00:00"
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "php-http/discovery",
             "version": "1.20.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-http/discovery.git",
-                "reference": "82fe4c73ef3363caed49ff8dd1539ba06044910d"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-http/discovery/zipball/82fe4c73ef3363caed49ff8dd1539ba06044910d",
@@ -5783,15 +5659,6 @@
                 "psr/http-factory-implementation": "*",
                 "psr/http-message-implementation": "*"
             },
-            "require-dev": {
-                "composer/composer": "^1.0.2|^2.0",
-                "graham-campbell/phpspec-skip-example-extension": "^5.0",
-                "php-http/httplug": "^1.0 || ^2.0",
-                "php-http/message-factory": "^1.0",
-                "phpspec/phpspec": "^5.1 || ^6.1 || ^7.3",
-                "sebastian/comparator": "^3.0.5 || ^4.0.8",
-                "symfony/phpunit-bridge": "^6.4.4 || ^7.0.1"
-            },
             "type": "composer-plugin",
             "extra": {
                 "class": "Http\\Discovery\\Composer\\Plugin",
@@ -5805,7 +5672,6 @@
                     "src/Composer/Plugin.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5827,12 +5693,7 @@
                 "psr17",
                 "psr7"
             ],
-            "support": {
-                "issues": "https://github.com/php-http/discovery/issues",
-                "source": "https://github.com/php-http/discovery/tree/1.20.0"
-            },
-            "time": "2024-10-02T11:20:13+00:00",
-            "published-time": "2024-10-02T11:21:00+00:00"
+            "time": "2024-10-02T11:20:13+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -6020,16 +5881,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "5.11.0",
+            "version": "5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "3aa1f0d0f3c658b803c18050ac49244d07d96907"
+                "reference": "f03bcf6cbcae3a719b9b56c32077379b5cde2190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/3aa1f0d0f3c658b803c18050ac49244d07d96907",
-                "reference": "3aa1f0d0f3c658b803c18050ac49244d07d96907",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/f03bcf6cbcae3a719b9b56c32077379b5cde2190",
+                "reference": "f03bcf6cbcae3a719b9b56c32077379b5cde2190",
                 "shasum": ""
             },
             "require": {
@@ -6127,10 +5988,10 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.11.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.12.0"
             },
-            "time": "2026-11-08T06:29:49+00:00",
-            "published-time": "2026-11-08T06:49:56+00:00"
+            "time": "2026-11-22T06:48:07+00:00",
+            "published-time": "2026-11-22T07:25:13+00:00"
         },
         {
             "name": "phpoffice/wmf",
@@ -6494,11 +6355,6 @@
         {
             "name": "pragmarx/random",
             "version": "v0.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/antonioribeiro/random.git",
-                "reference": "daf08a189c5d2d40d1a827db46364d3a741a51b7"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/antonioribeiro/random/zipball/daf08a189c5d2d40d1a827db46364d3a741a51b7",
@@ -6507,12 +6363,6 @@
             },
             "require": {
                 "php": ">=7.0"
-            },
-            "require-dev": {
-                "fzaninotto/faker": "~1.7",
-                "phpunit/phpunit": "~6.4",
-                "pragmarx/trivia": "~0.1",
-                "squizlabs/php_codesniffer": "^2.3"
             },
             "suggest": {
                 "fzaninotto/faker": "Allows you to get dozens of randomized types",
@@ -6529,7 +6379,6 @@
                     "PragmaRX\\Random\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6552,21 +6401,11 @@
                 "random pattern",
                 "random string"
             ],
-            "support": {
-                "issues": "https://github.com/antonioribeiro/random/issues",
-                "source": "https://github.com/antonioribeiro/random/tree/master"
-            },
-            "time": "2017-11-21T05:26:22+00:00",
-            "published-time": "2017-11-21T05:30:14+00:00"
+            "time": "2017-11-21T05:26:22+00:00"
         },
         {
             "name": "pragmarx/recovery",
             "version": "v0.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/antonioribeiro/recovery.git",
-                "reference": "b5ce4082f059afac6761714a84497816f45271cc"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/antonioribeiro/recovery/zipball/b5ce4082f059afac6761714a84497816f45271cc",
@@ -6576,11 +6415,6 @@
             "require": {
                 "php": ">=7.0",
                 "pragmarx/random": "~0.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": ">=5.4.3",
-                "squizlabs/php_codesniffer": "^2.3",
-                "tightenco/collect": "^5.0"
             },
             "suggest": {
                 "tightenco/collect": "Allows to generate recovery codes as collections"
@@ -6596,7 +6430,6 @@
                     "PragmaRX\\Recovery\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6621,21 +6454,11 @@
                 "recovery codes",
                 "two factor auth"
             ],
-            "support": {
-                "issues": "https://github.com/antonioribeiro/recovery/issues",
-                "source": "https://github.com/antonioribeiro/recovery/tree/v0.2.1"
-            },
-            "time": "2021-08-15T12:26:51+00:00",
-            "published-time": "2021-08-15T12:28:29+00:00"
+            "time": "2021-08-15T12:26:51+00:00"
         },
         {
             "name": "psr/clock",
             "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/clock.git",
-                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/clock/zipball/e41a24703d4560fd0acb709162f73b8adfc3aa0d",
@@ -6651,7 +6474,6 @@
                     "Psr\\Clock\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6670,21 +6492,11 @@
                 "psr-20",
                 "time"
             ],
-            "support": {
-                "issues": "https://github.com/php-fig/clock/issues",
-                "source": "https://github.com/php-fig/clock/tree/1.0.0"
-            },
-            "time": "2022-11-25T14:36:26+00:00",
-            "published-time": "2022-11-25T14:59:22+00:00"
+            "time": "2022-11-25T14:36:26+00:00"
         },
         {
             "name": "psr/container",
             "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
@@ -6705,7 +6517,6 @@
                     "Psr\\Container\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6724,21 +6535,11 @@
                 "container-interop",
                 "psr"
             ],
-            "support": {
-                "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/2.0.2"
-            },
-            "time": "2021-11-05T16:47:00+00:00",
-            "published-time": "2021-11-05T16:53:27+00:00"
+            "time": "2021-11-05T16:47:00+00:00"
         },
         {
             "name": "psr/event-dispatcher",
             "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/event-dispatcher.git",
-                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/event-dispatcher/zipball/dbefd12671e8a14ec7f180cab83036ed26714bb0",
@@ -6759,7 +6560,6 @@
                     "Psr\\EventDispatcher\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6775,12 +6575,7 @@
                 "psr",
                 "psr-14"
             ],
-            "support": {
-                "issues": "https://github.com/php-fig/event-dispatcher/issues",
-                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
-            },
-            "time": "2019-01-08T18:20:26+00:00",
-            "published-time": "2019-03-25T15:31:44+00:00"
+            "time": "2019-01-08T18:20:26+00:00"
         },
         {
             "name": "psr/http-client",
@@ -6918,11 +6713,6 @@
         {
             "name": "psr/http-server-handler",
             "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-server-handler.git",
-                "reference": "84c4fb66179be4caaf8e97bd239203245302e7d4"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/84c4fb66179be4caaf8e97bd239203245302e7d4",
@@ -6944,7 +6734,6 @@
                     "Psr\\Http\\Server\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6966,11 +6755,7 @@
                 "response",
                 "server"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/http-server-handler/tree/1.0.2"
-            },
-            "time": "2023-04-10T20:06:20+00:00",
-            "published-time": "2023-04-10T20:07:30+00:00"
+            "time": "2023-04-10T20:06:20+00:00"
         },
         {
             "name": "psr/http-server-middleware",
@@ -7033,11 +6818,6 @@
         {
             "name": "psr/log",
             "version": "3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
@@ -7058,7 +6838,6 @@
                     "Psr\\Log\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7075,20 +6854,11 @@
                 "psr",
                 "psr-3"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.2"
-            },
-            "time": "2024-09-11T13:17:53+00:00",
-            "published-time": "2024-09-11T13:21:14+00:00"
+            "time": "2024-09-11T13:17:53+00:00"
         },
         {
             "name": "psr/simple-cache",
             "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
@@ -7109,7 +6879,6 @@
                     "Psr\\SimpleCache\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7127,11 +6896,7 @@
                 "psr-16",
                 "simple-cache"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
-            },
-            "time": "2021-10-29T13:26:27+00:00",
-            "published-time": "2021-10-29T13:27:19+00:00"
+            "time": "2021-10-29T13:26:27+00:00"
         },
         {
             "name": "psy/psysh",
@@ -7216,11 +6981,6 @@
         {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
@@ -7230,17 +6990,12 @@
             "require": {
                 "php": ">=5.6"
             },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5 || ^6.5"
-            },
             "type": "library",
             "autoload": {
                 "files": [
                     "src/getallheaders.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7251,12 +7006,7 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "support": {
-                "issues": "https://github.com/ralouphie/getallheaders/issues",
-                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
-            },
-            "time": "2019-03-08T08:55:37+00:00",
-            "published-time": "2019-03-08T09:01:32+00:00"
+            "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "ramsey/collection",
@@ -11342,11 +11092,6 @@
         {
             "name": "theiconic/name-parser",
             "version": "v1.2.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/theiconic/name-parser.git",
-                "reference": "9a54a713bf5b2e7fd990828147d42de16bf8a253"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/theiconic/name-parser/zipball/9a54a713bf5b2e7fd990828147d42de16bf8a253",
@@ -11355,11 +11100,6 @@
             },
             "require": {
                 "php": ">=7.1"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "php-mock/php-mock-phpunit": "^2.1",
-                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "autoload": {
@@ -11370,7 +11110,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -11381,12 +11120,7 @@
                 }
             ],
             "description": "PHP library for parsing a string containing a full name into its parts",
-            "support": {
-                "issues": "https://github.com/theiconic/name-parser/issues",
-                "source": "https://github.com/theiconic/name-parser/tree/v1.2.11"
-            },
-            "time": "2019-11-14T14:08:48+00:00",
-            "published-time": "2019-11-14T14:13:55+00:00"
+            "time": "2019-11-14T14:08:48+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -11820,16 +11554,16 @@
         },
         {
             "name": "web-auth/webauthn-lib",
-            "version": "5.3.15",
+            "version": "5.3.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-auth/webauthn-lib.git",
-                "reference": "768fb8cf7bebaad8a08b3015e206dda95e3320fa"
+                "reference": "7f38dbcf07cd22ec104fa6eb720df22eb4196b47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/768fb8cf7bebaad8a08b3015e206dda95e3320fa",
-                "reference": "768fb8cf7bebaad8a08b3015e206dda95e3320fa",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/7f38dbcf07cd22ec104fa6eb720df22eb4196b47",
+                "reference": "7f38dbcf07cd22ec104fa6eb720df22eb4196b47",
                 "shasum": ""
             },
             "require": {
@@ -11890,7 +11624,7 @@
                 "webauthn"
             ],
             "support": {
-                "source": "https://github.com/web-auth/webauthn-lib/tree/5.3.15"
+                "source": "https://github.com/web-auth/webauthn-lib/tree/5.3.17"
             },
             "funding": [
                 {
@@ -11902,8 +11636,8 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-11-18T16:46:55+00:00",
-            "published-time": "2026-11-19T11:40:19+00:00"
+            "time": "2026-11-23T18:46:47+00:00",
+            "published-time": "2026-11-24T07:58:53+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -12278,31 +12012,31 @@
         },
         {
             "name": "yiisoft/html",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/html.git",
-                "reference": "eeb0bea275c87c4ee0dbc444dbc24fbf44a5aa77"
+                "reference": "3084becca9ac070d386b8f977946ae538429c86c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/html/zipball/eeb0bea275c87c4ee0dbc444dbc24fbf44a5aa77",
-                "reference": "eeb0bea275c87c4ee0dbc444dbc24fbf44a5aa77",
+                "url": "https://api.github.com/repos/yiisoft/html/zipball/3084becca9ac070d386b8f977946ae538429c86c",
+                "reference": "3084becca9ac070d386b8f977946ae538429c86c",
                 "shasum": ""
             },
             "require": {
-                "php": "8.1 - 8.5",
+                "php": "8.1 - 8.6",
                 "yiisoft/arrays": "^2.0 || ^3.0",
                 "yiisoft/json": "^1.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.90",
                 "infection/infection": "^0.27.11 || ^0.32",
-                "maglnet/composer-require-checker": "^4.7.1",
+                "phpstan/phpstan": "^2.3",
                 "phpunit/phpunit": "^10.5.46",
                 "rector/rector": "^2.0.17",
-                "spatie/phpunit-watcher": "^1.24",
-                "vimeo/psalm": "^5.26.1 || ^6.12"
+                "shipmonk/composer-dependency-analyser": "^1.8",
+                "spatie/phpunit-watcher": "^1.24"
             },
             "type": "library",
             "autoload": {
@@ -12337,31 +12071,33 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-06-05T07:38:14+00:00",
-            "published-time": "2026-06-05T07:38:35+00:00"
+            "time": "2026-11-22T11:00:15+00:00",
+            "published-time": "2026-11-22T11:00:55+00:00"
         },
         {
             "name": "yiisoft/i18n",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/i18n.git",
-                "reference": "028fbcee0ea772dab150d0a8f40344a32e639d3f"
+                "reference": "ca5709128c1c4de51aa3496fb568a762e428b37a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/i18n/zipball/028fbcee0ea772dab150d0a8f40344a32e639d3f",
-                "reference": "028fbcee0ea772dab150d0a8f40344a32e639d3f",
+                "url": "https://api.github.com/repos/yiisoft/i18n/zipball/ca5709128c1c4de51aa3496fb568a762e428b37a",
+                "reference": "ca5709128c1c4de51aa3496fb568a762e428b37a",
                 "shasum": ""
             },
             "require": {
-                "php": "8.0 - 8.5"
+                "php": "8.0 - 8.6"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.3",
-                "maglnet/composer-require-checker": "^4.4",
+                "friendsofphp/php-cs-fixer": "^3.66",
+                "phpstan/phpstan": "^2.1.32",
                 "phpunit/phpunit": "^9.6.22",
                 "rector/rector": "^2.0.10",
+                "shipmonk/composer-dependency-analyser": "^1.8",
                 "spatie/phpunit-watcher": "^1.23.6"
             },
             "type": "library",
@@ -12405,8 +12141,8 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-11-29T15:57:19+00:00",
-            "published-time": "2025-11-29T15:57:38+00:00"
+            "time": "2026-11-22T15:52:11+00:00",
+            "published-time": "2026-11-22T15:52:34+00:00"
         },
         {
             "name": "yiisoft/json",
@@ -12556,30 +12292,33 @@
         },
         {
             "name": "yiisoft/translator",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/translator.git",
-                "reference": "62c64c9009a570597cc31dd42ff951d74049a60b"
+                "reference": "3febfebd24ffc6be5f089767e97bfefae5035275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/translator/zipball/62c64c9009a570597cc31dd42ff951d74049a60b",
-                "reference": "62c64c9009a570597cc31dd42ff951d74049a60b",
+                "url": "https://api.github.com/repos/yiisoft/translator/zipball/3febfebd24ffc6be5f089767e97bfefae5035275",
+                "reference": "3febfebd24ffc6be5f089767e97bfefae5035275",
                 "shasum": ""
             },
             "require": {
-                "php": "8.0 - 8.5",
+                "php": "8.0 - 8.6",
                 "psr/event-dispatcher": "1.0.0",
                 "yiisoft/files": "^1.0 || ^2.0",
                 "yiisoft/i18n": "^1.0"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8.3",
-                "maglnet/composer-require-checker": "^4.4",
+                "bamarni/composer-bin-plugin": "^1.9.1",
+                "friendsofphp/php-cs-fixer": "^3.95",
+                "phpstan/phpstan": "^2.1.14",
                 "phpunit/phpunit": "^9.6.29",
                 "rector/rector": "^2.1.7",
+                "shipmonk/composer-dependency-analyser": "^1.8",
                 "spatie/phpunit-watcher": "^1.23.6",
+                "yiisoft/code-style": "^1.0",
                 "yiisoft/di": "^1.2.1"
             },
             "suggest": {
@@ -12636,8 +12375,8 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-06T05:18:44+00:00",
-            "published-time": "2025-12-06T05:19:17+00:00"
+            "time": "2026-11-22T17:12:23+00:00",
+            "published-time": "2026-11-22T17:12:46+00:00"
         },
         {
             "name": "yiisoft/translator-message-php",
