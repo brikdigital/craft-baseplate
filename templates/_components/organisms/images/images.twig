@@ -1,0 +1,22 @@
+{% set images = images|default([]) %}
+
+<div class="overflow-hidden">
+	<div class="container" data-swiper='{ "type": "images" }'>
+		<div class="swiper-wrapper">
+			{% for image in images %}
+				<div class="swiper-slide h-auto! w-full">
+					{% include '_components/atoms/image/image.twig' with {
+						image: image,
+						transform: 'aspect-16/9',
+						alt: image.alt,
+						imageClasses: 'aspect-[16/9] h-full',
+						wrapperClasses: ''
+					} only %}
+				</div>
+			{% endfor %}
+		</div>
+		<div class="flex w-full justify-end pt-32">
+			{% include '_components/atoms/button/swiperButtons.twig' with { wrapperClasses: 'flex gap-24 pointer-events-auto' } only %}
+		</div>
+	</div>
+</div>

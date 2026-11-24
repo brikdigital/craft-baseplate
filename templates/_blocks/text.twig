@@ -1,7 +1,3 @@
 <section class="container">
-    <div class="mx-auto lg:w-1/2">
-        {% include '_blocks/chunksHandler.twig' with {
-            editorContent: block.body
-        } %}
-    </div>
+	{% include '_components/organisms/text/text.twig' with { content: block.body } only %}
 </section>

@@ -1,3 +1,20 @@
-{% include "_components/atoms/text/text.twig" with {
-    html: '<p>' ~ block.body ~ '</p>'
-} %}
+{# The media is the video, shown with the image as its poster #}
+{% set displayMethod = block.displayMethod.value ?? 'popUp' %}
+{% set video = block.videos.one() %}
+{% if displayMethod == 'autoplayPopUp' %}
+	{% set video = block.inlineVideo.one() ?: video %}
+{% endif %}
+
+<section>
+	{% include '_components/organisms/textMedia/textMedia.twig' with {
+		content: block.body,
+		mediaItems: video ? [{
+			type: 'video',
+			video: video.url,
+			poster: block.singleImage.one(),
+			displayMethod: displayMethod,
+		}] : [],
+		mediaPosition: block.textPosition == 'left' ? 'right' : 'left',
+		ratio: block.imageRatio.value ?? 'default',
+	} only %}
+</section>
