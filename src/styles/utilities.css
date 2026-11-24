@@ -21,9 +21,41 @@
 }
 
 @utility bg-check-secondary {
-	background-image: url('https://craft-baseplate.ddev.site/dist/img/icons/check.svg');
+	background-image: url('../img/icons/check.svg');
 }
 
 @utility bg-check-white {
-	background-image: url('https://craft-baseplate.ddev.site/dist/img/icons/check-white.svg');
+	background-image: url('../img/icons/check-white.svg');
+}
+
+@utility pt-block-none {
+	padding-top: var(--space-block-none);
+}
+
+@utility pt-block-sm {
+	padding-top: var(--space-block-sm);
+}
+
+@utility pt-block-md {
+	padding-top: var(--space-block-md);
+}
+
+@utility pt-block-lg {
+	padding-top: var(--space-block-lg);
+}
+
+@utility pb-block-none {
+	padding-bottom: var(--space-block-none);
+}
+
+@utility pb-block-sm {
+	padding-bottom: var(--space-block-sm);
+}
+
+@utility pb-block-md {
+	padding-bottom: var(--space-block-md);
+}
+
+@utility pb-block-lg {
+	padding-bottom: var(--space-block-lg);
 }

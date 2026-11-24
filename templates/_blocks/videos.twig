@@ -7,13 +7,15 @@
 {% set poster = block.singleImage.one() %}
 
 {% if video %}
-	<section class="container">
-		{% include '_components/molecules/videoPlayer/videoPlayer.twig' with {
-			video: video.url,
-			type: displayMethod,
-			posterImage: poster,
-			transform: 'aspect-16/9',
-			wrapperClasses: 'aspect-video w-full overflow-hidden',
-		} only %}
+	<section {{ attr(themeAttributes|default({})) }}>
+		<div class="container">
+			{% include '_components/molecules/videoPlayer/videoPlayer.twig' with {
+				video: video.url,
+				type: displayMethod,
+				posterImage: poster,
+				transform: 'aspect-16/9',
+				wrapperClasses: 'aspect-video w-full overflow-hidden',
+			} only %}
+		</div>
 	</section>
 {% endif %}

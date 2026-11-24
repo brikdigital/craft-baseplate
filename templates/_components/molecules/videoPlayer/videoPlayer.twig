@@ -24,10 +24,10 @@
       {% if posterUrl %}<media-poster class="absolute inset-0 hidden data-visible:block"><img class="size-full object-cover" alt=""></media-poster>{% endif %}
 
       <media-play-button class="group {{ buttonClasses }} grid">
-        <span class="hidden group-data-ended:grid group-data-paused:grid place-items-center">
+        <span class="hidden place-items-center group-data-ended:grid group-data-paused:grid">
           {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
         </span>
-        <span class="grid group-data-ended:hidden group-data-paused:hidden place-items-center">
+        <span class="grid place-items-center group-data-ended:hidden group-data-paused:hidden">
           {{ inlineSvg('icons/pause', ''~iconClasses, { sanitize: true, namespace: true }) }}
         </span>
       </media-play-button>

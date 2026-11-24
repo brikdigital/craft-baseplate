@@ -1,7 +1,6 @@
 import path from 'path';
 
 import { defineConfig } from 'vite';
-import restart from 'vite-plugin-restart';
 import { compression } from 'vite-plugin-compression2';
 import { ViteFaviconsPlugin as favicons } from 'vite-plugin-favicon2';
 import critical from 'rollup-plugin-critical';
@@ -14,21 +13,21 @@ export default defineConfig(({ command }) => ({
 	publicDir: path.resolve(import.meta.dirname, 'src/public'),
 	resolve: {
 		alias: {
-			'@': path.resolve(import.meta.dirname, 'src'),
+			'#': path.resolve(import.meta.dirname, 'src'),
 			'@css': path.resolve(import.meta.dirname, 'src/styles'),
-			'@ts': path.resolve(import.meta.dirname, 'src/ts'),
+			'@': path.resolve(import.meta.dirname, 'src/ts'),
 		},
 	},
 
 	build: {
-		target: 'es2023',
+		target: 'es2025',
 		commonjsOptions: {
 			transformMixedEsModules: true,
 		},
 		manifest: true,
 		sourcemap: false,
 		outDir: path.resolve(import.meta.dirname, 'public_html/dist/'),
-		rollupOptions: {
+		rolldownOptions: {
 			input: {
 				app: path.resolve(import.meta.dirname, 'src/ts/app.ts'),
 			},
@@ -36,12 +35,17 @@ export default defineConfig(({ command }) => ({
 	},
 
 	plugins: [
-		Inspect(),
-		restart({
-			reload: ['templates/**/*'],
-		}),
-
 		tailwindcss(),
+		Inspect(),
+		...(command === 'build'
+			? [
+					favicons({
+						logo: './src/img/favicon/favicon-src.svg',
+						inject: false,
+						outputPath: 'favicons',
+					}),
+				]
+			: []),
 		compression({
 			include: /\.(js|mjs|json|css|map)/i,
 			algorithms: ['gzip', 'brotliCompress'],
@@ -56,13 +60,26 @@ export default defineConfig(({ command }) => ({
 						criticalPages: [{ uri: '/', template: 'index' }],
 						criticalConfig: {},
 					}),
-					favicons({
-						logo: './src/img/favicon/favicon-src.svg',
-						inject: false,
-						outputPath: 'favicons',
-					}),
 				]
 			: []),
+
+		// Reload the browser when a template changes
+		{
+			name: 'reload',
+			configureServer(server) {
+				const { ws, watcher } = server;
+
+				function handleFileChange(file: string) {
+					if (file.endsWith('.twig')) {
+						ws.send({ type: 'full-reload' });
+					}
+				}
+
+				watcher.on('add', handleFileChange);
+				watcher.on('change', handleFileChange);
+				watcher.on('unlink', handleFileChange);
+			},
+		},
 	],
 
 	server: {

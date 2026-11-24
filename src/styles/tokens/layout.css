@@ -2,16 +2,28 @@
 	/* Set the base to 1px: p-16 = 16px, gap-24 = 24px */
 	--spacing: 0.0625rem;
 
-	--container-8xl: 88rem;
-	--container-9xl: 96rem;
-	--container-10xl: 104rem;
-	--container-11xl: 112rem;
-	--container-12xl: 120rem;
-	--container-13xl: 128rem;
-	--container-14xl: 136rem;
-
-	--aspect-landscape: 3 / 2;
-	--aspect-portrait: 2 / 3;
-
 	--shadow-skip-to-content: 0px 0px 800px 200px rgb(0 0 0 / 0.75);
+}
+
+/* Block padding (steps per breakpoint), used by the pt-block-* and pb-block-* utilities */
+:root {
+	--space-block-none: 0;
+	--space-block-sm: 1.5rem;
+	--space-block-md: 2.5rem;
+	--space-block-lg: 4rem;
+}
+
+@media (min-width: theme(--breakpoint-md)) {
+	:root {
+		--space-block-sm: 2rem;
+		--space-block-md: 3.75rem;
+		--space-block-lg: 5rem;
+	}
+}
+
+@media (min-width: theme(--breakpoint-lg)) {
+	:root {
+		--space-block-md: 5rem;
+		--space-block-lg: 6.25rem;
+	}
 }

@@ -1,1 +1,3 @@
-{% include '_components/organisms/images/images.twig' with { images: block.images.all() } only %}
+<section {{ attr(themeAttributes|default({})) }}>
+	{% include '_components/organisms/images/images.twig' with { images: block.images.all() } only %}
+</section>

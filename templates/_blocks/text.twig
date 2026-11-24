@@ -1,3 +1,5 @@
-<section class="container">
-	{% include '_components/organisms/text/text.twig' with { content: block.body } only %}
+<section {{ attr(themeAttributes|default({})) }}>
+	<div class="container">
+		{% include '_components/organisms/text/text.twig' with { content: block.body } only %}
+	</div>
 </section>

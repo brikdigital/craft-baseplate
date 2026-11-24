@@ -13,6 +13,11 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"jsx": "preserve",
+		"paths": {
+			"#/*": ["./src/*"],
+			"@/*": ["./src/ts/*"],
+			"@css/*": ["./src/styles/*"]
+		},
 		"types": ["vite/client"],
 		"typeRoots": ["./node_modules", "types"]
 	}

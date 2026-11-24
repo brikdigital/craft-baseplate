@@ -1,11 +1,10 @@
-{# The media is the video, shown with the image as its poster #}
 {% set displayMethod = block.displayMethod.value ?? 'popUp' %}
 {% set video = block.videos.one() %}
 {% if displayMethod == 'autoplayPopUp' %}
 	{% set video = block.inlineVideo.one() ?: video %}
 {% endif %}
 
-<section>
+<section {{ attr(themeAttributes|default({})) }}>
 	{% include '_components/organisms/textMedia/textMedia.twig' with {
 		content: block.body,
 		mediaItems: video ? [{
