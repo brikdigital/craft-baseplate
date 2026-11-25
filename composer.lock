@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e52818fff88b8d0e220a680ca4745664",
+    "content-hash": "3420a61ed03ead41164f8acbf8ae5b1e",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -493,11 +493,11 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "6.0.0-beta.1",
+            "version": "6.0.0-beta.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/44208e171b454a63216db80d265b23e73a2f00ae",
-                "reference": "44208e171b454a63216db80d265b23e73a2f00ae",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/95df081e532dee6c3c367030ede53947ea6ada8b",
+                "reference": "95df081e532dee6c3c367030ede53947ea6ada8b",
                 "shasum": ""
             },
             "require": {
@@ -541,7 +541,7 @@
                 "docs": "https://github.com/craftcms/ckeditor/blob/6.x/README.md",
                 "rss": "https://github.com/craftcms/ckeditor/commits/6.x.atom"
             },
-            "time": "2026-11-10T18:44:36+00:00"
+            "time": "2026-11-24T19:06:07+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -1792,16 +1792,16 @@
         },
         {
             "name": "embed/embed",
-            "version": "v4.6.2",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-embed/Embed.git",
-                "reference": "1d6040f32f1723156302ca1966f561c1deaf3483"
+                "reference": "82f62ff26bc1a2f5f2a370aa5fd0f31febbbcf92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-embed/Embed/zipball/1d6040f32f1723156302ca1966f561c1deaf3483",
-                "reference": "1d6040f32f1723156302ca1966f561c1deaf3483",
+                "url": "https://api.github.com/repos/php-embed/Embed/zipball/82f62ff26bc1a2f5f2a370aa5fd0f31febbbcf92",
+                "reference": "82f62ff26bc1a2f5f2a370aa5fd0f31febbbcf92",
                 "shasum": ""
             },
             "require": {
@@ -1868,7 +1868,7 @@
             },
             "funding": [
                 {
-                    "url": "https://paypal.me/oscarotero",
+                    "url": "https://www.paypal.com/donate/?business=info%40vitor.pro&currency_code=USD",
                     "type": "custom"
                 },
                 {
@@ -1880,8 +1880,8 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-11-06T12:42:47+00:00",
-            "published-time": "2026-11-06T12:42:56+00:00"
+            "time": "2026-11-23T21:30:01+00:00",
+            "published-time": "2026-11-23T21:32:32+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -8132,16 +8132,16 @@
         },
         {
             "name": "symfony/html-sanitizer",
-            "version": "v8.1.11",
+            "version": "v8.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/html-sanitizer.git",
-                "reference": "1ecf13d98b75f5d8a2dcc1ffecde7184d29506ef"
+                "reference": "dabda9c20d51beaaeadb08f1bd50c124fa08bfb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/1ecf13d98b75f5d8a2dcc1ffecde7184d29506ef",
-                "reference": "1ecf13d98b75f5d8a2dcc1ffecde7184d29506ef",
+                "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/dabda9c20d51beaaeadb08f1bd50c124fa08bfb9",
+                "reference": "dabda9c20d51beaaeadb08f1bd50c124fa08bfb9",
                 "shasum": ""
             },
             "require": {
@@ -8180,7 +8180,7 @@
                 "sanitizer"
             ],
             "support": {
-                "source": "https://github.com/symfony/html-sanitizer/tree/v8.1.11"
+                "source": "https://github.com/symfony/html-sanitizer/tree/v8.1.12"
             },
             "funding": [
                 {
@@ -8200,8 +8200,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-04T08:39:20+00:00",
-            "published-time": "2026-11-04T11:31:16+00:00"
+            "time": "2026-11-24T18:01:43+00:00",
+            "published-time": "2026-11-25T09:28:30+00:00"
         },
         {
             "name": "symfony/http-client",

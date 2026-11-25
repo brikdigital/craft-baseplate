@@ -6,7 +6,7 @@
 	"license": "MPL-2.0",
 	"require": {
 		"php": "^8.5",
-		"craftcms/ckeditor": "^6.0.0-beta.1",
+		"craftcms/ckeditor": "^6.0.0-beta.2",
 		"craftcms/cms": "^6.0.0-beta.2",
 		"laravel/framework": "^13.17",
 		"laravel/tinker": "^3.0",
