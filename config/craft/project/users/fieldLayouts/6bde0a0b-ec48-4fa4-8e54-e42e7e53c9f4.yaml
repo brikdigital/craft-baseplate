@@ -1,5 +1,3 @@
-cardThumbAlignment: end
-cardThumbStyle: normal
 tabs:
   - elementCondition: null
     elements:
@@ -7,13 +5,12 @@ tabs:
         autocomplete: false
         autocorrect: true
         class: null
-        dateAdded: '2026-11-20T11:13:37+00:00'
+        dateAdded: '2024-08-20T04:44:32-07:00'
         disabled: false
         elementCondition: null
         id: null
         inputType: null
         instructions: null
-        instructionsPosition: before
         label: null
         max: null
         min: null
@@ -26,8 +23,8 @@ tabs:
         step: null
         tip: null
         title: null
-        type: CraftCms\Cms\FieldLayout\LayoutElements\Users\UsernameField
-        uid: 6ef51bec-9eed-476e-a8e2-af482c542622
+        type: CraftCms\Cms\FieldLayout\LayoutElements\users\UsernameField
+        uid: 538c84d9-4b62-478d-b602-25840d4084f9
         userCondition: null
         warning: null
         width: 100
@@ -36,13 +33,12 @@ tabs:
         autocomplete: false
         autocorrect: true
         class: null
-        dateAdded: '2026-11-20T11:13:37+00:00'
+        dateAdded: '2024-08-20T04:44:32-07:00'
         disabled: false
         elementCondition: null
         id: null
         inputType: null
         instructions: null
-        instructionsPosition: before
         label: null
         max: null
         min: null
@@ -56,22 +52,21 @@ tabs:
         step: null
         tip: null
         title: null
-        type: CraftCms\Cms\FieldLayout\LayoutElements\Users\FullNameField
-        uid: 17ae66ff-ea21-4ffd-a784-d827ec35b03a
+        type: CraftCms\Cms\FieldLayout\LayoutElements\users\FullNameField
+        uid: d02d319b-6376-400a-ba75-7cc6cf301b1a
         userCondition: null
         warning: null
         width: 100
-      - dateAdded: '2026-11-20T11:13:37+00:00'
+      - dateAdded: '2024-08-20T04:44:32-07:00'
         elementCondition: null
         id: null
         instructions: null
-        instructionsPosition: before
         label: null
         orientation: null
         requirable: false
         tip: null
-        type: CraftCms\Cms\FieldLayout\LayoutElements\Users\PhotoField
-        uid: 5189aa27-165b-4296-bc3e-a011b817b8f8
+        type: CraftCms\Cms\FieldLayout\LayoutElements\users\PhotoField
+        uid: 7ebcba5a-008a-4e61-a95b-2f9b3466fbbb
         userCondition: null
         warning: null
         width: 100
@@ -79,13 +74,12 @@ tabs:
         autocomplete: false
         autocorrect: true
         class: null
-        dateAdded: '2026-11-20T11:13:37+00:00'
+        dateAdded: '2024-08-20T04:44:32-07:00'
         disabled: false
         elementCondition: null
         id: null
         inputType: null
         instructions: null
-        instructionsPosition: before
         label: null
         max: null
         min: null
@@ -98,12 +92,10 @@ tabs:
         step: null
         tip: null
         title: null
-        type: CraftCms\Cms\FieldLayout\LayoutElements\Users\EmailField
-        uid: 1e8df6b8-6a6a-4317-9259-914ed073026e
+        type: CraftCms\Cms\FieldLayout\LayoutElements\users\EmailField
+        uid: efa7dd52-d29d-4249-a4a2-33e410062faf
         userCondition: null
         width: 100
-    icon: null
     name: Content
-    type: content
     uid: 5d4f989e-0d30-49ab-bc2e-63d1798e0fd5
     userCondition: null

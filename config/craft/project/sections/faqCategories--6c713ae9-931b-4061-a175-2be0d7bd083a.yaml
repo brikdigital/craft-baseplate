@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - uid: d292f057-2899-444e-8e42-2848bcbdbab5 # FAQ Category
+handle: faqCategories
+maxAuthors: 1
+minAuthors: 1
+name: 'FAQ Categories'
+propagationMethod: all
+siteSettings:
+  a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Baseplate EN
+    enabledByDefault: true
+    hasUrls: false
+    route: null
+    template: null
+    uriFormat: null
+  edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
+    enabledByDefault: true
+    hasUrls: false
+    route: null
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: ffa331ef-c0a2-400a-8f55-9157dd21cd4f
+type: structure
+workflow: null

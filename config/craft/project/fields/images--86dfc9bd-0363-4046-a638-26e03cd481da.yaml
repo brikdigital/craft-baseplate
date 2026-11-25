@@ -1,14 +1,14 @@
 handle: images
-instructions: null
-name: 'Afbeelding (meerdere)'
-searchable: true
+instructions: 'Upload or select multiple images from the asset library.'
+name: Images
+searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
-  allowUploads: false
+  allowUploads: true
   branchLimit: null
   defaultPlacement: end
-  defaultUploadLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
+  defaultUploadLocationSource: 'volume:6d331798-9114-4f91-8f40-0a160531ae50' # Media
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: null
@@ -16,7 +16,7 @@ settings:
   previewMode: full
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Bestanden
+  restrictedLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Files
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
@@ -47,7 +47,7 @@ settings:
                       - CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
                     -
                       - uid
-                      - 2a8d3768-8798-4532-ae27-0a1f3478545e
+                      - 3661ccf5-dc93-4ba7-befa-7d94336cf17e
                     -
                       - operator
                       - in
@@ -55,11 +55,12 @@ settings:
                       - values
                       -
                         - image
-  selectionLabel: null
+  selectionLabel: 'Add an image'
   showSearchInput: true
   showSiteMenu: true
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:6d331798-9114-4f91-8f40-0a160531ae50' # Media
   targetSiteId: null
   thumbSize: lg
   validateRelatedElements: false

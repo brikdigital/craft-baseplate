@@ -1,0 +1,30 @@
+handle: position
+instructions: null
+name: Position
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    - __assoc__:
+        0:
+          - label
+          - Links
+        1:
+          - value
+          - left
+        3:
+          - default
+          - '1'
+    - __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - right
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\ButtonGroup
+warning: null

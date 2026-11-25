@@ -1,0 +1,33 @@
+handle: videoAutoplay
+instructions: null
+name: 'Video Autoplay'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: true
+  options:
+    - __assoc__:
+        -
+          - label
+          - Pause
+        -
+          - value
+          - pause
+        -
+          - icon
+          - pause
+    - __assoc__:
+        -
+          - label
+          - Play
+        -
+          - value
+          - play
+        -
+          - icon
+          - play
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\ButtonGroup
+warning: null

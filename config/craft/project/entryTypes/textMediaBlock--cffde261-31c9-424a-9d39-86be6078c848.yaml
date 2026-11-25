@@ -1,0 +1,210 @@
+allowLineBreaksInTitles: false
+color: null
+description: 'Combine text with an image or video in a two-column layout.'
+fieldLayouts:
+  67374a86-2379-435f-8483-8200c10be10f:
+    cardThumbAlignment: start
+    cardThumbStyle: normal
+    tabs:
+      - elementCondition: null
+        elements:
+          - content: 'Combine text with an image or video in a two-column layout.'
+            dateAdded: '2026-11-25T08:36:45+00:00'
+            displayInPane: false
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Markdown
+            uid: 0e3fa3be-85a9-4bb9-8096-10f5b2401937
+            userCondition: null
+            width: 100
+          - dateAdded: '2026-11-25T08:36:45+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: 441c6fdf-8624-423f-a992-26aa59c72dbf
+            userCondition: null
+          - dateAdded: '2026-11-25T08:36:45+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d544c7a1-06b0-46c7-b2a6-8987f2c6bd84 # Content
+            handle: content
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 1a444565-3c47-402b-a33a-bef9b9114a5b
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-24T08:25:55+00:00'
+            elementCondition: null
+            heading: Media
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Heading
+            uid: ac39c8db-38d4-4d17-a06e-408b21da1837
+            userCondition: null
+          - dateAdded: '2026-11-24T08:25:55+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 211fb832-8904-48ff-8b5f-9367c82f1692 # Image or Video
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 7d2b2d35-4fa5-4999-828d-4355b1bb742f
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T15:11:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Image
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: e4ec6b37-962a-4592-a3e0-4c7481055728
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-07-18T15:11:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: f74b6406-d6fc-4982-b3ee-98311563055e
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-24T08:25:55+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d2c59b5c-3a54-4fc5-9729-41ac810b56ad # Video Autoplay
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 3b131a1c-13ac-44c3-9c52-ee710d9e641f
+            userCondition: null
+            warning: null
+            width: 25
+          - dateAdded: '2026-11-24T08:25:55+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a03b8510-679c-4ffc-b32a-aa2df2b4d396 # Video Display Mode
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 274dfdf3-e9b4-4045-9db1-b989a9573e6d
+            userCondition: null
+            warning: null
+            width: 75
+          - dateAdded: '2026-11-24T08:25:55+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7990d129-e4e9-488d-b9ca-0347364425e1 # Position
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: e9b5dfd4-7569-415a-bf76-a7754ef0ddc4
+            userCondition: null
+            warning: null
+            width: 25
+          - dateAdded: '2024-10-17T14:19:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 767c68f7-a42c-4402-a640-46af0c267fb7 # Aspect ratio
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 4bfe0b10-2a05-445a-b2c1-48f4f9c55c0f
+            userCondition: null
+            warning: null
+            width: 50
+        icon: null
+        name: Content
+        type: content
+        uid: d13bf530-6e70-49d4-834d-ebbb71c354c1
+        userCondition: null
+      - elementCondition: null
+        elements:
+          - dateAdded: '2026-11-24T08:26:10+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Block Settings
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 1eb7d6fb-4572-4911-afb5-05974e9a70e7
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Settings
+        type: content
+        uid: a4f64995-df79-4dce-b590-41620f30fd49
+        userCondition: null
+    thumbSources:
+      - 'layoutElement:e4ec6b37-962a-4592-a3e0-4c7481055728'
+handle: textMediaBlock
+hasTitleField: false
+icon: photo-film
+name: 'Text with Media'
+showExpiryDateField: true
+showPostDateField: true
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: "{{ content|replace('~</[^>]+>\\s*<[^>]+>~', ' ', 'r')|striptags|trim|split(' ')|slice(0, 10)|join(' ') }}..."

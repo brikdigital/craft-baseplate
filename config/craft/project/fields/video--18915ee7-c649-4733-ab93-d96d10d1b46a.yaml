@@ -1,0 +1,72 @@
+handle: video
+instructions: 'Upload a video to display. (The image that you upload will become the fallback image)'
+name: Video
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:6d331798-9114-4f91-8f40-0a160531ae50' # Media
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Files
+  restrictedLocationSubpath: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - CraftCms\Cms\Asset\Elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - forQuery
+        - false
+      -
+        - class
+        - CraftCms\Cms\Asset\Conditions\AssetCondition
+      -
+        - conditionRules
+        - __assoc__:
+            -
+              - operator
+              - and
+            -
+              - rules
+              -
+                - __assoc__:
+                    -
+                      - class
+                      - CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
+                    -
+                      - uid
+                      - 988f3c35-febb-4254-beb3-4cbc81d83427
+                    -
+                      - operator
+                      - in
+                    -
+                      - values
+                      -
+                        - video
+  selectionLabel: 'Add a video'
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:6d331798-9114-4f91-8f40-0a160531ae50' # Media
+  targetSiteId: null
+  thumbSize: sm
+  validateRelatedElements: false
+  viewMode: list
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Assets
+warning: null

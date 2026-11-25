@@ -1,0 +1,36 @@
+handle: buttonType
+instructions: 'Select the type of button.'
+name: 'Button Type'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    - __assoc__:
+        0:
+          - label
+          - Primair
+        1:
+          - value
+          - primary
+        4:
+          - default
+          - '1'
+    - __assoc__:
+        -
+          - label
+          - Secundair
+        -
+          - value
+          - secondary
+    - __assoc__:
+        -
+          - label
+          - 'Alleen tekst'
+        -
+          - value
+          - textOnly
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Dropdown
+warning: null

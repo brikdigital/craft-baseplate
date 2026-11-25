@@ -1,6 +1,6 @@
 handle: sharedBlock
 instructions: null
-name: 'Gedeeld blok'
+name: 'Shared Block'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -9,12 +9,12 @@ settings:
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
-  selectionLabel: 'Kies een blok'
-  showSearchInput: true
+  selectionLabel: 'Add a block'
+  showSearchInput: false
   showSiteMenu: false
   showUnpermittedSections: true
   sources:
-    - 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Gedeelde content blokken
+    - 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Shared Blocks
   targetSiteId: null
   thumbSize: sm
   validateRelatedElements: false

@@ -1,9 +1,8 @@
 altTranslationKeyFormat: null
-altTranslationMethod: site
+altTranslationMethod: none
 fieldLayouts:
   e17e7aa0-5388-41e8-ab4e-f5c831357200:
     cardThumbAlignment: end
-    cardThumbStyle: auto
     tabs:
       - elementCondition: null
         elements:
@@ -11,13 +10,12 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2026-11-20T11:30:07+00:00'
+            dateAdded: '2024-10-17T11:31:08+00:00'
             disabled: false
             elementCondition: null
             id: null
             inputType: null
             instructions: null
-            instructionsPosition: before
             label: null
             max: null
             min: null
@@ -30,32 +28,19 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: CraftCms\Cms\FieldLayout\LayoutElements\Assets\AssetTitleField
-            uid: 8b453ee7-9152-4edc-ab8a-97d0433608e7
+            type: CraftCms\Cms\FieldLayout\LayoutElements\assets\AssetTitleField
+            uid: 2c2c0c03-1bc9-4d51-bf72-274c1deec411
             userCondition: null
             warning: null
             width: 100
           - attribute: alt
             class: null
             cols: null
-            dateAdded: '2026-11-20T11:35:15+00:00'
+            dateAdded: '2024-10-21T11:31:42+00:00'
             disabled: false
-            elementCondition:
-              class: CraftCms\Cms\Asset\Conditions\AssetCondition
-              conditionRules:
-                operator: and
-                rules:
-                  - class: CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
-                    operator: in
-                    uid: 7051ac14-933b-46a9-9469-683480b2613b
-                    values:
-                      - image
-              elementType: null
-              fieldContext: global
-              forQuery: false
+            elementCondition: null
             id: null
             instructions: null
-            instructionsPosition: before
             label: null
             name: null
             orientation: null
@@ -66,22 +51,21 @@ fieldLayouts:
             rows: null
             tip: null
             title: null
-            type: CraftCms\Cms\FieldLayout\LayoutElements\Assets\AltField
-            uid: 55e26ea9-c788-4346-a89e-18de2bb6f51f
+            type: CraftCms\Cms\FieldLayout\LayoutElements\assets\AltField
+            uid: 16df8543-04e0-4f57-9cdb-6f3f800466b5
             userCondition: null
             warning: null
             width: 100
-        icon: null
         name: Inhoud
-        type: content
         uid: 8ad123d3-9d13-44f2-8ee8-651a013bd0c3
         userCondition: null
+    thumbFieldKey: null
 fs: local
 handle: files
-hasUrls: false
-name: Bestanden
-propagationMethod: all
+name: Files
 sortOrder: 2
-subpath: ''
+subpath: files
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none
+transformFs: ''
+transformSubpath: ''

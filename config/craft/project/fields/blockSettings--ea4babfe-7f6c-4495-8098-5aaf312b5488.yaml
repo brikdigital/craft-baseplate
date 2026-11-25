@@ -1,0 +1,172 @@
+handle: blockSettings
+instructions: 'Configure the settings of this block.'
+name: 'Block Settings'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 7c943f0e-3252-4e7c-b480-bc65c15cf844
+        - __assoc__:
+            0:
+              - tabs
+              -
+                - __assoc__:
+                    0:
+                      - uid
+                      - 39f74ea5-8e90-4071-96a0-d5aa2090d3e9
+                    1:
+                      - name
+                      - Inhoud
+                    5:
+                      - type
+                      - content
+                    6:
+                      - elements
+                      -
+                        - __assoc__:
+                            0:
+                              - type
+                              - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+                            2:
+                              - uid
+                              - 373b0133-307c-4e7d-9c0d-899ebf8dabd1
+                            3:
+                              - width
+                              - 100
+                            4:
+                              - dateAdded
+                              - '2026-11-24T08:08:12+00:00'
+                            7:
+                              - instructionsPosition
+                              - before
+                            10:
+                              - required
+                              - false
+                            15:
+                              - fieldUid
+                              - 5026f9b8-4a01-4754-8e5b-e71d9e17f5c8 # Theme
+                        - __assoc__:
+                            0:
+                              - type
+                              - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+                            2:
+                              - uid
+                              - 1bbe2ab4-400c-45e4-a146-4d9aafdcb754
+                            3:
+                              - width
+                              - 25
+                            4:
+                              - dateAdded
+                              - '2026-11-24T08:10:58+00:00'
+                            5:
+                              - label
+                              - 'Spacing top'
+                            6:
+                              - instructions
+                              - 'Control the amount of padding above this block'
+                            7:
+                              - instructionsPosition
+                              - before
+                            10:
+                              - required
+                              - false
+                            11:
+                              - handle
+                              - paddingTop
+                            12:
+                              - oldFieldUid
+                              - 8157929d-6ed4-4e28-a095-cd2da0013745 # Spacing
+                            15:
+                              - fieldUid
+                              - 8157929d-6ed4-4e28-a095-cd2da0013745 # Spacing
+                        - __assoc__:
+                            0:
+                              - type
+                              - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+                            2:
+                              - uid
+                              - 447ce18e-e802-48eb-83a1-e0b1e23ff265
+                            3:
+                              - width
+                              - 25
+                            4:
+                              - dateAdded
+                              - '2026-11-24T08:10:58+00:00'
+                            5:
+                              - label
+                              - 'Spacing bottom'
+                            6:
+                              - instructions
+                              - 'Control the amount of padding below this block'
+                            7:
+                              - instructionsPosition
+                              - before
+                            10:
+                              - required
+                              - false
+                            11:
+                              - handle
+                              - paddingBottom
+                            12:
+                              - oldFieldUid
+                              - 8157929d-6ed4-4e28-a095-cd2da0013745 # Spacing
+                            15:
+                              - fieldUid
+                              - 8157929d-6ed4-4e28-a095-cd2da0013745 # Spacing
+                        - __assoc__:
+                            0:
+                              - type
+                              - CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+                            2:
+                              - uid
+                              - 685c7deb-544a-4fc7-a24c-950ead084d01
+                            3:
+                              - dateAdded
+                              - '2026-11-24T08:10:58+00:00'
+                        - __assoc__:
+                            0:
+                              - type
+                              - CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+                            2:
+                              - uid
+                              - 6c9fa34c-dcbc-48d7-8c57-5e1613cd5efd
+                            3:
+                              - width
+                              - 100
+                            4:
+                              - dateAdded
+                              - '2026-11-24T08:10:58+00:00'
+                            5:
+                              - label
+                              - Anchor
+                            6:
+                              - instructions
+                              - "Enter an anchor ID that can be used to link directly to this section (e.g. 'your-anchor')."
+                            7:
+                              - instructionsPosition
+                              - before
+                            10:
+                              - required
+                              - false
+                            11:
+                              - handle
+                              - anchor
+                            12:
+                              - oldFieldUid
+                              - 38d453ca-6ad2-47bf-ba04-0a2d7b1a9c00 # Code
+                            15:
+                              - fieldUid
+                              - 38d453ca-6ad2-47bf-ba04-0a2d7b1a9c00 # Code
+            4:
+              - cardThumbAlignment
+              - end
+            5:
+              - cardThumbStyle
+              - normal
+  viewMode: grouped
+tip: null
+translationKeyFormat: null
+translationMethod: site
+type: CraftCms\Cms\Field\ContentBlock
+warning: null

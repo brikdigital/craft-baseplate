@@ -1,0 +1,83 @@
+allowLineBreaksInTitles: false
+color: null
+description: 'Add and format text using headings, paragraphs, lists and links.'
+fieldLayouts:
+  16610ec8-0d62-42a6-8839-4522cccaa5aa:
+    cardThumbAlignment: end
+    cardThumbStyle: normal
+    tabs:
+      - elementCondition: null
+        elements:
+          - content: 'Add and format text using headings, paragraphs, lists and links.'
+            dateAdded: '2026-11-25T08:35:16+00:00'
+            displayInPane: false
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Markdown
+            uid: adfd5add-f1cf-4951-a2c6-1556444c45e4
+            userCondition: null
+            width: 100
+          - dateAdded: '2026-11-25T08:35:16+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: ea51ce16-b5ed-4d4c-8680-4e89389e64f5
+            userCondition: null
+          - dateAdded: '2024-10-17T12:58:11+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Content
+            handle: content
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 20b37303-47ac-4b57-884e-7401a60a35ab
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Content
+        type: content
+        uid: 3cd0ba4b-e0ec-4248-a095-643591dc081a
+        userCondition: null
+      - elementCondition: null
+        elements:
+          - dateAdded: '2026-11-24T08:23:19+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Block Settings
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: e23aaa14-538d-4346-a635-f5ab146fe054
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Settings
+        type: content
+        uid: 63c70ad2-2091-4b6e-bb0a-7bb5d5645c1e
+        userCondition: null
+handle: textBlock
+hasTitleField: false
+icon: font-case
+name: Text
+showExpiryDateField: true
+showPostDateField: true
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: "{{ content|replace('~</[^>]+>\\s*<[^>]+>~', ' ', 'r')|striptags|trim|split(' ')|slice(0, 10)|join(' ') }}..."

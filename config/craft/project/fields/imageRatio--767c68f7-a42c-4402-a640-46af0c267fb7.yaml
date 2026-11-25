@@ -1,6 +1,6 @@
 handle: imageRatio
-instructions: null
-name: 'Afbeelding ratio'
+instructions: 'Select the aspect ratio for the images.'
+name: 'Aspect ratio'
 searchable: false
 settings:
   customOptions: false

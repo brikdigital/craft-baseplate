@@ -1,0 +1,87 @@
+allowLineBreaksInTitles: false
+color: null
+description: 'Select a shared block to display its content on this page. Changes to the shared block are reflected everywhere it is used.'
+fieldLayouts:
+  a6c943c0-c73c-46a3-865d-9eac8e28e0c1:
+    cardThumbAlignment: end
+    cardThumbStyle: normal
+    tabs:
+      - elementCondition: null
+        elements:
+          - content: 'Select a shared block to display its content on this page. Changes to the shared block are reflected everywhere it is used.'
+            dateAdded: '2026-11-25T08:29:44+00:00'
+            displayInPane: false
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Markdown
+            uid: cc81e23d-b234-4f85-9e56-38efb0efa7b0
+            userCondition: null
+            width: 100
+          - dateAdded: '2026-11-25T08:29:44+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: e565c4d7-3ccb-4157-b4aa-e083d3f3892d
+            userCondition: null
+          - autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-11-24T08:20:11+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
+            uid: 622260bf-0c7f-4cc0-bef9-624723562278
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2024-10-18T13:04:07+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d52247de-f951-467f-823c-4808b53741ca # Shared Block
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: a3522863-b089-4f06-a08b-8fcc3af84fd0
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Content
+        type: content
+        uid: d7b67f99-1d12-41a1-85fb-3e8e07ecf6a0
+        userCondition: null
+handle: sharedBlockBlock
+hasTitleField: true
+icon: cubes
+name: 'Shared Block'
+showExpiryDateField: true
+showPostDateField: true
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

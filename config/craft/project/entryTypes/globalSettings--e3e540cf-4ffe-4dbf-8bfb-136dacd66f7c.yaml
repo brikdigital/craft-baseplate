@@ -1,0 +1,28 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  71a65517-f407-47cb-87af-127843e5cbe6:
+    cardThumbAlignment: end
+    cardThumbStyle: normal
+    tabs:
+      - elementCondition: null
+        icon: null
+        name: Settings
+        type: content
+        uid: 0f09bbed-2c80-4791-b673-c05008c340d1
+        userCondition: null
+handle: globalSettings
+hasTitleField: false
+icon: gear
+name: 'Global Settings'
+showExpiryDateField: true
+showPostDateField: true
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: Settings

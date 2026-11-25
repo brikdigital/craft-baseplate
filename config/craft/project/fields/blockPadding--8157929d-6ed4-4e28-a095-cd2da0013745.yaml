@@ -1,0 +1,43 @@
+handle: blockPadding
+instructions: null
+name: Spacing
+searchable: false
+settings:
+  customOptions: false
+  options:
+    - __assoc__:
+        0:
+          - label
+          - Default
+        1:
+          - value
+          - default
+        4:
+          - default
+          - '1'
+    - __assoc__:
+        -
+          - label
+          - Smaller
+        -
+          - value
+          - smaller
+    - __assoc__:
+        -
+          - label
+          - Larger
+        -
+          - value
+          - larger
+    - __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - none
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Dropdown
+warning: null

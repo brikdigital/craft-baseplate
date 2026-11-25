@@ -1,0 +1,117 @@
+allowLineBreaksInTitles: false
+color: null
+description: 'Add a FAQ block to the page. Optionally you can start with a filtered category.'
+fieldLayouts:
+  843939a3-cbf5-48cd-99ff-ab1cbc626350:
+    cardThumbAlignment: end
+    cardThumbStyle: normal
+    tabs:
+      - elementCondition: null
+        elements:
+          - content: 'Add a FAQ block to the page. Optionally you can start with a filtered category.'
+            dateAdded: '2026-11-25T09:43:37+00:00'
+            displayInPane: false
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Markdown
+            uid: 3912963a-817c-42b8-b2a4-99a0ff89e2ec
+            userCondition: null
+            width: 100
+          - dateAdded: '2026-11-25T09:43:37+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: 429d696c-68dc-4e18-8324-3616f9b40fa3
+            userCondition: null
+          - dateAdded: '2026-11-25T09:43:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d544c7a1-06b0-46c7-b2a6-8987f2c6bd84 # Content
+            handle: content
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: aedebbb7-9763-4a52-8262-569ffb770d2d
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-25T09:43:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: be4ae16d-6317-4958-b1e9-b0732d01f4f9 # FAQ Category
+            handle: null
+            instructions: 'Choose a FAQ category to filter on.'
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 2db39ac5-fc96-44ea-9882-7fe37d5fa819
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-25T09:43:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22 # Button
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 4907ed03-2101-4ccc-b534-8e9b9bc6beaa
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Content
+        type: content
+        uid: 4ec38b34-58eb-49c8-b721-4261699c42d7
+        userCondition: null
+      - elementCondition: null
+        elements:
+          - dateAdded: '2026-11-25T09:43:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Block Settings
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: ab2130de-9fd2-4d4c-a0bb-8928498d8e67
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Settings
+        type: content
+        uid: dc85c4ae-e125-4e35-a6f9-c0a72ba23bab
+        userCondition: null
+handle: faqBlock
+hasTitleField: false
+icon: question
+name: FAQs
+showExpiryDateField: true
+showPostDateField: true
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: "{{ content|replace('~</[^>]+>\\s*<[^>]+>~', ' ', 'r')|striptags|trim|split(' ')|slice(0, 10)|join(' ') }}..."

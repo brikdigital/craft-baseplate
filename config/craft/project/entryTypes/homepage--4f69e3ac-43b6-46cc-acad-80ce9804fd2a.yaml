@@ -12,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2026-11-20T11:59:29+00:00'
+            dateAdded: '2024-10-17T10:15:33+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -32,25 +32,20 @@ fieldLayouts:
             tip: null
             title: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
-            uid: 005c35c1-dbe5-49d4-b234-e7239bd5b2ba
+            uid: 0c56a516-291c-4f96-9e27-e50280be09cf
             userCondition: null
             warning: null
             width: 100
-        icon: null
-        name: Content
-        type: content
-        uid: 372dfb5a-ed9c-4a0d-b8a7-04e5a1e281e3
-        userCondition: null
-      - elementCondition: null
-        elements:
           - dateAdded: '2024-10-17T10:25:40+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
+            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blocks
             handle: null
             instructions: null
+            instructionsPosition: before
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
@@ -61,7 +56,7 @@ fieldLayouts:
         icon: null
         name: Content
         type: content
-        uid: e5ead6ac-1fc7-46ae-89cb-32c9c00f3eed
+        uid: 372dfb5a-ed9c-4a0d-b8a7-04e5a1e281e3
         userCondition: null
       - elementCondition: null
         elements:
@@ -69,10 +64,12 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO Instellingen
+            fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO settings
             handle: null
             instructions: null
+            instructionsPosition: before
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
@@ -81,7 +78,7 @@ fieldLayouts:
             warning: null
             width: 100
         icon: null
-        name: SEO
+        name: Settings
         type: content
         uid: 9c9bba4a-4278-4740-827a-2fc532831b04
         userCondition: null

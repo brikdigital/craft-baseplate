@@ -1,0 +1,26 @@
+handle: faqCategory
+instructions: null
+name: 'FAQ Category'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: 'Add a category'
+  showSearchInput: true
+  showSiteMenu: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:6c713ae9-931b-4061-a175-2be0d7bd083a' # FAQ Categories
+  targetSiteId: null
+  thumbSize: sm
+  validateRelatedElements: false
+  viewMode: list
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Entries
+warning: null

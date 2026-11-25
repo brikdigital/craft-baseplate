@@ -1,0 +1,131 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  15e692e6-9f21-4426-92f0-4321881c32a2:
+    cardThumbAlignment: end
+    cardThumbStyle: normal
+    tabs:
+      - elementCondition: null
+        elements:
+          - dateAdded: '2024-10-18T13:00:02+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Content
+            handle: content
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 2fcc9364-eb5d-4027-a6f4-6eb6a6a8b3ef
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2024-10-18T13:00:02+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: adb91080-5a53-4dc4-b87d-596bfb42efd9
+            userCondition: null
+          - dateAdded: '2026-11-24T08:13:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 132fd44a-075e-4b36-a399-5270c429abdd # Article category
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 9c500951-1b5e-4513-be6f-13e6f5c8f297
+            userCondition: null
+            warning: null
+            width: 50
+          - dateAdded: '2024-10-18T13:00:09+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4f08eaca-189d-42fc-9987-cbed19663296 # Limit
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 1d05b5f3-f153-4651-922e-6ee9b1aebe4d
+            userCondition: null
+            warning: null
+            width: 50
+          - dateAdded: '2026-11-25T08:24:50+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: e7b52fd1-18df-4b53-9caf-a3851afee2b9
+            userCondition: null
+          - dateAdded: '2024-10-18T13:00:02+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b9f016c9-d8b3-49f8-acbe-3337414dd097 # Articles
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 821acc0d-8ca9-4855-b6bb-68eb6e0c7cea
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Content
+        type: content
+        uid: bb604c80-09df-448d-8f76-8aeca7947f92
+        userCondition: null
+      - elementCondition: null
+        elements:
+          - dateAdded: '2026-11-24T08:13:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Block Settings
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 6b0a9d16-de56-4bf4-8985-dfbe5337dca3
+            userCondition: null
+            warning: null
+            width: 100
+        icon: null
+        name: Settings
+        type: content
+        uid: f84e202b-8e50-4fa7-81e9-ddf8ba700edd
+        userCondition: null
+handle: articlesBlock
+hasTitleField: false
+icon: newspaper
+name: Articles
+showExpiryDateField: true
+showPostDateField: true
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: "{{ content|replace('~</[^>]+>\\s*<[^>]+>~', ' ', 'r')|striptags|trim|split(' ')|slice(0, 10)|join(' ') }}..."

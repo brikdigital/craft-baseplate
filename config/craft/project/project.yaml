@@ -1,24 +1,9 @@
-dateModified: 1795513899
+dateModified: 1795615329
 elementSources:
   CraftCms\Cms\Entry\Elements\Entry:
-    - defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: table
-      disabled: false
-      key: '*'
-      page: Entries
-      showBadgeCount: false
-      tableAttributes:
-        - status
-        - section
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    - heading: Algemeen
-      key: 'heading:46cd15e8-2969-4ff5-84cb-3ae4e8dcafa3'
-      page: Entries
+    - heading: Content
+      key: 'heading:c57b7762-774d-4b30-99bf-e034408188b2'
+      page: Content
       type: heading
     - defaultSort:
         - structure
@@ -26,12 +11,12 @@ elementSources:
       defaultViewMode: structure
       disabled: false
       key: 'section:6548b4e4-c92a-4820-8d2f-065cbf1bda66' # Indexes
-      page: Entries
+      page: Content
       showBadgeCount: false
       tableAttributes:
+        - type
         - status
-        - postDate
-        - expiryDate
+        - dateUpdated
         - link
       type: native
     - defaultSort:
@@ -39,8 +24,8 @@ elementSources:
         - asc
       defaultViewMode: structure
       disabled: false
-      key: 'section:b7fa6983-cbe4-435a-a345-b065911c3442' # Pagina's
-      page: Entries
+      key: 'section:b7fa6983-cbe4-435a-a345-b065911c3442' # Pages
+      page: Content
       showBadgeCount: false
       tableAttributes:
         - status
@@ -48,63 +33,31 @@ elementSources:
         - expiryDate
         - link
       type: native
-    - heading: Publicaties
-      key: 'heading:2f3f578a-6435-4e1f-b223-b0e0a2072825'
-      page: Entries
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: table
+      disabled: false
+      key: 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Articles
+      page: Content
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    - heading: More
+      key: 'heading:057cb9eb-37cc-44aa-b570-fe48da149fbe'
+      page: Content
       type: heading
     - defaultSort:
         - postDate
         - desc
       defaultViewMode: table
       disabled: false
-      key: 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Artikelen
-      page: Entries
-      showBadgeCount: false
-      tableAttributes:
-        - status
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    - defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: table
-      disabled: false
-      key: 'section:ae59b117-731a-4efe-83b6-33186b75a174' # Evenementen
-      page: Entries
-      showBadgeCount: false
-      tableAttributes:
-        - status
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    - heading: Overleggen
-      key: 'heading:182d05da-684c-4ebf-b25d-90139af8d952'
-      page: Entries
-      type: heading
-    - defaultSort:
-        - structure
-        - asc
-      defaultViewMode: structure
-      disabled: false
-      key: 'section:b20babee-2b3a-4f80-9384-15e7b592cdc9' # Artikel type
-      page: Entries
-      showBadgeCount: false
-      tableAttributes:
-        - status
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    - defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: table
-      disabled: false
-      key: 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Gedeelde content blokken
-      page: Entries
+      key: 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Shared Blocks
+      page: Content
       showBadgeCount: false
       tableAttributes:
         - status
@@ -118,7 +71,7 @@ elementSources:
       defaultViewMode: table
       disabled: false
       key: 'section:edb6d78c-27f5-4522-852d-2df53429bb71' # Errors
-      page: Entries
+      page: Content
       showBadgeCount: false
       tableAttributes:
         - status
@@ -126,76 +79,168 @@ elementSources:
         - expiryDate
         - link
       type: native
+    - heading: ''
+      key: 'heading:6de84770-9f1a-4105-a91c-856344528445'
+      page: Content
+      type: heading
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: table
+      disabled: false
+      key: '*'
+      page: Content
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    - heading: ''
+      key: 'heading:9c5563f3-3873-45c6-8d4e-61593da81dc1'
+      page: Content
+      type: heading
+    - defaultSort:
+        - title
+        - asc
+      defaultViewMode: table
+      disabled: false
+      key: 'section:ffc57940-6cfb-47aa-93cc-52c5afd46262' # Settings
+      page: Content
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - link
+      type: native
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: table
+      disabled: false
+      key: 'section:a1721f5d-40fb-4869-970b-d7e387cb9f50' # FAQs
+      page: Content
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    - defaultSort:
+        - structure
+        - asc
+      defaultViewMode: structure
+      disabled: false
+      key: 'section:6c713ae9-931b-4061-a175-2be0d7bd083a' # FAQ Categories
+      page: Content
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    - heading: Categories
+      key: 'heading:26eafd4d-1579-4fbf-814d-f285020760a9'
+      page: 'Site Settings'
+      type: heading
+    - defaultSort:
+        - structure
+        - asc
+      defaultViewMode: structure
+      disabled: false
+      key: 'section:b20babee-2b3a-4f80-9384-15e7b592cdc9' # Article Categories
+      page: 'Site Settings'
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+elementSourcesPages:
+  CraftCms\Cms\Entry\Elements\Entry:
+    'Site Settings':
+      icon: gear
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SYSTEM_EMAIL_SENDER
   mailer: postmark
 meta:
   __names__:
-    1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: Artikelen # Artikelen
+    01ad70f2-21a9-405c-9519-23be837553fa: FAQ # FAQ
+    1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: Articles # Articles
     3b5e939d-5880-4f47-ab94-dddf2d6f3f21: Archived # Archived
-    4f08eaca-189d-42fc-9987-cbed19663296: 'Maximaal aantal berichten' # Maximaal aantal berichten
+    4f08eaca-189d-42fc-9987-cbed19663296: Limit # Limit
     4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
-    5fe4b921-1ad2-4cce-bf81-bb2fe1f766a3: 'Externe url' # Externe url
-    8cdbea37-6d9b-4922-b11e-97df6d3660b2: 'Standaard open source icons' # Standaard open source icons
-    8d87bf9f-8546-434b-a971-6407e109f8aa: Blokken # Blokken
-    8f439fc2-311f-4f45-99c6-c482d129d1fd: Tag # Tag
-    10e2197c-c763-463e-998a-a704543fd784: 'Platte tekst' # Platte tekst
+    6c713ae9-931b-4061-a175-2be0d7bd083a: 'FAQ Categories' # FAQ Categories
+    6d331798-9114-4f91-8f40-0a160531ae50: Media # Media
+    8d87bf9f-8546-434b-a971-6407e109f8aa: Blocks # Blocks
+    8f14a0ee-5383-4650-9a75-44deec4f6489: 'FAQ Categories' # FAQ Categories
+    10e2197c-c763-463e-998a-a704543fd784: 'Plain Text' # Plain Text
     25d92538-2fd7-4c96-86ab-976b57112aad: Default # Default
-    057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Gedeeld blok' # Gedeeld blok
-    86dfc9bd-0363-4046-a638-26e03cd481da: 'Afbeelding (meerdere)' # Afbeelding (meerdere)
-    87add8ee-18cc-4272-8a4c-4fd06d16ec25: "Pagina's" # Pagina's
-    93f18740-c2f0-4e41-886e-b092eb38e71f: Layout # Layout
-    132fd44a-075e-4b36-a399-5270c429abdd: 'Artikel Type' # Artikel Type
-    432be928-1cc7-435b-bd50-bf75c40a983c: 'Gedeelde content blokken' # Gedeelde content blokken
-    596b60e6-cde4-48fb-9853-a567dcb99ece: Knoppen # Knoppen
-    731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO Instellingen' # SEO Instellingen
-    767c68f7-a42c-4402-a640-46af0c267fb7: 'Afbeelding ratio' # Afbeelding ratio
+    38d453ca-6ad2-47bf-ba04-0a2d7b1a9c00: Code # Code
+    057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Shared Block' # Shared Block
+    72f9a502-9f14-4fe3-8473-3d0089f8b34a: 'Plain Text (not translatable)' # Plain Text (not translatable)
+    86dfc9bd-0363-4046-a638-26e03cd481da: Images # Images
+    87add8ee-18cc-4272-8a4c-4fd06d16ec25: Page # Page
+    132fd44a-075e-4b36-a399-5270c429abdd: 'Article category' # Article category
+    211fb832-8904-48ff-8b5f-9367c82f1692: 'Image or Video' # Image or Video
+    432be928-1cc7-435b-bd50-bf75c40a983c: 'Shared Block' # Shared Block
+    596b60e6-cde4-48fb-9853-a567dcb99ece: Buttons # Buttons
+    604c9d56-d743-4374-96d3-f57afb47e8a6: Content # Content
+    731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO settings' # SEO settings
+    767c68f7-a42c-4402-a640-46af0c267fb7: 'Aspect ratio' # Aspect ratio
     830fde48-892d-46e6-90f8-24b6cfd0f316: Draft # Draft
-    889f70a7-0949-425c-a9be-060721269cf0: 'Tekst positie' # Tekst positie
-    5026f9b8-4a01-4754-8e5b-e71d9e17f5c8: Thema # Thema
+    1242c708-173c-482a-ac98-09d310d2dac4: 'Images Display Mode' # Images Display Mode
+    5026f9b8-4a01-4754-8e5b-e71d9e17f5c8: Theme # Theme
     6548b4e4-c92a-4820-8d2f-065cbf1bda66: Indexes # Indexes
-    7205ce0b-82c8-45e4-8400-08ceaf7f7576: Bestanden # Bestanden
-    7990d129-e4e9-488d-b9ca-0347364425e1: 'Icoon positie' # Icoon positie
+    7205ce0b-82c8-45e4-8400-08ceaf7f7576: Files # Files
+    7990d129-e4e9-488d-b9ca-0347364425e1: Position # Position
     18915ee7-c649-4733-ab93-d96d10d1b46a: Video # Video
-    35872b14-d347-4e31-889e-b505340c4704: 'Knop thema' # Knop thema
-    54058ce4-020d-4535-9931-d69993419df7: Artikelen # Artikelen
-    74716a14-5d9a-4002-bc77-51f38589d539: 'Artikel grid' # Artikel grid
-    437963f6-fffc-4014-921d-e13fd7b2315f: 'Tekst (uitgebreid)' # Tekst (uitgebreid)
-    12976062-797d-4c3f-bba9-b08f9517d734: 'Standaard custom icons' # Standaard custom icons
-    25165387-9136-4739-86cb-59a989b1c003: Afbeelding # Afbeelding
+    35872b14-d347-4e31-889e-b505340c4704: 'Button Type' # Button Type
+    54058ce4-020d-4535-9931-d69993419df7: Article # Article
+    74716a14-5d9a-4002-bc77-51f38589d539: Articles # Articles
+    437963f6-fffc-4014-921d-e13fd7b2315f: Content # Content
+    8157929d-6ed4-4e28-a095-cd2da0013745: Spacing # Spacing
+    25165387-9136-4739-86cb-59a989b1c003: Images # Images
+    a03b8510-679c-4ffc-b32a-aa2df2b4d396: 'Video Display Mode' # Video Display Mode
     a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Baseplate EN' # Baseplate EN
-    a43b9a82-d36b-47f2-9c34-fb66898b6fd1: 'Titel formaat' # Titel formaat
-    ae59b117-731a-4efe-83b6-33186b75a174: Evenementen # Evenementen
-    b5da10b5-92de-4de6-8ac4-619c4d1eccc6: 'Slider type' # Slider type
-    b7fa6983-cbe4-435a-a345-b065911c3442: "Pagina's" # Pagina's
-    b9f016c9-d8b3-49f8-acbe-3337414dd097: Artikelen # Artikelen
-    b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Artikel type' # Artikel type
-    b56c28d2-a08b-4291-80fd-4cff8f398791: Weergave # Weergave
-    b5386dfa-66c8-4d08-bbcc-38503a3862c9: ' Video' # Video
-    bb9f38f1-c5e0-4ed6-9d09-97f29487de56: Type # Type
+    a32dbd69-c25d-4444-af5f-a68e5b25c87e: Video # Video
+    a1721f5d-40fb-4869-970b-d7e387cb9f50: FAQs # FAQs
+    b7fa6983-cbe4-435a-a345-b065911c3442: Pages # Pages
+    b9f016c9-d8b3-49f8-acbe-3337414dd097: Articles # Articles
+    b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Article Categories' # Article Categories
+    b5386dfa-66c8-4d08-bbcc-38503a3862c9: Video # Video
+    b90107cc-9cad-4581-ae43-59791244ec13: FAQs # FAQs
     bbe7c8a3-9f54-437e-b3a9-714b21468aab: Active # Active
-    bc6369ec-7f21-4151-a8ad-85cec976c987: 'Artikel type' # Artikel type
-    c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Knoppen # Knoppen
-    c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22: Knop # Knop
-    c798cdf5-723e-4cdc-8ac1-6c527b1a14a6: Bovenkop # Bovenkop
-    c957c2ee-ff8a-4973-8111-58c21b775495: Tekst # Tekst
+    bc6369ec-7f21-4151-a8ad-85cec976c987: 'Article Category' # Article Category
+    be4ae16d-6317-4958-b1e9-b0732d01f4f9: 'FAQ Category' # FAQ Category
+    c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Buttons # Buttons
+    c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22: Button # Button
+    c957c2ee-ff8a-4973-8111-58c21b775495: Text # Text
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
-    cffde261-31c9-424a-9d39-86be6078c848: 'Tekst met media' # Tekst met media
-    d4a4bc7c-6065-4510-878b-e4e3ef6ec1ce: Type # Type
-    d544c7a1-06b0-46c7-b2a6-8987f2c6bd84: 'Tekst (simpel)' # Tekst (simpel)
-    d602da2a-239f-4f18-93fd-8047af89cdd0: Kop # Kop
-    d1928b4f-7613-41fb-9e2b-4756e2c31adb: 'Evenement datum' # Evenement datum
-    d52247de-f951-467f-823c-4808b53741ca: 'Gedeeld blok' # Gedeeld blok
-    db6df807-fdb5-4bef-a3f5-2ebb6800c0bd: Artikelen # Artikelen
+    cffde261-31c9-424a-9d39-86be6078c848: 'Text with Media' # Text with Media
+    d2c59b5c-3a54-4fc5-9729-41ac810b56ad: 'Video Autoplay' # Video Autoplay
+    d292f057-2899-444e-8e42-2848bcbdbab5: 'FAQ Category' # FAQ Category
+    d544c7a1-06b0-46c7-b2a6-8987f2c6bd84: Content # Content
+    d1928b4f-7613-41fb-9e2b-4756e2c31adb: 'Date range' # Date range
+    d52247de-f951-467f-823c-4808b53741ca: 'Shared Block' # Shared Block
+    db6df807-fdb5-4bef-a3f5-2ebb6800c0bd: Articles # Articles
     dbd31f29-8b03-46f8-819a-181826ff96c0: New # New
-    dcaf6647-c88d-48cf-adf6-9b3e1d3150b1: Icoon # Icoon
+    dcaf6647-c88d-48cf-adf6-9b3e1d3150b1: Icon # Icon
+    e3e540cf-4ffe-4dbf-8bfb-136dacd66f7c: 'Global Settings' # Global Settings
     e325439d-f974-4c27-a2d9-2fe44cce12bb: Quote # Quote
+    ea4babfe-7f6c-4495-8098-5aaf312b5488: 'Block Settings' # Block Settings
     edb6d78c-27f5-4522-852d-2df53429bb71: Errors # Errors
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
-    f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Gedeelde content blokken' # Gedeelde content blokken
-    f659e4e5-e885-4efe-918b-f9ea22bef550: 'Afbeelding (enkel)' # Afbeelding (enkel)
+    efdb17e7-d5b4-4222-bcf2-8a42cf5b0658: Images # Images
+    f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Shared Blocks' # Shared Blocks
+    f659e4e5-e885-4efe-918b-f9ea22bef550: Image # Image
+    ffc57940-6cfb-47aa-93cc-52c5afd46262: Settings # Settings
 plugins:
   ckeditor:
     edition: standard

@@ -1,0 +1,17 @@
+handle: code
+instructions: null
+name: Code
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: site
+type: CraftCms\Cms\Field\PlainText
+warning: null

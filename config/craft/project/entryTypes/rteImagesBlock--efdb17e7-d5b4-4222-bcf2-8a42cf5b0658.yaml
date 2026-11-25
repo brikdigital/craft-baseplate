@@ -1,0 +1,90 @@
+allowLineBreaksInTitles: false
+color: null
+description: 'Add one or more images to your page.'
+fieldLayouts:
+  208d5572-0ef4-42e3-aa53-53dc7b1ea277:
+    cardThumbAlignment: start
+    cardThumbStyle: normal
+    tabs:
+      - elementCondition: null
+        elements:
+          - content: 'Showcase one or more images in a visual gallery or image layout.'
+            dateAdded: '2026-11-25T08:20:28+00:00'
+            displayInPane: true
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Markdown
+            uid: f5d03f24-a0d6-48e8-9685-82d4c1740664
+            userCondition: null
+            width: 100
+          - dateAdded: '2024-10-18T08:58:28+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 86dfc9bd-0363-4046-a638-26e03cd481da # Images
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 9ec2ee91-8157-465f-ba49-985b71336e16
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-24T08:07:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 1242c708-173c-482a-ac98-09d310d2dac4 # Images Display Mode
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 280464f7-bcc2-4665-b26b-7e58aeae0cdc
+            userCondition: null
+            warning: null
+            width: 50
+          - dateAdded: '2024-10-18T08:58:28+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 767c68f7-a42c-4402-a640-46af0c267fb7 # Aspect ratio
+            handle: null
+            instructions: null
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 43d0c4b2-bf73-4745-9781-6a17f112a1eb
+            userCondition: null
+            warning: null
+            width: 50
+        icon: null
+        name: Content
+        type: content
+        uid: 1e74dea7-7167-4ee6-882d-422b807f2d5e
+        userCondition: null
+    thumbSources:
+      - 'layoutElement:1e52c8a4-7bc9-4501-aa38-df6fbe8ca1ae'
+handle: rteImagesBlock
+hasTitleField: false
+icon: images
+name: Images
+showExpiryDateField: true
+showPostDateField: true
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

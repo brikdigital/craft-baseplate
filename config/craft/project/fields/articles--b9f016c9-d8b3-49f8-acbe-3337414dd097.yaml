@@ -1,6 +1,6 @@
 handle: articles
 instructions: null
-name: Artikelen
+name: Articles
 searchable: false
 settings:
   allowSelfRelations: false
@@ -9,12 +9,12 @@ settings:
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
-  selectionLabel: 'Selecteer artikelen'
-  showSearchInput: true
+  selectionLabel: 'Add an article'
+  showSearchInput: false
   showSiteMenu: false
   showUnpermittedSections: true
   sources:
-    - 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Artikelen
+    - 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Articles
   targetSiteId: null
   thumbSize: sm
   validateRelatedElements: false

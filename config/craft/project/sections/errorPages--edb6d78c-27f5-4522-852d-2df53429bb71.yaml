@@ -11,11 +11,14 @@ siteSettings:
   a0934f1f-fd61-4f48-ae9a-3afec428cafe: # Baseplate EN
     enabledByDefault: true
     hasUrls: false
+    route: null
     template: null
     uriFormat: null
   edd82513-9dec-4df9-a2a1-300da844a91f: # Baseplate
     enabledByDefault: true
     hasUrls: false
+    route: null
     template: null
     uriFormat: null
 type: channel
+workflow: null

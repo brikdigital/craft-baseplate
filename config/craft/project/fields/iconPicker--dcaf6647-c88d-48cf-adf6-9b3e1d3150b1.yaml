@@ -1,12 +1,12 @@
 columnSuffix: null
 handle: iconPicker
-instructions: null
-name: Icoon
+instructions: 'Select an icon from the library'
+name: Icon
 searchable: false
 settings:
-  iconSets: '*'
-  renderId: null
-  showLabels: false
+  availableWeights:
+    - light
+  defaultWeight: light
 translationKeyFormat: null
 translationMethod: none
-type: verbb\iconpicker\fields\IconPickerField
+type: phosphoricons\fields\PhosphorIcon
