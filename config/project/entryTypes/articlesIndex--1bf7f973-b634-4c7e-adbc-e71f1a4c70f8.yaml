@@ -41,10 +41,11 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Afbeelding (enkel)
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Image
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -57,10 +58,11 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Tekst (uitgebreid)
-            handle: null
+            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Content
+            handle: content
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -68,23 +70,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: '2024-10-17T10:57:11+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: c5b33e76-5fe4-40c4-98a6-2f13e354ced5 # Knoppen
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4363c03c-b0b0-4eee-8b03-b0ddda162214
-            userCondition: null
-            warning: null
-            width: 100
-        name: Hero
+        name: Content
         uid: 869adf13-a4c3-42ab-b425-73e0f80b953b
         userCondition: null
       -
@@ -95,32 +81,11 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 8d87bf9f-8546-434b-a971-6407e109f8aa # Blokken
+            fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO settings
             handle: null
             instructions: null
             label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 94adc43f-79e8-473e-a5ba-d414a51f9379
-            userCondition: null
-            warning: null
-            width: 100
-        name: Content
-        uid: cfde52c9-8023-442b-a0c8-4712db9fc11f
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2024-10-17T10:57:11+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 731e9cf0-d175-4a28-bd06-59e7f71e6ba1 # SEO Instellingen
-            handle: null
-            instructions: null
-            label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -128,14 +93,14 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: SEO
+        name: Settings
         uid: 5e61034d-d197-4b86-8fb3-825da79df710
         userCondition: null
     thumbFieldKey: null
 handle: articlesIndex
 hasTitleField: true
 icon: newspaper
-name: Artikelen
+name: Articles
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

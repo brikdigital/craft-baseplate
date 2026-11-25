@@ -1,0 +1,88 @@
+columnSuffix: null
+handle: rteSimple
+instructions: 'Add and format your text using headings, paragraphs, and other available formatting options.'
+name: Content
+searchable: true
+settings:
+  advancedLinkFields: null
+  availableTransforms: ''
+  availableVolumes: '*'
+  characterLimit: null
+  css: null
+  cssFile: null
+  defaultTransform: null
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 596b60e6-cde4-48fb-9853-a567dcb99ece # Buttons
+        -
+          - expanded
+          - false
+  fullGraphqlData: true
+  headingLevels:
+    - '2'
+    - '3'
+    - '4'
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
+  js: null
+  jsFile: null
+  options:
+    __assoc__:
+      -
+        - link
+        -
+          __assoc__:
+            -
+              - decorators
+              -
+                __assoc__:
+                  -
+                    - isExternal
+                    -
+                      __assoc__:
+                        -
+                          - attributes
+                          -
+                            __assoc__:
+                              -
+                                - rel
+                                - 'noopener noreferrer'
+                              -
+                                - target
+                                - _blank
+                        -
+                          - label
+                          - 'Open in a new tab'
+                        -
+                          - mode
+                          - manual
+  parseEmbeds: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
+    - '|'
+    - bulletedList
+    - numberedList
+    - '|'
+    - createEntry
+    - sourceEditing
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\ckeditor\Field

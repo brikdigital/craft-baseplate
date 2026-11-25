@@ -1,5 +1,5 @@
 altTranslationKeyFormat: null
-altTranslationMethod: site
+altTranslationMethod: none
 fieldLayouts:
   e17e7aa0-5388-41e8-ab4e-f5c831357200:
     cardThumbAlignment: end
@@ -41,17 +41,7 @@ fieldLayouts:
             cols: null
             dateAdded: '2024-10-21T11:31:42+00:00'
             disabled: false
-            elementCondition:
-              class: craft\elements\conditions\assets\AssetCondition
-              conditionRules:
-                -
-                  class: craft\elements\conditions\assets\FileTypeConditionRule
-                  operator: in
-                  uid: 58d8c14e-2241-4cfb-9e4c-0a71c1a5ec47
-                  values:
-                    - image
-              elementType: craft\elements\Asset
-              fieldContext: global
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -72,12 +62,13 @@ fieldLayouts:
         name: Inhoud
         uid: 8ad123d3-9d13-44f2-8ee8-651a013bd0c3
         userCondition: null
-fs: files
+    thumbFieldKey: null
+fs: local
 handle: files
-name: Bestanden
+name: Files
 sortOrder: 2
-subpath: ''
+subpath: files
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
-transformFs: files
+titleTranslationMethod: none
+transformFs: ''
 transformSubpath: ''

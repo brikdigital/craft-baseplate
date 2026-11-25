@@ -1,19 +1,22 @@
 columnSuffix: null
 handle: sharedBlock
 instructions: null
-name: 'Gedeeld blok'
+name: 'Shared Block'
 searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
+  defaultPlacement: end
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
-  selectionLabel: 'Kies een blok'
-  showCardsInGrid: false
+  selectionLabel: 'Add a block'
+  showSearchInput: false
   showSiteMenu: false
+  showUnpermittedEntries: true
+  showUnpermittedSections: true
   sources:
-    - 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Gedeelde content blokken
+    - 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Shared Blocks
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

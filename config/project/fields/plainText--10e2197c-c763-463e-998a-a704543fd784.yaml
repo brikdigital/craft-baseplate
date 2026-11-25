@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: plainText
 instructions: null
-name: 'Platte tekst'
+name: 'Plain Text'
 searchable: false
 settings:
   byteLimit: null

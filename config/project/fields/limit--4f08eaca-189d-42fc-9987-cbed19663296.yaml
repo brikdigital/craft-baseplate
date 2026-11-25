@@ -1,18 +1,19 @@
 columnSuffix: null
 handle: limit
-instructions: null
-name: 'Maximaal aantal berichten'
+instructions: 'Maximum number of results or items to display.'
+name: Limit
 searchable: false
 settings:
   decimals: 0
-  defaultValue: 3
+  defaultValue: null
   max: null
   min: 1
   prefix: null
   previewCurrency: null
   previewFormat: decimal
   size: null
-  suffix: null
+  step: null
+  suffix: items
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Number

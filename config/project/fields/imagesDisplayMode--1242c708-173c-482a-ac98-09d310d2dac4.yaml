@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: imagesDisplayMode
+instructions: null
+name: 'Images Display Mode'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Default
+        -
+          - value
+          - default
+        -
+          - icon
+          - image
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Slider
+        -
+          - value
+          - slider
+        -
+          - icon
+          - rectangle-vertical-history
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

@@ -1,0 +1,54 @@
+columnSuffix: null
+handle: rteSimpleNoHeadings
+instructions: 'Add and format your text using paragraphs and other available formatting options.'
+name: Content
+searchable: true
+settings:
+  advancedLinkFields: null
+  availableTransforms: ''
+  availableVolumes: '*'
+  characterLimit: null
+  css: null
+  cssFile: null
+  defaultTransform: null
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 596b60e6-cde4-48fb-9853-a567dcb99ece # Buttons
+        -
+          - expanded
+          - false
+  fullGraphqlData: true
+  headingLevels: false
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
+  js: null
+  jsFile: null
+  options: null
+  parseEmbeds: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  toolbar:
+    - bold
+    - italic
+    - link
+    - '|'
+    - bulletedList
+    - numberedList
+    - '|'
+    - createEntry
+    - sourceEditing
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\ckeditor\Field

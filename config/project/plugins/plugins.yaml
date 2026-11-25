@@ -13,10 +13,6 @@ blitz:
   schemaVersion: 5.14.0
   settings:
     maxUriLength: 2048
-buttonbox:
-  edition: standard
-  enabled: true
-  schemaVersion: 3.0.0
 ckeditor:
   edition: standard
   enabled: true
@@ -149,11 +145,6 @@ formie:
     useQueueForIntegrations: true
     useQueueForNotifications: true
     validateCustomTemplates: true
-icon-picker:
-  edition: standard
-  enabled: true
-  licenseKey: FBHOI0B2BXG644AOX3NIQW3E
-  schemaVersion: 1.2.3
 imager-x:
   edition: pro
   enabled: true
@@ -200,7 +191,7 @@ navigation:
   enabled: true
   licenseKey: N94WJ8FJY1C9LSYZ747WGJP7
   schemaVersion: 4.0.10
-position-fieldtype:
+phosphor-icons:
   edition: standard
   enabled: true
   schemaVersion: 1.0.0
@@ -208,6 +199,10 @@ postmark:
   edition: standard
   enabled: true
   schemaVersion: 2.0.1
+queue-monitor:
+  edition: standard
+  enabled: true
+  schemaVersion: 1.0.0
 retcon:
   edition: standard
   enabled: true

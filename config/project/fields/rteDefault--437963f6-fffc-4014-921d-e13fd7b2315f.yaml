@@ -1,0 +1,125 @@
+columnSuffix: null
+handle: rteDefault
+instructions: 'Add and format your text using headings, paragraphs, and other available formatting options.'
+name: Content
+searchable: true
+settings:
+  advancedLinkFields: null
+  availableTransforms: ''
+  availableVolumes: ''
+  characterLimit: null
+  css: ".ck.ck-content ul + ul, .ck.ck-content ul + ol, .ck.ck-content ol + ul, .ck.ck-content ol + ol {\r\n  margin-top: 20px;\r\n}"
+  cssFile: null
+  defaultTransform: null
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - efdb17e7-d5b4-4222-bcf2-8a42cf5b0658 # Images
+        -
+          - expanded
+          - false
+    -
+      __assoc__:
+        -
+          - uid
+          - a32dbd69-c25d-4444-af5f-a68e5b25c87e # Video
+        -
+          - expanded
+          - false
+    -
+      __assoc__:
+        -
+          - uid
+          - 596b60e6-cde4-48fb-9853-a567dcb99ece # Buttons
+        -
+          - expanded
+          - false
+    -
+      __assoc__:
+        -
+          - uid
+          - e325439d-f974-4c27-a2d9-2fe44cce12bb # Quote
+        -
+          - expanded
+          - false
+  fullGraphqlData: true
+  headingLevels:
+    - '2'
+    - '3'
+    - '4'
+  imageEntryTypeUid: efdb17e7-d5b4-4222-bcf2-8a42cf5b0658 # Images
+  imageFieldUid: 9ec2ee91-8157-465f-ba49-985b71336e16
+  imageMode: img
+  js: null
+  jsFile: null
+  options:
+    __assoc__:
+      -
+        - link
+        -
+          __assoc__:
+            -
+              - decorators
+              -
+                __assoc__:
+                  -
+                    - isExternal
+                    -
+                      __assoc__:
+                        -
+                          - attributes
+                          -
+                            __assoc__:
+                              -
+                                - rel
+                                - 'noopener noreferrer'
+                              -
+                                - target
+                                - _blank
+                        -
+                          - label
+                          - 'Open in a new tab'
+                        -
+                          - mode
+                          - manual
+      -
+        - fontSize
+        -
+          __assoc__:
+            -
+              - options
+              -
+                - tiny
+                - small
+                - big
+                - huge
+  parseEmbeds: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  toolbar:
+    - heading
+    - fontSize
+    - '|'
+    - bold
+    - italic
+    - link
+    - '|'
+    - bulletedList
+    - numberedList
+    - '|'
+    - insertTable
+    - createEntry
+    - sourceEditing
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\ckeditor\Field

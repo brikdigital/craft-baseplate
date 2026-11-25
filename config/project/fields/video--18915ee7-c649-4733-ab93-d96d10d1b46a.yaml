@@ -1,0 +1,37 @@
+columnSuffix: null
+handle: video
+instructions: 'Upload a video to display. (The image that you upload will become the fallback image)'
+name: Video
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - video
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:6d331798-9114-4f91-8f40-0a160531ae50' # Media
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:7205ce0b-82c8-45e4-8400-08ceaf7f7576' # Files
+  restrictedLocationSubpath: null
+  selectionLabel: 'Add a video'
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedFiles: true
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:6d331798-9114-4f91-8f40-0a160531ae50' # Media
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: seoSettings
-instructions: null
-name: 'SEO Instellingen'
+instructions: 'Manage the SEO settings for this page.'
+name: 'SEO settings'
 searchable: false
 settings:
   elementDisplayPreviewType: google
@@ -11,17 +11,13 @@ settings:
     - ogDescription
     - ogImage
     - ogImageDescription
-  facebookTabEnabled: '1'
+  facebookTabEnabled: ''
   generalEnabledFields:
     - seoPreview
-    - mainEntityOfPage
     - seoTitle
     - seoDescription
-    - seoKeywords
     - seoImage
-    - seoImageDescription
     - robots
-    - canonicalUrl
   generalTabEnabled: '1'
   sitemapEnabledFields: ''
   sitemapTabEnabled: ''
@@ -32,7 +28,7 @@ settings:
     - twitterDescription
     - twitterImage
     - twitterImageDescription
-  twitterTabEnabled: '1'
+  twitterTabEnabled: ''
 translationKeyFormat: null
 translationMethod: site
 type: nystudio107\seomatic\fields\SeoSettings

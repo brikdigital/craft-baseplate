@@ -1,0 +1,109 @@
+allowLineBreaksInTitles: false
+color: null
+description: 'Embed a video to bring your content to life.'
+fieldLayouts:
+  5aaa4ce3-814f-4afa-a522-13d225dec2b2:
+    cardThumbAlignment: start
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            content: 'Embed a video to bring your content to life.'
+            dateAdded: '2026-11-25T08:47:02+00:00'
+            displayInPane: false
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: f48d745a-a141-4517-8e8b-f21d240b9c58
+            userCondition: null
+            width: 100
+          -
+            dateAdded: '2026-11-25T08:47:02+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 59cacd11-83e7-4f4c-a64d-beb6c1855915
+            userCondition: null
+          -
+            dateAdded: '2025-07-18T14:56:35+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Image
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d0ecb63-291b-426b-be60-27856e6c43d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-18T08:59:00+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 18915ee7-c649-4733-ab93-d96d10d1b46a # Video
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bea9207b-bbe7-4f85-b1d5-4aab6768f8ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-24T08:26:57+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d2c59b5c-3a54-4fc5-9729-41ac810b56ad # Video Autoplay
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e182ca8e-3394-45c1-b7f6-4fb0399f6d69
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-11-24T08:26:57+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a03b8510-679c-4ffc-b32a-aa2df2b4d396 # Video Display Mode
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03eb06bc-66e3-4a51-a1f7-8adf62ce225c
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 5ef95ee8-28bb-4403-8884-526ada766fb1
+        userCondition: null
+    thumbFieldKey: 'layoutElement:47d6cdeb-0953-4712-bb4d-5ddbc7c31fc0'
+handle: rteVideoBlock
+hasTitleField: false
+icon: video
+name: Video
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

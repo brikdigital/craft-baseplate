@@ -2,11 +2,11 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 87add8ee-18cc-4272-8a4c-4fd06d16ec25 # Pagina's
+    uid: 87add8ee-18cc-4272-8a4c-4fd06d16ec25 # Page
 handle: pages
 maxAuthors: 1
 minAuthors: 1
-name: "Pagina's"
+name: Pages
 previewTargets:
   -
     label: 'Primary entry page'

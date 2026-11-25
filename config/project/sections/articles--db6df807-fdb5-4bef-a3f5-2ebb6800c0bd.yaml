@@ -2,11 +2,11 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 54058ce4-020d-4535-9931-d69993419df7 # Artikelen
+    uid: 54058ce4-020d-4535-9931-d69993419df7 # Article
 handle: articles
 maxAuthors: 1
 minAuthors: 1
-name: Artikelen
+name: Articles
 previewTargets:
   -
     label: 'Primary entry page'

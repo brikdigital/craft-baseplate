@@ -2,11 +2,11 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 432be928-1cc7-435b-bd50-bf75c40a983c # Gedeelde content blokken
+    uid: 432be928-1cc7-435b-bd50-bf75c40a983c # Shared Block
 handle: sharedBlocks
 maxAuthors: 1
 minAuthors: 1
-name: 'Gedeelde content blokken'
+name: 'Shared Blocks'
 previewTargets:
   -
     label: 'Primary entry page'
