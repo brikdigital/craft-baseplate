@@ -14,7 +14,7 @@
 	@swup:visit:start.document="close()"
 	class="bg-surface-default sticky top-0 z-50 shadow-md">
 	<div class="container flex h-72 items-center justify-between gap-24">
-		<a href="{{ siteUrl() }}" class="text-text-primary text-20 font-bold">{{ currentSite.name }}</a>
+		{% include '_components/atoms/logo/logo.twig' with { url: siteUrl(), logoClasses: 'h-40 w-auto' } only %}
 
 		<div class="flex items-center gap-8 lg:order-last lg:-ml-24">
 			<a href="{{ url('search') }}" class="text-text-primary hover:bg-surface-transparent grid size-40 place-items-center rounded-md">

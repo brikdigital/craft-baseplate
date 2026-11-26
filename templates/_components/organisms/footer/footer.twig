@@ -9,7 +9,7 @@
 <footer id="footer" class="bg-surface-default border-border-primary/10 border-t">
 	<div class="container flex flex-col gap-48 pt-block-md pb-block-md">
 		<div class="flex flex-col gap-40 xl:flex-row xl:justify-between">
-			<a href="{{ siteUrl() }}" class="text-text-primary text-20 font-bold">{{ currentSite.name }}</a>
+			{% include '_components/atoms/logo/logo.twig' with { url: siteUrl(), logoClasses: 'h-64 w-auto' } only %}
 
 			<nav aria-label="{{ 'Footernavigatie'|t }}" class="grid grid-cols-2 gap-x-24 gap-y-40 md:grid-cols-3 xl:flex xl:flex-1 xl:flex-wrap xl:justify-end xl:gap-x-64">
 				{% for node in nodes %}
