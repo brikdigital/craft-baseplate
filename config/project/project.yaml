@@ -1,13 +1,12 @@
 dateModified: 1795708269
 elementSources:
   craft\elements\Entry:
-    -
-      defaultSort:
+    - defaultSort:
         - postDate
         - desc
-      defaultViewMode: ''
+      defaultViewMode: ""
       disabled: false
-      key: '*'
+      key: "*"
       page: Content
       tableAttributes:
         - status
@@ -16,18 +15,16 @@ elementSources:
         - expiryDate
         - link
       type: native
-    -
-      heading: Content
-      key: 'heading:c57b7762-774d-4b30-99bf-e034408188b2'
+    - heading: Content
+      key: "heading:c57b7762-774d-4b30-99bf-e034408188b2"
       page: Content
       type: heading
-    -
-      defaultSort:
+    - defaultSort:
         - structure
         - asc
-      defaultViewMode: ''
+      defaultViewMode: ""
       disabled: false
-      key: 'section:6548b4e4-c92a-4820-8d2f-065cbf1bda66' # Indexes
+      key: "section:6548b4e4-c92a-4820-8d2f-065cbf1bda66" # Indexes
       page: Content
       tableAttributes:
         - type
@@ -35,13 +32,12 @@ elementSources:
         - dateUpdated
         - link
       type: native
-    -
-      defaultSort:
+    - defaultSort:
         - structure
         - asc
-      defaultViewMode: ''
+      defaultViewMode: ""
       disabled: false
-      key: 'section:b7fa6983-cbe4-435a-a345-b065911c3442' # Pages
+      key: "section:b7fa6983-cbe4-435a-a345-b065911c3442" # Pages
       page: Content
       tableAttributes:
         - status
@@ -49,13 +45,12 @@ elementSources:
         - expiryDate
         - link
       type: native
-    -
-      defaultSort:
+    - defaultSort:
         - postDate
         - desc
-      defaultViewMode: ''
+      defaultViewMode: ""
       disabled: false
-      key: 'section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd' # Articles
+      key: "section:db6df807-fdb5-4bef-a3f5-2ebb6800c0bd" # Articles
       page: Content
       tableAttributes:
         - status
@@ -63,74 +58,67 @@ elementSources:
         - expiryDate
         - link
       type: native
-    -
-      key: 'section:a1721f5d-40fb-4869-970b-d7e387cb9f50' # FAQs
+    - key: "section:a1721f5d-40fb-4869-970b-d7e387cb9f50" # FAQs
       page: Content
       type: native
-    -
-      key: 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Shared Blocks
+    - key: "section:f9a50eaa-e4c7-4211-bfda-4797859199e9" # Shared Blocks
       page: Content
       type: native
-    -
-      defaultSort:
+    - defaultSort:
         - title
         - asc
-      defaultViewMode: ''
+      defaultViewMode: ""
       disabled: false
       key: singles
-      page: 'Site Settings'
+      page: "Site Settings"
       tableAttributes:
         - status
         - link
       type: native
-    -
-      defaultSort:
+    - defaultSort:
         - postDate
         - desc
-      defaultViewMode: ''
+      defaultViewMode: ""
       disabled: false
-      key: 'section:edb6d78c-27f5-4522-852d-2df53429bb71' # Errors
-      page: 'Site Settings'
+      key: "section:edb6d78c-27f5-4522-852d-2df53429bb71" # Errors
+      page: "Site Settings"
       tableAttributes:
         - status
         - postDate
         - expiryDate
         - link
       type: native
-    -
-      heading: Categories
-      key: 'heading:26eafd4d-1579-4fbf-814d-f285020760a9'
-      page: 'Site Settings'
+    - heading: Categories
+      key: "heading:26eafd4d-1579-4fbf-814d-f285020760a9"
+      page: "Site Settings"
       type: heading
-    -
-      defaultSort:
+    - defaultSort:
         - structure
         - asc
-      defaultViewMode: ''
+      defaultViewMode: ""
       disabled: false
-      key: 'section:b20babee-2b3a-4f80-9384-15e7b592cdc9' # Article Categories
-      page: 'Site Settings'
+      key: "section:b20babee-2b3a-4f80-9384-15e7b592cdc9" # Article Categories
+      page: "Site Settings"
       tableAttributes:
         - status
         - postDate
         - expiryDate
         - link
       type: native
-    -
-      key: 'section:6c713ae9-931b-4061-a175-2be0d7bd083a' # FAQ Categories
-      page: 'Site Settings'
+    - key: "section:6c713ae9-931b-4061-a175-2be0d7bd083a" # FAQ Categories
+      page: "Site Settings"
       type: native
 elementSourcesPages:
   craft\elements\Entry:
-    'Site Settings':
+    "Site Settings":
       icon: gear
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SYSTEM_EMAIL_SENDER
   replyToEmail: null
-  template: ''
+  template: ""
   transportSettings:
-    messageStream: ''
+    messageStream: ""
     token: $POSTMARK_API
   transportType: craftcms\postmark\Adapter
 fs:
@@ -138,86 +126,86 @@ fs:
     hasUrls: true
     name: Local
     settings:
-      path: '@webroot/assets'
+      path: "@webroot/assets"
     type: craft\fs\Local
-    url: '@assetsUrl/assets'
+    url: "@assetsUrl/assets"
 meta:
   __names__:
     01ad70f2-21a9-405c-9519-23be837553fa: FAQ # FAQ
     1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: Articles # Articles
-    3af40fe1-a559-4dca-96a6-89705bbf7a18: 'Legal Navigation' # Legal Navigation
+    3af40fe1-a559-4dca-96a6-89705bbf7a18: "Legal Navigation" # Legal Navigation
     3b5e939d-5880-4f47-ab94-dddf2d6f3f21: Archived # Archived
     3df2f486-0f01-45a9-b310-92abb40e5998: Textarea # Textarea
     4f08eaca-189d-42fc-9987-cbed19663296: Limit # Limit
     4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
-    5d6fed71-6dfb-4db7-977c-635e7131c698: 'Footer Navigation' # Footer Navigation
+    5d6fed71-6dfb-4db7-977c-635e7131c698: "Footer Navigation" # Footer Navigation
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
-    6c713ae9-931b-4061-a175-2be0d7bd083a: 'FAQ Categories' # FAQ Categories
+    6c713ae9-931b-4061-a175-2be0d7bd083a: "FAQ Categories" # FAQ Categories
     6d331798-9114-4f91-8f40-0a160531ae50: Media # Media
     8d87bf9f-8546-434b-a971-6407e109f8aa: Blocks # Blocks
-    8f14a0ee-5383-4650-9a75-44deec4f6489: 'FAQ Categories' # FAQ Categories
-    10e2197c-c763-463e-998a-a704543fd784: 'Plain Text' # Plain Text
+    8f14a0ee-5383-4650-9a75-44deec4f6489: "FAQ Categories" # FAQ Categories
+    10e2197c-c763-463e-998a-a704543fd784: "Plain Text" # Plain Text
     25d92538-2fd7-4c96-86ab-976b57112aad: Default # Default
     38d453ca-6ad2-47bf-ba04-0a2d7b1a9c00: Code # Code
-    057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Shared Block' # Shared Block
+    057c8c38-dc14-4f4f-8bc8-14a7232d3905: "Shared Block" # Shared Block
     58d20086-b1fc-4be6-bb29-ee826465589f: Content # Content
-    72f9a502-9f14-4fe3-8473-3d0089f8b34a: 'Plain Text (not translatable)' # Plain Text (not translatable)
+    72f9a502-9f14-4fe3-8473-3d0089f8b34a: "Plain Text (not translatable)" # Plain Text (not translatable)
     86dfc9bd-0363-4046-a638-26e03cd481da: Images # Images
     87add8ee-18cc-4272-8a4c-4fd06d16ec25: Page # Page
-    132fd44a-075e-4b36-a399-5270c429abdd: 'Article category' # Article category
-    211fb832-8904-48ff-8b5f-9367c82f1692: 'Image or Video' # Image or Video
-    432be928-1cc7-435b-bd50-bf75c40a983c: 'Shared Block' # Shared Block
+    132fd44a-075e-4b36-a399-5270c429abdd: "Article category" # Article category
+    211fb832-8904-48ff-8b5f-9367c82f1692: "Image or Video" # Image or Video
+    432be928-1cc7-435b-bd50-bf75c40a983c: "Shared Block" # Shared Block
     596b60e6-cde4-48fb-9853-a567dcb99ece: Buttons # Buttons
     604c9d56-d743-4374-96d3-f57afb47e8a6: Content # Content
-    731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO settings' # SEO settings
-    767c68f7-a42c-4402-a640-46af0c267fb7: 'Aspect ratio' # Aspect ratio
+    731e9cf0-d175-4a28-bd06-59e7f71e6ba1: "SEO settings" # SEO settings
+    767c68f7-a42c-4402-a640-46af0c267fb7: "Aspect ratio" # Aspect ratio
     830fde48-892d-46e6-90f8-24b6cfd0f316: Draft # Draft
-    1242c708-173c-482a-ac98-09d310d2dac4: 'Images Display Mode' # Images Display Mode
+    1242c708-173c-482a-ac98-09d310d2dac4: "Images Display Mode" # Images Display Mode
     5026f9b8-4a01-4754-8e5b-e71d9e17f5c8: Theme # Theme
     6548b4e4-c92a-4820-8d2f-065cbf1bda66: Indexes # Indexes
     7205ce0b-82c8-45e4-8400-08ceaf7f7576: Files # Files
     7990d129-e4e9-488d-b9ca-0347364425e1: Position # Position
     18915ee7-c649-4733-ab93-d96d10d1b46a: Video # Video
-    35872b14-d347-4e31-889e-b505340c4704: 'Button Type' # Button Type
+    35872b14-d347-4e31-889e-b505340c4704: "Button Type" # Button Type
     54058ce4-020d-4535-9931-d69993419df7: Article # Article
     74716a14-5d9a-4002-bc77-51f38589d539: Articles # Articles
     206546c6-a2fc-44e4-92a8-5d9fe76b7113: Hero # Hero
     437963f6-fffc-4014-921d-e13fd7b2315f: Content # Content
     8157929d-6ed4-4e28-a095-cd2da0013745: Spacing # Spacing
     25165387-9136-4739-86cb-59a989b1c003: Images # Images
-    a03b8510-679c-4ffc-b32a-aa2df2b4d396: 'Video Display Mode' # Video Display Mode
-    a0934f1f-fd61-4f48-ae9a-3afec428cafe: 'Baseplate EN' # Baseplate EN
+    a03b8510-679c-4ffc-b32a-aa2df2b4d396: "Video Display Mode" # Video Display Mode
+    a0934f1f-fd61-4f48-ae9a-3afec428cafe: "Baseplate EN" # Baseplate EN
     a32dbd69-c25d-4444-af5f-a68e5b25c87e: Video # Video
     a1721f5d-40fb-4869-970b-d7e387cb9f50: FAQs # FAQs
     b7fa6983-cbe4-435a-a345-b065911c3442: Pages # Pages
     b9f016c9-d8b3-49f8-acbe-3337414dd097: Articles # Articles
-    b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Article Categories' # Article Categories
+    b20babee-2b3a-4f80-9384-15e7b592cdc9: "Article Categories" # Article Categories
     b5386dfa-66c8-4d08-bbcc-38503a3862c9: Video # Video
     b90107cc-9cad-4581-ae43-59791244ec13: FAQs # FAQs
     bbe7c8a3-9f54-437e-b3a9-714b21468aab: Active # Active
-    bc6369ec-7f21-4151-a8ad-85cec976c987: 'Article Category' # Article Category
-    be4ae16d-6317-4958-b1e9-b0732d01f4f9: 'FAQ Category' # FAQ Category
+    bc6369ec-7f21-4151-a8ad-85cec976c987: "Article Category" # Article Category
+    be4ae16d-6317-4958-b1e9-b0732d01f4f9: "FAQ Category" # FAQ Category
     c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Buttons # Buttons
     c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22: Button # Button
     c957c2ee-ff8a-4973-8111-58c21b775495: Text # Text
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
-    cffde261-31c9-424a-9d39-86be6078c848: 'Text with Media' # Text with Media
-    d2c59b5c-3a54-4fc5-9729-41ac810b56ad: 'Video Autoplay' # Video Autoplay
-    d3aea8e5-ab4e-40e7-8387-21b5dc891bca: 'Header Navigation' # Header Navigation
-    d292f057-2899-444e-8e42-2848bcbdbab5: 'FAQ Category' # FAQ Category
+    cffde261-31c9-424a-9d39-86be6078c848: "Text with Media" # Text with Media
+    d2c59b5c-3a54-4fc5-9729-41ac810b56ad: "Video Autoplay" # Video Autoplay
+    d3aea8e5-ab4e-40e7-8387-21b5dc891bca: "Header Navigation" # Header Navigation
+    d292f057-2899-444e-8e42-2848bcbdbab5: "FAQ Category" # FAQ Category
     d544c7a1-06b0-46c7-b2a6-8987f2c6bd84: Content # Content
-    d1928b4f-7613-41fb-9e2b-4756e2c31adb: 'Date range' # Date range
-    d52247de-f951-467f-823c-4808b53741ca: 'Shared Block' # Shared Block
+    d1928b4f-7613-41fb-9e2b-4756e2c31adb: "Date range" # Date range
+    d52247de-f951-467f-823c-4808b53741ca: "Shared Block" # Shared Block
     db6df807-fdb5-4bef-a3f5-2ebb6800c0bd: Articles # Articles
     dbd31f29-8b03-46f8-819a-181826ff96c0: New # New
     dcaf6647-c88d-48cf-adf6-9b3e1d3150b1: Icon # Icon
-    e3e540cf-4ffe-4dbf-8bfb-136dacd66f7c: 'Global Settings' # Global Settings
+    e3e540cf-4ffe-4dbf-8bfb-136dacd66f7c: "Global Settings" # Global Settings
     e325439d-f974-4c27-a2d9-2fe44cce12bb: Quote # Quote
     ea4babfe-7f6c-4495-8098-5aaf312b5488: Settings # Settings
     edb6d78c-27f5-4522-852d-2df53429bb71: Errors # Errors
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
     efdb17e7-d5b4-4222-bcf2-8a42cf5b0658: Images # Images
-    f9a50eaa-e4c7-4211-bfda-4797859199e9: 'Shared Blocks' # Shared Blocks
+    f9a50eaa-e4c7-4211-bfda-4797859199e9: "Shared Blocks" # Shared Blocks
     f659e4e5-e885-4efe-918b-f9ea22bef550: Image # Image
     ffc57940-6cfb-47aa-93cc-52c5afd46262: Settings # Settings
 system:
