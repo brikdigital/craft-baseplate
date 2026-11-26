@@ -1,4 +1,4 @@
-dateModified: 1795706078
+dateModified: 1795707344
 elementSources:
   craft\elements\Entry:
     -
@@ -181,6 +181,7 @@ meta:
     35872b14-d347-4e31-889e-b505340c4704: 'Button Type' # Button Type
     54058ce4-020d-4535-9931-d69993419df7: Article # Article
     74716a14-5d9a-4002-bc77-51f38589d539: Articles # Articles
+    206546c6-a2fc-44e4-92a8-5d9fe76b7113: Hero # Hero
     437963f6-fffc-4014-921d-e13fd7b2315f: Content # Content
     8157929d-6ed4-4e28-a095-cd2da0013745: Spacing # Spacing
     25165387-9136-4739-86cb-59a989b1c003: Images # Images

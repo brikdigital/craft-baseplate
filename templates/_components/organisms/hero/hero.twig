@@ -1,8 +1,9 @@
 {% set page = page|default(null) %}
 {% set heading = page.title ?? '' %}
-{% set text = page.description ?? '' %}
-{% set image = page.image is defined ? page.image.one() : null %}
-{% set mediaPosition = page.position.value ?? 'left' %}
+{% set hero = page.defaultHero ?? page %}
+{% set text = hero.description ?? '' %}
+{% set image = hero.image is defined ? hero.image.one() : null %}
+{% set mediaPosition = hero.position.value ?? 'left' %}
 {% set wrapperClasses = wrapperClasses|default('') %}
 {% set mediaRight = image and mediaPosition == 'right' %}
 

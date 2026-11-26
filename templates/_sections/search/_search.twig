@@ -19,7 +19,7 @@
 			<ul class="mt-16 flex flex-col divide-y divide-border-primary/10">
 				{% for result in results %}
 					{% set title = result.cardTitle ?? null ?: result.title %}
-					{% set descriptionField = (result.cardDescription ?? null)|striptags|trim ? result.cardDescription : (result.description ?? null) %}
+					{% set descriptionField = (result.cardDescription ?? null)|striptags|trim ? result.cardDescription : (result.defaultHero.description ?? result.description ?? null) %}
 					{% set description = '' %}
 					{% for chunk in descriptionField ?? [] %}
 						{% if chunk.type == 'markup' %}

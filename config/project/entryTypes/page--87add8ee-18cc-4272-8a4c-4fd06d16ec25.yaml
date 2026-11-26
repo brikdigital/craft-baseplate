@@ -37,56 +37,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-11-25T08:32:40+00:00'
+            dateAdded: '2026-11-26T15:28:58+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
-            handle: description
+            fieldUid: 206546c6-a2fc-44e4-92a8-5d9fe76b7113 # Hero
+            handle: null
             instructions: null
-            label: Description
+            label: null
             oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b2f7f4c1-1cfb-4528-adb9-d890a841b6c8
+            uid: 121b985d-b0ca-4f09-ae03-0b31944574d4
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: '2024-10-17T10:35:12+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Image
-            handle: null
-            instructions: null
-            label: null
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e370e1a4-283b-4f5f-bbc9-70233f7e8d9c
-            userCondition: null
-            warning: null
-            width: 75
-          -
-            dateAdded: '2026-11-24T08:22:22+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 7990d129-e4e9-488d-b9ca-0347364425e1 # Position
-            handle: null
-            instructions: null
-            label: null
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 78ed9793-d252-4a8a-ae00-f455b072df90
-            userCondition: null
-            warning: null
-            width: 25
           -
             dateAdded: '2026-11-24T08:22:22+00:00'
             elementCondition: null
@@ -142,7 +108,7 @@ fieldLayouts:
             handle: cardDescription
             instructions: null
             label: Description
-            oldFieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
