@@ -1,13 +1,29 @@
 {% extends '_layouts/default.twig' %}
-{% import '_macros/retcon.twig' as retcon %}
 
+{% set articlesQuery = craft.entries().section('articles').orderBy('postDate DESC').with(['cardImage', 'image', 'articleCategory']) %}
 
 {% block html %}
+	{% include '_components/organisms/hero/hero.twig' with { page: entry } only %}
 
-	{{entry.title}}
+	{% paginate articlesQuery.limit(12) as pageInfo, articles %}
+
+	{% if articles|length %}
+		<section class="bg-surface-default text-text-primary pb-block-md" data-theme="light">
+			<div class="container">
+				<ul class="grid grid-cols-1 gap-x-24 gap-y-40 md:grid-cols-2 lg:grid-cols-3">
+					{% for article in articles %}
+						<li class="flex">
+							{% include '_components/molecules/articleCard/articleCard.twig' with { article: article, wrapperClasses: 'w-full' } only %}
+						</li>
+					{% endfor %}
+				</ul>
+
+				{% include '_components/molecules/pagination/pagination.twig' with { pageInfo: pageInfo, wrapperClasses: 'mt-48' } only %}
+			</div>
+		</section>
+	{% endif %}
 
 	{% include '_components/blocks.twig' with {
 		blocks: entry.blocks ? entry.blocks.eagerly().all() : [],
 	} %}
-
 {% endblock %}

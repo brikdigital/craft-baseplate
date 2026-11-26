@@ -1,0 +1,59 @@
+{% set pageInfo = pageInfo|default(null) %}
+{% set window = window|default(1) %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+
+{% if pageInfo and pageInfo.totalPages > 1 %}
+	{% set current = pageInfo.currentPage %}
+	{% set total = pageInfo.totalPages %}
+	{% set start = max(1, current - window) %}
+	{% set end = min(total, current + window) %}
+	{% set itemClasses = 'text-16 flex size-40 items-center justify-center rounded-md font-semibold transition-colors' %}
+
+	<nav aria-label="{{ 'Paginering'|t }}" class="{{ wrapperClasses }}">
+		<ul class="flex flex-wrap items-center justify-center gap-8">
+			<li>
+				{% if pageInfo.prevUrl %}
+					<a href="{{ pageInfo.prevUrl }}" rel="prev" aria-label="{{ 'Vorige pagina'|t }}" class="{{ itemClasses }} hover:bg-border-primary/10">
+						{% include '_components/atoms/icon/icon.twig' with { icon: 'caret-left', size: 'small' } only %}
+					</a>
+				{% else %}
+					<span aria-hidden="true" class="{{ itemClasses }} opacity-30">
+						{% include '_components/atoms/icon/icon.twig' with { icon: 'caret-left', size: 'small' } only %}
+					</span>
+				{% endif %}
+			</li>
+
+			{% if start > 1 %}
+				<li><a href="{{ pageInfo.getPageUrl(1) }}" aria-label="{{ 'Pagina {n}'|t({ n: 1 }) }}" class="{{ itemClasses }} hover:bg-border-primary/10">1</a></li>
+				{% if start > 2 %}<li aria-hidden="true" class="{{ itemClasses }}">…</li>{% endif %}
+			{% endif %}
+
+			{% for n in start..end %}
+				<li>
+					{% if n == current %}
+						<span aria-current="page" aria-label="{{ 'Pagina {n}'|t({ n: n }) }}" class="{{ itemClasses }} bg-interactive-default text-text-inverse">{{ n }}</span>
+					{% else %}
+						<a href="{{ pageInfo.getPageUrl(n) }}" aria-label="{{ 'Pagina {n}'|t({ n: n }) }}" class="{{ itemClasses }} hover:bg-border-primary/10">{{ n }}</a>
+					{% endif %}
+				</li>
+			{% endfor %}
+
+			{% if end < total %}
+				{% if end < total - 1 %}<li aria-hidden="true" class="{{ itemClasses }}">…</li>{% endif %}
+				<li><a href="{{ pageInfo.getPageUrl(total) }}" aria-label="{{ 'Pagina {n}'|t({ n: total }) }}" class="{{ itemClasses }} hover:bg-border-primary/10">{{ total }}</a></li>
+			{% endif %}
+
+			<li>
+				{% if pageInfo.nextUrl %}
+					<a href="{{ pageInfo.nextUrl }}" rel="next" aria-label="{{ 'Volgende pagina'|t }}" class="{{ itemClasses }} hover:bg-border-primary/10">
+						{% include '_components/atoms/icon/icon.twig' with { icon: 'caret-right', size: 'small' } only %}
+					</a>
+				{% else %}
+					<span aria-hidden="true" class="{{ itemClasses }} opacity-30">
+						{% include '_components/atoms/icon/icon.twig' with { icon: 'caret-right', size: 'small' } only %}
+					</span>
+				{% endif %}
+			</li>
+		</ul>
+	</nav>
+{% endif %}
