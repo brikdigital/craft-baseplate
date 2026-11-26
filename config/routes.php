@@ -9,4 +9,6 @@
  * https://craftcms.com/docs/4.x/routing.html
  */
 
-return [];
+return [
+    'search' => ['template' => '_sections/search/_search'],
+];

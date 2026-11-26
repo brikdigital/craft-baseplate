@@ -1,0 +1,33 @@
+{% extends '_layouts/default.twig' %}
+
+{% set q = craft.app.request.getQueryParam('q')|trim %}
+
+{% block html %}
+	<div class="container-half pt-block-md pb-block-md">
+		{% include '_components/atoms/heading/heading.twig' with { htmlTag: 'h1', text: 'Zoeken'|t, size: 'large' } only %}
+
+		<form action="{{ url('search') }}" method="get" role="search" class="mt-24 flex max-w-640 gap-8">
+			<label for="search-page-q" class="sr-only">{{ 'Zoeken'|t }}</label>
+			<input id="search-page-q" type="search" name="q" value="{{ q }}" class="border-border-primary/20 text-16 w-full rounded-md border" />
+			{% include '_components/atoms/button/button.twig' with { text: 'Zoeken'|t, type: 'submit' } only %}
+		</form>
+
+		{% if q %}
+			{% set results = craft.entries().section(['pages', 'articles']).search(q).orderBy('score').limit(50).all() %}
+			<p class="text-text-primary mt-32">{{ '{count} resultaten voor "{query}"'|t({ count: results|length, query: q }) }}</p>
+
+			<ul class="mt-16 flex flex-col divide-y divide-border-primary/10">
+				{% for result in results %}
+					{% set description = (result.description ?: result.cardIntro ?: result.intro)|striptags|trim %}
+					<li class="flex flex-col items-start gap-8 py-16">
+						{% include '_components/atoms/badge/badge.twig' with { text: result.type.name|t, theme: 'secondary', size: 'small' } only %}
+						<a href="{{ result.url }}" class="text-text-primary text-20 font-bold hover:underline">{{ result.title }}</a>
+						{% if description %}
+							<p class="text-16 text-text-primary max-w-640 leading-160">{{ description|length > 200 ? description|slice(0, 200)|trim ~ '…' : description }}</p>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
+{% endblock %}

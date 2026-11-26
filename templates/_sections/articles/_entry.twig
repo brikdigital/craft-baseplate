@@ -11,7 +11,7 @@
 {% set related = related.all() %}
 
 {% block html %}
-	<article class="container-half pb-block-md pt-24 lg:pt-40">
+	<article class="container-half pt-block-md pb-block-md">
 		<div class=" flex flex-col gap-24 lg:gap-32">
 			<header class="flex flex-col items-start gap-16 lg:gap-24">
 			    {% include '_components/atoms/heading/heading.twig' with { htmlTag: 'h1', text: entry.title, size: 'large' } only %}
