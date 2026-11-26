@@ -1,0 +1,18 @@
+{% set image = block.image.one() %}
+{% set video = block.video.one() %}
+
+{% if video %}
+	<section {{ attr(themeAttributes|default({})) }}>
+		<div class="container">
+			{% include '_components/molecules/media/media.twig' with {
+				imageOrVideo: 'video',
+				video: video.url,
+				image: image,
+				videoAutoplay: block.videoAutoplay.value ?? 'pause',
+				videoDisplayMode: block.videoDisplayMode.value ?? 'inline',
+				ratio: 'aspect-16/9',
+				wrapperClasses: 'lg:max-h-dvh',
+			} only %}
+		</div>
+	</section>
+{% endif %}
