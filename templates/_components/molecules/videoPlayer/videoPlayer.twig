@@ -10,6 +10,7 @@
 {% endif %}
 
 {% set autoPlay = type == 'inlineAutoplay' %}
+{% set posterAlt = posterImage is not string and posterImage ? (posterImage.alt ?? '') : '' %}
 
 {% set wrapperClasses = wrapperClasses|default('') %}
 {% set positionClasses = autoPlay ? 'right-16 bottom-16 md:right-24 md:bottom-24' : 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform' %}
@@ -23,7 +24,7 @@
   <video-player class="relative block group {{wrapperClasses}}" {% if posterUrl %}poster="{{ posterUrl }}"{% endif %}>
     <media-container class="relative block size-full">
       <video class="size-full object-cover" src="{{ video }}" {{ autoPlay ? 'data-autoplay muted loop preload="metadata"' : 'preload="metadata"' }} playsinline></video>
-      {% if posterUrl %}<media-poster class="absolute inset-0 hidden data-visible:block"><img class="size-full object-cover" alt=""></media-poster>{% endif %}
+      {% if posterUrl %}<media-poster class="absolute inset-0 hidden data-visible:block"><img class="size-full object-cover" alt="{{ posterAlt }}"></media-poster>{% endif %}
 
       <media-play-button class="group {{ buttonClasses }} grid">
         <span class="hidden place-items-center group-data-ended:grid group-data-paused:grid">
@@ -44,6 +45,7 @@
 
     {% include "_components/atoms/image/image.twig" with {
         image: posterImage,
+        alt: posterAlt,
         transform: transform,
         imageClasses: '',
         wrapperClasses: ''
