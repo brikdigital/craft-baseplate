@@ -1,69 +1,29 @@
-{# mediaItems: [{ type: 'image' | 'video', image, video, poster, displayMethod }], mediaPosition: left | right #}
-{% set content = content|default(null) %}
-{% set mediaItems = mediaItems|default([]) %}
-{% set mediaPosition = mediaPosition|default('right') %}
+{% set text = text|default('') %}
+{% set image = image|default(null) %}
+{% set video = video|default('') %}
+{% set imageOrVideo = imageOrVideo|default('image') %}
+{% set videoAutoplay = videoAutoplay|default('pause') %}
+{% set videoDisplayMode = videoDisplayMode|default('inline') %}
 {% set ratio = ratio|default('default') %}
+{% set mediaPosition = mediaPosition|default('left') %}
+{% set wrapperClasses = wrapperClasses|default('') %}
 
-{# Text position (vertical) #}
-{% switch textPosition|default('center') %}
-	{% case 'start' %}
-		{% set positionClasses = '' %}
-	{% case 'end' %}
-		{% set positionClasses = 'justify-end' %}
-	{% default %}
-		{% set positionClasses = 'justify-center' %}
-{% endswitch %}
-
-{# Text alignment #}
-{% switch textAlignment|default('left') %}
-	{% case 'right' %}
-		{% set alignmentClasses = 'text-right' %}
-	{% case 'center' %}
-		{% set alignmentClasses = 'text-center' %}
-	{% default %}
-		{% set alignmentClasses = '' %}
-{% endswitch %}
-
-{% set transform = mediaItems|length > 1 ? 'aspect-1/1' : ratio %}
-
-{% set sliderContent %}
-	{% for item in mediaItems %}
-		{% if item.type == 'image' %}
-			{% include '_components/atoms/image/image.twig' with {
-				image: item.image,
-				imageClasses: '',
-				transform: transform,
-				wrapperClasses: 'swiper-slide'
-			} only %}
+<div class="container-grid items-center {{ wrapperClasses }}">
+	<div class="col-span-full lg:col-span-6">
+		{% if text is iterable %}
+			{% include '_blocks/chunksHandler.twig' with { editorContent: text } only %}
 		{% else %}
-			{% include '_components/molecules/videoPlayer/videoPlayer.twig' with {
-				video: item.video,
-				type: item.displayMethod,
-				posterImage: item.poster,
-				transform: transform == 'default' ? 'aspect-16/9' : transform,
-				wrapperClasses: 'swiper-slide'
-			} only %}
+			{% include '_components/atoms/text/text.twig' with { html: text } only %}
 		{% endif %}
-	{% endfor %}
-{% endset %}
-
-<section class="w-full">
-	<div class="container flex flex-col gap-24 md:flex-row">
-		<div class="flex w-full flex-col md:w-1/2 {{ positionClasses }} {{ alignmentClasses }}">
-			{% include '_blocks/chunksHandler.twig' with { editorContent: content } only %}
-		</div>
-
-		<div class="{{ mediaPosition == 'left' ? 'md:order-first' : '' }} w-full pb-24 md:w-1/2 md:pb-0">
-			{% if mediaItems|length >= 2 %}
-				{% include '_components/molecules/slider/slider.twig' with {
-					slides: sliderContent,
-					sliderType: 'fullWidth',
-					showNavigation: true,
-					showPagination: false
-				} only %}
-			{% else %}
-				{{ sliderContent }}
-			{% endif %}
-		</div>
 	</div>
-</section>
+
+	{% include '_components/molecules/media/media.twig' with {
+		image: image,
+		video: video,
+		imageOrVideo: imageOrVideo,
+		videoAutoplay: videoAutoplay,
+		videoDisplayMode: videoDisplayMode,
+		ratio: ratio,
+		wrapperClasses: 'order-first col-span-full lg:col-span-6 ' ~ (mediaPosition == 'right' ? 'lg:order-last' : 'lg:order-first'),
+	} only %}
+</div>

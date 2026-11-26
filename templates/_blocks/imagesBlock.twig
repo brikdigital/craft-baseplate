@@ -1,3 +1,18 @@
+{% set ratio = block.imageRatio.value ?? 'default' %}
+{% set displayMode = block.imagesDisplayMode.value ?? 'default' %}
+{% set images = block.images ?? [] %}
+{% set images = images is array ? images : images.all() %}
+
 <section {{ attr(themeAttributes|default({})) }}>
-	{% include '_components/organisms/images/images.twig' with { images: block.images.all() } only %}
+	<div class="container-grid">
+		<div class="col-span-full lg:col-span-8 lg:col-start-3 {{ displayMode == 'default' ? 'flex flex-col gap-24 md:gap-32' : '' }}">
+			{% if displayMode == 'slider' %}
+				{% include '_components/molecules/imageSlider/imageSlider.twig' with { images: images, ratio: ratio } only %}
+			{% else %}
+				{% for image in images %}
+					{% include '_components/molecules/media/media.twig' with { image: image, ratio: ratio } only %}
+				{% endfor %}
+			{% endif %}
+		</div>
+	</div>
 </section>

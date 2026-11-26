@@ -20,7 +20,7 @@ settings:
           - image
         -
           - default
-          - ''
+          - '1'
     -
       __assoc__:
         -
@@ -35,6 +35,8 @@ settings:
         -
           - default
           - ''
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\ButtonGroup
+warning: null

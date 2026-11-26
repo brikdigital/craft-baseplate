@@ -1,19 +1,14 @@
-{% set displayMethod = block.displayMethod.value ?? 'popUp' %}
-{% set video = block.videos.one() %}
-{% if displayMethod == 'autoplayPopUp' %}
-	{% set video = block.inlineVideo.one() ?: video %}
-{% endif %}
+{% set video = block.video.one() %}
 
 <section {{ attr(themeAttributes|default({})) }}>
 	{% include '_components/organisms/textMedia/textMedia.twig' with {
-		content: block.body,
-		mediaItems: video ? [{
-			type: 'video',
-			video: video.url,
-			poster: block.singleImage.one(),
-			displayMethod: displayMethod,
-		}] : [],
-		mediaPosition: block.textPosition == 'left' ? 'right' : 'left',
+		text: block.content,
+		image: block.image.one(),
+		video: video ? video.url : '',
+		imageOrVideo: block.imageOrVideo.value ?? 'image',
+		videoAutoplay: block.videoAutoplay.value ?? 'pause',
+		videoDisplayMode: block.videoDisplayMode.value ?? 'inline',
 		ratio: block.imageRatio.value ?? 'default',
+		mediaPosition: block.position.value ?? 'left',
 	} only %}
 </section>

@@ -32,7 +32,7 @@ fieldLayouts:
             handle: content
             instructions: null
             label: null
-            oldFieldUid: d544c7a1-06b0-46c7-b2a6-8987f2c6bd84 # Content
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -103,7 +103,7 @@ fieldLayouts:
             instructions: null
             label: null
             oldFieldUid: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: f74b6406-d6fc-4982-b3ee-98311563055e
