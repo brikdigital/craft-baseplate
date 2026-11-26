@@ -1,0 +1,8 @@
+{% set sharedBlock = block.sharedBlock.one() %}
+
+{% if sharedBlock.blocks is defined %}
+	{% include '_components/blocks.twig' with {
+		blocks: sharedBlock.blocks.type(['not', 'sharedBlockBlock']).all(),
+		isInText: isInText|default(false),
+	} %}
+{% endif %}
