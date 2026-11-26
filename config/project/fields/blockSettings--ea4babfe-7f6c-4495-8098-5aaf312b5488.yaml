@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: blockSettings
 instructions: 'Configure the settings of this block.'
-name: 'Block Settings'
+name: Settings
 searchable: false
 settings:
   fieldLayouts:
@@ -24,6 +24,17 @@ settings:
                     4:
                       - elements
                       -
+                        -
+                          __assoc__:
+                            -
+                              - type
+                              - craft\fieldlayoutelements\HorizontalRule
+                            -
+                              - dateAdded
+                              - '2026-11-26T10:34:32+00:00'
+                            -
+                              - uid
+                              - c27d80e0-586a-4cca-a5f3-3b1dcddcafea
                         -
                           __assoc__:
                             0:
@@ -154,7 +165,9 @@ settings:
             4:
               - cardThumbAlignment
               - end
-  viewMode: grouped
+  viewMode: inline
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\ContentBlock
+warning: null

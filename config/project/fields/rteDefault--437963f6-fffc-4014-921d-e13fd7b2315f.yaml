@@ -8,7 +8,7 @@ settings:
   availableTransforms: ''
   availableVolumes: ''
   characterLimit: null
-  css: ".ck.ck-content ul + ul, .ck.ck-content ul + ol, .ck.ck-content ol + ul, .ck.ck-content ol + ol {\r\n  margin-top: 20px;\r\n}"
+  css: ".ck.ck-content ul + ul, .ck.ck-content ul + ol, .ck.ck-content ol + ul, .ck.ck-content ol + ol {\r\n  margin-top: 20px;\r\n}\r\n\r\n.ck.ck-content h2 {\r\n  font-size: 28px;\r\n  line-height: 1.2;\r\n  font-weight: 600;\r\n}\r\n\r\n.ck.ck-content h3 {\r\n  font-size: 22px;\r\n  line-height: 1.2;\r\n  font-weight: 600;\r\n}\r\n\r\n.ck.ck-content h4 {\r\n  font-size: 18px;\r\n  line-height: 1.2;\r\n  font-weight: 600;\r\n}\r\n\r\n.ck.ck-content figure.table {\r\n  margin-left: 0;\r\n  margin-right: 0;\r\n}\r\n\r\n.ck.ck-content .table table {\r\n  margin-left: 0;\r\n  margin-right: auto;\r\n}"
   cssFile: null
   defaultTransform: null
   defaultUploadLocationSubpath: null

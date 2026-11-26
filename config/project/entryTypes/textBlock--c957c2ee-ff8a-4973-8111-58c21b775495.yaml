@@ -32,7 +32,7 @@ fieldLayouts:
             handle: content
             instructions: null
             label: null
-            oldFieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Content
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -51,11 +51,11 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Block Settings
+            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Settings
             handle: null
             instructions: null
             label: null
-            oldFieldUid: null
+            oldFieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Settings
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

@@ -1,5 +1,5 @@
-:root {
-	--swiper-pagination-color: var(--color-secondary);
+[data-swiper] {
+	--swiper-pagination-color: var(--interactive-hover);
 	--swiper-pagination-left: auto;
 	--swiper-pagination-right: 0px;
 	--swiper-pagination-top: auto;
@@ -7,7 +7,7 @@
 	--swiper-pagination-bullet-size: 12px;
 	--swiper-pagination-bullet-width: 12px;
 	--swiper-pagination-bullet-height: 12px;
-	--swiper-pagination-bullet-inactive-color: var(--color-primary);
+	--swiper-pagination-bullet-inactive-color: var(--interactive-default);
 	--swiper-pagination-bullet-inactive-opacity: 0.5;
 	--swiper-pagination-bullet-opacity: 1;
 	--swiper-pagination-bullet-horizontal-gap: 6px;

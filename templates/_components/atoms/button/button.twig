@@ -15,13 +15,13 @@
 
 {% switch theme %}
 	{% case 'primary' %}
-		{% set themeClasses = 'bg-primary text-white hover:text-primary hover:bg-secondary' %}
+		{% set themeClasses = 'bg-interactive-default text-text-inverse hover:bg-interactive-hover hover:text-primary' %}
 	{% case 'secondary' %}
-		{% set themeClasses = 'bg-secondary text-primary hover:bg-primary hover:text-secondary' %}
+		{% set themeClasses = 'bg-secondary text-primary hover:bg-interactive-default hover:text-text-inverse' %}
 	{% case 'textDark' %}
-		{% set themeClasses = 'text-black border-b border-current hover:text-secondary' %}
+		{% set themeClasses = 'text-text-primary underline underline-offset-6 hover:opacity-70' %}
 	{% case 'textLight' %}
-		{% set themeClasses = 'text-white border-b border-current hover:text-primary' %}
+		{% set themeClasses = 'text-white underline underline-offset-6 hover:text-primary' %}
 {% endswitch %}
 
 {% set attributes = {
@@ -82,19 +82,19 @@
 {% endif %}
 
 {% apply spaceless %}
-<{{ htmlTag }} {{attr(attributes)}}>
-		{% if icon and iconPosition == 'left' %}
-      <span aria-hidden="true">
-        {{ inlineSvg(icon, 'mr-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
-      </span>
-		{% endif %}
+    <{{ htmlTag }} {{attr(attributes)}}>
+        {% if icon and iconPosition == 'left' %}
+            <span aria-hidden="true">
+                {{ inlineSvg(icon, 'mr-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
+            </span>
+        {% endif %}
 
-		{{ text }}
+        {{ text }}
 
-		{% if icon and iconPosition == 'right' %}
-      <span aria-hidden="true">
-        {{ inlineSvg(icon, 'ml-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
-      </span>
-		{% endif %}
-</{{ htmlTag }}>
+        {% if icon and iconPosition == 'right' %}
+            <span aria-hidden="true">
+                {{ inlineSvg(icon, 'ml-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
+            </span>
+        {% endif %}
+    </{{ htmlTag }}>
 {% endapply %}

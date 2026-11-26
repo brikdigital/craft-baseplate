@@ -59,3 +59,20 @@
 @utility pb-block-lg {
 	padding-bottom: var(--space-block-lg);
 }
+
+/* Bottom margin between paragraphs, lists and blocks in rich text */
+@utility content-spacing {
+	margin-bottom: calc(var(--spacing) * 24);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: theme(--breakpoint-lg)) {
+		margin-bottom: calc(var(--spacing) * 32);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

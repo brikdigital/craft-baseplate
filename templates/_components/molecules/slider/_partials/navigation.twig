@@ -1,5 +1,5 @@
 {% set wrapperClasses = wrapperClasses|default('absolute top-1/2 transform -translate-y-1/2 z-10 w-full flex justify-between') %}
-{% set buttonClasses = 'bg-primary text-secondary hover:bg-secondary hover:text-primary size-40 relative z-10 flex justify-center items-center rounded-full transition ease-in duration-200' %}
+{% set buttonClasses = 'relative z-10 flex size-40 items-center justify-center rounded-full bg-interactive-default text-text-inverse transition duration-200 ease-in hover:bg-interactive-hover hover:text-primary' %}
 
 <div class="flex gap-8 {{wrapperClasses}}">
   <button class="button-prev {{buttonClasses}}">

@@ -1,4 +1,4 @@
-dateModified: 1795682780
+dateModified: 1795691895
 elementSources:
   craft\elements\Entry:
     -
@@ -207,7 +207,7 @@ meta:
     dcaf6647-c88d-48cf-adf6-9b3e1d3150b1: Icon # Icon
     e3e540cf-4ffe-4dbf-8bfb-136dacd66f7c: 'Global Settings' # Global Settings
     e325439d-f974-4c27-a2d9-2fe44cce12bb: Quote # Quote
-    ea4babfe-7f6c-4495-8098-5aaf312b5488: 'Block Settings' # Block Settings
+    ea4babfe-7f6c-4495-8098-5aaf312b5488: Settings # Settings
     edb6d78c-27f5-4522-852d-2df53429bb71: Errors # Errors
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
     efdb17e7-d5b4-4222-bcf2-8a42cf5b0658: Images # Images

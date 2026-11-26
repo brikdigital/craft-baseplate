@@ -1,0 +1,10 @@
+{% include '_components/molecules/media/media.twig' with {
+	imageOrVideo: 'video',
+	video: block.video.one().url ?? '',
+	image: block.image.one(),
+	videoAutoplay: block.videoAutoplay.value ?? 'pause',
+	videoDisplayMode: block.videoDisplayMode.value ?? 'inline',
+	ratio: 'aspect-16/9',
+	aspectRatio: '16 / 9',
+	wrapperClasses: 'content-spacing desktop:max-h-dvh',
+} only %}

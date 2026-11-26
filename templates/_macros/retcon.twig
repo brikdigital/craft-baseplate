@@ -1,37 +1,37 @@
-{%- macro default(field) -%}
-    {{ field | retcon([
-        ['attr', 'h2', { class: 'font-semibold text-primary text-32 md:text-36 leading-120 mb-6' }],
-        ['attr', 'h3', { class: 'font-semibold text-primary text-24 md:text-28 leading-120 mb-6' }],
-        ['attr', 'h4', { class: 'font-semibold text-primary text-18 md:text-22 leading-120 mb-6' }],
-        ['attr', 'a', { class: 'text-primary underline underline-offset-2 hover:opacity-50' }],
-        ['attr', 'strong', { class: 'font-semibold' }],
-        ['attr', 'p', { class: 'mb-6 text-16 leading-160 opacity-80 text-16 md:text-18' }],
-        ['attr', 'ul', { class: 'mb-6 flex flex-col gap-4' }],
-        ['attr', 'ul li', { class: 'pl-8 text-16 md:text-18 leading-16 relative before:absolute before:content-[""] before:w-5 before:h-4 before:top-2 before:left-0 before:bg-check-secondary before:bg-no-repeat before:bg-contain' }],
-        ['attr', 'ol', { class: 'list-decimal pl-5 mb-6 flex flex-col gap-4' }],
-        ['attr', 'ol li', { class: 'pl-3 text-16 md:text-18 leading-160' }],
-        ['wrap', 'table', '.overflow-x-auto' ],
-        ['attr', 'table', { class: 'mb-6' }],
-        ['attr', 'th, td', { class: 'text-left text-16 md:text-18 leading-160 pr-4' }],
-        ['attr', 'blockquote', { class: 'p-4 my-4 bg-gray-50 border-l-4 border-gray-300 text-16 md:text-18' }],
-    ]) }}
+{%- macro render(field, bodySize) -%}
+	{{ field | retcon([
+		['attr', 'h1', { class: 'mb-12 text-40 leading-110 font-semibold text-text-titles last:mb-0 md:mb-20 md:text-52' }],
+		['attr', 'h2', { class: 'mb-12 text-32 leading-120 font-semibold text-text-titles last:mb-0 md:mb-20 md:text-36' }],
+		['attr', 'h3', { class: 'mb-12 text-24 leading-120 font-semibold text-text-titles last:mb-0 md:mb-20 md:text-28' }],
+		['attr', 'h4', { class: 'mb-12 text-18 leading-120 font-semibold text-text-titles last:mb-0 md:mb-20 md:text-22' }],
+		['attr', 'p', { class: bodySize ~ ' content-spacing text-text-primary' }],
+		['attr', 'strong', { class: 'font-semibold' }],
+		['attr', 'a', { class: 'underline underline-offset-4 hover:opacity-70' }],
+		['attr', 'ul', { class: 'content-spacing flex list-disc flex-col gap-8 pl-24' }],
+		['attr', 'ol', { class: 'content-spacing flex list-decimal flex-col gap-8 pl-24' }],
+		['attr', 'ul li, ol li', { class: bodySize ~ ' text-text-primary' }],
+		['wrap', 'table', '.overflow-x-auto'],
+		['attr', 'figure.table', { class: 'content-spacing block' }],
+		['attr', '.overflow-x-auto', { class: 'content-spacing overflow-x-auto' }],
+		['attr', 'table', { class: 'w-full border-collapse' }],
+		['attr', 'tr', { class: 'border-y border-border-primary/20' }],
+		['attr', 'th', { class: 'bg-surface-transparent px-12 py-12 text-left align-top text-16 leading-160 font-semibold text-text-primary md:px-24 md:py-20 md:text-18' }],
+		['attr', 'td', { class: 'px-12 py-12 text-left align-top text-16 leading-160 text-text-primary md:px-24 md:py-20 md:text-18' }],
+		['attr', '.text-huge', { class: 'text-32! leading-110! md:text-52!' }],
+		['attr', '.text-big', { class: 'text-22! leading-140! md:text-28!' }],
+		['attr', '.text-small', { class: 'text-14! leading-160!' }],
+		['attr', '.text-tiny', { class: 'text-12! leading-160!' }],
+		['attr', 'blockquote', { class: 'mt-24 mb-24 border-l-4 border-border-secondary pl-24 text-18 leading-140 text-text-primary last:mb-0 md:text-22' }],
+	]) }}
 {%- endmacro -%}
 
-{%- macro darkBg(field) -%}
-	{{ field | retcon([
-        ['attr', 'h2', { class: 'text-white font-semibold text-32 md:text-36 leading-120 mb-6' }],
-        ['attr', 'h3', { class: 'text-white font-semibold text-24 md:text-28 leading-120 mb-6' }],
-        ['attr', 'h4', { class: 'text-white font-semibold text-18 md:text-22 leading-120 mb-6' }],
-        ['attr', 'a', { class: 'text-white underline underline-offset-2 hover:opacity-50' }],
-        ['attr', 'strong', { class: 'font-semibold' }],
-        ['attr', 'p', { class: 'text-white mb-6 text-16 leading-160 opacity-80 text-16 md:text-18' }],
-        ['attr', 'ul', { class: 'mb-6 flex flex-col gap-4' }],
-        ['attr', 'ul li', { class: 'text-white pl-8 text-16 md:text-18 leading-16 relative before:absolute before:content-[""] before:w-5 before:h-4 before:top-2 before:left-0 before:bg-check-white before:bg-no-repeat before:bg-contain' }],
-        ['attr', 'ol', { class: 'list-decimal pl-5 mb-6 flex flex-col gap-4' }],
-        ['attr', 'ol li', { class: 'text-white pl-3 text-16 md:text-18 leading-160' }],
-        ['wrap', 'table', '.overflow-x-auto' ],
-        ['attr', 'table', { class: 'mb-6' }],
-        ['attr', 'th, td', { class: 'text-white text-left text-16 md:text-18 leading-160 pr-4' }],
-        ['attr', 'blockquote', { class: 'text-white p-4 my-4 bg-primary border-l-4 border-secondary text-16 md:text-18' }],
-    ]) }}
+{%- macro default(field) -%}
+	{% import _self as retcon %}
+	{{ retcon.render(field, 'text-16 md:text-18 leading-160') }}
+{%- endmacro -%}
+
+{# Large variant, for intro text #}
+{%- macro intro(field) -%}
+	{% import _self as retcon %}
+	{{ retcon.render(field, 'text-22 md:text-28 leading-140') }}
 {%- endmacro -%}

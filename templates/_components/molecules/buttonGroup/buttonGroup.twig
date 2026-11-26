@@ -1,0 +1,17 @@
+{% set buttons = buttons|default([]) %}
+{% set buttons = buttons is array ? buttons : buttons.all() %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+{% set themes = { primary: 'primary', secondary: 'secondary', textOnly: 'textDark' } %}
+
+{% if buttons|length %}
+	<div class="flex flex-wrap gap-16 {{ wrapperClasses }}">
+		{% for link in buttons %}
+			{% include '_components/atoms/button/button.twig' with {
+				text: link.text,
+				url: link.url,
+				target: link.newWindow ?? false ? '_blank' : '',
+				theme: themes[link.buttonType.value ?? 'primary'] ?? 'primary',
+			} only %}
+		{% endfor %}
+	</div>
+{% endif %}

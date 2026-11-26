@@ -1,0 +1,6 @@
+{% include '_components/molecules/quote/quote.twig' with {
+	title: block.title,
+	description: block.description ?? null,
+	image: block.image.one() ?? null,
+	wrapperClasses: 'content-spacing',
+} only %}

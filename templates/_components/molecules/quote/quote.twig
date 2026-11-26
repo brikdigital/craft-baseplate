@@ -1,0 +1,30 @@
+{% set title = title|default('') %}
+{% set description = description|default(null) %}
+{% set image = image|default(null) %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+
+{% if title %}
+	<figure class="flex flex-col gap-16 {{ wrapperClasses }}">
+		<blockquote class="text-text-primary text-28 md:text-40 lg:text-48 leading-120 font-extrabold">
+			&ldquo;{{ title }}&rdquo;
+		</blockquote>
+
+		{% if image or description %}
+			<figcaption class="flex items-center gap-16">
+				{% if image %}
+					<div class="size-56 shrink-0 overflow-hidden rounded-full md:size-64">
+						{% include '_components/atoms/image/image.twig' with {
+							image: image,
+							alt: image.alt ?? '',
+							transform: 'aspect-1/1',
+							imageClasses: 'block aspect-1/1 size-full object-cover'
+						} only %}
+					</div>
+				{% endif %}
+				{% if description %}
+					<span class="text-text-primary text-16 md:text-18">{{ description }}</span>
+				{% endif %}
+			</figcaption>
+		{% endif %}
+	</figure>
+{% endif %}

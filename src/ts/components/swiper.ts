@@ -40,6 +40,15 @@ export default function swiper() {
 					loop: true,
 				};
 				break;
+			case 'imageFade':
+				typeOptions = {
+					spaceBetween: 0,
+					slidesPerView: 1,
+					loop: false,
+					effect: 'fade',
+					fadeEffect: { crossFade: true },
+				};
+				break;
 			case 'cards':
 				typeOptions = {
 					spaceBetween: 16,

@@ -1,0 +1,43 @@
+{% set image = image|default(null) %}
+{% set video = video|default('') %}
+{% set imageOrVideo = imageOrVideo|default('image') %}
+{% set videoAutoplay = videoAutoplay|default('pause') %}
+{% set videoDisplayMode = videoDisplayMode|default('inline') %}
+{% set displayMethod = displayMethod|default(
+	videoDisplayMode == 'popup'
+		? (videoAutoplay == 'play' ? 'autoplayPopUp' : 'popUp')
+		: (videoAutoplay == 'play' ? 'inlineAutoplay' : 'inline')
+) %}
+{% set ratio = ratio|default('default') %}
+{% set size = size|default('default') %}
+{% set aspectRatio = aspectRatio is defined ? aspectRatio : (ratio == 'default' and image ? image.width ~ ' / ' ~ image.height : '') %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+{% set loading = loading|default('') %}
+{% set fetchpriority = fetchpriority|default('') %}
+{% set posterWidth = posterWidth|default('') %}
+{% set buttonClasses = buttonClasses|default('') %}
+
+{% set ratioClasses = {
+	'aspect-1/1': 'aspect-1/1',
+	'aspect-4/3': 'aspect-4/3',
+	'aspect-5/2': 'aspect-5/2',
+	'aspect-16/9': 'aspect-16/9',
+} %}
+
+{% if imageOrVideo == 'video' %}
+	{% include '_components/molecules/videoPlayer/videoPlayer.twig' with {
+		video: video,
+		posterImage: image,
+		type: displayMethod,
+		size: size,
+		transform: ratio,
+		aspectRatio: aspectRatio,
+		posterWidth: posterWidth,
+		buttonClasses: buttonClasses,
+		wrapperClasses: wrapperClasses,
+	} only %}
+{% else %}
+	<div class="relative overflow-hidden {{ wrapperClasses }}">
+		{% include '_components/atoms/image/image.twig' with { image: image, alt: image.alt, transform: ratio, loading: loading, fetchpriority: fetchpriority, imageClasses: 'size-full object-cover ' ~ (ratioClasses[ratio] ?? '') } only %}
+	</div>
+{% endif %}

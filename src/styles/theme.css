@@ -7,6 +7,11 @@
 @import './tokens/typography.css';
 
 @layer base {
+	html {
+		/* Offset for anchor links, so the target doesn't end up under the header */
+		scroll-padding-top: calc(var(--spacing) * 100);
+	}
+
 	html,
 	body {
 		-webkit-font-smoothing: antialiased;

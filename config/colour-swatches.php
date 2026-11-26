@@ -3,6 +3,28 @@
 return [
     // Custom  palettes, fixed options [label, default (boolean), colour (array(colour, customOptions)) ]
     'palettes' => [
+        'Blocks' => [
+            [
+                'label'   => 'White',
+                'default' => true,
+                'color'   =>  [
+                    [
+                        'color'             => '#ffffff',
+                        'bgColor'           => 'bg-white',
+                    ],
+                ],
+            ],
+            [
+                'label'   => 'Purple',
+                'default' => false,
+                'color'   =>  [
+                    [
+                        'color'             => '#250436',
+                        'bgColor'           => 'bg-primary',
+                    ],
+                ],
+            ],
+        ],
         'Theme' => [
             [
                 'label'   => 'White',

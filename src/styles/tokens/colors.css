@@ -4,3 +4,42 @@
 	--color-error: #ff0000;
 	--color-skip-to-content: rgb(0 0 0);
 }
+
+@theme inline {
+	--color-surface-default: var(--surface-default);
+	--color-surface-transparent: var(--surface-transparent);
+	--color-text-titles: var(--text-titles);
+	--color-text-primary: var(--text-primary);
+	--color-text-inverse: var(--text-inverse);
+	--color-border-primary: var(--border-primary);
+	--color-border-secondary: var(--border-secondary);
+	--color-interactive-default: var(--interactive-default);
+	--color-interactive-hover: var(--interactive-hover);
+}
+
+:root,
+[data-theme='light'] {
+	color-scheme: light;
+	--surface-default: var(--color-white);
+	--surface-transparent: color-mix(in oklab, var(--color-primary) 5%, transparent);
+	--text-titles: var(--color-primary);
+	--text-primary: var(--color-primary);
+	--text-inverse: var(--color-white);
+	--border-primary: var(--color-primary);
+	--border-secondary: var(--color-secondary);
+	--interactive-default: var(--color-primary);
+	--interactive-hover: var(--color-secondary);
+}
+
+[data-theme='dark'] {
+	color-scheme: dark;
+	--surface-default: var(--color-primary);
+	--surface-transparent: color-mix(in oklab, var(--color-white) 10%, transparent);
+	--text-titles: var(--color-white);
+	--text-primary: var(--color-white);
+	--text-inverse: var(--color-primary);
+	--border-primary: var(--color-white);
+	--border-secondary: var(--color-secondary);
+	--interactive-default: var(--color-white);
+	--interactive-hover: var(--color-secondary);
+}

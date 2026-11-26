@@ -1,0 +1,20 @@
+{% set images = images|default([]) %}
+{% set ratio = ratio|default('default') %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+
+{% if images|length %}
+	<div class="relative overflow-hidden {{ images|length > 1 ? 'pb-28' : '' }} {{ wrapperClasses }}" data-swiper='{ "type": "imageFade" }'>
+		<div class="swiper-wrapper">
+			{% for image in images %}
+				<div class="swiper-slide">
+					{% include '_components/molecules/media/media.twig' with { image: image, ratio: ratio } only %}
+				</div>
+			{% endfor %}
+		</div>
+
+		{% if images|length > 1 %}
+			{% include '_components/molecules/slider/_partials/pagination.twig' only %}
+			{% include '_components/molecules/slider/_partials/navigation.twig' with { wrapperClasses: 'pointer-events-none absolute top-[calc((100%-28px)/2)] z-10 w-full -translate-y-1/2 justify-between px-16 [&_button]:pointer-events-auto' } only %}
+		{% endif %}
+	</div>
+{% endif %}
