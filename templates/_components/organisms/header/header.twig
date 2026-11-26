@@ -1,7 +1,3 @@
-{% macro icon(name, classes = 'size-24') %}
-	<span aria-hidden="true" class="inline-flex shrink-0 [&>svg]:size-full {{ classes }}">{{ craft.phosphorIcons.icon(name, 'regular')|raw }}</span>
-{% endmacro %}
-
 {% set nodes = craft.navigation.nodes({ handle: 'headerNavigation', level: 1 }).all() %}
 {% set sites = craft.app.sites.getSitesByGroupId(currentSite.groupId) %}
 
@@ -23,12 +19,12 @@
 		<div class="flex items-center gap-8 lg:order-last lg:-ml-24">
 			<a href="{{ url('search') }}" class="text-text-primary hover:bg-surface-transparent grid size-40 place-items-center rounded-md">
 				<span class="sr-only">{{ 'Zoeken'|t }}</span>
-				{{ _self.icon('magnifying-glass') }}
+				{% include '_components/atoms/icon/icon.twig' with { icon: 'magnifying-glass', size: 'medium' } only %}
 			</a>
 			<button type="button" @click="open = !open" :aria-expanded="open" aria-controls="main-nav" class="bg-interactive-default text-text-inverse hover:bg-interactive-hover hover:text-primary grid size-40 place-items-center rounded-md transition-colors lg:hidden">
 				<span class="sr-only">{{ 'Menu'|t }}</span>
-				{{ _self.icon('list', 'size-24 in-aria-expanded:hidden') }}
-				{{ _self.icon('x', 'size-24 not-in-aria-expanded:hidden') }}
+				{% include '_components/atoms/icon/icon.twig' with { icon: 'list', size: 'medium', iconClasses: 'in-aria-expanded:hidden' } only %}
+				{% include '_components/atoms/icon/icon.twig' with { icon: 'x', size: 'medium', iconClasses: 'not-in-aria-expanded:hidden' } only %}
 			</button>
 		</div>
 
@@ -46,14 +42,14 @@
 						{% if children|length %}
 							<button type="button" @click="toggleSub('{{ node.id }}')" :aria-expanded="sub === '{{ node.id }}'" class="{{ linkClasses }} {{ node.active ? 'bg-surface-transparent' : '' }}">
 								{{ node.title }}
-								{{ _self.icon('caret-right', 'size-16 ml-auto lg:hidden') }}
-								{{ _self.icon('caret-down', 'size-16 transition-transform max-lg:hidden in-aria-expanded:rotate-180') }}
+								{% include '_components/atoms/icon/icon.twig' with { icon: 'caret-right', size: 'small', iconClasses: 'ml-auto lg:hidden' } only %}
+								{% include '_components/atoms/icon/icon.twig' with { icon: 'caret-down', size: 'small', iconClasses: 'transition-transform max-lg:hidden in-aria-expanded:rotate-180' } only %}
 							</button>
 							<ul x-show="sub === '{{ node.id }}'" x-cloak class="{{ dropdownClasses }}">
 								<li class="mb-8 lg:hidden">
 									<button type="button" data-back @click="back($el)" class="bg-interactive-default text-text-inverse hover:bg-interactive-hover hover:text-primary ml-4 inline-flex items-center justify-center rounded-md p-8 transition-colors">
 										<span class="sr-only">{{ 'Terug'|t }}</span>
-										{{ _self.icon('caret-left', 'size-24') }}
+										{% include '_components/atoms/icon/icon.twig' with { icon: 'caret-left', size: 'medium' } only %}
 									</button>
 								</li>
 
@@ -76,7 +72,7 @@
 				{% if sites|length > 1 %}
 					<div class="relative" @focusout="leave($el, $event, 'lang')" @keydown.escape="escape($el, 'lang')">
 						<button type="button" @click="toggleSub('lang')" :aria-expanded="sub === 'lang'" class="text-text-primary hover:bg-surface-transparent grid size-40 place-items-center rounded-md">
-							{{ _self.icon('globe') }}
+							{% include '_components/atoms/icon/icon.twig' with { icon: 'globe', size: 'medium' } only %}
 							<span class="sr-only">{{ 'Taal wijzigen'|t }}</span>
 						</button>
 						<ul x-show="sub === 'lang'" x-cloak class="bg-surface-default absolute bottom-full left-0 z-10 mb-8 w-full min-w-224 rounded-md p-4 shadow-lg outline-1 outline-black/5 lg:top-full lg:right-0 lg:bottom-auto lg:left-auto lg:mt-8 lg:mb-0 lg:w-224">

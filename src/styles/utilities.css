@@ -20,14 +20,6 @@
 	background-image: linear-gradient(180deg, rgb(0 0 0 / 0) 69.66%, rgb(0 0 0 / 0.8) 90.29%);
 }
 
-@utility bg-check-secondary {
-	background-image: url('../img/icons/check.svg');
-}
-
-@utility bg-check-white {
-	background-image: url('../img/icons/check-white.svg');
-}
-
 @utility pt-block-none {
 	padding-top: var(--space-block-none);
 }

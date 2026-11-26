@@ -11,7 +11,7 @@ export default function pageTransitions() {
 	if (swup) return;
 
 	swup = new Swup({
-		containers: ['#header', '#main'],
+		containers: ['#header', '#main', '#footer'],
 		animationSelector: '#main',
 		ignoreVisit: (_url, { el } = {}) => !!el?.closest('[data-no-swup], [data-lightbox]'),
 		plugins: [

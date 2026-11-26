@@ -1,8 +1,8 @@
 <div class="flex {{wrapperClasses}}">
     <div class="button-prev cursor-pointer">
-        {{ inlineSvg('icons/arrow', 'size-24 stroke-current rotate-180', { sanitize: true, namespace: true }) }}
+        {% include '_components/atoms/icon/icon.twig' with { icon: 'arrow-left' } only %}
     </div>
     <div class="button-next cursor-pointer">
-        {{ inlineSvg('icons/arrow', 'size-24 stroke-current', { sanitize: true, namespace: true }) }}
+        {% include '_components/atoms/icon/icon.twig' with { icon: 'arrow-right' } only %}
     </div>
 </div>

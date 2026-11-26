@@ -1,16 +1,20 @@
+{# Phosphor icon, rendered by the Phosphor Icons plugin. `size` is small (16), medium (24) or large (32); `sizeClasses` overrides it. #}
 {% set icon = icon is defined and icon|length ? icon : false %}
+{% set weight = weight is defined and weight|length ? weight : 'regular' %}
 {% set size = size is defined and size|length ? size : 'medium' %}
-{% set iconClasses = iconClasses is defined and iconClasses|length ? iconClasses : 'fill-current' %}
+{% set iconClasses = iconClasses is defined and iconClasses|length ? iconClasses : '' %}
 
-{% switch size %}
-	{% case 'large' %}
-		{% set sizeClasses = 'size-32' %}
-	{% case 'medium' %}
-		{% set sizeClasses = 'size-24' %}
-	{% case 'small' %}
-		{% set sizeClasses = 'size-16' %}
-{% endswitch %}
+{% if sizeClasses is not defined or not sizeClasses|length %}
+	{% switch size %}
+		{% case 'large' %}
+			{% set sizeClasses = 'size-32' %}
+		{% case 'small' %}
+			{% set sizeClasses = 'size-16' %}
+		{% default %}
+			{% set sizeClasses = 'size-24' %}
+	{% endswitch %}
+{% endif %}
 
 {% if icon %}
-	{{ inlineSvg('icons/'~ icon, ' ' ~ sizeClasses ~ ' ' ~ iconClasses, { sanitize: true, namespace: true }) }}
+	<span aria-hidden="true" class="inline-flex shrink-0 [&>svg]:size-full {{ sizeClasses }} {{ iconClasses }}">{{ craft.phosphorIcons.icon(icon, weight)|raw }}</span>
 {% endif %}

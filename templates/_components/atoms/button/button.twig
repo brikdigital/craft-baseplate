@@ -84,17 +84,13 @@
 {% apply spaceless %}
     <{{ htmlTag }} {{attr(attributes)}}>
         {% if icon and iconPosition == 'left' %}
-            <span aria-hidden="true">
-                {{ inlineSvg(icon, 'mr-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
-            </span>
+            {% include '_components/atoms/icon/icon.twig' with { icon: icon, size: 'small', iconClasses: 'mr-8' } only %}
         {% endif %}
 
         {{ text }}
 
         {% if icon and iconPosition == 'right' %}
-            <span aria-hidden="true">
-                {{ inlineSvg(icon, 'ml-2 size-3 fill-current', { sanitize: true, namespace: true }) }}
-            </span>
+            {% include '_components/atoms/icon/icon.twig' with { icon: icon, size: 'small', iconClasses: 'ml-8' } only %}
         {% endif %}
     </{{ htmlTag }}>
 {% endapply %}

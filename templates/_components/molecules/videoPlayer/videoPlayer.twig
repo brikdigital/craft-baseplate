@@ -14,7 +14,8 @@
 {% set wrapperClasses = wrapperClasses|default('') %}
 {% set positionClasses = autoPlay ? 'right-16 bottom-16 md:right-24 md:bottom-24' : 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform' %}
 {% set buttonClasses = positionClasses ~ ' absolute z-10 size-56 lg:size-64 place-items-center rounded-full bg-secondary text-primary outline-none cursor-pointer group-hover:bg-primary group-hover:text-secondary transition ease-in-out duration-200' %}
-{% set iconClasses = 'fill-current block size-16 lg:size-20 -mr-px' %}
+{% set iconSizeClasses = 'size-16 lg:size-20' %}
+{% set iconClasses = '-mr-px' %}
 
 {% if type == 'inline' or type == 'inlineAutoplay' %}
   {# A poster is only used when it is a real image, not when it falls back to the video file itself #}
@@ -26,10 +27,10 @@
 
       <media-play-button class="group {{ buttonClasses }} grid">
         <span class="hidden place-items-center group-data-ended:grid group-data-paused:grid">
-          {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
+          {% include '_components/atoms/icon/icon.twig' with { icon: 'play', weight: 'fill', sizeClasses: iconSizeClasses, iconClasses: iconClasses } only %}
         </span>
         <span class="grid place-items-center group-data-ended:hidden group-data-paused:hidden">
-          {{ inlineSvg('icons/pause', ''~iconClasses, { sanitize: true, namespace: true }) }}
+          {% include '_components/atoms/icon/icon.twig' with { icon: 'pause', weight: 'fill', sizeClasses: iconSizeClasses, iconClasses: iconClasses } only %}
         </span>
       </media-play-button>
     </media-container>
@@ -38,7 +39,7 @@
   {% set popupPoster = posterImage is string ? (posterImage == video ? '' : posterImage) : (posterImage ? posterImage.url : '') %}
   <a href="{{video}}" {% if popupPoster %}data-poster="{{ popupPoster }}"{% endif %} data-lightbox data-autoplay="{{ type == 'autoplayPopUp' ? 'true' : 'false' }}" class="relative z-0 block group {{wrapperClasses}}" aria-label="{{ 'Video afspelen'|t }}">
     <button class="grid {{buttonClasses}}">
-        {{ inlineSvg('icons/play', ''~iconClasses, { sanitize: true, namespace: true }) }}
+        {% include '_components/atoms/icon/icon.twig' with { icon: 'play', weight: 'fill', sizeClasses: iconSizeClasses, iconClasses: iconClasses } only %}
     </button>
 
     {% include "_components/atoms/image/image.twig" with {

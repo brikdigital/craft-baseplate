@@ -1,0 +1,66 @@
+{% set nodes = craft.navigation.nodes({ handle: 'footerNavigation', level: 1 }).all() %}
+{% set legalNodes = craft.navigation.nodes({ handle: 'legalNavigation', level: 1 }).all() %}
+
+{% set socialIcons = { twitter: 'x-logo', wikipedia: 'globe', vimeo: 'monitor-play' } %}
+{% set socials = seomatic.site.sameAsLinks|filter(item => item.url) %}
+
+{% set linkClasses = 'text-16 text-text-primary/70 transition-colors hover:text-text-primary' %}
+
+<footer id="footer" class="bg-surface-default border-border-primary/10 border-t">
+	<div class="container flex flex-col gap-48 pt-block-md pb-block-md">
+		<div class="flex flex-col gap-40 xl:flex-row xl:justify-between">
+			<a href="{{ siteUrl() }}" class="text-text-primary text-20 font-bold">{{ currentSite.name }}</a>
+
+			<nav aria-label="{{ 'Footernavigatie'|t }}" class="grid grid-cols-2 gap-x-24 gap-y-40 md:grid-cols-3 xl:flex xl:flex-1 xl:flex-wrap xl:justify-end xl:gap-x-64">
+				{% for node in nodes %}
+					<div class="xl:w-200">
+						<h3 class="text-16 text-text-titles font-bold">
+							{% if node.url %}
+								<a href="{{ node.url }}" {{ node.newWindow ? 'target="_blank" rel="noopener noreferrer"' }} {{ node.active ? 'aria-current="page"' }} class="hover:underline">{{ node.title }}</a>
+							{% else %}
+								{{ node.title }}
+							{% endif %}
+						</h3>
+						{% set children = node.children.all()|filter(child => child.url) %}
+						{% if children|length %}
+							<ul class="mt-16 flex flex-col gap-12">
+								{% for child in children %}
+									<li><a href="{{ child.url }}" {{ child.newWindow ? 'target="_blank" rel="noopener noreferrer"' }} {{ child.active ? 'aria-current="page"' }} class="{{ linkClasses }}">{{ child.title }}</a></li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</nav>
+		</div>
+
+		<div class="border-border-primary/10 flex flex-col gap-16 border-t pt-24 md:flex-row md:items-center md:justify-between">
+			<div class="text-14 text-text-primary/70 flex flex-wrap items-center gap-x-24 gap-y-8 md:order-1">
+				<p>&copy; {{ now|date('Y') }} {{ currentSite.name }}</p>
+
+				{% if legalNodes|length %}
+					<nav aria-label="{{ 'Juridisch'|t }}">
+						<ul class="flex flex-wrap gap-x-24 gap-y-8">
+							{% for node in legalNodes|filter(node => node.url) %}
+								<li><a href="{{ node.url }}" {{ node.newWindow ? 'target="_blank" rel="noopener noreferrer"' }} {{ node.active ? 'aria-current="page"' }} class="hover:text-text-primary transition-colors">{{ node.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</nav>
+				{% endif %}
+			</div>
+
+			{% if socials|length %}
+				<ul class="flex flex-wrap gap-x-16 gap-y-12 md:order-2 md:justify-end">
+					{% for item in socials %}
+						<li>
+							<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="text-text-primary/70 hover:text-text-primary transition-colors">
+								<span class="sr-only">{{ item.siteName }}</span>
+								{% include '_components/atoms/icon/icon.twig' with { icon: socialIcons[item.handle] ?? (item.handle ~ '-logo') } only %}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+	</div>
+</footer>
