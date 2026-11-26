@@ -17,6 +17,7 @@
 		"serve": "NODE_ENV=dev vite"
 	},
 	"dependencies": {
+		"@alpinejs/focus": "^3.17.5",
 		"@swup/a11y-plugin": "^5.2.1",
 		"@swup/head-plugin": "^2.3.1",
 		"@swup/preload-plugin": "^3.2.12",

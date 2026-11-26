@@ -1,0 +1,93 @@
+{% macro icon(name, classes = 'size-24') %}
+	<span aria-hidden="true" class="inline-flex shrink-0 [&>svg]:size-full {{ classes }}">{{ craft.phosphorIcons.icon(name, 'regular')|raw }}</span>
+{% endmacro %}
+
+{% set nodes = craft.navigation.nodes({ handle: 'headerNavigation', level: 1 }).all() %}
+{% set sites = craft.app.sites.getSitesByGroupId(currentSite.groupId) %}
+
+{% set linkClasses = 'flex w-full items-center gap-4 rounded-md px-12 py-8 text-18 font-bold text-text-primary transition-colors hover:bg-surface-transparent lg:w-auto lg:text-16' %}
+{% set dropdownClasses = 'fixed inset-x-0 top-72 bottom-0 z-10 flex flex-col gap-4 overflow-y-auto bg-surface-default p-(--container-padding) lg:absolute lg:inset-x-auto lg:top-full lg:bottom-auto lg:w-224 lg:gap-2 lg:overflow-visible lg:rounded-md lg:p-4 lg:shadow-lg lg:outline-1 lg:outline-black/5' %}
+{% set dropdownLinkClasses = 'block rounded-md px-12 py-8 text-16 text-text-primary hover:bg-surface-transparent' %}
+
+<header
+	id="header"
+	data-alpine
+	x-data="mainMenu"
+	@click.outside="close()"
+	@keydown.escape.window="close()"
+	@swup:visit:start.document="close()"
+	class="bg-surface-default sticky top-0 z-50 shadow-md">
+	<div class="container flex h-72 items-center justify-between gap-24">
+		<a href="{{ siteUrl() }}" class="text-text-primary text-20 font-bold">{{ currentSite.name }}</a>
+
+		<div class="flex items-center gap-8 lg:order-last lg:-ml-24">
+			<a href="{{ url('search') }}" class="text-text-primary hover:bg-surface-transparent grid size-40 place-items-center rounded-md">
+				<span class="sr-only">{{ 'Zoeken'|t }}</span>
+				{{ _self.icon('magnifying-glass') }}
+			</a>
+			<button type="button" @click="open = !open" :aria-expanded="open" aria-controls="main-nav" class="bg-interactive-default text-text-inverse hover:bg-interactive-hover hover:text-primary grid size-40 place-items-center rounded-md transition-colors lg:hidden">
+				<span class="sr-only">{{ 'Menu'|t }}</span>
+				{{ _self.icon('list', 'size-24 in-aria-expanded:hidden') }}
+				{{ _self.icon('x', 'size-24 not-in-aria-expanded:hidden') }}
+			</button>
+		</div>
+
+		<nav
+			id="main-nav"
+			aria-label="{{ 'Hoofdmenu'|t }}"
+			:class="open ? 'flex' : 'max-lg:hidden'"
+			x-trap.noscroll="trap"
+			@click="linkClick($event)"
+			class="bg-surface-default fixed inset-x-0 top-72 bottom-0 flex-col gap-16 overflow-y-auto p-(--container-padding) lg:static lg:flex lg:flex-1 lg:flex-row lg:items-center lg:justify-between lg:overflow-visible lg:p-0">
+			<ul class="flex flex-col gap-4 lg:flex-row lg:items-center lg:pl-24">
+				{% for node in nodes %}
+					{% set children = node.children.all() %}
+					<li class="relative" {% if children|length %}@focusout="leave($el, $event, '{{ node.id }}', true)" @keydown.escape="escape($el, '{{ node.id }}')"{% endif %}>
+						{% if children|length %}
+							<button type="button" @click="toggleSub('{{ node.id }}')" :aria-expanded="sub === '{{ node.id }}'" class="{{ linkClasses }} {{ node.active ? 'bg-surface-transparent' : '' }}">
+								{{ node.title }}
+								{{ _self.icon('caret-right', 'size-16 ml-auto lg:hidden') }}
+								{{ _self.icon('caret-down', 'size-16 transition-transform max-lg:hidden in-aria-expanded:rotate-180') }}
+							</button>
+							<ul x-show="sub === '{{ node.id }}'" x-cloak class="{{ dropdownClasses }}">
+								<li class="mb-8 lg:hidden">
+									<button type="button" data-back @click="back($el)" class="bg-interactive-default text-text-inverse hover:bg-interactive-hover hover:text-primary ml-4 inline-flex items-center justify-center rounded-md p-8 transition-colors">
+										<span class="sr-only">{{ 'Terug'|t }}</span>
+										{{ _self.icon('caret-left', 'size-24') }}
+									</button>
+								</li>
+
+								{% if node.url %}
+									<li><a href="{{ node.url }}" class="{{ dropdownLinkClasses }} max-lg:text-18 font-bold">{{ node.title }}</a></li>
+								{% endif %}
+
+								{% for child in children|filter(child => child.url) %}
+									<li><a href="{{ child.url }}" {{ child.newWindow ? 'target="_blank" rel="noopener noreferrer"' }} {{ child.active ? 'aria-current="page"' }} class="{{ dropdownLinkClasses }}">{{ child.title }}</a></li>
+								{% endfor %}
+							</ul>
+						{% elseif node.url %}
+							<a href="{{ node.url }}" {{ node.newWindow ? 'target="_blank" rel="noopener noreferrer"' }} {{ node.active ? 'aria-current="page"' }} class="{{ linkClasses }} {{ node.active ? 'bg-surface-transparent' : '' }}">{{ node.title }}</a>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+
+			<div class="mt-auto flex items-center gap-8 lg:mt-0">
+				{% if sites|length > 1 %}
+					<div class="relative" @focusout="leave($el, $event, 'lang')" @keydown.escape="escape($el, 'lang')">
+						<button type="button" @click="toggleSub('lang')" :aria-expanded="sub === 'lang'" class="text-text-primary hover:bg-surface-transparent grid size-40 place-items-center rounded-md">
+							{{ _self.icon('globe') }}
+							<span class="sr-only">{{ 'Taal wijzigen'|t }}</span>
+						</button>
+						<ul x-show="sub === 'lang'" x-cloak class="bg-surface-default absolute bottom-full left-0 z-10 mb-8 w-full min-w-224 rounded-md p-4 shadow-lg outline-1 outline-black/5 lg:top-full lg:right-0 lg:bottom-auto lg:left-auto lg:mt-8 lg:mb-0 lg:w-224">
+							{% for site in sites %}
+								{% set localized = entry is defined and entry ? entry.getLocalized().siteId(site.id).one() : null %}
+								<li><a href="{{ localized and localized.url ? localized.url : site.baseUrl }}" hreflang="{{ site.language }}" lang="{{ site.language }}" {{ site.id == currentSite.id ? 'aria-current="true"' }} class="{{ dropdownLinkClasses }} {{ site.id == currentSite.id ? 'font-bold' : '' }}">{{ site.name }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endif %}
+			</div>
+		</nav>
+	</div>
+</header>

@@ -1,3 +1,4 @@
+import focus from '@alpinejs/focus';
 import Alpine from 'alpinejs';
 
 declare global {
@@ -8,6 +9,7 @@ declare global {
 
 export default function alpine() {
 	loadModules().then(() => {
+		Alpine.plugin(focus);
 		window.Alpine = Alpine;
 		Alpine.start();
 	});

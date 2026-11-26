@@ -1,4 +1,4 @@
-dateModified: 1795697288
+dateModified: 1795697426
 elementSources:
   craft\elements\Entry:
     -
@@ -200,6 +200,7 @@ meta:
     c3833bf8-fd94-41d8-9ffc-edd0fa60fc6a: Baseplate # Baseplate
     cffde261-31c9-424a-9d39-86be6078c848: 'Text with Media' # Text with Media
     d2c59b5c-3a54-4fc5-9729-41ac810b56ad: 'Video Autoplay' # Video Autoplay
+    d3aea8e5-ab4e-40e7-8387-21b5dc891bca: 'Header Navigation' # Header Navigation
     d292f057-2899-444e-8e42-2848bcbdbab5: 'FAQ Category' # FAQ Category
     d544c7a1-06b0-46c7-b2a6-8987f2c6bd84: Content # Content
     d1928b4f-7613-41fb-9e2b-4756e2c31adb: 'Date range' # Date range

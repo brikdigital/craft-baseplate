@@ -41,6 +41,8 @@
         <body class="overflow-x-hidden relative flex flex-col min-h-screen antialiased {{ bodyClasses }} {{ devMode ? 'debug-screens' : '' }}">
             {% include '_components/atoms/skipToContent/skipToContent.twig' %}
 
+            {% include '_components/organisms/header/header.twig' %}
+
             <main id="main" tabindex="-1" class="flex-[1_0_auto] focus:outline-none">
                 {% block html %}
                 {% endblock %}
