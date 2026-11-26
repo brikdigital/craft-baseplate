@@ -1,9 +1,12 @@
 {%- macro render(field, bodySize) -%}
+	{%- set headingMargin = 'mb-12 md:mb-20 last:mb-0' -%}
 	{{ field | retcon([
-		['attr', 'h1', { class: 'mb-12 text-40 leading-tight font-extrabold text-text-titles last:mb-0 md:mb-20 lg:text-60' }],
-		['attr', 'h2', { class: 'mb-12 text-32 leading-120 font-semibold text-text-titles last:mb-0 md:mb-20 md:text-36' }],
-		['attr', 'h3', { class: 'mb-12 text-24 leading-120 font-semibold text-text-titles last:mb-0 md:mb-20 md:text-28' }],
-		['attr', 'h4', { class: 'mb-12 text-18 leading-120 font-semibold text-text-titles last:mb-0 md:mb-20 md:text-22' }],
+		['attr', 'h1', { class: 'heading-2xl text-text-titles ' ~ headingMargin }],
+		['attr', 'h2', { class: 'heading-xl text-text-titles ' ~ headingMargin }],
+		['attr', 'h3', { class: 'heading-lg text-text-titles ' ~ headingMargin }],
+		['attr', 'h4', { class: 'heading-md text-text-titles ' ~ headingMargin }],
+		['attr', 'h5', { class: 'heading-sm text-text-titles ' ~ headingMargin }],
+		['attr', 'h6', { class: 'heading-xs text-text-titles ' ~ headingMargin }],
 		['attr', 'p', { class: bodySize ~ ' content-spacing text-text-primary' }],
 		['attr', 'strong', { class: 'font-semibold' }],
 		['attr', 'a', { class: 'underline underline-offset-4 hover:opacity-70' }],
@@ -15,8 +18,8 @@
 		['attr', '.overflow-x-auto', { class: 'content-spacing overflow-x-auto' }],
 		['attr', 'table', { class: 'w-full border-collapse' }],
 		['attr', 'tr', { class: 'border-y border-border-primary/20' }],
-		['attr', 'th', { class: 'bg-surface-transparent px-12 py-12 text-left align-top text-16 leading-160 font-semibold text-text-primary md:px-24 md:py-20 md:text-18' }],
-		['attr', 'td', { class: 'px-12 py-12 text-left align-top text-16 leading-160 text-text-primary md:px-24 md:py-20 md:text-18' }],
+		['attr', 'th', { class: 'bg-surface-transparent px-12 py-12 body text-left align-top font-semibold text-text-primary md:px-24 md:py-20' }],
+		['attr', 'td', { class: 'px-12 py-12 body text-left align-top text-text-primary md:px-24 md:py-20' }],
 		['attr', '.text-huge', { class: 'text-32! leading-110! md:text-52!' }],
 		['attr', '.text-big', { class: 'text-22! leading-140! md:text-28!' }],
 		['attr', '.text-small', { class: 'text-14! leading-160!' }],
@@ -27,11 +30,11 @@
 
 {%- macro default(field) -%}
 	{% import _self as retcon %}
-	{{ retcon.render(field, 'text-16 md:text-18 leading-160') }}
+	{{ retcon.render(field, 'body') }}
 {%- endmacro -%}
 
 {# Large variant, for intro text #}
 {%- macro intro(field) -%}
 	{% import _self as retcon %}
-	{{ retcon.render(field, 'text-22 md:text-28 leading-140') }}
+	{{ retcon.render(field, 'intro') }}
 {%- endmacro -%}

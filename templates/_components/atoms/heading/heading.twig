@@ -1,19 +1,10 @@
 {% set htmlTag = htmlTag is defined and htmlTag|length ? htmlTag : 'h2' %}
 {% set text = text is defined and text|length ? text : '' %}
-{% set size = size is defined and size|length ? size : 'medium' %}
+{% set size = size is defined and size|length ? size : 'xl' %}
 {% set color = color is defined and color|length ? color : 'text-text-titles' %}
 {% set headingClasses = headingClasses is defined and headingClasses|length ? headingClasses : '' %}
 {% set textTransform = textTransform is defined and textTransform|length ? textTransform : '' %}
-{% set baseClasses = 'font-extrabold block' %}
-
-{% switch size %}
-	{% case 'small' %}
-		{% set baseClasses = baseClasses ~ ' ' ~ 'leading-tight text-20 lg:text-24 xl:text-32' %}
-	{% case 'medium' %}
-		{% set baseClasses = baseClasses ~ ' ' ~ 'leading-tight text-28 md:text-32 lg:text-40' %}
-	{% case 'large' %}
-		{% set baseClasses = baseClasses ~ ' ' ~ 'leading-tight text-40 lg:text-60' %}
-{% endswitch %}
+{% set baseClasses = 'block heading-' ~ size %}
 
 {% set cssClasses = baseClasses ~ ' ' ~ color ~ ' ' ~ textTransform ~ ' ' ~ headingClasses %}
 

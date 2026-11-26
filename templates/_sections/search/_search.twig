@@ -4,7 +4,7 @@
 
 {% block html %}
 	<div class="container-half pt-block-md pb-block-md">
-		{% include '_components/atoms/heading/heading.twig' with { htmlTag: 'h1', text: 'Zoeken'|t, size: 'large' } only %}
+		{% include '_components/atoms/heading/heading.twig' with { htmlTag: 'h1', text: 'Zoeken'|t, size: '2xl' } only %}
 
 		<form action="{{ url('search') }}" method="get" role="search" class="mt-24 flex max-w-640 gap-8">
 			<label for="search-page-q" class="sr-only">{{ 'Zoeken'|t }}</label>

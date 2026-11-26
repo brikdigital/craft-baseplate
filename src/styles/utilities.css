@@ -16,6 +16,54 @@
 	}
 }
 
+/* Headings */
+@utility heading-2xl {
+	font-size: var(--font-size-heading-2xl);
+	font-weight: 800;
+	line-height: 1.25;
+}
+
+@utility heading-xl {
+	font-size: var(--font-size-heading-xl);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+@utility heading-lg {
+	font-size: var(--font-size-heading-lg);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+@utility heading-md {
+	font-size: var(--font-size-heading-md);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+@utility heading-sm {
+	font-size: var(--font-size-heading-sm);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+@utility heading-xs {
+	font-size: var(--font-size-heading-xs);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+/* Body */
+@utility body {
+	font-size: var(--font-size-body);
+	line-height: 1.6;
+}
+
+@utility intro {
+	font-size: var(--font-size-intro);
+	line-height: 1.4;
+}
+
 @utility bg-overlay {
 	background-image: linear-gradient(180deg, rgb(0 0 0 / 0) 69.66%, rgb(0 0 0 / 0.8) 90.29%);
 }

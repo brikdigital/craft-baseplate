@@ -35,3 +35,35 @@
 	--leading-160: 1.6;
 	--leading-200: 2;
 }
+
+:root {
+	--font-size-heading-2xl: var(--text-40);
+	--font-size-heading-xl: var(--text-28);
+	--font-size-heading-lg: var(--text-24);
+	--font-size-heading-md: var(--text-18);
+	--font-size-heading-sm: var(--text-16);
+	--font-size-heading-xs: var(--text-14);
+	--font-size-body: var(--text-16);
+	--font-size-intro: var(--text-20);
+}
+
+@media (min-width: theme(--breakpoint-md)) {
+	:root {
+		--font-size-heading-2xl: var(--text-48);
+		--font-size-heading-xl: var(--text-32);
+		--font-size-heading-lg: var(--text-28);
+		--font-size-heading-md: var(--text-22);
+		--font-size-heading-sm: var(--text-18);
+		--font-size-heading-xs: var(--text-16);
+		--font-size-body: var(--text-18);
+		--font-size-intro: var(--text-22);
+	}
+}
+
+@media (min-width: theme(--breakpoint-lg)) {
+	:root {
+		--font-size-heading-2xl: var(--text-52);
+		--font-size-heading-xl: var(--text-36);
+		--font-size-heading-lg: var(--text-32);
+	}
+}

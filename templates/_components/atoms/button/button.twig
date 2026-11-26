@@ -11,13 +11,13 @@
 {% set rel = rel|default(false) %}
 {% set role = role|default(false) %}
 {% set disabled = disabled|default(false) %}
-{% set baseClasses = 'inline-flex items-center justify-center font-bold text-16 transition ease-in-out duration-150' %}
+{% set baseClasses = 'inline-flex items-center justify-center font-bold transition ease-in-out duration-150' %}
 
 {% switch theme %}
 	{% case 'primary' %}
-		{% set themeClasses = 'bg-interactive-default text-text-inverse hover:bg-interactive-hover hover:text-primary' %}
+		{% set themeClasses = 'rounded-md bg-interactive-default text-text-inverse hover:bg-interactive-hover hover:text-primary' %}
 	{% case 'secondary' %}
-		{% set themeClasses = 'bg-secondary text-primary hover:bg-interactive-default hover:text-text-inverse' %}
+		{% set themeClasses = 'rounded-md bg-secondary text-primary hover:bg-interactive-default hover:text-text-inverse' %}
 	{% case 'textDark' %}
 		{% set themeClasses = 'text-text-primary underline underline-offset-6 hover:opacity-70' %}
 	{% case 'textLight' %}
@@ -30,8 +30,8 @@
 
 {% switch size %}
 	{% case 'large' %}
-		{% set fontSize = 'text-18' %}
-		{% set padding = 'px-20 py-12' %}
+		{% set fontSize = 'text-16 md:text-18' %}
+		{% set padding = 'px-12 py-8' %}
 	{% case 'small' %}
 		{% set fontSize = 'text-16' %}
 		{% set padding = 'px-12 py-8' %}
@@ -84,13 +84,13 @@
 {% apply spaceless %}
     <{{ htmlTag }} {{attr(attributes)}}>
         {% if icon and iconPosition == 'left' %}
-            {% include '_components/atoms/icon/icon.twig' with { icon: icon, size: 'small', iconClasses: 'mr-8' } only %}
+            {% include '_components/atoms/icon/icon.twig' with { icon: icon, sizeClasses: 'size-20', iconClasses: 'mr-8' } only %}
         {% endif %}
 
         {{ text }}
 
         {% if icon and iconPosition == 'right' %}
-            {% include '_components/atoms/icon/icon.twig' with { icon: icon, size: 'small', iconClasses: 'ml-8' } only %}
+            {% include '_components/atoms/icon/icon.twig' with { icon: icon, sizeClasses: 'size-20', iconClasses: 'ml-8' } only %}
         {% endif %}
     </{{ htmlTag }}>
 {% endapply %}
