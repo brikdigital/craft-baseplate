@@ -1,6 +1,21 @@
-dateModified: 1795601148
+dateModified: 1795682780
 elementSources:
   craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      page: Content
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
     -
       heading: Content
       key: 'heading:c57b7762-774d-4b30-99bf-e034408188b2'
@@ -49,47 +64,12 @@ elementSources:
         - link
       type: native
     -
-      heading: More
-      key: 'heading:057cb9eb-37cc-44aa-b570-fe48da149fbe'
+      key: 'section:a1721f5d-40fb-4869-970b-d7e387cb9f50' # FAQs
       page: Content
-      type: heading
+      type: native
     -
       key: 'section:f9a50eaa-e4c7-4211-bfda-4797859199e9' # Shared Blocks
       page: Content
-      type: native
-    -
-      defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: ''
-      disabled: false
-      key: 'section:edb6d78c-27f5-4522-852d-2df53429bb71' # Errors
-      page: Content
-      tableAttributes:
-        - status
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    -
-      heading: ''
-      key: 'heading:6de84770-9f1a-4105-a91c-856344528445'
-      page: Content
-      type: heading
-    -
-      defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: ''
-      disabled: false
-      key: '*'
-      page: Content
-      tableAttributes:
-        - status
-        - section
-        - postDate
-        - expiryDate
-        - link
       type: native
     -
       defaultSort:
@@ -101,6 +81,20 @@ elementSources:
       page: 'Site Settings'
       tableAttributes:
         - status
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:edb6d78c-27f5-4522-852d-2df53429bb71' # Errors
+      page: 'Site Settings'
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
         - link
       type: native
     -
@@ -121,6 +115,10 @@ elementSources:
         - postDate
         - expiryDate
         - link
+      type: native
+    -
+      key: 'section:6c713ae9-931b-4061-a175-2be0d7bd083a' # FAQ Categories
+      page: 'Site Settings'
       type: native
 elementSourcesPages:
   craft\elements\Entry:
@@ -222,4 +220,4 @@ system:
   name: Baseplate
   retryDuration: 60
   schemaVersion: 5.12.0.2
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Amsterdam

@@ -10,9 +10,7 @@ blitz:
   edition: standard
   enabled: true
   licenseKey: FEKJVGWWK8G0MZZHEKCNR950
-  schemaVersion: 5.14.0
-  settings:
-    maxUriLength: 2048
+  schemaVersion: 5.16.0
 ckeditor:
   edition: standard
   enabled: true
@@ -41,7 +39,7 @@ formie:
   edition: standard
   enabled: true
   licenseKey: 435ASQ7ZIWT7QYQXDI5WQTZX
-  schemaVersion: 4.0.89
+  schemaVersion: 4.0.116
   settings:
     ajaxTimeout: 10
     alertEmails: null
