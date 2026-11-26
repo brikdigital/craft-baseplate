@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: textarea
+instructions: null
+name: Textarea
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText
+warning: null

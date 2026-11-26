@@ -1,0 +1,21 @@
+{% set content = content|default('') %}
+{% set buttons = buttons|default([]) %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+
+{% if content or buttons|length %}
+	<div class="container flex flex-col gap-24 lg:flex-row lg:items-end lg:justify-between {{ wrapperClasses }}">
+		{% if content %}
+			<div class="min-w-0 lg:max-w-2/3">
+				{% if content is iterable %}
+					{% include '_blocks/chunksHandler.twig' with { editorContent: content } only %}
+				{% else %}
+					{% include '_components/atoms/text/text.twig' with { html: content } only %}
+				{% endif %}
+			</div>
+		{% endif %}
+
+		{% if buttons|length %}
+			{% include '_components/molecules/buttonGroup/buttonGroup.twig' with { buttons: buttons, wrapperClasses: 'hidden justify-end lg:flex' } only %}
+		{% endif %}
+	</div>
+{% endif %}

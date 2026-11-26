@@ -1,0 +1,31 @@
+{% set content = content|default('') %}
+{% set buttons = buttons|default([]) %}
+{% set articles = articles|default([]) %}
+{% set hasButtons = buttons|length > 0 %}
+
+<div class="overflow-x-clip">
+	{% include '_components/molecules/sectionHeading/sectionHeading.twig' with { content: content, buttons: buttons, wrapperClasses: 'mb-32 md:mb-48' } only %}
+
+	<div class="container">
+		{% set slides %}
+			{% for article in articles %}
+				<div class="swiper-slide h-auto!">
+					{% include '_components/molecules/articleCard/articleCard.twig' with { article: article } only %}
+				</div>
+			{% endfor %}
+		{% endset %}
+
+		{% set controlsStart %}
+			{% if hasButtons %}
+				{% include '_components/molecules/buttonGroup/buttonGroup.twig' with { buttons: buttons, wrapperClasses: 'lg:hidden' } only %}
+			{% endif %}
+		{% endset %}
+
+		{% include '_components/molecules/slider/slider.twig' with {
+			sliderType: 'cards',
+			slides: slides,
+			controlsStart: controlsStart,
+			controlsClasses: 'mt-24 md:mt-32',
+		} only %}
+	</div>
+</div>

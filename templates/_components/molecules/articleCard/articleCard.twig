@@ -1,0 +1,31 @@
+{% set article = article|default(null) %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+
+{% if article %}
+	{% set title = article.cardTitle ?: article.title %}
+	{% set image = article.cardImage.one() ?? article.image.one() ?? null %}
+	{% set intro = article.cardIntro ?: article.intro %}
+	{% set category = article.articleCategory.one() ?? null %}
+
+	<a href="{{ article.url }}" class="group flex flex-col gap-16 {{ wrapperClasses }}">
+		<div class="relative shrink-0 overflow-hidden">
+			{% include '_components/atoms/image/image.twig' with {
+				image: image,
+				transform: 'aspect-4/3',
+				alt: image.alt ?? '',
+				imageClasses: 'block aspect-4/3 object-cover transition duration-300 ease-in-out group-hover:scale-105',
+			} only %}
+			{% if category %}
+				{% include '_components/atoms/badge/badge.twig' with { text: category.title, theme: 'secondary', size: 'small', badgeClasses: 'absolute bottom-16 left-16' } only %}
+			{% endif %}
+		</div>
+
+		<div class="flex flex-col gap-8">
+			<p class="text-20 text-text-titles md:text-24 leading-120 font-semibold">{{ title }}</p>
+			<p class="text-14 text-text-primary opacity-70">{{ article.postDate|date('j F Y') }}</p>
+			{% if intro|length %}
+				<div class="text-16 text-text-primary leading-160">{{ intro }}</div>
+			{% endif %}
+		</div>
+	</a>
+{% endif %}

@@ -4,7 +4,9 @@ instructions: 'Add and format your text using paragraphs and other available for
 name: Content
 searchable: true
 settings:
-  advancedLinkFields: null
+  advancedLinkFields:
+    - target
+    - download
   availableTransforms: ''
   availableVolumes: '*'
   characterLimit: null
@@ -49,6 +51,8 @@ settings:
     - createEntry
     - sourceEditing
   wordLimit: null
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\ckeditor\Field
+warning: null

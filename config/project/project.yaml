@@ -1,4 +1,4 @@
-dateModified: 1795692814
+dateModified: 1795695879
 elementSources:
   craft\elements\Entry:
     -
@@ -146,6 +146,7 @@ meta:
     01ad70f2-21a9-405c-9519-23be837553fa: FAQ # FAQ
     1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: Articles # Articles
     3b5e939d-5880-4f47-ab94-dddf2d6f3f21: Archived # Archived
+    3df2f486-0f01-45a9-b310-92abb40e5998: Textarea # Textarea
     4f08eaca-189d-42fc-9987-cbed19663296: Limit # Limit
     4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
@@ -157,6 +158,7 @@ meta:
     25d92538-2fd7-4c96-86ab-976b57112aad: Default # Default
     38d453ca-6ad2-47bf-ba04-0a2d7b1a9c00: Code # Code
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Shared Block' # Shared Block
+    58d20086-b1fc-4be6-bb29-ee826465589f: Content # Content
     72f9a502-9f14-4fe3-8473-3d0089f8b34a: 'Plain Text (not translatable)' # Plain Text (not translatable)
     86dfc9bd-0363-4046-a638-26e03cd481da: Images # Images
     87add8ee-18cc-4272-8a4c-4fd06d16ec25: Page # Page

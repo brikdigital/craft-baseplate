@@ -1,0 +1,20 @@
+{% set articles = block.articles is defined ? (block.articles is array ? block.articles : block.articles.all()) : [] %}
+
+{% if not articles|length %}
+	{% set categoryIds = block.articleCategory is defined ? block.articleCategory.ids() : [] %}
+	{% set query = craft.entries().section('articles').id('not ' ~ (entry.id ?? 0)).limit(block.limit ?? null) %}
+	{% if categoryIds|length %}
+		{% do query.articleCategory(categoryIds) %}
+	{% endif %}
+	{% set articles = query.all() %}
+{% endif %}
+
+{% if articles|length %}
+	<section {{ attr(themeAttributes|default({})) }}>
+		{% include '_components/organisms/articles/articles.twig' with {
+			content: block.content ?? '',
+			buttons: block.buttons ?? [],
+			articles: articles,
+		} only %}
+	</section>
+{% endif %}

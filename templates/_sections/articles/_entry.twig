@@ -1,11 +1,53 @@
 {% extends '_layouts/default.twig' %}
 
+{% set category = entry.articleCategory.one() %}
+{% set author = entry.author %}
+{% set image = entry.image.one() %}
+
+{% set related = craft.entries().section('articles').id('not ' ~ entry.id).limit(6) %}
+{% if category %}
+	{% do related.articleCategory(category) %}
+{% endif %}
+{% set related = related.all() %}
+
 {% block html %}
+	<article class="container-half pb-block-md pt-24 lg:pt-40">
+		<div class=" flex flex-col gap-24 lg:gap-32">
+			<header class="flex flex-col items-start gap-16 lg:gap-24">
+			    {% include '_components/atoms/heading/heading.twig' with { htmlTag: 'h1', text: entry.title, size: 'large' } only %}
 
-	{{entry.title}}
+			    <div class="flex flex-wrap items-center gap-12">
+					{% if category %}
+						{% include '_components/atoms/badge/badge.twig' with { text: category.title, theme: 'secondary', size: 'medium' } only %}
+					{% endif %}
+					<time datetime="{{ entry.postDate|date('Y-m-d') }}" class="text-14 text-text-primary md:text-16 opacity-70">{{ entry.postDate|date('j F Y') }}</time>
+				</div>
 
-	{% include '_components/blocks.twig' with {
-		blocks: entry.blocks ? entry.blocks.eagerly().all() : [],
-	} %}
+				{% if entry.intro %}
+					{% include '_components/atoms/text/text.twig' with { html: '<p>' ~ entry.intro|e|nl2br ~ '</p>', variant: 'intro' } only %}
+				{% endif %}
 
+				{% if author and author.fullName|length %}
+					<p class="text-14 text-text-primary md:text-16">{{ 'Door'|t }} <span class="font-semibold">{{ author.fullName }}</span></p>
+				{% endif %}
+			</header>
+
+			{% if image %}
+				{% include '_components/molecules/media/media.twig' with { image: image, ratio: 'aspect-16/9', loading: 'eager', fetchpriority: 'high' } only %}
+			{% endif %}
+
+			<div>
+				{% include '_blocks/chunksHandler.twig' with { editorContent: entry.content } only %}
+			</div>
+		</div>
+	</article>
+
+	{% if related|length %}
+		<section class="pb-block-lg">
+			{% include '_components/organisms/articles/articles.twig' with {
+				content: '<h2>' ~ 'Meer artikelen'|t ~ '</h2>',
+				articles: related,
+			} only %}
+		</section>
+	{% endif %}
 {% endblock %}

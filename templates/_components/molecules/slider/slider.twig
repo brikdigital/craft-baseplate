@@ -1,25 +1,25 @@
 {% set sliderType = sliderType|default('fullWidth') %}
+{% set options = options|default({}) %}
 {% set slides = slides|default('') %}
+{% set showNavigation = showNavigation ?? true %}
+{% set showPagination = showPagination ?? false %}
+{% set controlsStart = controlsStart|default('') %}
+{% set controlsClasses = controlsClasses|default('mt-16') %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+{% set config = { type: sliderType, minSlides: 1 }|merge(options) %}
 
-{% if showNavigation is not defined %}
-  {% set showNavigation = true %}
-{% endif %}
+<div class="relative w-full {{ wrapperClasses }}" data-swiper="{{ config|json_encode|e('html_attr') }}">
+	<div class="swiper-wrapper">{{ slides }}</div>
 
-{% set showPagination = showPagination|default(false) %}
-
-<div class="relative w-full overflow-hidden" data-swiper='{
-    "type": "{{sliderType}}",
-    "minSlides": 1
-  }'>
-  <div class="swiper-wrapper">
-    {{ slides }}
-  </div>
-
-  {% if showNavigation %}
-    {% include "_components/molecules/slider/_partials/navigation" with { wrapperClasses: '' } %}
-  {% endif %}
-
-  {% if showPagination %}
-    {% include "_components/molecules/slider/_partials/pagination" with { wrapperClasses: 'mt-16' } %}
-  {% endif %}
+	{% if controlsStart or showPagination or showNavigation %}
+		<div class="flex items-center justify-between {{ controlsClasses }}">
+			{{ controlsStart }}
+			{% if showPagination %}
+				{% include '_components/molecules/slider/_partials/pagination.twig' only %}
+			{% endif %}
+			{% if showNavigation %}
+				{% include '_components/molecules/slider/_partials/navigation.twig' with { wrapperClasses: 'ml-auto' } only %}
+			{% endif %}
+		</div>
+	{% endif %}
 </div>

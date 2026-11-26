@@ -4,7 +4,9 @@ instructions: 'Add and format your text using headings, paragraphs, and other av
 name: Content
 searchable: true
 settings:
-  advancedLinkFields: null
+  advancedLinkFields:
+    - target
+    - download
   availableTransforms: ''
   availableVolumes: '*'
   characterLimit: null
@@ -83,8 +85,8 @@ settings:
     - __ADMINS__
   toolbar:
     - heading
-    - fontSize
     - '|'
+    - fontSize
     - bold
     - italic
     - link
@@ -93,7 +95,6 @@ settings:
     - numberedList
     - '|'
     - insertTable
-    - createEntry
     - sourceEditing
   wordLimit: null
 tip: null
