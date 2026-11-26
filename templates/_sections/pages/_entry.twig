@@ -2,7 +2,7 @@
 
 {% block html %}
 
-    {{entry.title}}
+    {% include '_components/organisms/hero/hero.twig' with { page: entry } only %}
 
     {% include '_components/blocks.twig' with {
         blocks: entry.blocks

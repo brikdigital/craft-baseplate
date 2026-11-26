@@ -17,7 +17,7 @@ settings:
           - left
         -
           - icon
-          - ''
+          - objects-align-left
         -
           - default
           - ''
@@ -31,7 +31,7 @@ settings:
           - right
         -
           - icon
-          - ''
+          - objects-align-right
         -
           - default
           - '1'

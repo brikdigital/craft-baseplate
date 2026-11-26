@@ -23,8 +23,8 @@
 					<time datetime="{{ entry.postDate|date('Y-m-d') }}" class="text-14 text-text-primary md:text-16 opacity-70">{{ entry.postDate|date('j F Y') }}</time>
 				</div>
 
-				{% if entry.intro %}
-					{% include '_components/atoms/text/text.twig' with { html: '<p>' ~ entry.intro|e|nl2br ~ '</p>', variant: 'intro' } only %}
+				{% if entry.description|striptags|trim %}
+					{% include '_blocks/chunksHandler.twig' with { editorContent: entry.description, variant: 'intro' } only %}
 				{% endif %}
 
 				{% if author and author.fullName|length %}

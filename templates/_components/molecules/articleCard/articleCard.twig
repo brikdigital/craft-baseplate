@@ -4,7 +4,14 @@
 {% if article %}
 	{% set title = article.cardTitle ?: article.title %}
 	{% set image = article.cardImage.one() ?? article.image.one() ?? null %}
-	{% set intro = article.cardIntro ?: article.intro %}
+	{% set descriptionField = article.cardDescription|striptags|trim ? article.cardDescription : article.description %}
+	{% set intro = '' %}
+	{% for chunk in descriptionField ?? [] %}
+		{% if chunk.type == 'markup' %}
+			{% set intro = intro ~ ' ' ~ chunk|striptags %}
+		{% endif %}
+	{% endfor %}
+	{% set intro = intro|striptags|trim %}
 	{% set category = article.articleCategory.one() ?? null %}
 
 	<a href="{{ article.url }}" class="group flex flex-col gap-16 {{ wrapperClasses }}">
@@ -23,8 +30,8 @@
 		<div class="flex flex-col gap-8">
 			<p class="text-20 text-text-titles md:text-24 leading-120 font-semibold">{{ title }}</p>
 			<p class="text-14 text-text-primary opacity-70">{{ article.postDate|date('j F Y') }}</p>
-			{% if intro|length %}
-				<div class="text-16 text-text-primary leading-160">{{ intro }}</div>
+			{% if intro %}
+				<p class="line-clamp-3 text-16 text-text-primary leading-160">{{ intro }}</p>
 			{% endif %}
 		</div>
 	</a>

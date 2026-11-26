@@ -1,0 +1,35 @@
+{% set page = page|default(null) %}
+{% set heading = page.title ?? '' %}
+{% set text = page.description ?? '' %}
+{% set image = page.image is defined ? page.image.one() : null %}
+{% set mediaPosition = page.position.value ?? 'left' %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+{% set mediaRight = image and mediaPosition == 'right' %}
+
+<section class="bg-surface-default text-text-primary pt-block-md pb-block-md" data-theme="light">
+	<div class="container-grid items-center {{ wrapperClasses }}">
+		<div class="col-span-full flex flex-col items-start gap-20 lg:gap-32 {{ image ? 'lg:col-span-6' : 'lg:col-span-8' }} {{ mediaRight ? 'lg:col-start-1 lg:row-start-1' : '' }}">
+			{% include '_components/atoms/heading/heading.twig' with {
+				htmlTag: 'h1',
+				text: heading,
+				size: 'large',
+			} only %}
+
+			{% if text is iterable %}
+				{% include '_blocks/chunksHandler.twig' with { editorContent: text, variant: 'intro' } only %}
+			{% elseif text|length %}
+				{% include '_components/atoms/text/text.twig' with { html: text, variant: 'intro' } only %}
+			{% endif %}
+		</div>
+
+		{% if image %}
+			{% include '_components/molecules/media/media.twig' with {
+				image: image,
+				loading: 'eager',
+				fetchpriority: 'high',
+				ratio: 'aspect-4/3',
+				wrapperClasses: 'order-first col-span-full lg:col-span-6 ' ~ (mediaRight ? 'lg:order-last lg:col-start-7 lg:row-start-1' : 'lg:order-first'),
+			} only %}
+		{% endif %}
+	</div>
+</section>

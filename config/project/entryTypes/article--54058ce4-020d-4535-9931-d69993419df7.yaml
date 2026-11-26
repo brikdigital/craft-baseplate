@@ -39,19 +39,19 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-11-26T12:22:29+00:00'
+            dateAdded: '2026-11-26T15:13:11+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 3df2f486-0f01-45a9-b310-92abb40e5998 # Textarea
-            handle: intro
-            instructions: 'Short text summarizing or introducing this article'
-            label: Introduction
-            oldFieldUid: 3df2f486-0f01-45a9-b310-92abb40e5998 # Textarea
+            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            handle: description
+            instructions: null
+            label: Description
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8d98eff0-a329-4ab8-b701-89cd47c94413
+            uid: 8a70b247-9e95-4b01-8cb4-43fc92c5978b
             userCondition: null
             warning: null
             width: 100
@@ -142,19 +142,19 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-11-26T12:23:31+00:00'
+            dateAdded: '2026-11-26T15:11:42+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 3df2f486-0f01-45a9-b310-92abb40e5998 # Textarea
-            handle: cardIntro
+            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            handle: cardDescription
             instructions: null
-            label: Introduction
-            oldFieldUid: 3df2f486-0f01-45a9-b310-92abb40e5998 # Textarea
+            label: Description
+            oldFieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ac6dde66-ebdc-430b-afa7-e26dcecf2dec
+            uid: e56d6fa0-a8a3-4a5f-8048-ec52644d7cc7
             userCondition: null
             warning: null
             width: 100
