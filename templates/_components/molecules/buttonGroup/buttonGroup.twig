@@ -1,3 +1,5 @@
+{% import '_macros/button.twig' as buttonMacro %}
+{% set defaultIcons = true %}
 {% set buttons = buttons|default([]) %}
 {% set buttons = buttons is array ? buttons : buttons.all() %}
 {% set wrapperClasses = wrapperClasses|default('') %}
@@ -11,6 +13,8 @@
 				url: link.url,
 				target: link.newWindow ?? false ? '_blank' : '',
 				theme: themes[link.buttonType.value ?? 'primary'] ?? 'primary',
+				icon: buttonMacro.icon(link, defaultIcons),
+				iconPosition: link.position.value ?? 'right',
 			} only %}
 		{% endfor %}
 	</div>

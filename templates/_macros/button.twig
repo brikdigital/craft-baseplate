@@ -1,0 +1,10 @@
+{#- Icon of a Hyper link button: the picked icon wins, otherwise by link type (only when `defaults` is true, else no icon). Email, phone and url (external) get their own icon, everything else points inside the site -#}
+{%- macro icon(link, defaults = true) -%}
+	{%- set typeIcons = { email: 'envelope-open', phone: 'phone-call', tel: 'phone-call', url: 'arrow-up-right' } -%}
+	{%- set pickedIcon = link.iconPicker.name ?? null -%}
+
+	{#- A Url link holding a mailto: or tel: address still gets the right icon -#}
+	{%- set url = link.url ?? '' -%}
+	{%- set schemeIcon = url starts with 'mailto:' ? 'envelope-open' : (url starts with 'tel:' ? 'phone-call' : null) -%}
+	{{- pickedIcon ?? (defaults ? (schemeIcon ?? typeIcons[link.handle ?? ''] ?? 'arrow-right') : null) -}}
+{%- endmacro -%}
