@@ -1,0 +1,19 @@
+{% set category = block.faqCategory.one() ?? null %}
+
+{% set query = craft.entries().section('faqs') %}
+{% if category %}
+	{% do query.faqCategories(category) %}
+{% endif %}
+{% set faqs = query.all() %}
+
+{% if faqs|length %}
+	<section {{ attr(themeAttributes|default({})) }}>
+		<div class="container-half">
+			{% include '_components/organisms/faq/faq.twig' with {
+				content: block.content ?? '',
+				faqs: faqs,
+				buttons: block.button ?? [],
+			} only %}
+		</div>
+	</section>
+{% endif %}

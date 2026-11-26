@@ -32,28 +32,11 @@ fieldLayouts:
             handle: content
             instructions: null
             label: null
-            oldFieldUid: d544c7a1-06b0-46c7-b2a6-8987f2c6bd84 # Content
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: aedebbb7-9763-4a52-8262-569ffb770d2d
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2026-11-25T09:43:37+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: be4ae16d-6317-4958-b1e9-b0732d01f4f9 # FAQ Category
-            handle: null
-            instructions: 'Choose a FAQ category to filter on.'
-            label: null
-            oldFieldUid: be4ae16d-6317-4958-b1e9-b0732d01f4f9 # FAQ Category
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2db39ac5-fc96-44ea-9882-7fe37d5fa819
             userCondition: null
             warning: null
             width: 100
@@ -71,6 +54,29 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 4907ed03-2101-4ccc-b534-8e9b9bc6beaa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T12:37:47+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 685b6a7a-65b1-4e8d-89c6-bc4910106d71
+            userCondition: null
+          -
+            dateAdded: '2026-11-25T09:43:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: be4ae16d-6317-4958-b1e9-b0732d01f4f9 # FAQ Category
+            handle: null
+            instructions: 'Choose a FAQ category to filter on.'
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2db39ac5-fc96-44ea-9882-7fe37d5fa819
             userCondition: null
             warning: null
             width: 100

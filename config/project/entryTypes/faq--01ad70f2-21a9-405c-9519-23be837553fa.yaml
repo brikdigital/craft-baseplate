@@ -18,7 +18,7 @@ fieldLayouts:
             instructions: null
             label: null
             oldFieldUid: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 46fc0715-d31c-45f8-b890-7c0ad22f99a3
@@ -68,7 +68,7 @@ fieldLayouts:
             handle: answer
             instructions: null
             label: Answer
-            oldFieldUid: d544c7a1-06b0-46c7-b2a6-8987f2c6bd84 # Content
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -85,7 +85,7 @@ fieldLayouts:
             handle: null
             instructions: null
             label: Link
-            oldFieldUid: c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22 # Button
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

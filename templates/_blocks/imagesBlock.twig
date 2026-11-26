@@ -4,8 +4,8 @@
 {% set images = images is array ? images : images.all() %}
 
 <section {{ attr(themeAttributes|default({})) }}>
-	<div class="container-grid">
-		<div class="col-span-full lg:col-span-8 lg:col-start-3 {{ displayMode == 'default' ? 'flex flex-col gap-24 md:gap-32' : '' }}">
+	<div class="container-half">
+		<div class="{{ displayMode == 'default' ? 'flex flex-col gap-24 md:gap-32' : '' }}">
 			{% if displayMode == 'slider' %}
 				{% include '_components/molecules/imageSlider/imageSlider.twig' with { images: images, ratio: ratio } only %}
 			{% else %}

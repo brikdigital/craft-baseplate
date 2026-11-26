@@ -1,0 +1,26 @@
+{% set content = content|default('') %}
+{% set faqs = faqs|default([]) %}
+{% set buttons = buttons|default([]) %}
+{% set wrapperClasses = wrapperClasses|default('') %}
+
+<div class="flex flex-col gap-32 {{ wrapperClasses }}">
+	{% if content %}
+		<div>
+			{% if content is iterable %}
+				{% include '_blocks/chunksHandler.twig' with { editorContent: content } only %}
+			{% else %}
+				{% include '_components/atoms/text/text.twig' with { html: content } only %}
+			{% endif %}
+		</div>
+	{% endif %}
+
+	<div class="border-border-secondary border-t">
+		{% for faq in faqs %}
+			{% include '_components/molecules/faqItem/faqItem.twig' with { faq: faq } only %}
+		{% endfor %}
+	</div>
+
+	{% if buttons|length %}
+		{% include '_components/molecules/buttonGroup/buttonGroup.twig' with { buttons: buttons } only %}
+	{% endif %}
+</div>
