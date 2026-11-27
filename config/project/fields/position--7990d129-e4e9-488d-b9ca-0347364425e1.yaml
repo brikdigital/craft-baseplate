@@ -11,7 +11,7 @@ settings:
       __assoc__:
         -
           - label
-          - Links
+          - Left
         -
           - value
           - left
@@ -25,7 +25,7 @@ settings:
       __assoc__:
         -
           - label
-          - Rechts
+          - Right
         -
           - value
           - right
