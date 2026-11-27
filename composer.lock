@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4550e431831a47ace71a22e08052d755",
+    "content-hash": "1549e8a561f85df9bf08394400484491",
     "packages": [
         {
             "name": "amphp/amp",
@@ -6425,6 +6425,45 @@
                 "shell"
             ],
             "time": "2023-04-19T08:25:22+00:00"
+        },
+        {
+            "name": "mindseeker-media/craft-related-elements",
+            "version": "1.3.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MindseekerMedia/craft-related-elements/zipball/7a22c9c9e0f4aad54c3f272507eed5b2a7beb960",
+                "reference": "7a22c9c9e0f4aad54c3f272507eed5b2a7beb960",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0",
+                "php": ">=8.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "related-elements",
+                "name": "Related Elements",
+                "developer": "Mindseeker Media",
+                "documentationUrl": "https://github.com/MindseekerMedia/craft-related-elements",
+                "class": "mindseekermedia\\craftrelatedelements\\RelatedElements"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mindseekermedia\\craftrelatedelements\\": "src/"
+                }
+            },
+            "license": [
+                "mit"
+            ],
+            "description": "Displays related elements of an entry, category or asset in the control panel edit view sidebar.",
+            "support": {
+                "email": "dev@mindseeker.media",
+                "issues": "https://github.com/MindseekerMedia/craft-related-elements/issues?state=open",
+                "source": "https://github.com/MindseekerMedia/craft-related-elements",
+                "docs": "https://github.com/MindseekerMedia/craft-related-elements",
+                "rss": "https://github.com/MindseekerMedia/craft-related-elements/releases.atom"
+            },
+            "time": "2026-11-21T23:08:40+00:00"
         },
         {
             "name": "ml/iri",
