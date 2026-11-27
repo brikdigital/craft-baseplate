@@ -37,11 +37,28 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-11-26T15:41:56+00:00'
+            dateAdded: '2026-11-27T07:40:46+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 206546c6-a2fc-44e4-92a8-5d9fe76b7113 # Hero
+            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            handle: description
+            instructions: null
+            label: Description
+            oldFieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e09fc3e-a47e-420a-98b8-f5527f906c82
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-27T07:40:46+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Image
             handle: null
             instructions: null
             label: null
@@ -49,10 +66,27 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2ea4a129-7a9c-412a-aa0d-da81cc567fcb
+            uid: 309b031b-e753-4d94-9648-4563d50ec6ca
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            dateAdded: '2026-11-27T07:40:46+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7990d129-e4e9-488d-b9ca-0347364425e1 # Position
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9adb223-ebfd-4e4a-b237-19133436d8ca
+            userCondition: null
+            warning: null
+            width: 25
         name: Content
         uid: 869adf13-a4c3-42ab-b425-73e0f80b953b
         userCondition: null

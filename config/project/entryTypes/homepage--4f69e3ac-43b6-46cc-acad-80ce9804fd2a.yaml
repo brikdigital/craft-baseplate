@@ -37,11 +37,28 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-11-26T15:29:21+00:00'
+            dateAdded: '2026-11-27T07:39:40+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 206546c6-a2fc-44e4-92a8-5d9fe76b7113 # Hero
+            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            handle: description
+            instructions: null
+            label: Description
+            oldFieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7ac518dc-dd33-4386-af76-6af95fa11e3d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-27T07:39:40+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Image
             handle: null
             instructions: null
             label: null
@@ -49,10 +66,33 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fdc259ba-776d-44fb-ae73-43c8ca842a3e
+            uid: 0200a3c8-e871-4b20-8935-ab9bcf64c794
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            dateAdded: '2026-11-27T07:39:40+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7990d129-e4e9-488d-b9ca-0347364425e1 # Position
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be9ba0b9-8804-4f19-ac1b-53d76a01aa10
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-11-27T07:39:40+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 2b8bc66a-e453-40b6-9fe0-2404ce34b69b
+            userCondition: null
           -
             dateAdded: '2024-10-17T10:25:40+00:00'
             editCondition: null

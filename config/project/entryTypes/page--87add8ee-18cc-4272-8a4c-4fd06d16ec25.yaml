@@ -37,11 +37,28 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-11-26T15:28:58+00:00'
+            dateAdded: '2026-11-27T07:38:34+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 206546c6-a2fc-44e4-92a8-5d9fe76b7113 # Hero
+            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            handle: description
+            instructions: null
+            label: Description
+            oldFieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13091c76-1646-4dcc-96dd-0d6061d96129
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-27T07:38:34+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f659e4e5-e885-4efe-918b-f9ea22bef550 # Image
             handle: null
             instructions: null
             label: null
@@ -49,10 +66,27 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 121b985d-b0ca-4f09-ae03-0b31944574d4
+            uid: 7e821e6b-6ed7-48d9-8d60-228dc2ee930d
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            dateAdded: '2026-11-27T07:38:34+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7990d129-e4e9-488d-b9ca-0347364425e1 # Position
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11d8fbd9-0093-4183-9dcc-2d14c55c9fb6
+            userCondition: null
+            warning: null
+            width: 25
           -
             dateAdded: '2026-11-24T08:22:22+00:00'
             elementCondition: null
