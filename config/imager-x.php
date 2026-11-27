@@ -19,10 +19,5 @@ return [
         'removeTransformsOnAssetFileops' => true, // Required for proper Gumlet purging
         'transformer' => 'gumlet',
         'useForCpThumbs' => true,
-    ],
-
-    'dev' => [
-        'transformer' => 'craft',
-        'useForCpThumbs' => false,
-    ],
+    ]
 ];
