@@ -1,13 +1,15 @@
 columnSuffix: null
-handle: theme
-instructions: null
+handle: blockTheme
+instructions: 'Choose the color of your block'
 name: Theme
 searchable: false
 settings:
   default: null
-  palette: Theme
+  palette: Blocks
   setRandom: false
   useConfigFile: true
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: percipiolondon\colourswatches\fields\ColourSwatches
+warning: null

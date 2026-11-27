@@ -1,6 +1,21 @@
-dateModified: 1795615329
+dateModified: 1795772679
 elementSources:
   CraftCms\Cms\Entry\Elements\Entry:
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: table
+      disabled: false
+      key: '*'
+      page: Content
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
     - heading: Content
       key: 'heading:c57b7762-774d-4b30-99bf-e034408188b2'
       page: Content
@@ -47,10 +62,20 @@ elementSources:
         - expiryDate
         - link
       type: native
-    - heading: More
-      key: 'heading:057cb9eb-37cc-44aa-b570-fe48da149fbe'
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: table
+      disabled: false
+      key: 'section:a1721f5d-40fb-4869-970b-d7e387cb9f50' # FAQs
       page: Content
-      type: heading
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
     - defaultSort:
         - postDate
         - desc
@@ -65,41 +90,8 @@ elementSources:
         - expiryDate
         - link
       type: native
-    - defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: table
-      disabled: false
-      key: 'section:edb6d78c-27f5-4522-852d-2df53429bb71' # Errors
-      page: Content
-      showBadgeCount: false
-      tableAttributes:
-        - status
-        - postDate
-        - expiryDate
-        - link
-      type: native
     - heading: ''
-      key: 'heading:6de84770-9f1a-4105-a91c-856344528445'
-      page: Content
-      type: heading
-    - defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: table
-      disabled: false
-      key: '*'
-      page: Content
-      showBadgeCount: false
-      tableAttributes:
-        - status
-        - section
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    - heading: ''
-      key: 'heading:9c5563f3-3873-45c6-8d4e-61593da81dc1'
+      key: 'heading:310615d1-7a19-4a38-af06-8f667383ccb3'
       page: Content
       type: heading
     - defaultSort:
@@ -119,22 +111,8 @@ elementSources:
         - desc
       defaultViewMode: table
       disabled: false
-      key: 'section:a1721f5d-40fb-4869-970b-d7e387cb9f50' # FAQs
-      page: Content
-      showBadgeCount: false
-      tableAttributes:
-        - status
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    - defaultSort:
-        - structure
-        - asc
-      defaultViewMode: structure
-      disabled: false
-      key: 'section:6c713ae9-931b-4061-a175-2be0d7bd083a' # FAQ Categories
-      page: Content
+      key: 'section:edb6d78c-27f5-4522-852d-2df53429bb71' # Errors
+      page: 'Site Settings'
       showBadgeCount: false
       tableAttributes:
         - status
@@ -160,6 +138,20 @@ elementSources:
         - expiryDate
         - link
       type: native
+    - defaultSort:
+        - structure
+        - asc
+      defaultViewMode: structure
+      disabled: false
+      key: 'section:6c713ae9-931b-4061-a175-2be0d7bd083a' # FAQ Categories
+      page: 'Site Settings'
+      showBadgeCount: false
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
 elementSourcesPages:
   CraftCms\Cms\Entry\Elements\Entry:
     'Site Settings':
@@ -172,7 +164,7 @@ meta:
   __names__:
     01ad70f2-21a9-405c-9519-23be837553fa: FAQ # FAQ
     1bf7f973-b634-4c7e-adbc-e71f1a4c70f8: Articles # Articles
-    3b5e939d-5880-4f47-ab94-dddf2d6f3f21: Archived # Archived
+    3df2f486-0f01-45a9-b310-92abb40e5998: Textarea # Textarea
     4f08eaca-189d-42fc-9987-cbed19663296: Limit # Limit
     4f69e3ac-43b6-46cc-acad-80ce9804fd2a: Homepage # Homepage
     5ec318c4-b6f4-4a56-92a5-f9b7edfbb635: Errors # Errors
@@ -184,6 +176,7 @@ meta:
     25d92538-2fd7-4c96-86ab-976b57112aad: Default # Default
     38d453ca-6ad2-47bf-ba04-0a2d7b1a9c00: Code # Code
     057c8c38-dc14-4f4f-8bc8-14a7232d3905: 'Shared Block' # Shared Block
+    58d20086-b1fc-4be6-bb29-ee826465589f: Content # Content
     72f9a502-9f14-4fe3-8473-3d0089f8b34a: 'Plain Text (not translatable)' # Plain Text (not translatable)
     86dfc9bd-0363-4046-a638-26e03cd481da: Images # Images
     87add8ee-18cc-4272-8a4c-4fd06d16ec25: Page # Page
@@ -194,7 +187,6 @@ meta:
     604c9d56-d743-4374-96d3-f57afb47e8a6: Content # Content
     731e9cf0-d175-4a28-bd06-59e7f71e6ba1: 'SEO settings' # SEO settings
     767c68f7-a42c-4402-a640-46af0c267fb7: 'Aspect ratio' # Aspect ratio
-    830fde48-892d-46e6-90f8-24b6cfd0f316: Draft # Draft
     1242c708-173c-482a-ac98-09d310d2dac4: 'Images Display Mode' # Images Display Mode
     5026f9b8-4a01-4754-8e5b-e71d9e17f5c8: Theme # Theme
     6548b4e4-c92a-4820-8d2f-065cbf1bda66: Indexes # Indexes
@@ -216,7 +208,6 @@ meta:
     b20babee-2b3a-4f80-9384-15e7b592cdc9: 'Article Categories' # Article Categories
     b5386dfa-66c8-4d08-bbcc-38503a3862c9: Video # Video
     b90107cc-9cad-4581-ae43-59791244ec13: FAQs # FAQs
-    bbe7c8a3-9f54-437e-b3a9-714b21468aab: Active # Active
     bc6369ec-7f21-4151-a8ad-85cec976c987: 'Article Category' # Article Category
     be4ae16d-6317-4958-b1e9-b0732d01f4f9: 'FAQ Category' # FAQ Category
     c5b33e76-5fe4-40c4-98a6-2f13e354ced5: Buttons # Buttons
@@ -230,11 +221,10 @@ meta:
     d1928b4f-7613-41fb-9e2b-4756e2c31adb: 'Date range' # Date range
     d52247de-f951-467f-823c-4808b53741ca: 'Shared Block' # Shared Block
     db6df807-fdb5-4bef-a3f5-2ebb6800c0bd: Articles # Articles
-    dbd31f29-8b03-46f8-819a-181826ff96c0: New # New
     dcaf6647-c88d-48cf-adf6-9b3e1d3150b1: Icon # Icon
     e3e540cf-4ffe-4dbf-8bfb-136dacd66f7c: 'Global Settings' # Global Settings
     e325439d-f974-4c27-a2d9-2fe44cce12bb: Quote # Quote
-    ea4babfe-7f6c-4495-8098-5aaf312b5488: 'Block Settings' # Block Settings
+    ea4babfe-7f6c-4495-8098-5aaf312b5488: Settings # Settings
     edb6d78c-27f5-4522-852d-2df53429bb71: Errors # Errors
     edd82513-9dec-4df9-a2a1-300da844a91f: Baseplate # Baseplate
     efdb17e7-d5b4-4222-bcf2-8a42cf5b0658: Images # Images

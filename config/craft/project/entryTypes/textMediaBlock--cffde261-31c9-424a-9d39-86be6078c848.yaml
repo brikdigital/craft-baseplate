@@ -88,7 +88,7 @@ fieldLayouts:
             instructionsPosition: before
             label: null
             oldFieldUid: null
-            required: false
+            required: true
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: f74b6406-d6fc-4982-b3ee-98311563055e
@@ -174,7 +174,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Block Settings
+            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Settings
             handle: null
             instructions: null
             instructionsPosition: before

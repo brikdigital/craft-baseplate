@@ -18,7 +18,7 @@ fieldLayouts:
             instructionsPosition: before
             label: null
             oldFieldUid: null
-            required: false
+            required: true
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 46fc0715-d31c-45f8-b890-7c0ad22f99a3

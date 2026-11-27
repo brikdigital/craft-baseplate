@@ -1,3 +1,4 @@
+columnSuffix: null
 handle: plainText
 instructions: null
 name: 'Plain Text'
@@ -10,8 +11,6 @@ settings:
   multiline: false
   placeholder: null
   uiMode: normal
-tip: null
 translationKeyFormat: null
 translationMethod: site
 type: CraftCms\Cms\Field\PlainText
-warning: null

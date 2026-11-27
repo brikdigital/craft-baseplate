@@ -42,23 +42,6 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: be4ae16d-6317-4958-b1e9-b0732d01f4f9 # FAQ Category
-            handle: null
-            instructions: 'Choose a FAQ category to filter on.'
-            instructionsPosition: before
-            label: null
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
-            uid: 2db39ac5-fc96-44ea-9882-7fe37d5fa819
-            userCondition: null
-            warning: null
-            width: 100
-          - dateAdded: '2026-11-25T09:43:37+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
             fieldUid: c6a1c79f-c8b3-46ea-ba09-ccb521dd8e22 # Button
             handle: null
             instructions: null
@@ -69,6 +52,28 @@ fieldLayouts:
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
             uid: 4907ed03-2101-4ccc-b534-8e9b9bc6beaa
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-26T12:37:47+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: 685b6a7a-65b1-4e8d-89c6-bc4910106d71
+            userCondition: null
+          - dateAdded: '2026-11-25T09:43:37+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: be4ae16d-6317-4958-b1e9-b0732d01f4f9 # FAQ Category
+            handle: null
+            instructions: 'Choose a FAQ category to filter on.'
+            instructionsPosition: before
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 2db39ac5-fc96-44ea-9882-7fe37d5fa819
             userCondition: null
             warning: null
             width: 100
@@ -83,7 +88,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Block Settings
+            fieldUid: ea4babfe-7f6c-4495-8098-5aaf312b5488 # Settings
             handle: null
             instructions: null
             instructionsPosition: before

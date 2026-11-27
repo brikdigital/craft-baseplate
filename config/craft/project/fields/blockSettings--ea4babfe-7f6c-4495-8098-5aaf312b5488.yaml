@@ -1,6 +1,6 @@
 handle: blockSettings
 instructions: 'Configure the settings of this block.'
-name: 'Block Settings'
+name: Settings
 searchable: false
 settings:
   fieldLayouts:
@@ -24,6 +24,16 @@ settings:
                     6:
                       - elements
                       -
+                        - __assoc__:
+                            0:
+                              - type
+                              - CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+                            2:
+                              - uid
+                              - c27d80e0-586a-4cca-a5f3-3b1dcddcafea
+                            3:
+                              - dateAdded
+                              - '2026-11-26T10:34:32+00:00'
                         - __assoc__:
                             0:
                               - type
@@ -164,7 +174,7 @@ settings:
             5:
               - cardThumbStyle
               - normal
-  viewMode: grouped
+  viewMode: inline
 tip: null
 translationKeyFormat: null
 translationMethod: site

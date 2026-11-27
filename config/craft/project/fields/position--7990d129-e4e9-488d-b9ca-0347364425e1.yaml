@@ -7,15 +7,15 @@ settings:
   iconsOnly: false
   options:
     - __assoc__:
-        0:
+        -
           - label
           - Links
-        1:
+        -
           - value
           - left
-        3:
-          - default
-          - '1'
+        -
+          - icon
+          - objects-align-left
     - __assoc__:
         -
           - label
@@ -23,6 +23,12 @@ settings:
         -
           - value
           - right
+        -
+          - icon
+          - objects-align-right
+        -
+          - default
+          - '1'
 tip: null
 translationKeyFormat: null
 translationMethod: none

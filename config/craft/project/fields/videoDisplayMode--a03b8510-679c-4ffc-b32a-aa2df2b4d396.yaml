@@ -16,6 +16,9 @@ settings:
         -
           - icon
           - arrows-minimize
+        -
+          - default
+          - '1'
     - __assoc__:
         -
           - label

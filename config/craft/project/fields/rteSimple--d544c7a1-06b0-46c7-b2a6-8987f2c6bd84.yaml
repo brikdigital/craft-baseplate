@@ -3,10 +3,13 @@ instructions: 'Add and format your text using headings, paragraphs, and other av
 name: Content
 searchable: true
 settings:
+  advancedLinkFields:
+    - target
+    - download
   availableTransforms: null
   availableVolumes: '*'
   characterLimit: null
-  css: null
+  css: ".ck.ck-content h2 {\r\n  font-size: 28px;\r\n  line-height: 1.2;\r\n  font-weight: 600;\r\n}\r\n\r\n.ck.ck-content h3 {\r\n  font-size: 22px;\r\n  line-height: 1.2;\r\n  font-weight: 600;\r\n}\r\n\r\n.ck.ck-content h4 {\r\n  font-size: 18px;\r\n  line-height: 1.2;\r\n  font-weight: 600;\r\n}\r\n\r\n.ck.ck-content figure.table {\r\n  margin-left: 0;\r\n  margin-right: 0;\r\n}\r\n\r\n.ck.ck-content .table table {\r\n  margin-left: 0;\r\n  margin-right: auto;\r\n}"
   cssFile: null
   defaultTransform: null
   defaultUploadLocationSubpath: null
@@ -56,6 +59,16 @@ settings:
                         -
                           - mode
                           - manual
+      -
+        - fontSize
+        - __assoc__:
+            -
+              - options
+              -
+                - tiny
+                - small
+                - big
+                - huge
   parseEmbeds: false
   sanitizeHtml: true
   showUnpermittedFiles: false
@@ -66,6 +79,7 @@ settings:
   toolbar:
     - heading
     - '|'
+    - fontSize
     - bold
     - italic
     - link
@@ -73,7 +87,7 @@ settings:
     - bulletedList
     - numberedList
     - '|'
-    - createEntry
+    - insertTable
     - sourceEditing
   wordLimit: null
 tip: null

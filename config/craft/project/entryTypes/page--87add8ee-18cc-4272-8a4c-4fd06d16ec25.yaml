@@ -36,7 +36,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          - dateAdded: '2026-11-25T08:32:40+00:00'
+          - dateAdded: '2026-11-27T07:38:34+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -49,11 +49,11 @@ fieldLayouts:
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
-            uid: b2f7f4c1-1cfb-4528-adb9-d890a841b6c8
+            uid: 13091c76-1646-4dcc-96dd-0d6061d96129
             userCondition: null
             warning: null
             width: 100
-          - dateAdded: '2024-10-17T10:35:12+00:00'
+          - dateAdded: '2026-11-27T07:38:34+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -66,11 +66,11 @@ fieldLayouts:
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
-            uid: e370e1a4-283b-4f5f-bbc9-70233f7e8d9c
+            uid: 7e821e6b-6ed7-48d9-8d60-228dc2ee930d
             userCondition: null
             warning: null
             width: 75
-          - dateAdded: '2026-11-24T08:22:22+00:00'
+          - dateAdded: '2026-11-27T07:38:34+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -83,7 +83,7 @@ fieldLayouts:
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
-            uid: 78ed9793-d252-4a8a-ae00-f455b072df90
+            uid: 11d8fbd9-0093-4183-9dcc-2d14c55c9fb6
             userCondition: null
             warning: null
             width: 25
@@ -116,20 +116,37 @@ fieldLayouts:
         userCondition: null
       - elementCondition: null
         elements:
-          - dateAdded: '2024-10-17T10:36:30+00:00'
+          - dateAdded: '2026-11-26T15:09:13+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Content
-            handle: cardBody
+            fieldUid: 10e2197c-c763-463e-998a-a704543fd784 # Plain Text
+            handle: cardTitle
             instructions: null
             instructionsPosition: before
-            label: null
+            label: Title
             oldFieldUid: null
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
-            uid: b9b48f33-7463-4c24-bfa3-bda0d0fa0769
+            uid: 1bc2e1c0-6bf6-4d3e-b48b-e270840c113c
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-26T15:09:13+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            handle: cardDescription
+            instructions: null
+            instructionsPosition: before
+            label: Description
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: b3ba536e-3544-4ab4-9b2f-feea1ecccd88
             userCondition: null
             warning: null
             width: 100

@@ -36,7 +36,24 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          - dateAdded: '2024-10-17T10:57:11+00:00'
+          - dateAdded: '2026-11-27T07:40:46+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 604c9d56-d743-4374-96d3-f57afb47e8a6 # Content
+            handle: description
+            instructions: null
+            instructionsPosition: before
+            label: Description
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 3e09fc3e-a47e-420a-98b8-f5527f906c82
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2026-11-27T07:40:46+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -49,16 +66,16 @@ fieldLayouts:
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
-            uid: 00df0122-2922-441b-8c37-29d4bbb7e676
+            uid: 309b031b-e753-4d94-9648-4563d50ec6ca
             userCondition: null
             warning: null
-            width: 100
-          - dateAdded: '2024-10-17T10:57:11+00:00'
+            width: 75
+          - dateAdded: '2026-11-27T07:40:46+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 437963f6-fffc-4014-921d-e13fd7b2315f # Content
-            handle: content
+            fieldUid: 7990d129-e4e9-488d-b9ca-0347364425e1 # Position
+            handle: null
             instructions: null
             instructionsPosition: before
             label: null
@@ -66,10 +83,10 @@ fieldLayouts:
             required: false
             tip: null
             type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
-            uid: 8fb46f0d-ddc2-4ea5-b276-b384d6664590
+            uid: e9adb223-ebfd-4e4a-b237-19133436d8ca
             userCondition: null
             warning: null
-            width: 100
+            width: 25
         icon: null
         name: Content
         type: content

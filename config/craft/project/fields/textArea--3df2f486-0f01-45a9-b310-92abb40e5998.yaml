@@ -1,0 +1,17 @@
+handle: textArea
+instructions: null
+name: Textarea
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: site
+type: CraftCms\Cms\Field\PlainText
+warning: null

@@ -3,6 +3,9 @@ instructions: 'Add and format your text using paragraphs and other available for
 name: Content
 searchable: true
 settings:
+  advancedLinkFields:
+    - target
+    - download
   availableTransforms: null
   availableVolumes: '*'
   characterLimit: null

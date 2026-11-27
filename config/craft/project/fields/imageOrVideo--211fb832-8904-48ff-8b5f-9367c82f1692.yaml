@@ -16,6 +16,9 @@ settings:
         -
           - icon
           - image
+        -
+          - default
+          - '1'
     - __assoc__:
         -
           - label

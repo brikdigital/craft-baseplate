@@ -1,0 +1,44 @@
+handle: rteVerySimple
+instructions: null
+name: Content
+searchable: false
+settings:
+  advancedLinkFields:
+    - download
+    - target
+  availableTransforms: null
+  availableVolumes: '*'
+  characterLimit: null
+  css: null
+  cssFile: null
+  defaultTransform: null
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
+  fullGraphqlData: true
+  headingLevels: false
+  htmlSanitizer: default
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
+  js: null
+  jsFile: null
+  options: null
+  parseEmbeds: false
+  sanitizeHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
+  wordLimit: null
+tip: null
+translationKeyFormat: null
+translationMethod: site
+type: CraftCms\Ckeditor\Field
+warning: null
